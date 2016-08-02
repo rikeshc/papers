@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  13 MAR 2016 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  2 AUG 2016 15:45
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **mymaster.tex
 (./mymaster.tex
@@ -986,13 +987,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `mymaster.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'mymaster.bbl' found.
+Package biblatex Info: ... file 'mymaster.bbl' not found.
 
-(./mymaster.bbl)
+No file mymaster.bbl.
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
 Package hyperref Info: Link coloring ON on input line 16.
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1097,6 +1097,9 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 
 ] [2]
 Chapter 1.
+
+LaTeX Warning: Citation 'Fib' on page 3 undefined on input line 34.
+
 [3
 
 ] [4
@@ -1114,44 +1117,46 @@ Chapter 3.
 ] [12
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 46.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+
+LaTeX Warning: Empty bibliography on input line 46.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-
-[13
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
- (./mymaster.aux)
+(./mymaster.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `mymaster.out' has not changed.
 (rerunfilecheck)             Checksum: 5ACB5FC7958B255B1E903C39F6CC5A01;301.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                mymaster
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'mymaster.run.xml'.
 \openout1 = `mymaster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13406 strings out of 493089
- 217939 string characters out of 6134842
- 659282 words of memory out of 5000000
- 16631 multiletter control sequences out of 15000+600000
- 38881 words of font info for 71 fonts, out of 8000000 for 9000
+ 13354 strings out of 493089
+ 216148 string characters out of 6134842
+ 659285 words of memory out of 5000000
+ 16589 multiletter control sequences out of 15000+600000
+ 30188 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,48p,852b,1509s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/palatino/uplri8a.pfb>
-Output written on mymaster.pdf (27 pages, 5044040 bytes).
+ 44i,11n,39p,852b,1509s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mymaster.pdf (26 pages, 5763613 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

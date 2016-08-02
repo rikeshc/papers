@@ -1,15 +1,2 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'mymaster.blg'
-[51] biber-darwin:276> INFO - === Sun Mar 13, 2016, 19:42:28
-[51] Biber.pm:333> INFO - Reading 'mymaster.bcf'
-[169] Biber.pm:645> INFO - Found 1 citekeys in bib section 0
-[188] Biber.pm:2977> INFO - Processing section 0
-[209] Biber.pm:3115> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[214] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[215] bibtex.pm:895> INFO - Found BibTeX data source 'mybib.bib'
-[249] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[249] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[249] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'en-UK'
-[249] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[251] bbl.pm:505> INFO - Writing 'mymaster.bbl' with encoding 'UTF-8'
-[251] bbl.pm:596> INFO - Output to mymaster.bbl
+[0] 05015a72.pm:324> INFO - This is Biber 2.1
+[0] 05015a72.pm:327> INFO - Logfile is 'mymaster.blg'
