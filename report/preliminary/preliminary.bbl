@@ -1,0 +1,244 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{rectboot}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=cf76b1e54b0ce6d4db6d6e4eeb30f0ef}{Sawan}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=521890551e7f6695f10743c4d4fbf4bc}{Savaria}{S\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3b3862562520161d58993614bab01fba}
+      \strng{fullhash}{3b3862562520161d58993614bab01fba}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1932-4545}
+      \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{A High-Efficiency Low-Voltage CMOS Rectifier for Harvesting Energy in Implantable Devices}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{326\bibrangedash 335}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TBCAS.2011.2177267
+      \endverb
+    \endentry
+    \entry{rectrcc}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e74217f34f480bcabcef30ff7e239397}{Lam}{L\bibinitperiod}{Y.\bibnamedelimi H.}{Y\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=5c6eb071c07ec7db17b27ca831bce8d1}{Ki}{K\bibinitperiod}{W.\bibnamedelimi H.}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=872442c7da289ef06d6ca4620fda7831}{Tsui}{T\bibinitperiod}{C.\bibnamedelimi Y.}{C\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{938f83869de1a01fd909dd39c701c614}
+      \strng{fullhash}{938f83869de1a01fd909dd39c701c614}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-7747}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems II: Express Briefs}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Integrated Low-Loss CMOS Active Rectifier for Wirelessly Powered Devices}
+      \field{volume}{53}
+      \field{year}{2006}
+      \field{pages}{1378\bibrangedash 1382}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/TCSII.2006.885400
+      \endverb
+    \endentry
+    \entry{rectcomp}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7c87b550ef99004eabf2b0d0c7d4dfb9}{Lee}{L\bibinitperiod}{H.\bibnamedelimi M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{Ghovanloo}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{395022f2d99a39ff358ec0f98c13908c}
+      \strng{fullhash}{395022f2d99a39ff358ec0f98c13908c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{month}{08}
+      \field{number}{8}
+      \field{title}{An Integrated Power-Efficient Active Rectifier With Offset-Controlled High Speed Comparators for Inductively Powered Applications}
+      \field{volume}{58}
+      \field{year}{2011}
+      \field{pages}{1749\bibrangedash 1760}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TCSI.2010.2103172
+      \endverb
+    \endentry
+    \entry{rectsize}{article}{}
+      \name{author}{2}{}{%
+        {{hash=02b67fa032775069062f343440d656b7}{Bawa}{B\bibinitperiod}{Gaurav}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=6f2fe220eacd162a22aec01cac9286d2}{Ghovanloo}{G\bibinitperiod}{Maysam}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2e75f36585a65c217be8d96a7490bc18}
+      \strng{fullhash}{2e75f36585a65c217be8d96a7490bc18}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-1979}
+      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+      \field{number}{1}
+      \field{title}{Analysis, design, and implementation of a high-efficiency full-wave rectifier in standard CMOS technology}
+      \field{volume}{60}
+      \field{year}{2009}
+      \field{pages}{71\bibrangedash 81}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s10470-008-9204-7
+      \endverb
+    \endentry
+    \entry{ldo_psu}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a228ac6375cd9158362089dcff659e48}
+      \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}}
+      \field{month}{09}
+      \field{note}{Accessed: 13-Aug-2016}
+      \field{title}{PSU | Linear Power Supply, Radio-electronics.com}
+      \field{year}{2012}
+    \endentry
+    \entry{ldo_bulkmod}{article}{}
+      \name{author}{2}{}{%
+        {{hash=07680b70d446b2b5eaa15831db4465a3}{Keikhosravy}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=56a2df54c0d9e3b45fe7b30570825ff0}{Mirabbasi}{M\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{666b2ea8f89a4a8f7ac9a20890f960a6}
+      \strng{fullhash}{666b2ea8f89a4a8f7ac9a20890f960a6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{A 0.13-um CMOS Low-Power Capacitor-Less LDO Regulator Using Bulk-Modulation Technique}
+      \field{volume}{61}
+      \field{year}{2014}
+      \field{pages}{3105\bibrangedash 3114}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TCSI.2014.2334831
+      \endverb
+    \endentry
+    \entry{ldo_quiescent}{article}{}
+      \name{author}{2}{}{%
+        {{hash=91dcf17eb57b268dd6818d757b20a3c9}{Rincon-Mora}{R\bibinithyphendelim M\bibinitperiod}{G.\bibnamedelimi A.}{G\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=24d7a021141c92495f629971adf37575}{Allen}{A\bibinitperiod}{P.\bibnamedelimi E.}{P\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a2451d0d5efd8f03785ff65009131d57}
+      \strng{fullhash}{a2451d0d5efd8f03785ff65009131d57}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9200}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{A low-voltage, low quiescent current, low drop-out regulator}
+      \field{volume}{33}
+      \field{year}{1998}
+      \field{pages}{36\bibrangedash 44}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/4.654935
+      \endverb
+    \endentry
+    \entry{razavi_2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c7a8cbdc611fb566c84f257674d0a44f}{Razavi}{R\bibinitperiod}{Behzad}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill, Inc.}%
+      }
+      \strng{namehash}{c7a8cbdc611fb566c84f257674d0a44f}
+      \strng{fullhash}{c7a8cbdc611fb566c84f257674d0a44f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{0072380322, 9780072380323}
+      \field{title}{Design of Analog CMOS Integrated Circuits}
+      \field{year}{2001}
+    \endentry
+    \entry{baker_2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=95e0d3bf2c279c467eccf405c815079e}{Baker}{B\bibinitperiod}{R.\bibnamedelimi Jacob}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-IEEE Press}%
+      }
+      \strng{namehash}{95e0d3bf2c279c467eccf405c815079e}
+      \strng{fullhash}{95e0d3bf2c279c467eccf405c815079e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{0470881321, 9780470881323}
+      \field{title}{CMOS Circuit Design, Layout, and Simulation}
+      \field{year}{2010}
+    \endentry
+    \entry{johns_2012}{book}{}
+      \name{author}{2}{}{%
+        {{hash=43ac1527c314848943bc6b60d01bbd90}{Johns}{J\bibinitperiod}{David\bibnamedelima A}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=417386cd55d38dbbe1bbebccbbc8e8ed}{Martin}{M\bibinitperiod}{Ken}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{9cbb03b36034b841aa4c6aee137d4a4f}
+      \strng{fullhash}{9cbb03b36034b841aa4c6aee137d4a4f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2E}
+      \field{isbn}{978-1-118-09233-0}
+      \field{title}{Analog integrated circuit design}
+      \field{year}{2012}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
