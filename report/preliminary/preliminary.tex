@@ -151,6 +151,7 @@ LDO design discussion is followed next.
 \newpage
 
 \section{LDO}
+
 Voltage regulator follows the rectifier designed above in order to regulated the rectified voltage to 1.8 V and deliver maximum current of 10 mA. Since the output from the active rectifier is 2.2 V and the required regulated voltage is 1.8 V, charge pump or  \acrshort{smps} of boost type is irrelevant here. Buck SMPS could be an option for voltage regulation but LDO is preferred for it better performance in terms of noise \cite{ldo_psu}.\\ 
 
 Figure \ref{ldo_gen} shows a circuit of typical pMOS LDO. As shown in the figure, the components includes an error amplifier (EA), a pass device (Mpass), a feedback circuit (R1 and R2) and load (Cout and Iload). A more general and complete LDO circuit also includes the circuitry for generation of reference voltages and bias current/voltages. However, in this project it will be discussed separately for now. In short the working principle of LDO is that the error amplifier compares the scaled down regulated voltage, Vdiv with Vref and regulates the internal resistance of the pass transistor such that  the error, Vref - Vdiv is least or zero ideally. 
@@ -162,9 +163,9 @@ Figure \ref{ldo_gen} shows a circuit of typical pMOS LDO. As shown in the figure
    \label{ldo_gen}
 \end{figure}
 
-\cite{ldo_bulkmod} and \cite{ldo_quiescent} are two CMOS implementation of LDO. \cite{ldo_bulkmod} has proposed bulk moudation technique for improving load regulation and stability of capacitorless LDO. Similarly \cite{ldo_quiescent} has  proposed techniques for increasing current efficeincy of conventional LDO. \\
+\cite{ldo_bulkmod} and \cite{ldo_quiescent} are two examples of CMOS implementation of LDO. \cite{ldo_bulkmod} has proposed bulk modulation technique for improving load regulation and stability of capacitor-less LDO. Similarly \cite{ldo_quiescent} has  proposed techniques for increasing current efficiency of LDO especially at no or low load condition. Though the techniques discussed in these designs have not been used, they have given good insight into different design parameters of LDO.  \\
 
-Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The components in this design includes a folded cascode differential amplifier as error amplifier, pMOS buffer, pMOS pass device and feedback network of resistors. 
+Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The components in this design include a folded cascode differential amplifier as error amplifier, pMOS buffer, pMOS pass device and feedback network of resistors. 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -173,9 +174,26 @@ Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The 
    \label{ldo_cmos}
 \end{figure}
 
-As briefly mentioned above, the error amplifer amplifies scaled regulated voltage, Vdiv and reference voltage, Vref. It is known that an amplifier with higher open loop \acrshort{dc} gain reduced the closed loop gain error and hence amplifier with higher gain is desired here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifer has gain $> 40 dB$ which is not achieved with the single stage amiplifier with this technology. Higher gain could have been achieved with multiple single stage but with increased difficulty making the amplifier stable. So for achieving higher DC gain and at the same time for stability convinence, folded cascode amplifier \cite[pp. xx]{razavi_2001} is choosen. 
+As briefly mentioned above, the error amplifier amplifies scaled regulated voltage, Vdiv and reference voltage, Vref. It is known that an amplifier with higher open loop \acrshort{dc} gain reduced the closed loop gain error and hence amplifier with higher gain is desired here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifier has gain $> 40 dB$ which is not achieved with the single stage amplifier with this technology. Higher gain could have been achieved with multiple single stage but with increased difficulty making the amplifier stable. So for achieving higher DC gain and at the same time for stability convinence, folded cascode amplifier \cite[pp. xx]{razavi_2001} is choosen. \\
 
-The The amplifier has a pMOS differential stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is Vref. \\
+The amplifier has a pMOS differential input stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is Vref. \\
+
+
+\begin{table}[htbp]
+\caption{LDO parameter and performance} 
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+Regulated output voltage & 1.8 V \\ \hline
+I\textsubscript{load} max. & 10 mA \\ \hline
+C\textsubscript{load} min. & 1.2 uF for PM >60\textdegree \\ \hline
+Load regulation & TBA\\ \hline
+Line regulation &    TBA \\ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
 
 
 
