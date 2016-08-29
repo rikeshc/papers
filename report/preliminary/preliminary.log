@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  19 AUG 2016 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  28 AUG 2016 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1103,31 +1103,34 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )))
-(./preliminary.aux)
+(./preliminary.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
 \openout1 = `preliminary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for T1+pnc on input line 40.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for T1+pnc on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pnc.fd
 File: t1pnc.fd 2001/06/04 font definitions for T1/pnc.
@@ -1176,13 +1179,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `preliminary.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'preliminary.bbl' found.
+Package biblatex Info: ... file 'preliminary.bbl' not found.
 
-(./preliminary.bbl)
-Package biblatex Info: Reference section=0 on input line 40.
-Package biblatex Info: Reference segment=0 on input line 40.
+No file preliminary.bbl.
+Package biblatex Info: Reference section=0 on input line 51.
+Package biblatex Info: Reference segment=0 on input line 51.
 \AtBeginShipoutBox=\box36
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
@@ -1191,7 +1193,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 40.
+Package hyperref Info: Link coloring ON on input line 51.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1201,25 +1203,25 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (./preliminary.out) (./preliminary.out)
 \@outlinefile=\write4
 \openout4 = `preliminary.out'.
 
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 54.
 
-<img/block_diagram.pdf, id=17, 575.14874pt x 265.99374pt>
+<img/block_diagram.pdf, id=21, 575.14874pt x 265.99374pt>
 File: img/block_diagram.pdf Graphic file (type pdf)
 
 <use img/block_diagram.pdf>
-Package pdftex.def Info: img/block_diagram.pdf used on input line 48.
+Package pdftex.def Info: img/block_diagram.pdf used on input line 59.
 (pdftex.def)             Requested size: 312.00119pt x 144.29605pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
@@ -1227,190 +1229,347 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/b
 lock_diagram.pdf>] [2]
-Overfull \hbox (3.09196pt too wide) in paragraph at lines 75--76
+Overfull \hbox (3.09196pt too wide) in paragraph at lines 86--87
 \T1/pnc/m/n/12 The most ba-sic rec-ti-fier is con-ven-tional full wave bridge s
 truc-ture where
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+LaTeX Warning: Citation 'rectboot' on page 3 undefined on input line 90.
+
+LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 90.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+LaTeX Warning: Citation 'rectrcc' on page 3 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'rectcomp' on page 3 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'rectrcc' on page 3 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'rectcomp' on page 3 undefined on input line 92.
+
+
+LaTeX Warning: Citation 'rectrcc' on page 3 undefined on input line 92.
+
+
+Overfull \hbox (3.8003pt too wide) in paragraph at lines 92--93
+\T1/pnc/m/n/12 men-ted com-par-ator with com-pens-at-ing the fall-ing out-put d
+elay whereas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[3] <img/rect_conv.pdf, id=65, 361.35pt x 346.29375pt>
+[3]
+
+LaTeX Warning: Citation 'rectrcc' on page 4 undefined on input line 94.
+
+<img/rect_conv.pdf, id=61, 361.35pt x 346.29375pt>
 File: img/rect_conv.pdf Graphic file (type pdf)
  <use img/rect_conv.pdf>
-Package pdftex.def Info: img/rect_conv.pdf used on input line 87.
+Package pdftex.def Info: img/rect_conv.pdf used on input line 98.
 (pdftex.def)             Requested size: 175.49881pt x 168.18475pt.
 
-<img/rect_cc.pdf, id=66, 360.34625pt x 346.29375pt>
+<img/rect_cc.pdf, id=62, 360.34625pt x 346.29375pt>
 File: img/rect_cc.pdf Graphic file (type pdf)
  <use img/rect_cc.pdf>
-Package pdftex.def Info: img/rect_cc.pdf used on input line 89.
+Package pdftex.def Info: img/rect_cc.pdf used on input line 100.
 (pdftex.def)             Requested size: 175.49881pt x 168.65503pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 [4 <./img/rect_conv.pdf> <./img/rect_cc.pdf>]
-<img/rect_rcc.pdf, id=91, 515.9275pt x 371.3875pt>
+<img/rect_rcc.pdf, id=85, 515.9275pt x 371.3875pt>
 File: img/rect_rcc.pdf Graphic file (type pdf)
  <use img/rect_rcc.pdf>
-Package pdftex.def Info: img/rect_rcc.pdf used on input line 100.
+Package pdftex.def Info: img/rect_rcc.pdf used on input line 111.
 (pdftex.def)             Requested size: 206.69952pt x 148.79037pt.
 
-<img/rcc.pdf, id=92, 361.35pt x 333.245pt>
+<img/rcc.pdf, id=86, 361.35pt x 333.245pt>
 File: img/rcc.pdf Graphic file (type pdf)
  <use img/rcc.pdf>
-Package pdftex.def Info: img/rcc.pdf used on input line 102.
+Package pdftex.def Info: img/rcc.pdf used on input line 113.
 (pdftex.def)             Requested size: 163.79929pt x 151.05719pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+LaTeX Warning: Citation 'rectrcc' on page 5 undefined on input line 118.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 [5 <./img/rect_rcc.pdf> <./img/rcc.pdf>]
-<img/rect_output.pdf, id=110, 542.025pt x 289.08pt>
+
+LaTeX Warning: Citation 'rectsize' on page 6 undefined on input line 120.
+
+<img/rect_output.pdf, id=102, 542.025pt x 289.08pt>
 File: img/rect_output.pdf Graphic file (type pdf)
  <use img/rect_output.pdf>
-Package pdftex.def Info: img/rect_output.pdf used on input line 114.
-(pdftex.def)             Requested size: 312.00119pt x 166.40497pt.
+Package pdftex.def Info: img/rect_output.pdf used on input line 125.
+(pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
 
-[6 <./img/rect_output.pdf>] <img/rect_ce.pdf, id=141, 542.025pt x 289.08pt>
+[6 <./img/rect_output.pdf>] <img/rect_ce.pdf, id=130, 542.025pt x 289.08pt>
 File: img/rect_ce.pdf Graphic file (type pdf)
 
 <use img/rect_ce.pdf>
-Package pdftex.def Info: img/rect_ce.pdf used on input line 123.
-(pdftex.def)             Requested size: 312.00119pt x 166.40497pt.
+Package pdftex.def Info: img/rect_ce.pdf used on input line 134.
+(pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
  [7 <./img/rect_ce.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
- []
+LaTeX Warning: Citation 'ldo_psu' on page 8 undefined on input line 166.
 
-<img/ldo.pdf, id=169, 361.35pt x 259.97125pt>
-File: img/ldo.pdf Graphic file (type pdf)
- <use img/ldo.pdf>
-Package pdftex.def Info: img/ldo.pdf used on input line 161.
-(pdftex.def)             Requested size: 312.00119pt x 224.46742pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-[8 <./img/ldo.pdf>] <img/ldo_2.pdf, id=186, 704.6325pt x 398.48875pt>
-File: img/ldo_2.pdf Graphic file (type pdf)
+<img/ldo.pdf, id=159, 361.35pt x 259.97125pt>
+File: img/ldo.pdf Graphic file (type pdf)
+ <use img/ldo.pdf>
+Package pdftex.def Info: img/ldo.pdf used on input line 172.
+(pdftex.def)             Requested size: 350.99762pt x 252.52486pt.
 
-<use img/ldo_2.pdf>
-Package pdftex.def Info: img/ldo_2.pdf used on input line 172.
-(pdftex.def)             Requested size: 390.0pt x 220.55583pt.
+
+LaTeX Warning: Citation 'ldo_bulkmod' on page 8 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'ldo_quiescent' on page 8 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'ldo_bulkmod' on page 8 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'ldo_quiescent' on page 8 undefined on input line 177.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
+[8 <./img/ldo.pdf>] <img/ldo_2.pdf, id=169, 704.6325pt x 398.48875pt>
+File: img/ldo_2.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+<use img/ldo_2.pdf>
+Package pdftex.def Info: img/ldo_2.pdf used on input line 183.
+(pdftex.def)             Requested size: 390.0pt x 220.55583pt.
+
+
+LaTeX Warning: Citation 'ldo_bulkmod' on page 9 undefined on input line 188.
+
+
+LaTeX Warning: Citation 'razavi_2001' on page 9 undefined on input line 188.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pnc on input line 189.
+[9 <./img/ldo_2.pdf>]
+
+LaTeX Warning: Citation 'razavi_2001' on page 10 undefined on input line 190.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+LaTeX Warning: Citation 'ldo_ti_pmos' on page 10 undefined on input line 192.
+
+
+LaTeX Warning: Citation 'ldo_ti_pmos' on page 10 undefined on input line 192.
+
+
+LaTeX Warning: Citation 'ldo_ti_stability' on page 10 undefined on input line 1
+92.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+LaTeX Warning: Citation 'ldo_ti_stability' on page 10 undefined on input line 1
+94.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+[10] <img/ldo_tran.pdf, id=185, 542.025pt x 289.08pt>
+File: img/ldo_tran.pdf Graphic file (type pdf)
+ <use img/ldo_tran.pdf>
+Package pdftex.def Info: img/ldo_tran.pdf used on input line 198.
+(pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
+
+Overfull \hbox (2.09732pt too wide) in paragraph at lines 203--204
+\T1/pnc/m/n/12 wave-forms show that once the $\OML/cmm/m/it/12 Vdd$ \T1/pnc/m/n
+/12 reaches high enough to cre-ate proper
+ []
+
+<img/ldo_sta.pdf, id=187, 542.025pt x 289.08pt>
+File: img/ldo_sta.pdf Graphic file (type pdf)
+ <use img/ldo_sta.pdf>
+Package pdftex.def Info: img/ldo_sta.pdf used on input line 207.
+(pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
+LaTeX Font Info:    Try loading font information for TS1+pnc on input line 212.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1pnc.fd
 File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
-) [9 <./img/ldo_2.pdf>] [10]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 202.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (40.08546pt too wide) in paragraph at lines 203--203
-[][]$\T1/pcr/m/n/12 http : / / www . radio -[] electronics . com / info / power
- -[] management /
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
  []
 
 
-Overfull \hbox (10.4139pt too wide) in paragraph at lines 203--203
-\T1/pnc/m/n/12 Capacitor-Less LDO Reg-u-lator Us-ing Bulk-Modulation Tech-nique
-'.
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[11 <./img/ldo_tran.pdf>] [12 <./img/ldo_sta.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
  []
 
 
-Overfull \hbox (10.69965pt too wide) in paragraph at lines 203--203
-[]\T1/pnc/m/n/12 Behzad Razavi. \T1/pnc/m/it/12 Design of Ana-log CMOS In-teg-r
-ated Cir-cuits\T1/pnc/m/n/12 . 1st ed.
+LaTeX Warning: Citation 'gray_2009' on page 13 undefined on input line 240.
+
+
+Overfull \hbox (2.60027pt too wide) in paragraph at lines 240--241
+\T1/pnc/m/n/12 cur-rent source is gen-er-ated first and then this cur-rent is p
+assed through
  []
 
 
-Overfull \hbox (1.38338pt too wide) in paragraph at lines 203--203
-\T1/pnc/m/n/12 3rd. Wiley-IEEE Press, 2010. \T1/pnc/m/sc/12 isbn\T1/pnc/m/n/12 
-: 0470881321, 9780470881323. 
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
  []
 
-[11] [12] (./preliminary.lof)
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+<img/bgr_ckt.pdf, id=243, 704.6325pt x 403.5075pt>
+File: img/bgr_ckt.pdf Graphic file (type pdf)
+ <use img/bgr_ckt.pdf>
+Package pdftex.def Info: img/bgr_ckt.pdf used on input line 246.
+(pdftex.def)             Requested size: 350.99762pt x 200.99594pt.
+
+
+LaTeX Warning: Citation 'razavi_2001' on page 13 undefined on input line 251.
+
+
+Overfull \hbox (3.19801pt too wide) in paragraph at lines 251--252
+\T1/pnc/m/n/12 con-trolled cur-rent mir-ror [[]]. The cur-rent is $\OML/cmm/m/i
+t/12 I \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 V[]ln\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
+2 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =R[]$\T1/pnc/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+[14 <./img/bgr_ckt.pdf>]
+
+LaTeX Warning: Empty bibliography on input line 272.
+
+(./preliminary.lof)
 \tf@lof=\write5
 \openout5 = `preliminary.lof'.
 
- [13] (./preliminary.lot)
+ [15] (./preliminary.lot)
 \tf@lot=\write6
 \openout6 = `preliminary.lot'.
 
- [14]
+ [16]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls). 
-on input line 212.
+on input line 282.
 
-LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 212.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-[15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+[17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
  (./preliminary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
 Package rerunfilecheck Info: File `preliminary.out' has not changed.
-(rerunfilecheck)             Checksum: AFAC03E5863316F8333771CE7900BA95;129.
+(rerunfilecheck)             Checksum: 214B5C6F14E7EAEAC37335A6A24ABCEC;185.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                preliminary
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'preliminary.run.xml'.
 \openout1 = `preliminary.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18548 strings out of 493089
- 296961 string characters out of 6134842
- 801208 words of memory out of 5000000
- 21642 multiletter control sequences out of 15000+600000
- 33388 words of font info for 55 fonts, out of 8000000 for 9000
+ 18835 strings out of 493089
+ 300944 string characters out of 6134842
+ 804194 words of memory out of 5000000
+ 21941 multiletter control sequences out of 15000+600000
+ 26391 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,85p,1827b,1580s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on preliminary.pdf (15 pages, 329207 bytes).
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
+Output written on preliminary.pdf (17 pages, 420071 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

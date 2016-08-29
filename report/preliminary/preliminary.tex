@@ -30,6 +30,17 @@
 \newacronym{smps}{SMPS}{switch mode power supply}
 \newacronym{icmr}{ICMR}{input common mode range}
 \newacronym{dc}{DC}{direct current}
+\newacronym{pm}{PM}{phase margin}
+\newacronym{esr}{ESR}{equivalent series resistance}
+\newacronym{ugf}{UGF}{unity gain frequency}
+\newacronym{pvt}{PVT}{process voltage temperature}
+\newacronym{ptat}{PTAT}{proportional to absolute temperature}
+\newacronym{ctat}{CTAT}{complementary to absolute temperature}
+\newacronym{tc}{TC}{temperature coefficient}
+\newacronym{bgr}{BGR}{bandgap reference} 
+\newacronym{ota}{OTA}{operational transconductance amplifier} 
+\newacronym{bjt}{BJT}{bipolar junction transistor} 
+\newacronym{PNP}{pnp}{BJT where n-type semiconductor is between two p-type semiconductors} 
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -111,7 +122,7 @@ Similarly, the value of ripple rejection capacitor is chosen 100nF for better ri
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.8\textwidth]{img/rect_output.pdf} 
+   \includegraphics[width=.9\textwidth]{img/rect_output.pdf} 
    \caption{Voltage and current waveforms of the rectifier}
    \label{rect_plot}
 \end{figure}
@@ -120,7 +131,7 @@ Figure \ref{rect_plot} show the simulation results showing voltages and current 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.8\textwidth]{img/rect_ce.pdf} 
+   \includegraphics[width=.9\textwidth]{img/rect_ce.pdf} 
    \caption{Voltage and power conversion efficiency}
    \label{rect_ce}
 \end{figure}
@@ -152,13 +163,13 @@ LDO design discussion is followed next.
 
 \section{LDO}
 
-Voltage regulator follows the rectifier designed above in order to regulated the rectified voltage to 1.8 V and deliver maximum current of 10 mA. Since the output from the active rectifier is 2.2 V and the required regulated voltage is 1.8 V, charge pump or  \acrshort{smps} of boost type is irrelevant here. Buck SMPS could be an option for voltage regulation but LDO is preferred for it better performance in terms of noise \cite{ldo_psu}.\\ 
+Voltage regulator follows the rectifier designed above in order to regulated the rectified voltage to 1.8 V and deliver maximum current of 10 mA. Since the output from the active rectifier is 2.2 V and the required regulated voltage is 1.8 V, charge pump or  \acrshort{smps} of boost type is irrelevant here. Buck SMPS could be an option for voltage regulation but LDO is preferred for it better performance in terms of noise and faster settling of regulated voltage.  \cite{ldo_psu}.\\ 
 
 Figure \ref{ldo_gen} shows a circuit of typical pMOS LDO. As shown in the figure, the components includes an error amplifier (EA), a pass device (Mpass), a feedback circuit (R1 and R2) and load (Cout and Iload). A more general and complete LDO circuit also includes the circuitry for generation of reference voltages and bias current/voltages. However, in this project it will be discussed separately for now. In short the working principle of LDO is that the error amplifier compares the scaled down regulated voltage, Vdiv with Vref and regulates the internal resistance of the pass transistor such that  the error, Vref - Vdiv is least or zero ideally. 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.8\textwidth]{img/ldo.pdf} 
+   \includegraphics[width=.9\textwidth]{img/ldo.pdf} 
    \caption{Generic LDO with pMOS pass device}
    \label{ldo_gen}
 \end{figure}
@@ -174,13 +185,31 @@ Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The 
    \label{ldo_cmos}
 \end{figure}
 
-As briefly mentioned above, the error amplifier amplifies scaled regulated voltage, Vdiv and reference voltage, Vref. It is known that an amplifier with higher open loop \acrshort{dc} gain reduced the closed loop gain error and hence amplifier with higher gain is desired here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifier has gain $> 40 dB$ which is not achieved with the single stage amplifier with this technology. Higher gain could have been achieved with multiple single stage but with increased difficulty making the amplifier stable. So for achieving higher DC gain and at the same time for stability convinence, folded cascode amplifier \cite[pp. xx]{razavi_2001} is choosen. \\
+As briefly mentioned above, the error amplifier amplifies scaled regulated voltage, Vdiv and reference voltage, Vref. It is known that an amplifier with higher open loop \acrshort{dc} gain reduced the closed loop gain error and hence amplifier with higher gain is desired here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifier has gain $> 40 dB$ which is not achieved with the single stage amplifier with this technology. Higher gain could have been achieved with multiple single stage but with increased difficulty making the amplifier stable. So for achieving higher DC gain and at the same time for stability convenience, folded cascode amplifier \cite[pp. xx]{razavi_2001} is chosen. \\
 
-The amplifier has a pMOS differential input stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is Vref. Similarly, a pMOS buffer is used to supply sufficient current to drive the large pass transistor.  Moreover pMOS as buffer passes 1 better which means it can turn off the pass device completely and hence LDO regulates better at low load or no load condition.\\
+The amplifier has a pMOS differential input stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is Vref. In addition, this helps in pushing the poles at the folding point farther, easing the stability of the amplifier\cite[pp. 304-305]{razavi_2001}. Similarly, a pMOS buffer is used to supply sufficient current to drive the large pass transistor.  Moreover, pMOS as buffer passes 1 better which means it can turn off the pass device completely and hence LDO regulates better at low load or no load condition. \\
 
+The pass device is a pMOS transistor in this design. It is chosen because it has several advantages over it's counterparts like nMOS and BJT devices in terms of dropout voltage, quiescent current, input voltage, thermal response and noise\cite{ldo_ti_pmos}. Prominently, there are two factors that give pMOS edge over other devices; dropout voltage and quiescent current, when it comes to application in low power low and voltage devices. nMOS as a pass device requires a positive drive voltage with respect to output to operate. On the other hand, pMOS is driven by a negative signal with respect to input which means pMOS is preferable for a low input LDO. Similarly compared to BJTs, pMOS requires less headroom and less quiescent current to be driven\cite{ldo_ti_pmos}, \cite{ldo_ti_stability}, which means low dropout and low power operation, typical requirement of today's micro devices power supply. \\
 
+However, pMOS as a pass device in LDO causes challenges in stability. As mentioned above, LDO utilises a high gain feedback loop in order to provide a regulated output voltages independent of load current and in any system feedback loop, the locations of poles and zeros determine stability of the system.  In case of the pMOS LDO, the pass device is configured in a common source configuration. Since the common source has a lower output impedance, a pole closer to the dominant pole is created node resulting in significant  reduction in phase margin (\acrshort{pm}). Consequently, this may lead to instability of the LDO with pMOS pass device.  Various methods have been implemented for ensuring the stability of the pMOS LDO. In this project, a large external capacitor, $C\textsubscript{load}$ in figure \ref{ldo_gen}, is used for stabilising the system at the cost of additional settling time. When an external capacitor is used for designing a stable LDO, the minimum value of capacitance, $C\textsubscript{load}$ and minumum value of its equivalent series resistance (\acrshort{esr}), $R\textsubscript{esr}$ should be specified\cite{ldo_ti_stability}. $C\textsubscript{load}$ determines the dominant pole of the LDO and $R\textsubscript{esr}$ in series with $C\textsubscript{load}$ introduces a left half plane zero below unity gain frequency(\acrshort{ugf}) of LDO in order to cancel out the non-dominant pole below UGF, producing a stable LDO system. \\
 
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/ldo_tran.pdf} 
+   \caption{LDO transient simulation}
+   \label{ldo_tran}
+\end{figure}
 
+Figure \ref{ldo_tran} is the transient simulations of the LDO which illustrates the generation of $Vreg$ for both high load and no load condition. This waveforms show that once the $Vdd$ reaches high enough to create proper biasing, the regulated voltage of 1.8 V is produced and remains constant henceforth.
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/ldo_sta.pdf} 
+   \caption{LDO stability before and after compensation}
+   \label{ldo_sta}
+\end{figure}
+
+Figure  \ref{ldo_sta} the gain open loop gain and phase margin of LDO without (upper plot) and with (lower plot) compensation. Though the stability analysis plots shown above is for typical corner of the devices, the values of $R\textsubscript{esr}$ and $C\textsubscript{load}$ are chosen for PM of at least 45\textdegree  for the worst case i.e. slow corner and maximum load condition. \\ 
 
 \begin{table}[htbp]
 \caption{LDO parameter and performance} 
@@ -189,7 +218,9 @@ The amplifier has a pMOS differential input stage in order to obtain lower \acrs
 \hline \hline
 Regulated output voltage & 1.8 V \\ \hline
 I\textsubscript{load} max. & 10 mA \\ \hline
-C\textsubscript{load} min. & 1.2 uF for PM >60\textdegree \\ \hline
+C\textsubscript{load} min. & > 0.6 uF  \\ \hline
+R\textsubscript{esr} min. & > 0.8 $\Omega$ \\ \hline
+PM & 84\textdegree (typical) \\ \hline
 Load regulation & TBA\\ \hline
 Line regulation &    TBA \\ 
 \hline \hline
@@ -198,7 +229,43 @@ Line regulation &    TBA \\
 \label{default}
 \end{table}%
 
+Reference and biasing circuit design follows next. \\
 
+\newpage
+
+\section{Reference and biasing}
+
+Reference and biasing circuit is important part of any analog circuit. It is required to bias the designed circuitry with proper voltages and currents for operating all the devices in the intended region. For reliable and consistent  performance of the system, the references and biases should be independent of supply voltage and temperature variations. Moreover with the trend of shrinking device sizes, mismatch and process parameters variations have been so pronounced that these factors affect the operation of the devices. So for the todays' devices, it is necessary to design reference and biasing independent of \acrshort{pvt} variations. \\
+
+There are different methods of generating reference voltages and bias currents discussed in literatures. Basically, supply independent current source is generated first and then this current is passed through a resistor to get a reference voltages. Some ways of creating supply insensitive current sources are threshold voltage referenced, diode ($V_{BE}$ in BJT) referenced thermal voltage referenced current sources \cite[pp. 305-315]{gray_2009}. However, these current sources are not temperature independent. Threshold voltage of MOS and forward voltage of diode or $V_{BE}$ have a negative temperature coefficient \acrshort{tc}  and hence they produce a \acrshort{ctat} (complementary to absolute temperature) current. On the other hand, the thermal voltage($V_T$) has positive TC and hence it produce a \acrshort{ptat} (proportional to absolute temperature) current. So these techniques, though being insensitive to supply variations, still cannot be used for accurate reference voltage generation because of temperature dependence. So \gls{bgr} design is used to generate the required reference voltage for the LDO in this design which has significantly less PVT variations than the last three methods.\\
+
+BGR design involves summing up two voltages of which one is PTAT and the other is CTAT, both having equal and opposite TCs. The equal and opposite TCs cancels out leaving the resultant voltage with a zero TC. Figure  \ref{bgr_sch} is the CMOS implementation of reference and biasing circuit for this project which includes startup circuit, BGR circuit and biasing circuit. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/bgr_ckt.pdf} 
+   \caption{BGR and bias generation circuit}
+   \label{bgr_sch}
+\end{figure}
+
+PTAT current is first generated using thermal voltage referenced current source using PNP transistor as diodes, resistor and a op-amp controlled current mirror \cite[pp. 391-392]{razavi_2001}. The current is $I = V_T ln(n)/R_1$, where $V_T = kT/q $ is thermal voltage with positive TC and $n$ is number of parallel PNP transistors. This current is passed through a resistor, $R_2$ to create a PTAT voltage which is in series with a diode realised with a parasitic PNP transistor. The value of $R_2$ is so chosen such that the positive TC of PTAT voltage across it is equal to negative TC of $V_{BE}$. The temperature independent reference voltage is then given as $V_{ref}  = V_{BE} + \alpha V_T ln(n)$, where $ \alpha = R_2/R_1$ is equal to $  \Delta V_{BE}/\Delta T$. Similarly the folded cascode  \gls{ota} working as an error amplifier in LDO requires additional bias voltages which are produced as shown. Wide swing current mirror topology is used here for bias voltage generation.\\
+
+In case of the supply independent and self biased circuit, there may be start-up issue. If all the transistors carry zero current, they may indefinitely remain off even when the supply is turned on. Therefore start-up circuit is added in order to ensure that the devices are turn on as supply voltage is provided. Once the circuit is fully operational, the start-up circuit is off and does not effect the normal operation of BGR circuit. \\
+
+\begin{table}[htbp]
+\caption{Reference and biasing circuit parameters}
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+V\textsubscript{ref} & 1.2 V \\ \hline
+I\textsubscript{bias} & 10 uA \\ \hline
+\hline \hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+Preliminary report concludes here. \\
 
 \newpage
 \nocite{*}

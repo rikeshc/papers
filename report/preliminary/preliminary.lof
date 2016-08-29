@@ -23,3 +23,9 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Generic LDO with pMOS pass device\relax }}{8}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces CMOS implemenation of LDO\relax }}{9}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces LDO transient simulation\relax }}{11}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces LDO stability before and after compensation\relax }}{12}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces BGR and bias generation circuit\relax }}{14}{figure.caption.13}
