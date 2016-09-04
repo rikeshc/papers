@@ -1,31 +1,19 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \select@language {UKenglish}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Block diagram of complete design\relax }}{1}{figure.caption.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{4}{figure.caption.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conventional full wave bridge rectifier}}}{4}{subfigure.2.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gate cross coupled full wave rectifier}}}{4}{subfigure.2.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Active rectifier and active circuitry (comparator)\relax }}{5}{figure.caption.4}
-\defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gate cross coupled full wave active rectifer}}}{5}{subfigure.3.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Active circuit $D2$}}}{5}{subfigure.3.2}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{6}{figure.caption.5}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5}{\ignorespaces Voltage and power conversion efficiency\relax }}{7}{figure.caption.6}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6}{\ignorespaces Generic LDO with pMOS pass device\relax }}{8}{figure.caption.8}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces CMOS implemenation of LDO\relax }}{9}{figure.caption.9}
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces LDO transient simulation\relax }}{11}{figure.caption.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces LDO stability before and after compensation\relax }}{12}{figure.caption.11}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces LDO stability before and after compensation\relax }}{11}{figure.caption.11}
 \contentsline {figure}{\numberline {10}{\ignorespaces BGR and bias generation circuit\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces BGR over temperature varitaion\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {12}{\ignorespaces BGR DC performance\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {13}{\ignorespaces BGR transient performance\relax }}{16}{figure.caption.16}
