@@ -39,10 +39,10 @@
 \newacronym{ptat}{PTAT}{proportional to absolute temperature}
 \newacronym{ctat}{CTAT}{complementary to absolute temperature}
 \newacronym{tc}{TC}{temperature coefficient}
-\newacronym{bgr}{BGR}{bandgap reference} 
-\newacronym{ota}{OTA}{operational transconductance amplifier} 
-\newacronym{bjt}{BJT}{bipolar junction transistor} 
-\newacronym{PNP}{pnp}{BJT where n-type semiconductor is between two p-type semiconductors} 
+\newacronym{bgr}{BGR}{bandgap reference}
+\newacronym{ota}{OTA}{operational transconductance amplifier}
+\newacronym{bjt}{BJT}{bipolar junction transistor}
+\newacronym{PNP}{pnp}{BJT where n-type semiconductor is between two p-type semiconductors}
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -58,7 +58,7 @@ This report is a brief overview of my master project on wireless power transfer 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.8\textwidth]{img/block_diagram.pdf} 
+   \includegraphics[width=0.8\textwidth]{img/block_diagram.pdf}
    \caption{Block diagram of complete design}
    \label{fig:blockd}
 \end{figure}
@@ -94,7 +94,7 @@ All the above discussed topology suffer from either large voltage drop or large 
 
 In this project, active rectifier is chosen, primarily for better VCE and PCE and secondarily to avoid the use large on chip capacitors. \cite{rectrcc}  and \cite{rectcomp} have discussed same active rectifier topology with a slight difference in active circuitry. \cite{rectrcc} has implemented comparator with compensating the delay of comparator's output falling whereas \cite{rectcomp} has implemented comparator with compensating both the falling and the rising delay of comparator's output in expense of added circuit complexity and power consumption. \cite{rectrcc} has been used here for its simple design. \\
 
-Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vac \geq Vdc + Vtn$ for conduction. 
+Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vac \geq Vdc + Vtn$ for conduction.
 
 \begin{figure} [htbp]
   \centering 
@@ -112,7 +112,7 @@ For the illustration of operation of comparator, consider the case when $Vin1 > 
 \begin{figure} [H]
   \centering 
   \subfloat[Gate cross coupled full wave active rectifer]  {\includegraphics[width=.53\textwidth]{img/rect_rcc.pdf} \label{rect_rcc}}
-\hfill
+  \hfill
  \subfloat[Active circuit $D2$]  {\includegraphics[width=.42\textwidth]{img/rcc.pdf} \label{rcc}}
  \caption{Active rectifier and active circuitry (comparator)} 
 \label{rect_rcc_rcc} 
@@ -125,7 +125,7 @@ Similarly, the value of ripple rejection capacitor is chosen 100nF for better ri
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/rect_output.pdf} 
+   \includegraphics[width=.9\textwidth]{img/rect_output_2.pdf} 
    \caption{Voltage and current waveforms of the rectifier}
    \label{rect_plot}
 \end{figure}
@@ -139,7 +139,7 @@ Figure \ref{rect_plot} show the simulation results showing voltages and current 
    \label{rect_ce}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{Rectifier parameter and performance}
 \begin{center}
 \begin{tabular}{c|c}
@@ -160,7 +160,7 @@ VCE & >88\% \\
 \label{rect_spec}
 \end{table}
 
-LDO design discussion is followed next.
+%LDO design discussion is followed next.
 
 \newpage
 
@@ -183,18 +183,18 @@ Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/sch_ldo.pdf} 
+   \includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
    \caption{CMOS implemenation of LDO}
    \label{ldo_cmos}
 \end{figure}
 
 As briefly mentioned above, the error amplifier amplifies scaled regulated voltage, V\textsubscript{div} and reference voltage, V\textsubscript{ref}. It is known that an amplifier with higher open loop \acrshort{dc} gain reduced the closed loop gain error and hence amplifier with higher gain is desired here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifier has gain $> 40 dB$ which is not achieved with the single stage amplifier with this technology. Higher gain could have been achieved with multiple single stage but with increased difficulty in making the amplifier stable. So for achieving higher DC gain and at the same time for stability convenience, folded cascode amplifier \cite[pp. xx]{razavi_2001} is chosen. \\
 
-The amplifier has a pMOS differential input stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is V\textsubscript{ref}. In addition, this helps in pushing the poles at the folding point farther, easing the stability of the amplifier\cite[pp. 304-305]{razavi_2001}. Similarly, a pMOS buffer is used to supply sufficient current to drive the large pass transistor.  Moreover, pMOS as buffer passes 1 better which means it can turn off the pass device completely and hence LDO regulates better at low load or no load condition. \\
+The amplifier has a pMOS differential input stage in order to obtain lower \acrshort{icmr} of the amplifier closer to gnd because so is V\textsubscript{ref}. In addition, this helps in pushing the poles at the folding point farther, easing the stability of the amplifier\cite[pp. 304-305]{razavi_2001}. Similarly, a pMOS buffer is used to supply sufficient current to drive the large pass transistor.  Moreover, pMOS as buffer passes 1 better which means it can turn off the pass device completely and hence LDO regulates better at low load or no load condition. However at heavy load/large load current, the pMOS buffer is not able to pull down the gate of pass device as low as possible.  This is overcome by making the pass device large enough to feed the required load current.\\
 
 The pass device is a pMOS transistor in this design. It is chosen because it has several advantages over it's counterparts like nMOS and BJT devices in terms of dropout voltage, quiescent current, input voltage, thermal response and noise\cite{ldo_ti_pmos}. Prominently, there are two factors that give pMOS edge over other devices; dropout voltage and quiescent current, when it comes to application in low power and low voltage devices. nMOS as a pass device requires a positive drive voltage with respect to output to operate. On the other hand, pMOS is driven by a negative signal with respect to input which means pMOS is preferable for a low input LDO. Similarly compared to BJTs, pMOS requires less headroom and less quiescent current to be driven\cite{ldo_ti_pmos}, \cite{ldo_ti_stability}, which means low dropout and low power operation, typical requirement of today's micro devices' power supply. \\
 
-However, pMOS as a pass device in LDO causes challenges in stability. As mentioned above, LDO utilises a high gain feedback loop in order to provide a regulated output voltages independent of load current and in any system feedback loop, the locations of poles and zeros determine stability of the system.  In case of the pMOS LDO, the pass device is configured in a common source configuration. Since the common source has a lower output impedance, a pole closer to the dominant pole is created node resulting in significant  reduction in phase margin (\acrshort{pm}). Consequently, this may lead to instability of the LDO with pMOS pass device.  Various methods have been implemented for ensuring the stability of the pMOS LDO. In this project, a large external capacitor, $C\textsubscript{load}$ in figure \ref{ldo_gen}, is used for stabilising the system at the cost of additional settling time. When an external capacitor is used for designing a stable LDO, the minimum value of capacitance, $C\textsubscript{load}$ and minumum value of its equivalent series resistance (\acrshort{esr}), $R\textsubscript{esr}$ should be specified\cite{ldo_ti_stability}. $C\textsubscript{load}$ determines the dominant pole of the LDO and $R\textsubscript{esr}$ in series with $C\textsubscript{load}$ introduces a left half plane zero below unity gain frequency(\acrshort{ugf}) of LDO in order to cancel out the non-dominant pole below UGF, producing a stable LDO system. \\
+However, pMOS as a pass device in LDO causes challenges in stability. As mentioned above, LDO utilises a high gain feedback loop in order to provide a regulated output voltages independent of load current and in any system with feedback loop, the locations of poles and zeros determine stability of the system.  In case of the pMOS LDO, the pass device is configured in a common source configuration. LDO with big output cap has a dominant pole pole at the output, which is a low frequency pole. The second pole is located at the gate of pass device because as mentioned earlier pMOS pass device is large and has a big parasitic capacitance. This second pole may be located closer to the dominant pole, resulting in significant  reduction in phase margin (\acrshort{pm}). Consequently, this may lead to instability of the LDO with pMOS pass device.  Various methods have been implemented for ensuring the stability of the pMOS LDO. In this project, a large external capacitor, $C\textsubscript{load}$ in figure \ref{ldo_gen}, is used for stabilising the system at the cost of additional settling time. When an external capacitor is used for designing a stable LDO, the minimum value of capacitance, $C\textsubscript{load}$ and minumum value of its equivalent series resistance (\acrshort{esr}), $R\textsubscript{esr}$ should be specified\cite{ldo_ti_stability}. $C\textsubscript{load}$ determines the dominant pole of the LDO and $R\textsubscript{esr}$ in series with $C\textsubscript{load}$ introduces a left half plane zero below unity gain frequency(\acrshort{ugf}) of LDO in order to cancel out the non-dominant pole below UGF, producing a stable LDO system. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -214,7 +214,7 @@ Figure \ref{ldo_tran} is the transient simulations of the LDO which illustrates 
 
 Figure  \ref{ldo_sta} the gain open loop gain and phase margin of LDO without (upper plot) and with (lower plot) compensation. Though the stability analysis plots shown above is for typical corner of the devices, the values of $R\textsubscript{esr}$ and $C\textsubscript{load}$ are chosen for PM of at least 45\textdegree  for the worst case i.e. slow corner and maximum load condition. \\ 
 
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{LDO parameter and performance} 
 \begin{center}
 \begin{tabular}{c|c}
@@ -225,9 +225,9 @@ Regulated output voltage & 1.8 V \\ \hline
 I\textsubscript{load} max. & 10 mA \\ \hline
 C\textsubscript{load} min. & > 0.6 \si{\micro\farad}  \\ \hline
 R\textsubscript{esr} min. & > 0.8 $\Omega$ \\ \hline
-PM & 84\textdegree (typical) \\ \hline
-Load regulation & TBA\\ \hline
-Line regulation &    TBA \\ 
+PM & 84\textdegree (typical) \\ %\hline
+%Load regulation & TBA\\ \hline
+%Line regulation &    TBA \\ 
 \hline \hline
 \end{tabular}
 \end{center}
@@ -236,6 +236,7 @@ Line regulation &    TBA \\
 
 Reference and biasing circuit design follows next. \\
 
+\clearpage
 \newpage
 
 \section{Reference and biasing}
@@ -248,7 +249,7 @@ BGR design involves summing up two voltages of which one is PTAT and the other i
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/sch_bgr.pdf} 
+   \includegraphics[width=\textwidth]{img/sch_bgr_label.pdf} 
    \caption{BGR and bias generation circuit}
    \label{bgr_sch}
 \end{figure}
@@ -286,7 +287,7 @@ Figure  \ref{bgr_temp}, \ref{bgr_dc} and \ref{bgr_tran} illustrates temperature,
 \begin{tabular}{c|c}
 \hline \hline
 \multirow{3}{*}{V\textsubscript{ref}} & 1.201.1 \si{\volt} @slow corner \\ \cline{2-2}
-& 1.201.4 \si{\volt} @fast corner \\ \cline{2-2}%\hline
+& 1.201.4 \si{\volt} @fast corner \\ \cline{2-2} %\hline
 & 1.200.1 \si{\volt} @typical corner \\ \hline
 TC @27\textdegree C & 16.4 \si{\micro\volt}/\textdegree C \\ \hline
 \multirow{3}{*}{I\textsubscript{bias}} & 8.95 \si{\micro\ampere} @slow corner \\ \cline{2-2}
@@ -297,7 +298,6 @@ TC @27\textdegree C & 16.4 \si{\micro\volt}/\textdegree C \\ \hline
 \end{center}
 \label{bgr_spec}
 \end{table}%
-
 
 \newpage
 \nocite{*}

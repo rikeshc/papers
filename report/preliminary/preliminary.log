@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  18 SEP 2016 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  18 SEP 2016 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1599,16 +1599,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
  []
 
 [5 <./img/rect_rcc.pdf> <./img/rcc.pdf>]
-<img/rect_output.pdf, id=178, 542.025pt x 289.08pt>
-File: img/rect_output.pdf Graphic file (type pdf)
- <use img/rect_output.pdf>
-Package pdftex.def Info: img/rect_output.pdf used on input line 128.
-(pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
+<img/rect_output_2.pdf, id=178, 505.89pt x 325.215pt>
+File: img/rect_output_2.pdf Graphic file (type pdf)
 
-[6 <./img/rect_output.pdf>] <img/rect_ce.pdf, id=207, 542.025pt x 289.08pt>
+<use img/rect_output_2.pdf>
+Package pdftex.def Info: img/rect_output_2.pdf used on input line 128.
+(pdftex.def)             Requested size: 350.99762pt x 225.64415pt.
+ [6 <./img/rect_output_2.pdf>]
+<img/rect_ce.pdf, id=197, 542.025pt x 289.08pt>
 File: img/rect_ce.pdf Graphic file (type pdf)
-
-<use img/rect_ce.pdf>
+ <use img/rect_ce.pdf>
 Package pdftex.def Info: img/rect_ce.pdf used on input line 137.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
  [7 <./img/rect_ce.pdf>]
@@ -1616,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-<img/ldo.pdf, id=236, 361.35pt x 259.97125pt>
+<img/ldo.pdf, id=226, 361.35pt x 259.97125pt>
 File: img/ldo.pdf Graphic file (type pdf)
  <use img/ldo.pdf>
 Package pdftex.def Info: img/ldo.pdf used on input line 175.
@@ -1626,18 +1626,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[8 <./img/ldo.pdf>] <img/sch_ldo.pdf, id=257, 350.7288pt x 254.27467pt>
-File: img/sch_ldo.pdf Graphic file (type pdf)
+[8 <./img/ldo.pdf>] <img/sch_ldo_label.pdf, id=247, 590.75932pt x 428.98035pt>
+File: img/sch_ldo_label.pdf Graphic file (type pdf)
 
-<use img/sch_ldo.pdf>
-Package pdftex.def Info: img/sch_ldo.pdf used on input line 186.
-(pdftex.def)             Requested size: 350.99762pt x 254.47578pt.
+<use img/sch_ldo_label.pdf>
+Package pdftex.def Info: img/sch_ldo_label.pdf used on input line 186.
+(pdftex.def)             Requested size: 350.99762pt x 254.87663pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
-[9 <./img/sch_ldo.pdf>]
+[9 <./img/sch_ldo_label.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -1652,7 +1652,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-[10] <img/ldo_tran.pdf, id=304, 542.025pt x 289.08pt>
+[10] <img/ldo_tran.pdf, id=303, 542.025pt x 289.08pt>
 File: img/ldo_tran.pdf Graphic file (type pdf)
  <use img/ldo_tran.pdf>
 Package pdftex.def Info: img/ldo_tran.pdf used on input line 201.
@@ -1663,7 +1663,7 @@ Overfull \hbox (2.09732pt too wide) in paragraph at lines 206--207
 /12 reaches high enough to cre-ate proper
  []
 
-<img/ldo_sta.pdf, id=306, 542.025pt x 289.08pt>
+<img/ldo_sta.pdf, id=305, 542.025pt x 289.08pt>
 File: img/ldo_sta.pdf Graphic file (type pdf)
  <use img/ldo_sta.pdf>
 Package pdftex.def Info: img/ldo_sta.pdf used on input line 210.
@@ -1678,71 +1678,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-
+[11 <./img/ldo_tran.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[11 <./img/ldo_tran.pdf>] [12 <./img/ldo_sta.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[12 <./img/ldo_sta.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Overfull \hbox (2.60027pt too wide) in paragraph at lines 245--246
+Overfull \hbox (2.60027pt too wide) in paragraph at lines 246--247
 \T1/pnc/m/n/12 cur-rent source is gen-er-ated first and then this cur-rent is p
 assed through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
-<img/sch_bgr.pdf, id=363, 396.65956pt x 193.77765pt>
-File: img/sch_bgr.pdf Graphic file (type pdf)
- <use img/sch_bgr.pdf>
-Package pdftex.def Info: img/sch_bgr.pdf used on input line 251.
-(pdftex.def)             Requested size: 390.0pt x 190.52467pt.
+<img/sch_bgr_label.pdf, id=362, 559.219pt x 274.59859pt>
+File: img/sch_bgr_label.pdf Graphic file (type pdf)
 
-Overfull \hbox (8.03564pt too wide) in paragraph at lines 256--257
+<use img/sch_bgr_label.pdf>
+Package pdftex.def Info: img/sch_bgr_label.pdf used on input line 252.
+(pdftex.def)             Requested size: 390.0pt x 191.51376pt.
+
+Overfull \hbox (8.03564pt too wide) in paragraph at lines 257--258
 \T1/pnc/m/n/12 con-trolled cur-rent mir-ror [[][]8[][], pp. 391-392]. The cur-r
 ent is $\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 V[]ln\OT1/cmr/m/n
 /12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =R[]$\T1/pnc/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+[13
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<img/bgr_temp.pdf, id=378, 542.025pt x 289.08pt>
+<img/bgr_temp.pdf, id=377, 542.025pt x 289.08pt>
 File: img/bgr_temp.pdf Graphic file (type pdf)
  <use img/bgr_temp.pdf>
-Package pdftex.def Info: img/bgr_temp.pdf used on input line 264.
+Package pdftex.def Info: img/bgr_temp.pdf used on input line 265.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
 
-[14 <./img/sch_bgr.pdf>] <img/bgr_dc.pdf, id=402, 542.025pt x 361.35pt>
+[14 <./img/sch_bgr_label.pdf>] <img/bgr_dc.pdf, id=411, 542.025pt x 361.35pt>
 File: img/bgr_dc.pdf Graphic file (type pdf)
 
 <use img/bgr_dc.pdf>
-Package pdftex.def Info: img/bgr_dc.pdf used on input line 271.
+Package pdftex.def Info: img/bgr_dc.pdf used on input line 272.
 (pdftex.def)             Requested size: 350.99762pt x 234.00354pt.
- <img/bgr_tran.pdf, id=403, 542.025pt x 361.35pt>
+ <img/bgr_tran.pdf, id=412, 542.025pt x 361.35pt>
 File: img/bgr_tran.pdf Graphic file (type pdf)
 
 <use img/bgr_tran.pdf>
-Package pdftex.def Info: img/bgr_tran.pdf used on input line 278.
+Package pdftex.def Info: img/bgr_tran.pdf used on input line 279.
 (pdftex.def)             Requested size: 350.99762pt x 234.00354pt.
  [15 <./img/bgr_temp.pdf>] [16 <./img/bgr_dc.pdf> <./img/bgr_tran.pdf>]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 304.
@@ -1807,10 +1810,10 @@ Package logreq Info: Writing requests to 'preliminary.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27175 strings out of 493089
- 500178 string characters out of 6134842
+ 27176 strings out of 493089
+ 500257 string characters out of 6134842
  951797 words of memory out of 5000000
- 30201 multiletter control sequences out of 15000+600000
+ 30202 multiletter control sequences out of 15000+600000
  38663 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,85p,10422b,1590s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1826,10 +1829,10 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/ncntrsbk/uncri8a.pfb>
-Output written on preliminary.pdf (21 pages, 515672 bytes).
+Output written on preliminary.pdf (21 pages, 529492 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 441 compressed objects within 5 object streams
+ 556 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
  65 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
