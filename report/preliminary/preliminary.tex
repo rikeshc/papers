@@ -1,3 +1,4 @@
+%!TEX TS-program = pdflatexmk
 \documentclass[12pt,a4paper,UKenglish]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc, url}
@@ -48,7 +49,8 @@
 \author{Rikesh Chauhan}
 \date{}
 
-\addbibresource{pre.bib}
+
+\addbibresource{preliminary.bib}
 
 \begin{document}
 \maketitle
@@ -83,7 +85,10 @@ Output dc voltage & 1.8 V \\
 
 A brief discussion of rectifier design is followed next.
 
+
+\clearpage
 \newpage
+% *********************************************************************** RECTIFIER  ***********************************************************************
 
 \section{Rectifier}
 The most basic rectifier is conventional full wave bridge structure where the diodes are replaced by the diode connected \acrshort{mos}. devices in \acrshort{cmos}. technology. This topology though being simple to implement, has a major drawback. It requires at least twice the $\acrshort{vtn}$ of a MOS device as there are two diode connected MOSes in the conduction path for each cycle of the input signal.  \\
@@ -160,9 +165,10 @@ VCE & >88\% \\
 \label{rect_spec}
 \end{table}
 
-%LDO design discussion is followed next.
 
+\clearpage
 \newpage
+% *********************************************************************** LDO  ***********************************************************************
 
 \section{LDO}
 
@@ -236,8 +242,10 @@ PM & 84\textdegree (typical) \\ %\hline
 
 Reference and biasing circuit design follows next. \\
 
+
 \clearpage
 \newpage
+% *********************************************************************** REFERENCE AND BIASING  ***********************************************************************
 
 \section{Reference and biasing}
 
@@ -298,6 +306,20 @@ TC @27\textdegree C & 16.4 \si{\micro\volt}/\textdegree C \\ \hline
 \end{center}
 \label{bgr_spec}
 \end{table}%
+
+
+\clearpage
+\newpage
+% *********************************************************************** ANTENNA DESIGN  ***********************************************************************
+
+\section{Antenna Design}
+
+All the components discussed above are part of any power management system. However, it is  a pair of antennas which created inductive links for transferring power wirelessly and hence it is the actual physical component which makes wireless power transfer possible. 
+
+why resonance: the power transfer efficiency depends on Q of coil and K between the coils \cite{ant_optres}.
+
+printed rectangular coil on PCB
+
 
 \newpage
 \nocite{*}

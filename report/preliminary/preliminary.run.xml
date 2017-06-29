@@ -81,7 +81,7 @@
       <file>preliminary.bcf</file>
     </requires>
     <requires type="editable">
-      <file>pre.bib</file>
+      <file>preliminary.bib</file>
     </requires>
   </external>
 </requests>

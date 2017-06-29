@@ -256,6 +256,32 @@
       \field{title}{Analysis and Design of Analog Integrated Circuits}
       \field{year}{2009}
     \endentry
+    \entry{ant_optres}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ee9e8aa069c9bb7efaa3a991bd10fbf0}{Xue}{X\bibinitperiod}{R.\bibnamedelimi F.}{R\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=9f381d8d0c9ba74da6e3230b07056019}{Cheng}{C\bibinitperiod}{K.\bibnamedelimi W.}{K\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=349a12032447529d9f4497072c395f9a}{Je}{J\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b9405f1617451f8b5e5875603b26e16f}
+      \strng{fullhash}{b9405f1617451f8b5e5875603b26e16f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{month}{04}
+      \field{number}{4}
+      \field{title}{High-Efficiency Wireless Power Transfer for Biomedical Implants by Optimal Resonant Load Transformation}
+      \field{volume}{60}
+      \field{year}{2013}
+      \field{pages}{867\bibrangedash 874}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TCSI.2012.2209297
+      \endverb
+      \keyw{biological tissues;inductive power transmission;prosthetic power supplies;radiofrequency power transmission;safety;surface mount technology;batch production;biocompatible;biomedical implant power;biomedical implants;chip inductor component;discrete surface mount components;ferromagnetic core;high-efficiency wireless power transfer technique;implantable coil;optimal resonant load transformation;planar integration;power carrier frequency;power transfer efficiency;power transfer efficiency maximization;printed spiral coils;tissue environment;Coils;Couplings;Electrical resistance measurement;Implants;Loading;Resonant frequency;Wireless communication;Implantable biomedical devices;inductive power transmission;load transformation;resonant coupling;wireless power transfer}
+    \endentry
     \entry{baker_2010}{book}{}
       \name{author}{1}{}{%
         {{hash=95e0d3bf2c279c467eccf405c815079e}{Baker}{B\bibinitperiod}{R.\bibnamedelimi Jacob}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
