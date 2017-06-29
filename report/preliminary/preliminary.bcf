@@ -2209,7 +2209,7 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">pre.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">preliminary.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">rectboot</bcf:citekey>
@@ -2235,6 +2235,7 @@
     <bcf:citekey order="21">ldo_ti_stability</bcf:citekey>
     <bcf:citekey order="22">gray_2009</bcf:citekey>
     <bcf:citekey order="23">razavi_2001</bcf:citekey>
+    <bcf:citekey order="24">ant_optres</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
