@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  30 JUN 2017 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  1 JUL 2017 00:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1514,6 +1514,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 55.
 LaTeX Info: Redefining \pageref on input line 55.
 LaTeX Info: Redefining \nameref on input line 55.
+
+(./preliminary.out) (./preliminary.out)
 \@outlinefile=\write4
 \openout4 = `preliminary.out'.
 
@@ -1521,22 +1523,13 @@ LaTeX Info: Redefining \nameref on input line 55.
 \c__siunitx_mathtt_int=\count356
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/pnc/b/n' tried instead on input line 58.
-LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 59.
 
-
-LaTeX Warning: Reference `fig:blockd' on page 1 undefined on input line 59.
-
-<img/block_diagram.pdf, id=4, 575.14874pt x 265.99374pt>
+<img/block_diagram.pdf, id=25, 575.14874pt x 265.99374pt>
 File: img/block_diagram.pdf Graphic file (type pdf)
 
 <use img/block_diagram.pdf>
 Package pdftex.def Info: img/block_diagram.pdf used on input line 63.
 (pdftex.def)             Requested size: 312.00119pt x 144.29605pt.
-
-
-LaTeX Warning: Reference `proj_spec' on page 1 undefined on input line 68.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
@@ -1564,6 +1557,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
 LaTeX Warning: Citation 'rectboot' on page 3 undefined on input line 98.
 
+LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 98.
 
 Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
@@ -1599,82 +1594,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
 ]
 
-LaTeX Warning: Reference `rect_conv' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_cc' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_rcc' on page 4 undefined on input line 102.
-
-
 LaTeX Warning: Citation 'rectrcc' on page 4 undefined on input line 102.
 
-
-LaTeX Warning: Reference `rect_conv' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_cc' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_cc' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_conv' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `rect_cc' on page 4 undefined on input line 102.
-
-<img/rect_conv.pdf, id=37, 221.68582pt x 201.3385pt>
+<img/rect_conv.pdf, id=65, 221.68582pt x 201.3385pt>
 File: img/rect_conv.pdf Graphic file (type pdf)
  <use img/rect_conv.pdf>
 Package pdftex.def Info: img/rect_conv.pdf used on input line 106.
 (pdftex.def)             Requested size: 175.49881pt x 159.39973pt.
 
-<img/rect_cc.pdf, id=38, 220.28664pt x 201.13594pt>
+<img/rect_cc.pdf, id=66, 220.28664pt x 201.13594pt>
 File: img/rect_cc.pdf Graphic file (type pdf)
  <use img/rect_cc.pdf>
 Package pdftex.def Info: img/rect_cc.pdf used on input line 108.
 (pdftex.def)             Requested size: 175.49881pt x 160.24297pt.
-
-
-LaTeX Warning: Reference `rect_rcc' on page 4 undefined on input line 113.
-
-
-LaTeX Warning: Reference `rect_cc' on page 4 undefined on input line 113.
-
-
-LaTeX Warning: Reference `rcc' on page 4 undefined on input line 113.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [4 <./img/rect_conv.pdf> <./img/rect_cc.pdf>]
-
-LaTeX Warning: Reference `rect_rcc' on page 5 undefined on input line 115.
-
-
-LaTeX Warning: Reference `rect_cc' on page 5 undefined on input line 115.
-
-<img/rect_rcc.pdf, id=92, 314.52525pt x 202.18236pt>
+<img/rect_rcc.pdf, id=127, 314.52525pt x 202.18236pt>
 File: img/rect_rcc.pdf Graphic file (type pdf)
  <use img/rect_rcc.pdf>
 Package pdftex.def Info: img/rect_rcc.pdf used on input line 119.
 (pdftex.def)             Requested size: 206.69952pt x 132.87311pt.
 
-<img/rcc.pdf, id=93, 378.41376pt x 369.38pt>
+<img/rcc.pdf, id=128, 378.41376pt x 369.38pt>
 File: img/rcc.pdf Graphic file (type pdf)
  <use img/rcc.pdf>
 Package pdftex.def Info: img/rcc.pdf used on input line 121.
 (pdftex.def)             Requested size: 163.79929pt x 159.88992pt.
-
-
-LaTeX Warning: Reference `rcc' on page 5 undefined on input line 126.
-
-
-LaTeX Warning: Reference `rect_rcc' on page 5 undefined on input line 126.
 
 
 LaTeX Warning: Citation 'rectrcc' on page 5 undefined on input line 126.
@@ -1688,26 +1637,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
 LaTeX Warning: Citation 'rectsize' on page 6 undefined on input line 128.
 
-<img/rect_output_2.pdf, id=134, 505.89pt x 325.215pt>
+<img/rect_output_2.pdf, id=170, 505.89pt x 325.215pt>
 File: img/rect_output_2.pdf Graphic file (type pdf)
 
 <use img/rect_output_2.pdf>
 Package pdftex.def Info: img/rect_output_2.pdf used on input line 133.
 (pdftex.def)             Requested size: 350.99762pt x 225.64415pt.
-
-
-LaTeX Warning: Reference `rect_plot' on page 6 undefined on input line 138.
-
-
-LaTeX Warning: Reference `rect_ce' on page 6 undefined on input line 138.
-
-
-LaTeX Warning: Reference `rect_spec' on page 6 undefined on input line 138.
-
-[6 <./img/rect_output_2.pdf>] <img/rect_ce.pdf, id=150, 542.025pt x 289.08pt>
+ [6 <./img/rect_output_2.pdf>]
+<img/rect_ce.pdf, id=188, 542.025pt x 289.08pt>
 File: img/rect_ce.pdf Graphic file (type pdf)
-
-<use img/rect_ce.pdf>
+ <use img/rect_ce.pdf>
 Package pdftex.def Info: img/rect_ce.pdf used on input line 142.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
  [7 <./img/rect_ce.pdf>] [8]
@@ -1719,10 +1658,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-
-LaTeX Warning: Reference `ldo_gen' on page 9 undefined on input line 177.
-
-<img/ldo.pdf, id=181, 361.35pt x 259.97125pt>
+<img/ldo.pdf, id=220, 361.35pt x 259.97125pt>
 File: img/ldo.pdf Graphic file (type pdf)
  <use img/ldo.pdf>
 Package pdftex.def Info: img/ldo.pdf used on input line 181.
@@ -1747,11 +1683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
 [9
 
- <./img/ldo.pdf>]
-
-LaTeX Warning: Reference `ldo_cmos' on page 10 undefined on input line 188.
-
-<img/sch_ldo_label.pdf, id=197, 590.75932pt x 428.98035pt>
+ <./img/ldo.pdf>] <img/sch_ldo_label.pdf, id=236, 590.75932pt x 428.98035pt>
 File: img/sch_ldo_label.pdf Graphic file (type pdf)
 
 <use img/sch_ldo_label.pdf>
@@ -1794,9 +1726,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
  []
 
 
-LaTeX Warning: Reference `ldo_gen' on page 11 undefined on input line 203.
-
-
 LaTeX Warning: Citation 'ldo_ti_stability' on page 11 undefined on input line 2
 03.
 
@@ -1805,31 +1734,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
-[11] <img/ldo_tran.pdf, id=239, 542.025pt x 289.08pt>
+[11] <img/ldo_tran.pdf, id=280, 542.025pt x 289.08pt>
 File: img/ldo_tran.pdf Graphic file (type pdf)
  <use img/ldo_tran.pdf>
 Package pdftex.def Info: img/ldo_tran.pdf used on input line 207.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
-
-
-LaTeX Warning: Reference `ldo_tran' on page 12 undefined on input line 212.
-
 
 Overfull \hbox (2.09732pt too wide) in paragraph at lines 212--213
 \T1/pnc/m/n/12 wave-forms show that once the $\OML/cmm/m/it/12 Vdd$ \T1/pnc/m/n
 /12 reaches high enough to cre-ate proper
  []
 
-<img/ldo_sta.pdf, id=240, 542.025pt x 289.08pt>
+<img/ldo_sta.pdf, id=282, 542.025pt x 289.08pt>
 File: img/ldo_sta.pdf Graphic file (type pdf)
  <use img/ldo_sta.pdf>
 Package pdftex.def Info: img/ldo_sta.pdf used on input line 216.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
-
-
-LaTeX Warning: Reference `ldo_sta' on page 12 undefined on input line 221.
-
 LaTeX Font Info:    Try loading font information for TS1+pnc on input line 221.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1pnc.fd
 File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
@@ -1863,14 +1785,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
  []
 
 
-LaTeX Warning: Reference `bgr_sch' on page 14 undefined on input line 256.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-<img/sch_bgr_label.pdf, id=296, 559.219pt x 274.59859pt>
+<img/sch_bgr_label.pdf, id=339, 559.219pt x 274.59859pt>
 File: img/sch_bgr_label.pdf Graphic file (type pdf)
 
 <use img/sch_bgr_label.pdf>
@@ -1899,32 +1818,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-
-LaTeX Warning: Reference `bgr_temp' on page 15 undefined on input line 269.
-
-
-LaTeX Warning: Reference `bgr_dc' on page 15 undefined on input line 269.
-
-
-LaTeX Warning: Reference `bgr_tran' on page 15 undefined on input line 269.
-
-
-LaTeX Warning: Reference `bgr_spec' on page 15 undefined on input line 269.
-
 [15 <./img/sch_bgr_label.pdf>]
-<img/bgr_temp.pdf, id=333, 542.025pt x 289.08pt>
+<img/bgr_temp.pdf, id=382, 542.025pt x 289.08pt>
 File: img/bgr_temp.pdf Graphic file (type pdf)
  <use img/bgr_temp.pdf>
 Package pdftex.def Info: img/bgr_temp.pdf used on input line 273.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
 
-<img/bgr_dc.pdf, id=334, 542.025pt x 361.35pt>
+<img/bgr_dc.pdf, id=383, 542.025pt x 361.35pt>
 File: img/bgr_dc.pdf Graphic file (type pdf)
  <use img/bgr_dc.pdf>
 Package pdftex.def Info: img/bgr_dc.pdf used on input line 280.
 (pdftex.def)             Requested size: 350.99762pt x 234.00354pt.
 
-<img/bgr_tran.pdf, id=335, 542.025pt x 361.35pt>
+<img/bgr_tran.pdf, id=384, 542.025pt x 361.35pt>
 File: img/bgr_tran.pdf Graphic file (type pdf)
  <use img/bgr_tran.pdf>
 Package pdftex.def Info: img/bgr_tran.pdf used on input line 287.
@@ -1941,152 +1848,125 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--327
  []
 
 
-LaTeX Warning: Reference `fig:ant_single_model' on page 18 undefined on input l
-ine 330.
-
-
-LaTeX Warning: Citation 'ant_SZ_formula' on page 18 undefined on input line 333
+LaTeX Warning: Citation 'ant_SZ_formula' on page 18 undefined on input line 337
 .
 
 
 LaTeX Warning: Citation 'ant_inductance_calculation' on page 18 undefined on in
-put line 334.
+put line 338.
 
 
-LaTeX Warning: Reference `tab:ant_inductance_compare' on page 18 undefined on i
-nput line 335.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--340
+Underfull \hbox (badness 10000) in paragraph at lines 329--344
 
  []
 
-<img/ant_single.png, id=383, 1302.8675pt x 836.12375pt>
+<img/ant_single.png, id=433, 1302.8675pt x 836.12375pt>
 File: img/ant_single.png Graphic file (type png)
 
 <use img/ant_single.png>
-Package pdftex.def Info: img/ant_single.png used on input line 343.
+Package pdftex.def Info: img/ant_single.png used on input line 347.
 (pdftex.def)             Requested size: 191.10214pt x 122.63185pt.
 
-<img/ant_single.pdf, id=385, 190.09608pt x 121.66023pt>
+<img/ant_single.pdf, id=435, 190.09608pt x 121.66023pt>
 File: img/ant_single.pdf Graphic file (type pdf)
 
 <use img/ant_single.pdf>
-Package pdftex.def Info: img/ant_single.pdf used on input line 345.
+Package pdftex.def Info: img/ant_single.pdf used on input line 349.
 (pdftex.def)             Requested size: 191.10214pt x 122.30408pt.
 
-<img/ant_non_ideal.pdf, id=386, 198.56694pt x 76.81578pt>
+<img/ant_non_ideal.pdf, id=436, 273.34642pt x 86.28958pt>
 File: img/ant_non_ideal.pdf Graphic file (type pdf)
 
 <use img/ant_non_ideal.pdf>
-Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 352.
-(pdftex.def)             Requested size: 234.00238pt x 90.52577pt.
+Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 356.
+(pdftex.def)             Requested size: 292.5pt x 92.33551pt.
 
 
 LaTeX Warning: Citation 'ant_inductance_calculation' on page 18 undefined on in
-put line 363.
+put line 367.
 
 
-Overfull \hbox (4.86073pt too wide) in paragraph at lines 360--367
+Overfull \hbox (4.86073pt too wide) in paragraph at lines 364--370
  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--381
+
  []
 
 [18
 
-] [19 <./img/ant_single.png> <./img/ant_single.pdf> <./img/ant_non_ideal.pdf>]
-
-LaTeX Warning: Reference `fig:ant_couple' on page 20 undefined on input line 37
-2.
-
-
-LaTeX Warning: Reference `tab:ant_couple_parameter' on page 20 undefined on inp
-ut line 375.
-
-
-LaTeX Warning: Reference `tab:ant_inductance_compare' on page 20 undefined on i
-nput line 376.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--378
-
- []
-
-<img/ant_couple.png, id=469, 1289.81876pt x 884.30376pt>
+] [19 <./img/ant_single.png> <./img/ant_single.pdf> <./img/ant_non_ideal.pdf>] 
+<img/ant_couple.png, id=521, 1289.81876pt x 884.30376pt>
 File: img/ant_couple.png Graphic file (type png)
 
 <use img/ant_couple.png>
-Package pdftex.def Info: img/ant_couple.png used on input line 381.
+Package pdftex.def Info: img/ant_couple.png used on input line 384.
 (pdftex.def)             Requested size: 191.10214pt x 131.00714pt.
 
-<img/ant_couple.pdf, id=470, 190.09608pt x 123.48534pt>
+<img/ant_couple.pdf, id=522, 190.09608pt x 123.48534pt>
 File: img/ant_couple.pdf Graphic file (type pdf)
 
 <use img/ant_couple.pdf>
-Package pdftex.def Info: img/ant_couple.pdf used on input line 383.
+Package pdftex.def Info: img/ant_couple.pdf used on input line 386.
 (pdftex.def)             Requested size: 191.10214pt x 124.13885pt.
- [20 <./img/ant_couple.png> <./img/ant_couple.pdf>]
-
-LaTeX Warning: Citation 'ant_optimal_resonance' on page 21 undefined on input l
-ine 408.
 
 
-LaTeX Warning: Citation 'ant_PSC_geometry' on page 21 undefined on input line 4
-08.
+LaTeX Warning: Citation 'ant_optimal_resonance' on page 20 undefined on input l
+ine 411.
 
 
-LaTeX Warning: Citation 'ant_optimal_resonance' on page 21 undefined on input l
-ine 409.
+LaTeX Warning: Citation 'ant_PSC_geometry' on page 20 undefined on input line 4
+11.
 
 
-LaTeX Warning: Citation 'ant_PSC_geometry' on page 21 undefined on input line 4
-10.
+LaTeX Warning: Citation 'ant_optimal_resonance' on page 20 undefined on input l
+ine 412.
 
 
-Overfull \hbox (22.70026pt too wide) in paragraph at lines 406--415
+LaTeX Warning: Citation 'ant_PSC_geometry' on page 20 undefined on input line 4
+13.
+
+
+Overfull \hbox (22.70026pt too wide) in paragraph at lines 409--418
 \T1/pnc/m/n/12 ling sys-tem design. [[]] and [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--415
+Underfull \hbox (badness 10000) in paragraph at lines 409--418
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--420
+[20 <./img/ant_couple.png> <./img/ant_couple.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 420--423
 
  []
 
-
-LaTeX Warning: Reference `fig:ant_couple_resonant' on page 21 undefined on inpu
-t line 425.
-
-
-LaTeX Warning: Reference `fig:ant_S_loss' on page 21 undefined on input line 42
-8.
-
-[21] <img/ant_couple_resonant.pdf, id=518, 259.59846pt x 93.67778pt>
+<img/ant_couple_resonant.pdf, id=568, 259.59846pt x 93.67778pt>
 File: img/ant_couple_resonant.pdf Graphic file (type pdf)
 
 <use img/ant_couple_resonant.pdf>
-Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 433.
+Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 436.
 (pdftex.def)             Requested size: 312.00119pt x 112.58856pt.
 
-<img/ant_S_loss.png, id=519, 427.5975pt x 308.65312pt>
+<img/ant_S_loss.png, id=569, 427.5975pt x 308.65312pt>
 File: img/ant_S_loss.png Graphic file (type png)
 
 <use img/ant_S_loss.png>
-Package pdftex.def Info: img/ant_S_loss.png used on input line 440.
+Package pdftex.def Info: img/ant_S_loss.png used on input line 443.
 (pdftex.def)             Requested size: 350.99762pt x 253.36093pt.
- [22 <./img/ant_couple_resonant.pdf> <./img/ant_S_loss.png (PNG copy)>]
+ [21 <./img/ant_couple_resonant.pdf>] [22 <./img/ant_S_loss.png (PNG copy)>]
 
 LaTeX Warning: Empty bibliography on input line 452.
 
+(./preliminary.lof)
 \tf@lof=\write5
 \openout5 = `preliminary.lof'.
 
-[23
+ [23
 
-]
+] (./preliminary.lot)
 \tf@lot=\write6
 \openout6 = `preliminary.lot'.
 
@@ -2096,30 +1976,17 @@ Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls). 
 on input line 462.
 
-
-Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acrony
-m}]. Rerun may be required (or you may have forgotten to use commands like \gls
-). on input line 462.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 464.
+[25]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 464.
-(./preliminary.aux)
+ (./preliminary.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 464.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 464.
+Package rerunfilecheck Info: File `preliminary.out' has not changed.
+(rerunfilecheck)             Checksum: 50FB280FD53B6E2F1CCCE0373DD8AF31;234.
 
-
-Package rerunfilecheck Warning: File `preliminary.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `preliminary.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  50FB280FD53B6E2F1CCCE0373DD8AF31;234.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2131,13 +1998,13 @@ Package logreq Info: Writing requests to 'preliminary.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27143 strings out of 493089
- 500048 string characters out of 6134842
- 948256 words of memory out of 5000000
- 30181 multiletter control sequences out of 15000+600000
+ 27160 strings out of 493089
+ 500262 string characters out of 6134842
+ 952719 words of memory out of 5000000
+ 30187 multiletter control sequences out of 15000+600000
  31666 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,14n,85p,10422b,1501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,14n,85p,10422b,1578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -2148,10 +2015,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on preliminary.pdf (24 pages, 1908746 bytes).
+Output written on preliminary.pdf (25 pages, 1914588 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
- 64 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -319,23 +319,27 @@ antennas which created inductive links for transferring power wirelessly and hen
 component which makes wireless power transfer possible. \\
 
 
-As already stated inductive coupling means coupling one coil with other, through magentic field created in the 
+As already stated inductive coupling means coupling one coil with other, through magnetic field created in the 
 first coil which induces the voltage in the second one. This is exactly the phenomenon for creating wireless 
-power transfer link. In this project, the antenna dimesnions are provided by Nordic Semiconductor which is one 
+power transfer link. In this project, the antenna dimensions are provided by Nordic Semiconductor which is one 
 of their design already used in some application. Since having similar shape and size of antennas is important 
 in gaining more transfer efficiency, the same antenna type is used as both primary and secondary coils. \\
 
 
 For purpose of this work, with provided dimensions of the antenna, it is first modelled in HFSS as shown in 
-figure \ref{fig:ant_single_model}. To realise a real antenna, physical parameters of materials used for making 
-printed antenna on a PCB are also given for the model.  After completing model, frequecny sweep is done for extracting S parameter of the 
-antenna which was eventually used to estimate  self inductanace of the modelled coil. The performance estiamtion of 
+figure \ref{fig:ant_single_model}. More accurately, a planar antenna on a PCB can be modelled as in figure 
+\ref{fig:ant_non_ideal} which includes parasitic: $Rp$, series Dc resistance of wire and $Cp$, inter-winding 
+self capacitance. These parasitic values minimise quality factor and self resonance frequency of the antenna. 
+In the discussion ahead, these will not be explicitly mentioned because the parameter extraction will include these factors too.
+To realise a real antenna, physical parameters of materials used for making 
+printed antenna on a PCB are also given for the model.  After completing model, frequency sweep is done for extracting S parameter of the 
+antenna which was eventually used to estimate  self inductance of the modelled coil. The performance estimation of 
 single antenna here and couple system later is based on formulas in \cite{ant_SZ_formula}. In order to check and compare the estimated inductance value from 
 the model, two different mathematical approximation methods described in \cite{ant_inductance_calculation} were used. All the values of 
 inductance of the antenna estimated from different method is listed in table \ref{tab:ant_inductance_compare}. The table shows that the 
 modelled value is less than mathematically approximated values. This difference can be explained with two things. 
 Firstly, mathematical calculation assumed that the antenna is spiral and rectangular with sharp edge but the model has 
-rounded edge. Secondly, during modelling besides dimesnions of the coils, physical parameters of coil materials are also used 
+rounded edge. Secondly, during modelling besides dimensions of the coils, physical parameters of coil materials are also used 
 but these are not considered for mathematical calculation.\\
 
 \begin{figure} [!htbp]
@@ -349,19 +353,18 @@ but these are not considered for mathematical calculation.\\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.6\textwidth]{img/ant_non_ideal.pdf} 
+   \includegraphics[width=0.75\textwidth]{img/ant_non_ideal.pdf} 
    \caption{Real antenna model schematic}
    \label{fig:ant_non_ideal}
 \end{figure}
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \caption{Self inductance estimates comparision} 
 \begin{center}
 \begin{tabular}{c|c}
 \hline \hline
 HFSS model extraction & 448 \si{\nano\henry} \\ \hline
 Modified Wheeler Formula \cite{ant_inductance_calculation} & 644 \si{\nano\henry}  \\ 
-
 \hline \hline
 \end{tabular}
 \end{center}
@@ -369,9 +372,9 @@ Modified Wheeler Formula \cite{ant_inductance_calculation} & 644 \si{\nano\henry
 \end{table}%
 
 The next step is to observe coupling of two antenna for varying distance of field interaction. Two coils, primary 
-and secondary are aligned together sepatated by some distance as shown in \ref{fig:ant_couple}. The same procedure as 
+and secondary are aligned together separated by some distance as shown in \ref{fig:ant_couple}. The same procedure as 
 used for single coil above, is used to extract self inductance of each coil, $L1$ and $L2$, mutual inductance 
-of two coils, $L12$, coupling cofficient between the coils, $k$ and quality factor, $Q$. The extracted values for coil separtaion of 
+of two coils, $L12$, coupling coefficient between the coils, $k$ and quality factor, $Q$. The extracted values for coil separation of 
 1mm, 5mm and 10mm are listed in table \ref{tab:ant_couple_parameter}. $L1$ and $L2$ are same as in 
 table \ref{tab:ant_inductance_compare} as it is the same coil used as primary and secondary. Similarly $L12$ and 
 $k$ are both decreasing with distance as expected.\\
@@ -405,10 +408,10 @@ Q		& -	& -	& -	 & -		    \\
 
 The power transfer efficiency of the physical link created by coupled coils is very important. [CITE] states 
 that efficiency depends k of coupling system and Q of coil and hence high k and high Q is always desirable and obviously coil optimisation 
-is the most important part of coupling system design. \cite{ant_optimal_resonance} and \cite{ant_PSC_geometry} discusses some techiques to 
+is the most important part of coupling system design. \cite{ant_optimal_resonance} and \cite{ant_PSC_geometry} discusses some techniques to 
 optimise transfer efficiency of inductive link: \cite{ant_optimal_resonance} about matching the load for better resonance whereas 
 \cite{ant_PSC_geometry} about designing optimal coil geometry for higher Q. The former one compares the efficiency of general inductive coupling 
-and conventional resonant coupling and their limitation in achieving higher effieicncy. This eventually proposes 
+and conventional resonant coupling and their limitation in achieving higher efficiency. This eventually proposes 
 optimal resonant load transformation which has better immunity to poor coupling and load variation. Likewise, the later one 
 describes step by step iterative process of designing an antenna with optimal geometry for the given 
 design constraints. \\
@@ -419,12 +422,12 @@ to the power career frequency. This method makes the bandwidth narrower but incr
 making gain maximum at this desired frequency. \\
 
 
-For the purpose of making a resonanat inductive link, the S parameter of coupled antenna system in HFSS 
+For the purpose of making a resonant inductive link, the S parameter of coupled antenna system in HFSS 
 is exported to ADS in order to design matching networks using capacitors only. Impedance of  primary antenna is 
-mathched to 50 \si{\ohm} source resistance and impedance of secondary is matched to load impedance (50 \si{\ohm} load or input 
+matched to 50 \si{\ohm} source resistance and impedance of secondary is matched to load impedance (50 \si{\ohm} load or input 
 impedance chip(?)) as shown in \ref{fig:ant_couple_resonant}. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
 on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz, a pair of
- Lc tanke circuit si thus made tunned at same frequency. Resonant coupling system with 5 mm separation is taken as a typical example. The losses at both the terminals for this case 
+ Lc tanke circuit si thus made tuned at same frequency. Resonant coupling system with 5 mm separation is taken as a typical example. The losses at both the terminals for this case 
 just around our operating frequency are as shown in figure \ref{fig:ant_S_loss}. These plots show that power 
 losses at both the ports have been reduced by at least an order of magnitude.
 
@@ -441,9 +444,6 @@ losses at both the ports have been reduced by at least an order of magnitude.
  \caption{Power loss before and after matching} 
 \label{fig:ant_S_loss} 
 \end{figure}
-
-
-The  vlaues of  s11 and s22   for coupled link before and after resonance is listed in [table]. 
 
  
 \clearpage

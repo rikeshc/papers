@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber preliminary"] 1498857805 "preliminary.bcf" "preliminary.bbl" "preliminary" 1498857805
-  "preliminary.bcf" 1498857805 101592 49eab46867d05b02827c1017f7b86fdb ""
+["biber preliminary"] 1498859640 "preliminary.bcf" "preliminary.bbl" "preliminary" 1498860377
+  "preliminary.bcf" 1498860343 101592 49eab46867d05b02827c1017f7b86fdb ""
   (generated)
   "preliminary.bbl"
   "preliminary.blg"
-["pdflatex"] 1498857802 "preliminary.tex" "preliminary.pdf" "preliminary" 1498857802
+["pdflatex"] 1498860341 "preliminary.tex" "preliminary.pdf" "preliminary" 1498860377
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm" 1136768653 3220 7b5d1a9569a08754f1bdfbc1c7ad8dbd ""
@@ -175,7 +175,7 @@
   "img/ant_couple.pdf" 1498856520 328789 da9b79f2fe6b94ee64c7d9de3081f276 ""
   "img/ant_couple.png" 1498853813 70892 d0d81575cdf2e0375d0ab3f02f013139 ""
   "img/ant_couple_resonant.pdf" 1498854420 328787 42ccb0b1a587b02e48835466884f12d5 ""
-  "img/ant_non_ideal.pdf" 1498854213 468184 69f05a36e483e5cd40b42f616d02ad99 ""
+  "img/ant_non_ideal.pdf" 1498859454 329315 e832e0c399d8b7fbc1fd562144a1ad55 ""
   "img/ant_single.pdf" 1498856204 328786 31d5785d9e1921dfcf635ed6f034abcc ""
   "img/ant_single.png" 1498853813 41100 bf92fcb1f3ad546d4c7e051645a34b42 ""
   "img/bgr_dc.pdf" 1473026495 28983 898bf362185cda931c41f3c78568d3b6 ""
@@ -193,16 +193,19 @@
   "img/rect_rcc.pdf" 1474192128 51669 adfa10ec67f378ed9e5b43aa856e8ee6 ""
   "img/sch_bgr_label.pdf" 1474199595 26725 1db532391559faefcf1f2d0f558d1f46 ""
   "img/sch_ldo_label.pdf" 1474198405 30420 755b0d5a18e20e93b29977df390f9148 ""
-  "preliminary.aux" 1498857802 8 a94a2480d3289e625eea47cd1b285758 ""
-  "preliminary.bbl" 1498857792 0 d41d8cd98f00b204e9800998ecf8427e "biber preliminary"
-  "preliminary.out" 0 -1 0 ""
-  "preliminary.tex" 1498857269 35893 164880a8a85a3bf8b40b0a79753f793a ""
+  "preliminary.aux" 1498860343 11982 1352850802962a442af8599124354b04 ""
+  "preliminary.bbl" 1498857818 0 d41d8cd98f00b204e9800998ecf8427e "biber preliminary"
+  "preliminary.lof" 1498860343 3133 a1a9d5958a0165ba8d19ee85f133398c ""
+  "preliminary.lot" 1498860343 831 ee2ec87f7fe054603ac91302e24bfe1c ""
+  "preliminary.out" 1498860343 234 50fb280fd53b6e2f1ccce0373dd8af31 ""
+  "preliminary.run.xml" 1498860343 2419 cad11a29eda481b2b5d5b9f60190b521 ""
+  "preliminary.tex" 1498860341 36219 5b6f4bf42eb52844e81f92a3633ad0cb ""
   (generated)
-  "preliminary.pdf"
   "preliminary.run.xml"
-  "preliminary.aux"
-  "preliminary.out"
-  "preliminary.bcf"
-  "preliminary.log"
-  "preliminary.lof"
+  "preliminary.pdf"
   "preliminary.lot"
+  "preliminary.out"
+  "preliminary.log"
+  "preliminary.bcf"
+  "preliminary.aux"
+  "preliminary.lof"
