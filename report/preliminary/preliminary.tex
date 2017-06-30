@@ -327,7 +327,7 @@ in gaining more transfer efficiency, the same antenna type is used as both prima
 
 
 For purpose of this work, with provided dimensions of the antenna, it is first modelled in HFSS as shown in 
-figure \ref{fig:ant_single}. To realise a real antenna, physical parameters of materials used for making 
+figure \ref{fig:ant_single_model}. To realise a real antenna, physical parameters of materials used for making 
 printed antenna on a PCB are also given for the model.  After completing model, frequecny sweep is done for extracting S parameter of the 
 antenna which was eventually used to estimate  self inductanace of the modelled coil. The performance estiamtion of 
 single antenna here and couple system later is based on formulas in \cite{ant_SZ_formula}. In order to check and compare the estimated inductance value from 
@@ -338,11 +338,20 @@ Firstly, mathematical calculation assumed that the antenna is spiral and rectang
 rounded edge. Secondly, during modelling besides dimesnions of the coils, physical parameters of coil materials are also used 
 but these are not considered for mathematical calculation.\\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+\begin{figure} [!htbp]
+  \centering 
+  \subfloat[HFSS antenna model]  {\includegraphics[width=.49\textwidth]{img/ant_single.png} \label{fig:ant_single_model}}
+\hfill
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_single.pdf}\label{fig:ant_single_schematic}}
+ \caption{Antenna model} 
+\label{fig:ant_single} 
+\end{figure}
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ant_single.png} 
-   \caption{HFSS model of antenna}
-   \label{fig:ant_single}
+   \includegraphics[width=0.6\textwidth]{img/ant_non_ideal.pdf} 
+   \caption{Real antenna model schematic}
+   \label{fig:ant_non_ideal}
 \end{figure}
 
 \begin{table}[H]
@@ -367,11 +376,13 @@ of two coils, $L12$, coupling cofficient between the coils, $k$ and quality fact
 table \ref{tab:ant_inductance_compare} as it is the same coil used as primary and secondary. Similarly $L12$ and 
 $k$ are both decreasing with distance as expected.\\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=0.9\textwidth]{img/ant_couple.png} 
-   \caption{HFSS model of coupling}
-   \label{fig:ant_couple}
+\begin{figure} [htbp]
+  \centering 
+  \subfloat[HFSS coupling model]  {\includegraphics[width=.49\textwidth]{img/ant_couple.png} \label{fig:ant_couple_model}}
+\hfill
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_couple.pdf}\label{fig:ant_couple_schematic}}
+ \caption{Antenna coupling model} 
+\label{fig:ant_couple} 
 \end{figure}
 
 \begin{table}[H]
@@ -411,11 +422,18 @@ making gain maximum at this desired frequency. \\
 For the purpose of making a resonanat inductive link, the S parameter of coupled antenna system in HFSS 
 is exported to ADS in order to design matching networks using capacitors only. Impedance of  primary antenna is 
 mathched to 50 \si{\ohm} source resistance and impedance of secondary is matched to load impedance (50 \si{\ohm} load or input 
-impedance chip(?)) as shown in [figure]. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
+impedance chip(?)) as shown in \ref{fig:ant_couple_resonant}. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
 on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz, a pair of
  Lc tanke circuit si thus made tunned at same frequency. Resonant coupling system with 5 mm separation is taken as a typical example. The losses at both the terminals for this case 
 just around our operating frequency are as shown in figure \ref{fig:ant_S_loss}. These plots show that power 
 losses at both the ports have been reduced by at least an order of magnitude.
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.8\textwidth]{img/ant_couple_resonant.pdf} 
+   \caption{Resonant coupled inductive link}
+   \label{fig:ant_couple_resonant}
+\end{figure}
 
 \begin{figure} [!htbp]
   \centering

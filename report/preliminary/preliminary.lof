@@ -9,14 +9,20 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Active circuit $D2$}}}{5}{subfigure.3.2}
 \contentsline {figure}{\numberline {4}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{6}{figure.caption.5}
 \contentsline {figure}{\numberline {5}{\ignorespaces Voltage and power conversion efficiency\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {6}{\ignorespaces Generic LDO with pMOS pass device\relax }}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {7}{\ignorespaces CMOS implemenation of LDO\relax }}{9}{figure.caption.9}
-\contentsline {figure}{\numberline {8}{\ignorespaces LDO transient simulation\relax }}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {9}{\ignorespaces LDO stability before and after compensation\relax }}{12}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces BGR and bias generation circuit\relax }}{14}{figure.caption.13}
-\contentsline {figure}{\numberline {11}{\ignorespaces BGR over temperature varitaion\relax }}{15}{figure.caption.14}
-\contentsline {figure}{\numberline {12}{\ignorespaces BGR DC performance\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {13}{\ignorespaces BGR transient performance\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {14}{\ignorespaces HFSS model of antenna\relax }}{18}{figure.caption.18}
-\contentsline {figure}{\numberline {15}{\ignorespaces HFSS model of coupling\relax }}{19}{figure.caption.20}
-\contentsline {figure}{\numberline {16}{\ignorespaces Power loss before and after matching\relax }}{21}{figure.caption.22}
+\contentsline {figure}{\numberline {6}{\ignorespaces Generic LDO with pMOS pass device\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces CMOS implemenation of LDO\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces LDO transient simulation\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces LDO stability before and after compensation\relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces BGR and bias generation circuit\relax }}{15}{figure.caption.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces BGR over temperature varitaion\relax }}{16}{figure.caption.14}
+\contentsline {figure}{\numberline {12}{\ignorespaces BGR DC performance\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {13}{\ignorespaces BGR transient performance\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {14}{\ignorespaces Antenna model\relax }}{19}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{19}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{19}{subfigure.14.2}
+\contentsline {figure}{\numberline {15}{\ignorespaces Real antenna model schematic\relax }}{19}{figure.caption.19}
+\contentsline {figure}{\numberline {16}{\ignorespaces Antenna coupling model\relax }}{20}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{20}{subfigure.16.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{20}{subfigure.16.2}
+\contentsline {figure}{\numberline {17}{\ignorespaces Resonant coupled inductive link\relax }}{22}{figure.caption.23}
+\contentsline {figure}{\numberline {18}{\ignorespaces Power loss before and after matching\relax }}{22}{figure.caption.24}
