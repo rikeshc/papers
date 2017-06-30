@@ -410,22 +410,12 @@ making gain maximum at this desired frequency. \\
 
 For the purpose of making a resonanat inductive link, the S parameter of coupled antenna system in HFSS 
 is exported to ADS in order to design matching networks using capacitors only. Impedance of  primary antenna is 
-mathched to 50 \si{\ohm} source resistance and impedance of secondary is matched to load impedance (50 \si{\ohm} load or input 
+mathched to 50 ohm source resistance and impedance of secondary is matched to load impedance (50 ohm load or input 
 impedance chip(?)) as shown in [figure]. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
-on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz, a pair of
- Lc tanke circuit si thus made tunned at same frequency. Resonant coupling system with 5 mm separation is taken as a typical example. The losses at both the terminals for this case 
-just around our operating frequency are as shown in figure \ref{fig:ant_S_loss}. These plots show that power 
-losses at both the ports have been reduced by at least an order of magnitude.
-
-\begin{figure} [!htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{img/ant_S_loss.png} 
- \caption{Power loss before and after matching} 
-\label{fig:ant_S_loss} 
-\end{figure}
+on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz.\\
 
 
-The  vlaues of  s11 and s22   for coupled link before and after resonance is listed in [table]. 
+The  vlaues of Q s11 and s22   for coupled link before and after resonance is listed in [table]. 
 
  
 \clearpage
