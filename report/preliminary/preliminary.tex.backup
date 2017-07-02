@@ -43,7 +43,9 @@
 \newacronym{bgr}{BGR}{bandgap reference}
 \newacronym{ota}{OTA}{operational transconductance amplifier}
 \newacronym{bjt}{BJT}{bipolar junction transistor}
-\newacronym{PNP}{pnp}{BJT where n-type semiconductor is between two p-type semiconductors}
+\newacronym{pnp}{PNP}{BJT where n-type semiconductor is between two p-type semiconductors}
+\newacronym{pms}{PMS}{Power Management System}
+\newacronym{smd}{SMD}{Surface Mounted Device}
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -116,12 +118,14 @@ For the illustration of operation of comparator, consider the case when $Vin1 > 
 
 \begin{figure} [H]
   \centering 
-  \subfloat[Gate cross coupled full wave active rectifer]  {\includegraphics[width=.53\textwidth]{img/rect_rcc.pdf} \label{rect_rcc}}
+  \subfloat[Gate cross coupled full wave active rectifer]  {\includegraphics[width=.49\textwidth]{img/rect_rcc.pdf} \label{rect_rcc}}
   \hfill
  \subfloat[Active circuit $D2$]  {\includegraphics[width=.42\textwidth]{img/rcc.pdf} \label{rcc}}
  \caption{Active rectifier and active circuitry (comparator)} 
 \label{rect_rcc_rcc} 
 \end{figure}
+
+
 
 Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vac > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vac < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M9$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vac < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
 
@@ -130,35 +134,58 @@ Similarly, the value of ripple rejection capacitor is chosen 100nF for better ri
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/rect_output_2.pdf} 
+   \includegraphics[width=.9\textwidth]{img/rectifier_testbench.png} 
    \caption{Voltage and current waveforms of the rectifier}
    \label{rect_plot}
 \end{figure}
 
-Figure \ref{rect_plot} show the simulation results showing voltages and current waveform of this designed rectifier. The generated waveforms clearly follows the working principle discussed above. Two important observations can be made from plots. First, the rectified output $Vrec$ is 2.2 V for $Vpp$ ac input of 2.5 V which means the voltage loss has been significantly reduced and the loss of around 300 mV yields to the conduction loss due the the channel resistance. Secondly, the reverse current from output to input has been effectively eliminated as there is only positive current flowing to the load when all conducting devices are on.  Similarly, figure  \ref{rect_ce} shows PCE and VCE with respect to magnitude peak ac input signal. Both PCE and VCE are very less for input ac amplitude less then 1.8 V. It can be explained by the fact that required bias current and gate drive voltage are not achieved for smaller input. Finally, table \ref{rect_spec} summarises the rectifier design parameters and its performance.
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=.9\textwidth]{img/rectifier_VI.pdf} 
+   \caption{Voltage and current waveforms of the rectifier}
+   \label{rect_plot}
+\end{figure}
+
+Figure \ref{rect_plot} show the simulation results showing voltages at the input ac and output rectified DC 
+voltages and current through rectifying MOSes for driving heaviest 11 mA load. 1 mA extra load is assumed to 
+account for the fact that RCC is self powered and subsequent LDO will be powered by this rectifier.   These  
+waveforms clearly follows the working principle discussed above. Two important observations can be made from 
+plots. First, the rectified output $Vrec$ is 2.2 V for $Vpp$ ac input of 2.5 V for driving which means the 
+voltage loss has been significantly reduced and the loss of around 300 mV yields to the conduction loss due 
+the channel resistance. Secondly, the reverse current from output to input has been effectively eliminated as 
+there is only positive current flowing to the load when all conducting devices 
+are on.  \\
+
+Similarly, figure  \ref{rect_ce} shows PCE, ratio powered deliverd to load to average power from the source and 
+VCE, ratio of rectified DC, $Vrec$ to peak ac input, |$Vac$| with respect to magnitude peak ac input signal. Both 
+PCE and VCE are very less for input ac amplitude less then 1.8 V. It can be explained by the fact that required 
+bias current and gate drive voltage for RCC circuit are not achieved for smaller input. [MORE COMMENT ?]
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/rect_ce.pdf} 
+   \includegraphics[width=\textwidth]{img/rectifier_ce.pdf} 
    \caption{Voltage and power conversion efficiency}
    \label{rect_ce}
 \end{figure}
+
+Table \ref{rect_spec} summarises the important parameters of this design and its performance.
 
 \begin{table}[H]
 \caption{Rectifier parameter and performance}
 \begin{center}
 \begin{tabular}{c|c}
 \hline \hline
-Wn/Ln, Wp/Lp & 550um/270nm, 900um/270nm \\ \hline
-Rectifier area & TBA mm\textsuperscript{2} \\ \hline
-Input ac frequency & 13.56 MHz \\ \hline
-Input ac \acrshort{vp} & 2.5 V \\ \hline
-Load current & 11 mA \\ \hline
-Ripple rejection cap & 100nF \\ \hline
-Output dc voltage & 2.2 V \\ \hline
-Ripple \acrshort{vpp} & 3 mV \\ \hline
-PCE & >85\% \\ \hline
-VCE & >88\% \\
+Wn/Ln, Wp/Lp 		& 720um/280nm, 1.2mm/280nm \\ \hline
+Rectifier area 		& TBA mm\textsuperscript{2} \\ \hline
+Operating frequency 	& 13.56 MHz \\ \hline
+Input ac magnitude	& 2.5  \acrshort{vp} \\ \hline
+Load current 		& 11 mA \\ \hline
+Ripple rejection cap 	& 100nF \\ \hline
+Output dc voltage 	& 2.2 V \\ \hline
+Ripple \acrshort{vpp} 	& 3 mV \\ \hline
+Peak current 		& 63.7 mA \\ \hline
+PCE 			& 84.5\% \\ \hline
+VCE 			& 88.6\% \\
 \hline \hline
 \end{tabular}
 \end{center}
@@ -319,40 +346,52 @@ antennas which created inductive links for transferring power wirelessly and hen
 component which makes wireless power transfer possible. \\
 
 
-As already stated inductive coupling means coupling one coil with other, through magentic field created in the 
+As already stated inductive coupling means coupling one coil with other, through magnetic field created in the 
 first coil which induces the voltage in the second one. This is exactly the phenomenon for creating wireless 
-power transfer link. In this project, the antenna dimesnions are provided by Nordic Semiconductor which is one 
+power transfer link. In this project, the antenna dimensions are provided by Nordic Semiconductor which is one 
 of their design already used in some application. Since having similar shape and size of antennas is important 
 in gaining more transfer efficiency, the same antenna type is used as both primary and secondary coils. \\
 
 
 For purpose of this work, with provided dimensions of the antenna, it is first modelled in HFSS as shown in 
-figure \ref{fig:ant_single}. To realise a real antenna, physical parameters of materials used for making 
-printed antenna on a PCB are also given for the model.  After completing model, frequecny sweep is done for extracting S parameter of the 
-antenna which was eventually used to estimate  self inductanace of the modelled coil. The performance estiamtion of 
+figure \ref{fig:ant_single_model}. More accurately, a planar antenna on a PCB can be modelled as in figure 
+\ref{fig:ant_non_ideal} which includes parasitic: $Rp$, series Dc resistance of wire and $Cp$, inter-winding 
+self capacitance. These parasitic values minimise quality factor and self resonance frequency of the antenna. 
+In the discussion ahead, these will not be explicitly mentioned because the parameter extraction will include these factors too.
+To realise a real antenna, physical parameters of materials used for making 
+printed antenna on a PCB are also given for the model.  After completing model, frequency sweep is done for extracting S parameter of the 
+antenna which was eventually used to estimate  self inductance of the modelled coil. The performance estimation of 
 single antenna here and couple system later is based on formulas in \cite{ant_SZ_formula}. In order to check and compare the estimated inductance value from 
 the model, two different mathematical approximation methods described in \cite{ant_inductance_calculation} were used. All the values of 
 inductance of the antenna estimated from different method is listed in table \ref{tab:ant_inductance_compare}. The table shows that the 
 modelled value is less than mathematically approximated values. This difference can be explained with two things. 
 Firstly, mathematical calculation assumed that the antenna is spiral and rectangular with sharp edge but the model has 
-rounded edge. Secondly, during modelling besides dimesnions of the coils, physical parameters of coil materials are also used 
+rounded edge. Secondly, during modelling besides dimensions of the coils, physical parameters of coil materials are also used 
 but these are not considered for mathematical calculation.\\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=0.9\textwidth]{img/ant_single.png} 
-   \caption{HFSS model of antenna}
-   \label{fig:ant_single}
+\begin{figure} [!htbp]
+  \centering 
+  \subfloat[HFSS antenna model]  {\includegraphics[width=.49\textwidth]{img/ant_single.png} \label{fig:ant_single_model}}
+\hfill
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_single.pdf}\label{fig:ant_single_schematic}}
+ \caption{Antenna model} 
+\label{fig:ant_single} 
 \end{figure}
 
-\begin{table}[H]
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/ant_non_ideal.pdf} 
+   \caption{Real antenna model schematic}
+   \label{fig:ant_non_ideal}
+\end{figure}
+
+\begin{table}[!htbp]
 \caption{Self inductance estimates comparision} 
 \begin{center}
 \begin{tabular}{c|c}
 \hline \hline
 HFSS model extraction & 448 \si{\nano\henry} \\ \hline
 Modified Wheeler Formula \cite{ant_inductance_calculation} & 644 \si{\nano\henry}  \\ 
-
 \hline \hline
 \end{tabular}
 \end{center}
@@ -360,18 +399,20 @@ Modified Wheeler Formula \cite{ant_inductance_calculation} & 644 \si{\nano\henry
 \end{table}%
 
 The next step is to observe coupling of two antenna for varying distance of field interaction. Two coils, primary 
-and secondary are aligned together sepatated by some distance as shown in \ref{fig:ant_couple}. The same procedure as 
+and secondary are aligned together separated by some distance as shown in \ref{fig:ant_couple}. The same procedure as 
 used for single coil above, is used to extract self inductance of each coil, $L1$ and $L2$, mutual inductance 
-of two coils, $L12$, coupling cofficient between the coils, $k$ and quality factor, $Q$. The extracted values for coil separtaion of 
+of two coils, $L12$, coupling coefficient between the coils, $k$ and quality factor, $Q$. The extracted values for coil separation of 
 1mm, 5mm and 10mm are listed in table \ref{tab:ant_couple_parameter}. $L1$ and $L2$ are same as in 
 table \ref{tab:ant_inductance_compare} as it is the same coil used as primary and secondary. Similarly $L12$ and 
 $k$ are both decreasing with distance as expected.\\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=0.9\textwidth]{img/ant_couple.png} 
-   \caption{HFSS model of coupling}
-   \label{fig:ant_couple}
+\begin{figure} [htbp]
+  \centering 
+  \subfloat[HFSS coupling model]  {\includegraphics[width=.49\textwidth]{img/ant_couple.png} \label{fig:ant_couple_model}}
+\hfill
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_couple.pdf}\label{fig:ant_couple_schematic}}
+ \caption{Antenna coupling model} 
+\label{fig:ant_couple} 
 \end{figure}
 
 \begin{table}[H]
@@ -394,10 +435,10 @@ Q		& -	& -	& -	 & -		    \\
 
 The power transfer efficiency of the physical link created by coupled coils is very important. [CITE] states 
 that efficiency depends k of coupling system and Q of coil and hence high k and high Q is always desirable and obviously coil optimisation 
-is the most important part of coupling system design. \cite{ant_optimal_resonance} and \cite{ant_PSC_geometry} discusses some techiques to 
+is the most important part of coupling system design. \cite{ant_optimal_resonance} and \cite{ant_PSC_geometry} discusses some techniques to 
 optimise transfer efficiency of inductive link: \cite{ant_optimal_resonance} about matching the load for better resonance whereas 
 \cite{ant_PSC_geometry} about designing optimal coil geometry for higher Q. The former one compares the efficiency of general inductive coupling 
-and conventional resonant coupling and their limitation in achieving higher effieicncy. This eventually proposes 
+and conventional resonant coupling and their limitation in achieving higher efficiency. This eventually proposes 
 optimal resonant load transformation which has better immunity to poor coupling and load variation. Likewise, the later one 
 describes step by step iterative process of designing an antenna with optimal geometry for the given 
 design constraints. \\
@@ -408,16 +449,57 @@ to the power career frequency. This method makes the bandwidth narrower but incr
 making gain maximum at this desired frequency. \\
 
 
-For the purpose of making a resonanat inductive link, the S parameter of coupled antenna system in HFSS 
+For the purpose of making a resonant inductive link, the S parameter of coupled antenna system in HFSS 
 is exported to ADS in order to design matching networks using capacitors only. Impedance of  primary antenna is 
-mathched to 50 ohm source resistance and impedance of secondary is matched to load impedance (50 ohm load or input 
-impedance chip(?)) as shown in [figure]. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
-on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz.\\
+matched to 50 \si{\ohm} source resistance and impedance of secondary is matched to load impedance (50 \si{\ohm} load or input 
+impedance chip(?)) as shown in \ref{fig:ant_couple_resonant}. $Cp1$ and $Cp2$ together with $L1$ created parallel resonant circuit 
+on the primary side and $Cs1$ together with $L2$ creates the secondary resonant circuit at 13.56 MHz, a pair of
+ Lc tanke circuit si thus made tuned at same frequency. Resonant coupling system with 5 mm separation is taken as a typical example. The losses at both the terminals for this case 
+just around our operating frequency are as shown in figure \ref{fig:ant_S_loss}. These plots show that power 
+losses at both the ports have been reduced by at least an order of magnitude.
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.8\textwidth]{img/ant_couple_resonant.pdf} 
+   \caption{Resonant coupled inductive link}
+   \label{fig:ant_couple_resonant}
+\end{figure}
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/ant_S_loss.png} 
+ \caption{Power loss before and after matching} 
+\label{fig:ant_S_loss} 
+\end{figure}
+
+\clearpage
+\newpage
+% *********************************************************************** WPT PRU SYSTEM  ***********************************************************************
 
 
-The  vlaues of Q s11 and s22   for coupled link before and after resonance is listed in [table]. 
+\section{Power Receiving Unit}
+Power receiving unit is the complete system which includes all the component designed above: coupled antenna, 
+rectifer, LDO and reference and biasing, as shown in figure[FIGURE]. The primary of tunned antenna system is 
+driven by a power source and AC signal is generated at the secondary as discussed earlier in antenna design 
+section. The rectifer then rectifies this AC singnal to DC. The DC output of the rectifer inherently has ripple, 
+so LDO follows this rectifer to produce regulated DC output. The reference and biasing circuit generates required 
+reference and biasing DC voltages for the LDO. \\
 
- 
+The simulation of the PRU system is done is two steps. As this system can be functionally divided into two sub-system: 
+coupling system and Power Management System (\acrshort{pms}), fisrtly PMS is simulated excluding the coupled antennas 
+to characterise the performace of PMS. Secondly, the whole PRU system: PMS with coupled antenna is simulated to observe 
+the wireless power transfer and then management of this transferred power. Though it has already been told earlier, 
+one important thing must be mentioned here again before going further. Even though reference and biasing circuit has 
+been integrated into the PMS system, it has been designed with an option to override it externally. This externally 
+supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system baises 
+and reference will be explicitly noted. \\
+
+Figure [FIGURE] is testbench setup for PMS simualtion. PMS block in the picture includes rectifer, LDO and RB. The values external 
+biases and references and off-chip components are listed in table [TABLE]. The requirement and choice of these components 
+are described in their respecitve design section above.
+
+
+
 \clearpage
 \newpage
 \nocite{*}
