@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc, url}
 \usepackage{float}
-\usepackage{graphicx}
+\usepackage{graphicx, epstopdf}
 \usepackage{subfig}
 \usepackage{multirow}
 \usepackage{siunitx}
@@ -62,7 +62,7 @@ This report is a brief overview of my master project on wireless power transfer 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.8\textwidth]{img/block_diagram.pdf}
+   \includegraphics[width=\textwidth]{img/block_diagram.pdf}
    \caption{Block diagram of complete design}
    \label{fig:blockd}
 \end{figure}
@@ -74,11 +74,12 @@ As shown in the block diagram above, the design includes antennas rectifier, \ac
 \begin{center}
 \begin{tabular}{c|c}
 \hline \hline
-Technology & TSMC 90nm CMOS \\ \hline
-Chip area & TBA mm\textsuperscript{2} \\ \hline
-Vpp for chip & 2.5 V \\ \hline
-Max. load & 10 mA \\ \hline
-Output dc voltage & 1.8 V \\ 
+Technology 		& TSMC 90nm 9M-1P\\ \hline
+Chip area 			& TBA mm\textsuperscript{2} \\ \hline
+Input AC voltage	& 2.5 Vp \\ \hline
+Operating frequency & 13.56 MHz \\ \hline
+Maximum load 		& 10 mA \\ \hline
+Output DC voltage 	& 1.8 V \\ 
 \hline \hline
 \end{tabular}
 \end{center}
@@ -101,47 +102,50 @@ All the above discussed topology suffer from either large voltage drop or large 
 
 In this project, active rectifier is chosen, primarily for better VCE and PCE and secondarily to avoid the use large on chip capacitors. \cite{rectrcc}  and \cite{rectcomp} have discussed same active rectifier topology with a slight difference in active circuitry. \cite{rectrcc} has implemented comparator with compensating the delay of comparator's output falling whereas \cite{rectcomp} has implemented comparator with compensating both the falling and the rising delay of comparator's output in expense of added circuit complexity and power consumption. \cite{rectrcc} has been used here for its simple design. \\
 
-Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vac \geq Vdc + Vtn$ for conduction.
+Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vac \geq Vdc + Vtn$ for conduction. \\
 
 \begin{figure} [htbp]
   \centering 
-  \subfloat[Conventional full wave bridge rectifier]  {\includegraphics[width=.45\textwidth]{img/rect_conv.pdf} \label{rect_conv}}
+  \subfloat[Conventional full wave bridge rectifier]  {\includegraphics[width=.49\textwidth]{img/rectifier_full_bridge.pdf} \label{rect_conv}}
 \hfill
- \subfloat[Gate cross coupled full wave rectifier]  {\includegraphics[width=.45\textwidth]{img/rect_cc.pdf}\label{rect_cc}}
+ \subfloat[Gate cross coupled full wave rectifier]  {\includegraphics[width=.49\textwidth]{img/rectifier_full_cc.pdf}\label{rect_cc}}
  \caption{Rectifier topologies: conventional and gate cross coupled} 
 \label{rect_conv_cc} 
 \end{figure}
 
 The proposed active circuit in \ref{rect_rcc} is improvement over \ref{rect_cc} which eliminates $Vtn$ drop required for conduction by replacing diode connected nMOS with devices controlled by active circuit as shown in figure \ref{rcc}. The active circuit is a four input comparator that turns on nMOSes fast when Vac > Vdc and turns off fast to avoid flow of current. \\
 
-For the illustration of operation of comparator, consider the case when $Vin1 > Vin2$ i.e. $Vin1 > 0$ and $Vin2 < 0$. During this half cycle, comparator $D1$ output is low and turns off $Mn2$ and also, $Mp1$ is reversed biased and hence there is no path to flow current along $Mn2$ and $Mp1$. For simplicity, assume $Vac =  Vin1 - Vin2$. When $Vac$ reaches $\acrshort{vtp}$, $Mp3$ turns on which shorts $Vin1$ to $Vrec$. When $Vac > Vrec$, $D2$ output goes high, which turns on $Mn4$ and starts the conduction path for the first half cycle and starts charging $Cl$. When $Vac$ reaches maximum, it starts to decrease and at $Vac < Vrec$, conduction stops as output of $D2$ is low and $Mn4$ is off. As $Vac$ further decreases to below $Vtp$, $Mp3$ if off too. This way rectifier in \ref{rect_rcc}  conducts during positive half cycle eliminating the $Vtn$ drop seen in \ref{rect_cc}. Now the only drop is the conduction drop due to channel resistance of two pass devices along the conduction path. This drop is much less because during conduction both the device are operating in the linear region with small resistance. The operation is similar for $Vin2 > Vin1$ where $Mn4$ and $Mp3$ are off and $Mn2$ and $Mp1$ conduct to charge $Cl$. 
-
-\begin{figure} [H]
-  \centering 
-  \subfloat[Gate cross coupled full wave active rectifer]  {\includegraphics[width=.49\textwidth]{img/rect_rcc.pdf} \label{rect_rcc}}
-  \hfill
- \subfloat[Active circuit $D2$]  {\includegraphics[width=.42\textwidth]{img/rcc.pdf} \label{rcc}}
- \caption{Active rectifier and active circuitry (comparator)} 
-\label{rect_rcc_rcc} 
-\end{figure}
-
-
-
-Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vac > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vac < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M9$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vac < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
-
-The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes.
-Similarly, the value of ripple rejection capacitor is chosen 100nF for better ripple rejection at the expense of some additional settling time.
+For the illustration of operation of comparator, consider the case when $Vin1 > Vin2$ i.e. $Vin1 > 0$ and $Vin2 < 0$. During this half cycle, comparator $D1$ output is low and turns off $Mn2$ and also, $Mp1$ is reversed biased and hence there is no path to flow current along $Mn2$ and $Mp1$. For simplicity, assume $Vac =  Vin1 - Vin2$. When $Vac$ reaches $\acrshort{vtp}$, $Mp3$ turns on which shorts $Vin1$ to $Vrec$. When $Vac > Vrec$, $D2$ output goes high, which turns on $Mn4$ and starts the conduction path for the first half cycle and starts charging $Cl$. When $Vac$ reaches maximum, it starts to decrease and at $Vac < Vrec$, conduction stops as output of $D2$ is low and $Mn4$ is off. As $Vac$ further decreases to below $Vtp$, $Mp3$ if off too. This way rectifier in \ref{rect_rcc}  conducts during positive half cycle eliminating the $Vtn$ drop seen in \ref{rect_cc}. Now the only drop is the conduction drop due to channel resistance of two pass devices along the conduction path. This drop is much less because during conduction both the device are operating in the linear region with small resistance. The operation is similar for $Vin2 > Vin1$ where $Mn4$ and $Mp3$ are off and $Mn2$ and $Mp1$ conduct to charge $Cl$. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/rectifier_testbench.png} 
+   \includegraphics[width=\textwidth]{img/rectifier_schematic.pdf} 
+   \caption{Gate cross coupled full wave active rectifer]}
+   \label{rect_rcc}
+\end{figure}
+
+Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vac > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vac < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M9$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vac < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/rectifier_rcc5.pdf} 
+   \caption{Comparator circuit, RCC }
+   \label{rcc}
+\end{figure}
+
+The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes.
+Similarly, the value of ripple rejection capacitor is chosen 100nF for better ripple rejection at the expense of some additional settling time. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/rectifier_testbench.pdf} 
    \caption{Testbench for rectifier}
    \label{rect_tb}
 \end{figure}
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+\begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/rectifier_VI.pdf} 
+   \includegraphics[width=\textwidth]{img/rectifier_VI.pdf} 
    \caption{Voltage and current waveforms of the rectifier}
    \label{rect_plot}
 \end{figure}
@@ -179,14 +183,14 @@ Table \ref{rect_spec} summarises the important parameters of this design and its
 Wn/Ln, Wp/Lp 		& 720um/280nm, 1.2mm/280nm \\ \hline
 Rectifier area 		& TBA mm\textsuperscript{2} \\ \hline
 Operating frequency 	& 13.56 MHz \\ \hline
-Input ac magnitude	& 2.5  \acrshort{vp} \\ \hline
+Input ac magnitude	& 2.5  \acrshort{vp} (Min. 1.85 Vp)\\ \hline
 Load current 		& 11 mA \\ \hline
-Ripple rejection cap 	& 100nF \\ \hline
+Ripple rejection cap 	& 100 nF \\ \hline
 Output dc voltage 	& 2.2 V \\ \hline
-Ripple \acrshort{vpp} 	& 3 mV \\ \hline
+Ripple \acrshort{vpp} & 3 mV \\ \hline
 Peak current 		& 63.7 mA \\ \hline
-PCE 			& 84.5\% \\ \hline
-VCE 			& 88.6\% \\
+PCE 				& 84.5\% \\ \hline
+VCE 				& 88.6\% \\
 \hline \hline
 \end{tabular}
 \end{center}

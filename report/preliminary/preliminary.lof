@@ -4,26 +4,25 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{4}{figure.caption.3}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conventional full wave bridge rectifier}}}{4}{subfigure.2.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gate cross coupled full wave rectifier}}}{4}{subfigure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Active rectifier and active circuitry (comparator)\relax }}{5}{figure.caption.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gate cross coupled full wave active rectifer}}}{5}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Active circuit $D2$}}}{5}{subfigure.3.2}
-\contentsline {figure}{\numberline {4}{\ignorespaces Testbench for rectifier\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {5}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {6}{\ignorespaces Voltage and power conversion efficiency\relax }}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {7}{\ignorespaces Generic LDO with pMOS pass device\relax }}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {8}{\ignorespaces CMOS implemenation of LDO\relax }}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {9}{\ignorespaces LDO transient simulation\relax }}{13}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces LDO stability before and after compensation\relax }}{14}{figure.caption.12}
-\contentsline {figure}{\numberline {11}{\ignorespaces BGR and bias generation circuit\relax }}{16}{figure.caption.14}
-\contentsline {figure}{\numberline {12}{\ignorespaces BGR over temperature varitaion\relax }}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {13}{\ignorespaces BGR DC performance\relax }}{18}{figure.caption.16}
-\contentsline {figure}{\numberline {14}{\ignorespaces BGR transient performance\relax }}{18}{figure.caption.17}
-\contentsline {figure}{\numberline {15}{\ignorespaces Antenna model\relax }}{20}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{20}{subfigure.15.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{20}{subfigure.15.2}
-\contentsline {figure}{\numberline {16}{\ignorespaces Real antenna model schematic\relax }}{20}{figure.caption.20}
-\contentsline {figure}{\numberline {17}{\ignorespaces Antenna coupling model\relax }}{21}{figure.caption.22}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{21}{subfigure.17.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{21}{subfigure.17.2}
-\contentsline {figure}{\numberline {18}{\ignorespaces Resonant coupled inductive link\relax }}{22}{figure.caption.24}
-\contentsline {figure}{\numberline {19}{\ignorespaces Power loss before and after matching\relax }}{23}{figure.caption.25}
+\contentsline {figure}{\numberline {3}{\ignorespaces Gate cross coupled full wave active rectifer]\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparator circuit, RCC \relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {5}{\ignorespaces Testbench for rectifier\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {6}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {7}{\ignorespaces Voltage and power conversion efficiency\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Generic LDO with pMOS pass device\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces CMOS implemenation of LDO\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces LDO transient simulation\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces LDO stability before and after compensation\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {12}{\ignorespaces BGR and bias generation circuit\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {13}{\ignorespaces BGR over temperature varitaion\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {14}{\ignorespaces BGR DC performance\relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {15}{\ignorespaces BGR transient performance\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {16}{\ignorespaces Antenna model\relax }}{20}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{20}{subfigure.16.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{20}{subfigure.16.2}
+\contentsline {figure}{\numberline {17}{\ignorespaces Real antenna model schematic\relax }}{20}{figure.caption.21}
+\contentsline {figure}{\numberline {18}{\ignorespaces Antenna coupling model\relax }}{21}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{21}{subfigure.18.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{21}{subfigure.18.2}
+\contentsline {figure}{\numberline {19}{\ignorespaces Resonant coupled inductive link\relax }}{22}{figure.caption.25}
+\contentsline {figure}{\numberline {20}{\ignorespaces Power loss before and after matching\relax }}{23}{figure.caption.26}
