@@ -133,8 +133,34 @@ Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \r
    \label{rcc}
 \end{figure}
 
-The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes.
-Similarly, the value of ripple rejection capacitor is chosen 100nF for better ripple rejection at the expense of some additional settling time. \\
+The design parameters for the rectifier is listed in table  \ref{tab:rect_parameter}. The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes. Thought maximum load for this work is 10 mA, It is always simulated with 1 mA extra load. This extra current is to account for the fact that RCC is self powered and LDO which will follow this rectifier will be powered by $Vrec$. Similarly, the value of ripple rejection capacitor is chosen 100nF. This size of 
+filter capacitor is calculated from capacitor current-voltage relationship with the assumption of keeping peak to peak ripple voltage below 5 mV to deliver 11 mA current.  \\
+
+\begin{table}[H]
+\caption{Rectifier design parameters}
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+Wn/Ln, Wp/Lp 		& 720um/280nm, 1.2mm/280nm \\ \hline
+Rectifier area 		& TBA mm\textsuperscript{2} \\ \hline
+Operating frequency 	& 13.56 MHz \\ \hline
+Input ac magnitude	& 2.5  \acrshort{vp}\\ \hline
+Load current 		& 11 mA \\ \hline
+Ripple rejection capacitor	& 100 nF \\ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:rect_parameter}
+\end{table}
+
+Figure \ref{rect_tb} is the test bench setup for simulation of the rectifier. Figure \ref{rect_plot} show the simulation results showing voltages at the input ac and output rectified DC 
+voltages and current through rectifying MOSes. These  
+waveforms clearly follows the working principle discussed above. Two important observations can be made from 
+plots. First, the rectified output $Vrec$ is 2.2 V for $Vpp$ ac input of 2.5 V for driving which means the 
+voltage loss has been significantly reduced and the loss of around 300 mV yields to the conduction loss due 
+the channel resistance. Secondly, the reverse current from output to input has been effectively eliminated as 
+there is only positive current flowing to the load when all conducting devices 
+are on.  \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -150,21 +176,27 @@ Similarly, the value of ripple rejection capacitor is chosen 100nF for better ri
    \label{rect_plot}
 \end{figure}
 
-Figure \ref{rect_tb} is the testbench setup for simulation of the rectifer. Thought maximum load for thsi work is 10 mA, 
-It is always simulated with 1 mA extra load. This extra current is to 
-account for the fact that RCC is self powered and LDO which will follow this rectifier will be powered by $Vrec$. Figure \ref{rect_plot} show the simulation results showing voltages at the input ac and output rectified DC 
-voltages and current through rectifying MOSes. These  
-waveforms clearly follows the working principle discussed above. Two important observations can be made from 
-plots. First, the rectified output $Vrec$ is 2.2 V for $Vpp$ ac input of 2.5 V for driving which means the 
-voltage loss has been significantly reduced and the loss of around 300 mV yields to the conduction loss due 
-the channel resistance. Secondly, the reverse current from output to input has been effectively eliminated as 
-there is only positive current flowing to the load when all conducting devices 
-are on.  \\
+Figure  \ref{fig:rect_v_post}  presents both pre and post layout results of input voltages, $Vin1$ and $Vin2$  and output voltage, $Vrec$, for one cycle of ac input. The closer view of rectified output is shown in figure \ref{fig:rect_ripple}. The voltage drop of about 60 mV in layout result is accounted for the voltage drop due to 
+the resistance of high current conduction path. \\
+
+\begin{figure}[H] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/rectifier_V_post.pdf} 
+   \caption{Voltages waveform for pre and post layout}
+   \label{fig:rect_v_post}
+\end{figure}
+
+\begin{figure}[H] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/rectifier_ripple.pdf} 
+   \caption{Rectified DC output for pre and post layout}
+   \label{fig:rect_ripple}
+\end{figure}
 
 Similarly, figure  \ref{rect_ce} shows PCE, ratio powered deliverd to load to average power from the source and 
 VCE, ratio of rectified DC, $Vrec$ to peak ac input, |$Vac$| with respect to magnitude peak ac input signal. Both 
 PCE and VCE are very less for input ac amplitude less then 1.8 V. It can be explained by the fact that required 
-bias current and gate drive voltage for RCC circuit are not achieved for smaller input. [MORE COMMENT ?]
+bias current and gate drive voltage for RCC circuit are not achieved for smaller input. [INCLUDE POST LAYOUT RESULT TOO] \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -173,28 +205,27 @@ bias current and gate drive voltage for RCC circuit are not achieved for smaller
    \label{rect_ce}
 \end{figure}
 
-Table \ref{rect_spec} summarises the important parameters of this design and its performance.
+Table \ref{tab:rect_spec} comparatively summarises performance for pre and post layout result of the design. The layout design is attached in appendix. The layout 
+is made symmetrical with four inputs, as seen in test bench figure \ref{rect_tb}, instead of two. This is done to make the current conducting path equal which result in 
+equal drop in voltage when it reaches the rectifying MOSes. Simialarly the paths from the pad to the recitifier inputs are mask blocked for random metal fill to avoid 
+inter layer coupling [WHY???]. The high current conduction routes are designed with wide parallel path of many higher level metal layers for reducing resistance in conduction path.
 
 \begin{table}[H]
-\caption{Rectifier parameter and performance}
+\caption{Rectifier performance summary}
 \begin{center}
-\begin{tabular}{c|c}
+\begin{tabular}{c|c|c}
 \hline \hline
-Wn/Ln, Wp/Lp 		& 720um/280nm, 1.2mm/280nm \\ \hline
-Rectifier area 		& TBA mm\textsuperscript{2} \\ \hline
-Operating frequency 	& 13.56 MHz \\ \hline
-Input ac magnitude	& 2.5  \acrshort{vp} (Min. 1.85 Vp)\\ \hline
-Load current 		& 11 mA \\ \hline
-Ripple rejection cap 	& 100 nF \\ \hline
-Output dc voltage 	& 2.2 V \\ \hline
-Ripple \acrshort{vpp} & 3 mV \\ \hline
-Peak current 		& 63.7 mA \\ \hline
-PCE 				& 84.5\% \\ \hline
-VCE 				& 88.6\% \\
+				 & \textbf{Schematic}		& \textbf{Post-layout} \\
+\hline \hline
+Rectified DC	 	& 2.23 V 				& 2.17 V	\\ \hline
+Ripple \acrshort{vpp} & 3.1 mV 				& 3 mV	\\ \hline
+Peak diode current 	& 63.7 mA 			&	-	\\ \hline
+PCE 				& 84.5\% 				&	-	\\ \hline
+VCE 				& 88.6\% 				&	-	\\
 \hline \hline
 \end{tabular}
 \end{center}
-\label{rect_spec}
+\label{tab:rect_spec}
 \end{table}
 
 
@@ -251,6 +282,30 @@ have been achieved by cascading multiple single stage but with increased difficu
 amplifier stable. So for achieving higher DC gain and at the same time for stability convenience, folded cascode 
 amplifier \cite[pp. xx]{razavi_2001} is chosen. \\
 
+\begin{table}[H]
+\caption{LDO design parameters}
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+Pass device				& pMOS \\ \hline
+(Wp/Lp)\textsubscript{pass} 	& 240um/280nm \\ \hline
+Input supply 				& >2.2 V \\ \hline
+Error amplifier				& folded cascode \\ \hline
+Vbias2 					& 1.1 V \\ \hline
+Vbias3					& 0.88 V \\ \hline
+Vbias4					& 0.68 V \\ \hline
+Vref						& 1.17 V \\ \hline
+C\textsubscript{load} 		& > 0.6 \si{\micro\farad}  \\ \hline
+R\textsubscript{esr} 	 		& > 0.8 $\Omega$ \\ \hline
+Regulated output voltage 		& 1.8 V \\ \hline
+I\textsubscript{load} max. 		& 10 mA \\
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:ldo_parameter}
+\end{table}
+
+
 The amplifier has a nMOS differential input stage, perferably for its higher mobility for achieving more gain.
 Reference voltage, V\textsubscript{ref} will be bandgap voltage, 1.17 V, of silicon and  thus \acrshort{icmr} 
 for EA lies almost at half the supply voltage. This amplifier drives a pMOS buffer which is used to supply 
@@ -269,6 +324,13 @@ driven by a negative signal with respect to input which means pMOS is preferable
 compared to BJTs, pMOS requires less headroom and less quiescent current to be driven\cite{ldo_ti_pmos}, 
 \cite{ldo_ti_stability}, which means low dropout and low power operation, typical requirement of today's micro 
 devices' power supply. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/ldo_testbench.pdf} 
+   \caption{LDO testbench setup}
+   \label{fig:ldo_testbench}
+\end{figure}
 
 However, pMOS as a pass device in LDO causes challenges in stability. As mentioned above, LDO utilises a high 
 gain feedback loop in order to provide a regulated output voltages independent of load current and in any system 
@@ -306,19 +368,17 @@ Figure \ref{ldo_tran} is the transient simulations of the LDO which illustrates 
 Figure  \ref{ldo_sta} the gain open loop gain and phase margin of LDO without (upper plot) and with (lower plot) compensation. Though the stability analysis plots shown above is for typical corner of the devices, the values of $R\textsubscript{esr}$ and $C\textsubscript{load}$ are chosen for PM of at least 45\textdegree  for the worst case i.e. slow corner and maximum load condition. \\ 
 
 \begin{table}[H]
-\caption{LDO parameter and performance} 
+\caption{LDO performance summary} 
 \begin{center}
-\begin{tabular}{c|c}
+\begin{tabular}{c|c|c}
 \hline \hline
-(Wp/Lp)\textsubscript{pass} & 240um/280nm \\ \hline
-Input supply voltage & 2.2 V \\ \hline
-Regulated output voltage & 1.8 V \\ \hline
-I\textsubscript{load} max. & 10 mA \\ \hline
-C\textsubscript{load} min. & > 0.6 \si{\micro\farad}  \\ \hline
-R\textsubscript{esr} min. & > 0.8 $\Omega$ \\ \hline
-PM & 84\textdegree (typical) \\ %\hline
-%Load regulation & TBA\\ \hline
-%Line regulation &    TBA \\ 
+				 & \textbf{Schematic}		& \textbf{Post-layout} \\
+\hline \hline
+PSSR 			 & dB				&	\\ \hline
+Phase margin		 & 84\textdegree 		&	 \\ \hline
+Gain margin		 & dB				&	 \\ \hline
+Load regulation 	& 					&	\\ \hline
+Line regulation 		&   					& 	\\ 
 \hline \hline
 \end{tabular}
 \end{center}

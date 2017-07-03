@@ -1,8 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
 \contentsline {table}{\numberline {1}{\ignorespaces Project specifications\relax }}{2}{table.caption.2}
-\contentsline {table}{\numberline {2}{\ignorespaces Rectifier parameter and performance\relax }}{9}{table.caption.9}
-\contentsline {table}{\numberline {3}{\ignorespaces LDO parameter and performance\relax }}{14}{table.caption.14}
-\contentsline {table}{\numberline {4}{\ignorespaces BGR parameter and performance\relax }}{17}{table.caption.19}
-\contentsline {table}{\numberline {5}{\ignorespaces Self inductance estimates comparision\relax }}{20}{table.caption.22}
-\contentsline {table}{\numberline {6}{\ignorespaces Coupling parameters for varying coils distance\relax }}{21}{table.caption.24}
+\contentsline {table}{\numberline {2}{\ignorespaces Rectifier design parameters\relax }}{7}{table.caption.6}
+\contentsline {table}{\numberline {3}{\ignorespaces Rectifier performance summary\relax }}{12}{table.caption.12}
+\contentsline {table}{\numberline {4}{\ignorespaces LDO design parameters\relax }}{15}{table.caption.15}
+\contentsline {table}{\numberline {5}{\ignorespaces LDO performance summary\relax }}{18}{table.caption.18}
+\contentsline {table}{\numberline {6}{\ignorespaces BGR parameter and performance\relax }}{21}{table.caption.23}
+\contentsline {table}{\numberline {7}{\ignorespaces Self inductance estimates comparision\relax }}{24}{table.caption.26}
+\contentsline {table}{\numberline {8}{\ignorespaces Coupling parameters for varying coils distance\relax }}{25}{table.caption.28}
