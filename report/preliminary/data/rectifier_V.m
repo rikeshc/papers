@@ -1,21 +1,9 @@
-% Vin1 Vin2 Vac and Vrec plot for rectifier voltages
-% data includes 150u to 200u trans
-
-%% Read data from file
-clear all;
-V_sch = importdata('rectifier_sch_V.matlab');
-time = V_sch.data(:, 1);
-Vin1 = V_sch.data(:, 2);
-Vin2 = V_sch.data(:, 4);
-Vac = V_sch.data(:, 8);
-Vrec = V_sch.data(:, 6);
-
-clear V_sch;    %saving only required variables
-save('V_sch');
+% Vin1 Vin2 Vac and Vrec plot for rectifier voltages schematics
 
 %% Load 
 clear all;
-load('V_sch.mat');
+load('V_sch.mat'); 
+% data includes 150u to 200u trans
 
 %% plot data
 
