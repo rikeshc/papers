@@ -13,18 +13,24 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Voltage and power conversion efficiency\relax }}{11}{figure.caption.11}
 \contentsline {figure}{\numberline {10}{\ignorespaces Generic LDO with pMOS pass device\relax }}{13}{figure.caption.13}
 \contentsline {figure}{\numberline {11}{\ignorespaces CMOS implemenation of LDO\relax }}{14}{figure.caption.14}
-\contentsline {figure}{\numberline {12}{\ignorespaces LDO transient simulation\relax }}{17}{figure.caption.16}
-\contentsline {figure}{\numberline {13}{\ignorespaces LDO stability before and after compensation\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {14}{\ignorespaces BGR and bias generation circuit\relax }}{20}{figure.caption.19}
-\contentsline {figure}{\numberline {15}{\ignorespaces BGR over temperature varitaion\relax }}{21}{figure.caption.20}
-\contentsline {figure}{\numberline {16}{\ignorespaces BGR DC performance\relax }}{22}{figure.caption.21}
-\contentsline {figure}{\numberline {17}{\ignorespaces BGR transient performance\relax }}{22}{figure.caption.22}
-\contentsline {figure}{\numberline {18}{\ignorespaces Antenna model\relax }}{24}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{24}{subfigure.18.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{24}{subfigure.18.2}
-\contentsline {figure}{\numberline {19}{\ignorespaces Real antenna model schematic\relax }}{24}{figure.caption.25}
-\contentsline {figure}{\numberline {20}{\ignorespaces Antenna coupling model\relax }}{25}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{25}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{25}{subfigure.20.2}
-\contentsline {figure}{\numberline {21}{\ignorespaces Resonant coupled inductive link\relax }}{26}{figure.caption.29}
-\contentsline {figure}{\numberline {22}{\ignorespaces Power loss before and after matching\relax }}{27}{figure.caption.30}
+\contentsline {figure}{\numberline {12}{\ignorespaces LDO testbench setup\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {13}{\ignorespaces LDO transient simulation\relax }}{17}{figure.caption.17}
+\contentsline {figure}{\numberline {14}{\ignorespaces LDO step line regulation\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {15}{\ignorespaces LDO step load regulation\relax }}{19}{figure.caption.19}
+\contentsline {figure}{\numberline {16}{\ignorespaces LDO stability before and after compensation\relax }}{20}{figure.caption.20}
+\contentsline {figure}{\numberline {17}{\ignorespaces PSSR performance\relax }}{21}{figure.caption.21}
+\contentsline {figure}{\numberline {18}{\ignorespaces Regulated voltage with load variation\relax }}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {19}{\ignorespaces Regulated voltage with supply variation\relax }}{23}{figure.caption.23}
+\contentsline {figure}{\numberline {20}{\ignorespaces BGR and bias generation circuit\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {21}{\ignorespaces BGR over temperature varitaion\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {22}{\ignorespaces BGR DC performance\relax }}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {23}{\ignorespaces BGR transient performance\relax }}{28}{figure.caption.28}
+\contentsline {figure}{\numberline {24}{\ignorespaces Antenna model\relax }}{30}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{30}{subfigure.24.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{30}{subfigure.24.2}
+\contentsline {figure}{\numberline {25}{\ignorespaces Real antenna model schematic\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {26}{\ignorespaces Antenna coupling model\relax }}{31}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{31}{subfigure.26.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{31}{subfigure.26.2}
+\contentsline {figure}{\numberline {27}{\ignorespaces Resonant coupled inductive link\relax }}{32}{figure.caption.35}
+\contentsline {figure}{\numberline {28}{\ignorespaces Power loss before and after matching\relax }}{33}{figure.caption.36}

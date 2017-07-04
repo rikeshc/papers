@@ -42,14 +42,14 @@ legend(h, 'Vin1, schematic', 'Vin2, schematic', 'Vrec, schematic', 'Vin1, layout
 %legend( 'Vin1', 'Vin2','Vrec', 'Vrec:post', 'Vin1:post', 'Vin2:post', 'location', 'best');
 xlabel('time (ns)'); ylabel('Voltage (V)');
 xlim([0, 74]); 
-%ylim([40, 100]);
+ylim([-0.25, 2.5]);
 %%
 f2 = figure(2); % ripple
 p = plot(time2(from: to), Vrec(from: to)); hold on;
     plot(t_pex2(from2:to2), Vrec_pex(from2:to2)); hold off;
 set(p, 'linewidth', plotwidth);
-legend1 = sprintf('Schematic: Vrec = %.2f V, Vrip = %.1f mV', mean(Vrec), peak2peak(Vrec)*1000);
-legend2 = sprintf('Post-layout: Vrec = %.2f V, Vrip = %.1f mV', mean(Vrec_pex), peak2peak(Vrec_pex)*1000);
+legend1 = sprintf('Schematic: Vrec = %.3f V, Vrip = %.1f mV', mean(Vrec), peak2peak(Vrec)*1000);
+legend2 = sprintf('Post-layout: Vrec = %.3f V, Vrip = %.1f mV', mean(Vrec_pex), peak2peak(Vrec_pex)*1000);
 l1 = legend(legend1, legend2, 'location', 'best');
 xlabel('time (ns)'); ylabel('Voltage (V)');
 xlim([0, 150]);

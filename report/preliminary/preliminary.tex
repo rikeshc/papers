@@ -220,8 +220,8 @@ inter layer coupling [WHY???]. The high current conduction routes are designed w
 Rectified DC	 	& 2.23 V 				& 2.17 V	\\ \hline
 Ripple \acrshort{vpp} & 3.1 mV 				& 3 mV	\\ \hline
 Peak diode current 	& 63.7 mA 			&	-	\\ \hline
-PCE 				& 84.5\% 				&	-	\\ \hline
-VCE 				& 88.6\% 				&	-	\\
+PCE 				& 84.5 \% 				&	-	\\ \hline
+VCE 				& 88.6 \% 				&	86.2 \%	\\
 \hline \hline
 \end{tabular}
 \end{center}
@@ -327,7 +327,7 @@ devices' power supply. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ldo_testbench.pdf} 
+   \includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
    \caption{LDO testbench setup}
    \label{fig:ldo_testbench}
 \end{figure}
@@ -351,21 +351,61 @@ stable LDO system. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ldo_tran.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_transient.pdf} 
    \caption{LDO transient simulation}
-   \label{ldo_tran}
+   \label{fig:ldo_tran}
 \end{figure}
-
-Figure \ref{ldo_tran} is the transient simulations of the LDO which illustrates the generation of $Vreg$ for both high load and no load condition. This waveforms show that once the $Vdd$ reaches high enough to create proper biasing, the regulated voltage of 1.8 V is produced and remains constant henceforth.
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ldo_sta.pdf} 
-   \caption{LDO stability before and after compensation}
-   \label{ldo_sta}
+   \includegraphics[width=\textwidth]{img/ldo_liner.pdf} 
+   \caption{LDO step line regulation}
+   \label{fig:ldo_liner}
 \end{figure}
 
-Figure  \ref{ldo_sta} the gain open loop gain and phase margin of LDO without (upper plot) and with (lower plot) compensation. Though the stability analysis plots shown above is for typical corner of the devices, the values of $R\textsubscript{esr}$ and $C\textsubscript{load}$ are chosen for PM of at least 45\textdegree  for the worst case i.e. slow corner and maximum load condition. \\ 
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo_loadr.pdf} 
+   \caption{LDO step load regulation}
+   \label{fig:ldo_loadr}
+\end{figure}
+
+Figure \ref{fig:ldo_tran} is the transient simulations of the LDO which illustrates the generation of $Vreg$ for 
+both high load and no load condition. This waveforms show that once the $Vdd$ reaches high enough to create 
+proper biasing, the regulated voltage of 1.8 V is produced and remains constant henceforth. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo_ac.pdf} 
+   \caption{LDO stability before and after compensation}
+   \label{fig:ldo_sta}
+\end{figure}
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo_pssr.pdf} 
+   \caption{PSSR performance}
+   \label{fig:ldo_pssr}
+\end{figure}
+
+Figure  \ref{fig:ldo_sta} the gain open loop gain and phase margin of LDO without (upper plot) and with (lower 
+plot) compensation. Though the stability analysis plots shown above is for typical corner of the devices, the 
+values of $R\textsubscript{esr}$ and $C\textsubscript{load}$ are chosen for PM of at least 45\textdegree  for 
+the worst case i.e. slow corner and maximum load condition. \\
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo_Iload.pdf} 
+   \caption{Regulated voltage with load variation}
+   \label{fig:ldo_Iload}
+\end{figure}
+
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo_dc.pdf} 
+   \caption{Regulated voltage with supply variation}
+   \label{fig:ldo_dc}
+\end{figure}
 
 \begin{table}[H]
 \caption{LDO performance summary} 
@@ -374,9 +414,9 @@ Figure  \ref{ldo_sta} the gain open loop gain and phase margin of LDO without (u
 \hline \hline
 				 & \textbf{Schematic}		& \textbf{Post-layout} \\
 \hline \hline
-PSSR 			 & dB				&	\\ \hline
-Phase margin		 & 84\textdegree 		&	 \\ \hline
-Gain margin		 & dB				&	 \\ \hline
+PSSR 			 & -42 dB				&	\\ \hline
+Phase margin		 & 76\textdegree 		&	 \\ \hline
+Gain margin		 & 36 dB				&	 \\ \hline
 Load regulation 	& 					&	\\ \hline
 Line regulation 		&   					& 	\\ 
 \hline \hline

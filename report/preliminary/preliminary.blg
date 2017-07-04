@@ -1,15 +1,29 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'preliminary.blg'
-[54] biber-darwin:276> INFO - === Mon Jul  3, 2017, 23:35:25
-[54] Biber.pm:333> INFO - Reading 'preliminary.bcf'
-[165] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[201] Biber.pm:2977> INFO - Processing section 0
-[225] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
-[230] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[232] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
-[459] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[459] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[459] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[459] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[481] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
-[484] bbl.pm:596> INFO - Output to preliminary.bbl
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'preliminary.blg'
+[40] biber:303> INFO - === Tue Jul  4, 2017, 10:06:21
+[68] Biber.pm:359> INFO - Reading 'preliminary.bcf'
+[175] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[204] Biber.pm:3670> INFO - Processing section 0
+[226] Biber.pm:3840> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
+[239] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[250] bibtex.pm:1292> INFO - Found BibTeX data source 'preliminary.bib'
+[256] Utils.pm:164> WARN - month field 'May' in entry 'ant_SZ_formula' is not an integer - this will probably not sort properly.
+[285] Utils.pm:164> WARN - month field 'Jan' in entry 'ldo_quiescent' is not an integer - this will probably not sort properly.
+[286] Utils.pm:164> WARN - ISBN '0470881321, 9780470881323' in entry 'baker_2010' is invalid - run biber with '--validate_datamodel' for details.
+[287] Utils.pm:164> WARN - ISBN '0072380322, 9780072380323' in entry 'razavi_2001' is invalid - run biber with '--validate_datamodel' for details.
+[289] Utils.pm:164> WARN - month field 'Nov' in entry 'ldo_bulkmod' is not an integer - this will probably not sort properly.
+[292] Utils.pm:164> WARN - month field 'Sept' in entry 'ant_PSC_geometry' is not an integer - this will probably not sort properly.
+[295] Utils.pm:164> WARN - month field 'Dec' in entry 'rectrcc' is not an integer - this will probably not sort properly.
+[296] Utils.pm:164> WARN - month field 'Sept' in entry 'ldo_psu' is not an integer - this will probably not sort properly.
+[298] Utils.pm:164> WARN - month field 'Aug' in entry 'rectboot' is not an integer - this will probably not sort properly.
+[300] Utils.pm:164> WARN - month field 'April' in entry 'ant_optimal_resonance' is not an integer - this will probably not sort properly.
+[302] Utils.pm:164> WARN - month field 'Aug' in entry 'ldo_ti_pmos' is not an integer - this will probably not sort properly.
+[304] Utils.pm:164> WARN - month field 'Oct' in entry 'ant_inductance_calculation' is not an integer - this will probably not sort properly.
+[306] Utils.pm:164> WARN - month field 'Aug' in entry 'rectcomp' is not an integer - this will probably not sort properly.
+[328] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[328] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[328] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-UK'
+[328] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-UK'
+[340] bbl.pm:608> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
+[344] bbl.pm:712> INFO - Output to preliminary.bbl
+[345] Biber.pm:109> INFO - WARNINGS: 13
