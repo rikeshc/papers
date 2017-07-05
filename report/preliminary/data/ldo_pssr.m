@@ -9,10 +9,10 @@ plotwidth = 1;
 logdB = 20*log10(Re);
 f1 = figure(1);
 semilogx(freq, logdB);
-legend1 = sprintf('PSSR @ 13.56 MHz: %.f dB', logdB(143));
+legend1 = sprintf('PSSR @ 13.56 MHz: %.f dB', logdB(144));
 l1 = legend(legend1, 'location', 'best');
 ylabel('dB'); xlabel('Frequency, Hz');
-xlim([1, 10^8.2]); 
+xlim([1, 10^9]); 
 grid on;
 
 

@@ -22,7 +22,7 @@ l1 = legend('Magnitude', 'PM', 'location', 'best');
 v1 = get(l1,'title');
 set(v1,'string','Unstable');
 %xlabel('Magnitude, V'); ylabel('Veg, V');
-xlim([1, 10^8.2]); 
+xlim([1, 10^9]); 
 
 subplot(2, 1, 2);
 yyaxis left;
@@ -31,17 +31,17 @@ p2 = semilogx(U_freq, S_mag); hold on;
         yyaxis right;
         ylabel('PM');
         semilogx(U_freq, S_PM);
-        ylim([-50, 200]);
+        ylim([-40, 200]);
 set(p2, 'linewidth', plotwidth);
 grid on;
-legend1 = sprintf('GM = %d dB', 36);
-legend2 = sprintf('PM = %d%c', 76, char(176));
+legend1 = sprintf('GM = %d dB', 30);
+legend2 = sprintf('PM = %d%c', 75, char(176));
 l2 = legend(legend1, legend2 ,'location', 'best');
 v2 = get(l2,'title');
 set(v2,'string','Stable');
 
 xlabel('Frquency, Hz'); 
-xlim([1, 10^8.2]); 
+xlim([1, 10^9]); 
 
 
 %% save image

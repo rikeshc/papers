@@ -4,7 +4,7 @@ U = importdata('ldo_ac_unstable.matlab');
 U_freq = U.data(:, 1);
 U_mag = U.data(:, 4);
 U_PM = U.data(:, 2);
-
+%%
 S = importdata('ldo_ac_stable.matlab');
 S_freq = S.data(:, 1);
 S_mag = S.data(:, 4);
