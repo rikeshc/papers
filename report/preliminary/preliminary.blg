@@ -1,17 +1,17 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'preliminary.blg'
-[73] biber-darwin:276> INFO - === Wed Jul  5, 2017, 01:15:13
-[73] Biber.pm:333> INFO - Reading 'preliminary.bcf'
-[196] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[226] Biber.pm:2977> INFO - Processing section 0
-[250] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
-[253] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[256] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
-[279] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
-[492] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[492] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[492] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[492] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[517] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
-[520] bbl.pm:596> INFO - Output to preliminary.bbl
-[520] Biber.pm:106> INFO - WARNINGS: 1
+[53] biber-darwin:276> INFO - === Wed Jul  5, 2017, 21:10:11
+[54] Biber.pm:333> INFO - Reading 'preliminary.bcf'
+[167] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[204] Biber.pm:2977> INFO - Processing section 0
+[230] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
+[234] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[237] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
+[262] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
+[473] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[473] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[473] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
+[473] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
+[497] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
+[499] bbl.pm:596> INFO - Output to preliminary.bbl
+[499] Biber.pm:106> INFO - WARNINGS: 1
