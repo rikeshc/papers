@@ -363,8 +363,9 @@ stable LDO system. \\
 \subsection{Transient response}
 
 Figure \ref{fig:ldo_tran} is the transient simulations of the LDO which illustrates generation of  regulated output voltage, $Vreg$ for 
-both maximun load, 10 mA and ligh load, 10 uA. For maximum load, it takes minimum 98 us to produce stable voltage. Since a large capacitor is used for stabilising 
-LDO, it take longer time. \\
+both maximun load, 10 mA. For maximum load, it takes minimum 107 us to produce stable voltage. Since a large capacitor is used for stabilising 
+LDO, it take longer time. Compared to schematic result, it takes 9 us extra time which can be accounted additional parasitic capacitance of interconnects 
+at the output of LDO.\\
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
@@ -377,7 +378,7 @@ Figure \ref{fig:ldo_loadr} and \ref{fig:ldo_liner} show the transient response o
 It gives information about how well and how fast regulated output settles for line and load variations. In  figure \ref{fig:ldo_loadr} load is given as pulse
  varying from 10 uA to 10 mA with both falling and rising time of 1 ns keeping input supply constant to 2.2 V. Sudden increase in load causes the output voltage to drop. The error amplifier then takes some time adjusts the gate voltage of pass device to low to fully turn on the device. Likewise when the load suddenly drops to minimum, it causes the output voltage to increase. Again error amplifier adjust it back by increasing the gate voltage of pass device to turn it off. Similarly for line variation 
  observation, input, $Vrec$ is pulsed from 2 V to 2.5 V with 1 ns rising and falling time keeping load current constant to 10 mA. Sudden increase in input voltage causes output to increase and vice-versa. As in load variation case, similar recovery pattern is seen. In both case of load and line regulation, the out put voltage is maintained 
- quickly, less than 0.15 us.\\
+ quickly, less than 0.15 us. Both results from schematic and post layout have same transition behaviour except post layout result offset by 3.7 mV as explained in DC response section below. \\
  
   Line regulation, change in regulated output voltage due to maximum change in input voltage and load regulation, change in output voltage due to maximum change in 
   load current are calculated from values shown in respective plots and are listed in table \ref{ldo_spec}.
@@ -399,9 +400,13 @@ It gives information about how well and how fast regulated output settles for li
 \subsection{DC response}
 
 Figure \ref{fig:ldo_dc} and \ref{fig:ldo_Iload} show LDO response to input voltage, $Vrec$ sweep and output load, $Iload$ sweep. As seen in \ref{fig:ldo_dc}, the
-regulator is turned off for input below 1.84 V. Since the input is also the supply for the entire design, higher voltage is required for creating proper biasing 
-of internal folded cascode error amplifier. However after turning on, it requires only 110 mV drop for proper regulation for maximum load and is even lesser for lighter 
-load. This shows that minimum value of supply required for LDO to function properly is 1.84 V.
+regulator is turned off for input below 1.85 V. Since the input is also the supply for the entire design, higher voltage is required for creating proper biasing 
+of internal folded cascode error amplifier. However after turning on, it requires only 100 mV drop for proper regulation for maximum load and is even lesser for lighter 
+load. This shows that minimum value of supply required for LDO to function properly is 1.95 V. In \ref{fig:ldo_Iload}, it is seen that regulated output voltage for post 
+layout simulation is 3.7 mV higher than for schematic. Since $Vreg = (1 + R1/R2)*Vref$, the mismatch in the resistors has resulted in slightly higher ratio, consequently 
+increasing the close loop gain.\\
+
+
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
@@ -448,7 +453,7 @@ Table \ref{ldo_spec} summaries the performance of LDO regulator discussed above.
 from the source. Quiescent current includes biasing currents for error amplifier, feedback resistors and buffer which is obtained by taking the difference of current 
 drawn from the source and current delivered to the load. Both power efficiency and quiescent current is calculated for maximum load operation. 
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{LDO performance summary} 
 \begin{center}
 \begin{tabular}{c|c|c}
