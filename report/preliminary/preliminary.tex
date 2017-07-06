@@ -368,7 +368,7 @@ LDO, it take longer time. \\
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_transient.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_transient_both.pdf} 
    \caption{LDO transient simulation}
    \label{fig:ldo_tran}
 \end{figure}
@@ -384,14 +384,14 @@ It gives information about how well and how fast regulated output settles for li
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_loadr.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_loadr_both.pdf} 
    \caption{LDO step load regulation}
    \label{fig:ldo_loadr}
 \end{figure}
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_liner.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_liner_both.pdf} 
    \caption{LDO step line regulation}
    \label{fig:ldo_liner}
 \end{figure}
@@ -405,14 +405,14 @@ load. This shows that minimum value of supply required for LDO to function prope
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_dc.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_dc_both.pdf} 
    \caption{Regulated voltage with supply variation}
    \label{fig:ldo_dc}
 \end{figure}
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_Iload.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_Iload_both.pdf} 
    \caption{Regulated voltage with load variation}
    \label{fig:ldo_Iload}
 \end{figure}
@@ -439,7 +439,7 @@ off frequency of PSSR, which can also been seen by comparing plots  \ref{fig:ldo
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_pssr.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_pssr_both.pdf} 
    \caption{PSSR performance}
    \label{fig:ldo_pssr}
 \end{figure}
@@ -455,13 +455,13 @@ drawn from the source and current delivered to the load. Both power efficiency a
 \hline \hline
 				 & \textbf{Schematic}		& \textbf{Post-layout} \\
 \hline \hline
-PSSR 			 & -36 dB	@ 13.56 MHz	&	\\ \hline
+PSSR 			 & -36 dB	@ 13.56 MHz	&-59 dB	@ 13.56 MH\\ \hline
 Phase margin		 & 75\textdegree 		&	 \\ \hline
 Gain margin		 & 30 dB				&	 \\ \hline
-Power efficiency		& 81 \%				& 	\\ \hline
-Quiescent current	& 105 uA			& 	\\ \hline
-Load regulation 	& 17 uV/mA				&	\\ \hline
-Line regulation 		&  415 uV/V 					& 	\\ 
+Power efficiency		& 80.9 \%			& 81 \%	\\ \hline
+Quiescent current	& 105 uA			& 114 uA	\\ \hline
+Load regulation 	& 17 uV/mA			& 53 uV/mA	\\ \hline
+Line regulation 		&  435 uV/V 		& -1.162 mV/V	\\ 
 \hline \hline
 \end{tabular}
 \end{center}

@@ -1,6 +1,6 @@
 %% Read transient ldo
 clear all;
-V = importdata('ldo_dc_Iload.matlab');
+V = importdata('ldo_Iload_sch.matlab');
 Iload_sch = V.data(:, 1);
 vreg_sch = V.data(:, 2);
 

@@ -1,9 +1,9 @@
 %% Read transient ldo
 clear all;
-U = importdata('ldo_pssr.matlab');
-freq = U.data(:, 1);
-Re = U.data(:, 2);
-Img = U.data(:, 3);
+U = importdata('ldo_pssr_sch.matlab');
+freq_sch = U.data(:, 1);
+Re_sch = U.data(:, 2);
+Img_sch = U.data(:, 3);
 
 
 
