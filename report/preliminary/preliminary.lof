@@ -25,12 +25,12 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces BGR over temperature varitaion\relax }}{28}{figure.caption.26}
 \contentsline {figure}{\numberline {22}{\ignorespaces BGR DC performance\relax }}{29}{figure.caption.27}
 \contentsline {figure}{\numberline {23}{\ignorespaces BGR transient performance\relax }}{29}{figure.caption.28}
-\contentsline {figure}{\numberline {24}{\ignorespaces Antenna model\relax }}{31}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{31}{subfigure.24.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{31}{subfigure.24.2}
-\contentsline {figure}{\numberline {25}{\ignorespaces Real antenna model schematic\relax }}{31}{figure.caption.31}
-\contentsline {figure}{\numberline {26}{\ignorespaces Antenna coupling model\relax }}{32}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{32}{subfigure.26.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{32}{subfigure.26.2}
-\contentsline {figure}{\numberline {27}{\ignorespaces Resonant coupled inductive link\relax }}{33}{figure.caption.35}
-\contentsline {figure}{\numberline {28}{\ignorespaces Power loss before and after matching\relax }}{34}{figure.caption.36}
+\contentsline {figure}{\numberline {24}{\ignorespaces Real antenna model\relax }}{31}{figure.caption.30}
+\contentsline {figure}{\numberline {25}{\ignorespaces Antenna model\relax }}{32}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{32}{subfigure.25.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{32}{subfigure.25.2}
+\contentsline {figure}{\numberline {26}{\ignorespaces Antenna coupling model\relax }}{33}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{33}{subfigure.26.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{33}{subfigure.26.2}
+\contentsline {figure}{\numberline {27}{\ignorespaces Resonant coupled inductive link\relax }}{35}{figure.caption.35}
+\contentsline {figure}{\numberline {28}{\ignorespaces Power loss before and after matching\relax }}{35}{figure.caption.36}

@@ -10,4 +10,7 @@
 \BOOKMARK [2][-]{subsection.3.4}{AC response}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Reference and biasing}{}% 11
 \BOOKMARK [1][-]{section.5}{Antenna Design}{}% 12
-\BOOKMARK [1][-]{section.6}{Power Receiving Unit}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Inductor model}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Inducitve link: coupled coils}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.3}{Magnetic Resonance Coupling}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Power Receiving Unit}{}% 16
