@@ -517,7 +517,7 @@ Figure  \ref{bgr_temp}, \ref{bgr_dc} and \ref{bgr_tran} illustrates temperature,
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/bgr_dc.pdf} 
+   \includegraphics[width=\textwidth]{img/bgr_dc.pdf} 
    \caption{BGR DC performance}
    \label{bgr_dc}
 \end{figure}
@@ -753,33 +753,51 @@ Q-factor			&			\\
 \section{Power Receiving Unit}
 Wireless power transfer, \acrshort{wpt} system always constitutes two main units: power transmitting unit, 
 \acrshort{ptu} and power receiving unit, \acrshort{pru}. Each unit comprises of resonator, power conditioner 
-and control circuits as shown in figure [figure]. Both the resonators in PRU and PTU are tuned to operating 
+and control circuits as shown in figure \ref{fig:wpt_ptu_pru}. Both the resonators in PRU and PTU are tuned to operating 
 frequency, which create a physical transfer link. Power conditioner circuit in PTU includes at least power 
 amplifier and matching circuit, whereas in PRU, it includes matching curcuit, recitifier and regulator. 
 Similarly both these units have control block which faciliates transfer procedure and communication between 
 these units.  In this work design and analysis of PRU is the main objective. Since PRU cannot be realised 
 without a transfer link, primary antenna creates a very simply PTU here.  \\
 
-Figure [FIGURE] is the block diagram of PRU system in this design. Secondary coil is the receiver resonator and  
-rectifer, LDO and reference and biasing is power conditioning block. The primary coil is 
-driven by a power source and AC signal is generated at the secondary as discussed earlier in antenna design 
-section. The rectifer then rectifies this AC singnal to DC. The DC output of the rectifer is then fed to LDO 
-to produce regulated DC output required to drive a load. The reference and biasing circuit generates required 
-reference and biasing DC voltages for the LDO. \\
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/wpt_ptu_pru.pdf} 
+ \caption{WPT block diagram} 
+\label{fig:wpt_ptu_pru} 
+\end{figure}
 
-The simulation of the PRU system is done is two steps. As this system can be functionally divided into two sub-system: 
-coupling system and Power Management System (\acrshort{pms}), fisrtly PMS is simulated excluding the coupled antennas 
-to characterise the performace of PMS. Secondly, the whole PRU system: PMS with coupled antenna is simulated to observe 
-the wireless power transfer and then management of this transferred power. Though it has already been told earlier, 
+
+In figure \ref{fig:wpt_ptu_pru} above, the block highlighted in blue is the PRU system in this design. Secondary coil, Rx is the receiver resonator, and  
+rectifier and regulator is power conditioning block. The primary coil is driven by a power source and AC signal is generated at the secondary as discussed 
+earlier in antenna design section. The rectifier then rectifies this AC signal to DC. The DC output of the rectifier is then fed to LDO 
+to produce regulated DC output required to drive a load. The reference and biasing circuit generates required reference and biasing DC voltages for the LDO. \\
+
+The PRU unit is broken down into two sub units for step wise analysis. As seen in the block diagram, it is functionally divided into Transfer Link and 
+Power Management System (\acrshort{pms}). Firstly, PMS is simulated excluding the transfer link to characterise the performance of PMS. Secondly, the whole PRU system: PMS with coupled antenna is simulated to observe the performance of whole PRU. Though it has already been told earlier, 
 one important thing must be mentioned here again before going further. Even though reference and biasing circuit has 
 been integrated into the PMS system, it has been designed with an option to override it externally. This externally 
-supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system baises 
+supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system biases 
 and reference will be explicitly noted when used. \\
 
-Figure [FIGURE] is testbench setup for PMS simualtion. PMS block in the picture includes rectifer, LDO and RB. The values external 
-biases and references and off-chip components are listed in table [TABLE]. The requirement and choice of these components 
-are described in their respecitve design section above.
+\section{Power Management System}
 
+Figure [FIGURE] is test-bench setup for PMS simulation. The values external biases and references and off-chip components are listed in table [TABLE]. 
+The requirement and choice of these components are described in their respective design section above.
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_V_wo_bgr.pdf} 
+ \caption{Transient } 
+\label{fig:wpt_V_wo} 
+\end{figure}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_ripple_wo_bgr.pdf} 
+ \caption{Ripple in Vrec and Vreg} 
+\label{fig:wpt_ripple_wo} 
+\end{figure}
 
 
 \clearpage
