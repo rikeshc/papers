@@ -48,7 +48,12 @@
 \newacronym{pnp}{PNP}{BJT where n-type semiconductor is between two p-type semiconductors}
 \newacronym{pms}{PMS}{Power Management System}
 \newacronym{smd}{SMD}{Surface Mounted Device}
-\newacronym{srf}{SRF}{self resonance frequency}
+\newacronym{srf}{SRF}{Self Resonance Frequency}
+
+\newacronym{wpt}{WPT}{Wireless Power Transfer}
+\newacronym{ipt}{IPT}{Inductive Power Transfer}
+\newacronym{pru}{PRU}{Power Receiving Unit}
+\newacronym{ptu}{PTU}{Power Transfer Unit}
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -746,11 +751,20 @@ Q-factor			&			\\
 
 
 \section{Power Receiving Unit}
-Power receiving unit is the complete system which includes all the component designed above: coupled antenna, 
-rectifer, LDO and reference and biasing, as shown in figure[FIGURE]. The primary of tunned antenna system is 
+Wireless power transfer, \acrshort{wpt} system always constitutes two main units: power transmitting unit, 
+\acrshort{ptu} and power receiving unit, \acrshort{pru}. Each unit comprises of resonator, power conditioner 
+and control circuits as shown in figure [figure]. Both the resonators in PRU and PTU are tuned to operating 
+frequency, which create a physical transfer link. Power conditioner circuit in PTU includes at least power 
+amplifier and matching circuit, whereas in PRU, it includes matching curcuit, recitifier and regulator. 
+Similarly both these units have control block which faciliates transfer procedure and communication between 
+these units.  In this work design and analysis of PRU is the main objective. Since PRU cannot be realised 
+without a transfer link, primary antenna creates a very simply PTU here.  \\
+
+Figure [FIGURE] is the block diagram of PRU system in this design. Secondary coil is the receiver resonator and  
+rectifer, LDO and reference and biasing is power conditioning block. The primary coil is 
 driven by a power source and AC signal is generated at the secondary as discussed earlier in antenna design 
-section. The rectifer then rectifies this AC singnal to DC. The DC output of the rectifer inherently has ripple, 
-so LDO follows this rectifer to produce regulated DC output. The reference and biasing circuit generates required 
+section. The rectifer then rectifies this AC singnal to DC. The DC output of the rectifer is then fed to LDO 
+to produce regulated DC output required to drive a load. The reference and biasing circuit generates required 
 reference and biasing DC voltages for the LDO. \\
 
 The simulation of the PRU system is done is two steps. As this system can be functionally divided into two sub-system: 
@@ -760,7 +774,7 @@ the wireless power transfer and then management of this transferred power. Thoug
 one important thing must be mentioned here again before going further. Even though reference and biasing circuit has 
 been integrated into the PMS system, it has been designed with an option to override it externally. This externally 
 supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system baises 
-and reference will be explicitly noted. \\
+and reference will be explicitly noted when used. \\
 
 Figure [FIGURE] is testbench setup for PMS simualtion. PMS block in the picture includes rectifer, LDO and RB. The values external 
 biases and references and off-chip components are listed in table [TABLE]. The requirement and choice of these components 
