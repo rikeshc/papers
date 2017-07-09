@@ -37,7 +37,9 @@ leg2 = sprintf('Schematic ripple = %.2f mV', rip_Vreg_sch*1000);
 
 f2 = figure(2); % ripple
 subplot(2, 1, 1);
-p2 = plot(time(from: to), Vrec_sch(from: to));
+p2 = plot(time(from: to), Vrec_sch(from: to)); hold on;
+    %plot(time(from: to), Vac_sch(from: to));
+    hold off;
 set(p2, 'linewidth', plotwidth);
 legend(leg1, 'location', 'best');
 %xlabel('time (us)'); 
