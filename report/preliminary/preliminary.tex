@@ -266,7 +266,7 @@ V\textsubscript{ref} - V\textsubscript{div} is least or zero ideally. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/ldo.pdf} 
+   \includegraphics[width=0.9\textwidth]{img/ldo.pdf} 
    \caption{Generic LDO with pMOS pass device}
    \label{ldo_gen}
 \end{figure}
@@ -285,11 +285,12 @@ network of resistors. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ldo_schematic.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_schematic.pdf} 
   %\includegraphics[width=0.9\textwidth]{img/ldo_schematic.pdf} 
    \caption{CMOS implemenation of LDO}
    \label{ldo_cmos}
 \end{figure}
+
 
 As briefly mentioned above, the error amplifier amplifies the error i.e. difference in scaled regulated voltage, 
 V\textsubscript{div} and reference voltage, V\textsubscript{ref}. It is known that an amplifier with higher 
@@ -313,8 +314,8 @@ Vbias2 					& 1.1 V \\ \hline
 Vbias3					& 0.88 V \\ \hline
 Vbias4					& 0.68 V \\ \hline
 Vref						& 1.17 V \\ \hline
-C\textsubscript{load} 		& > 2.5 \si{\micro\farad}  \\ \hline
-R\textsubscript{esr} 	 		& > 0.8 $\Omega$ \\ \hline
+C\textsubscript{load} 		& > 5 \si{\micro\farad}  \\ \hline
+R\textsubscript{esr} 	 		& > 0.5 $\Omega$ \\ \hline
 Regulated output voltage 		& 1.8 V \\ \hline
 I\textsubscript{load} max. 		& 10 mA \\
 \hline \hline
@@ -782,14 +783,13 @@ and reference will be explicitly noted when used. \\
 
 \section{Power Management System}
 
-Figure [FIGURE] is test-bench setup for PMS simulation. The values external biases and references and off-chip components are listed in table [TABLE]. 
-The requirement and choice of these components are described in their respective design section above.
+Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose here is to see Vrec and Vreg outputs while driving maximum load. The voltage biases outputs to examine the performance of BGR circuit which is disable now with external control signal Vctl low. The test bench setup is a shown in figure \label{fig:wpt_top_testbench} . 
 
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/wpt_top.pdf} 
  \caption{WPT PMS implementation} 
-\label{fig:wpt_pms} 
+\label{fig:wpt_top} 
 \end{figure}
 
 \vspace{5mm}
@@ -798,7 +798,7 @@ The requirement and choice of these components are described in their respective
   \centering
   \includegraphics[width=\textwidth]{img/wpt_top_testbench.pdf} 
  \caption{Test bench for PMS simulation } 
-\label{fig:wpt_pms_testbench} 
+\label{fig:wpt_top_testbench} 
 \end{figure}
 
 \section{Transient Response}

@@ -271,7 +271,7 @@ V\textsubscript{ref} - V\textsubscript{div} is least or zero ideally. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=.9\textwidth]{img/ldo.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo.pdf} 
    \caption{Generic LDO with pMOS pass device}
    \label{ldo_gen}
 \end{figure}
@@ -290,8 +290,8 @@ network of resistors. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
-  %\includegraphics[width=0.9\textwidth]{img/ldo_schematic.pdf} 
+   %\includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
+  \includegraphics[width=\textwidth]{img/ldo_schematic.pdf} 
    \caption{CMOS implemenation of LDO}
    \label{ldo_cmos}
 \end{figure}
@@ -318,8 +318,8 @@ Vbias2 					& 1.1 V \\ \hline
 Vbias3					& 0.88 V \\ \hline
 Vbias4					& 0.68 V \\ \hline
 Vref						& 1.17 V \\ \hline
-C\textsubscript{load} 		& > 2.5 \si{\micro\farad}  \\ \hline
-R\textsubscript{esr} 	 		& > 0.8 $\Omega$ \\ \hline
+C\textsubscript{load} 		& > 5 \si{\micro\farad}  \\ \hline
+R\textsubscript{esr} 	 		& > 0.5 $\Omega$ \\ \hline
 Regulated output voltage 		& 1.8 V \\ \hline
 I\textsubscript{load} max. 		& 10 mA \\
 \hline \hline
@@ -349,7 +349,7 @@ devices' power supply. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
+   \includegraphics[width=\textwidth]{img/ldo_testbench.pdf} 
    \caption{LDO testbench setup}
    \label{fig:ldo_testbench}
 \end{figure}
@@ -691,38 +691,82 @@ Q-factor			&			\\
 
 % *********************************************************************** WPT PRU SYSTEM  ***********************************************************************************
 
-\part{WPT System Design and Implementation}       
+\part{WPT System Design and Implementation}      
 
-\chapter{Power Management System}  
+\chapter{Power Receiving Unit Design} 
 
 \section{Introduction}		%****************************
 
-Power receiving unit is the complete system which includes all the component designed above: coupled antenna, 
-rectifer, LDO and reference and biasing, as shown in figure[FIGURE]. The primary of tunned antenna system is 
-driven by a power source and AC signal is generated at the secondary as discussed earlier in antenna design 
-section. The rectifer then rectifies this AC singnal to DC. The DC output of the rectifer inherently has ripple, 
-so LDO follows this rectifer to produce regulated DC output. The reference and biasing circuit generates required 
-reference and biasing DC voltages for the LDO. \\
+Wireless power transfer, \acrshort{wpt} system always constitutes two main units: power transmitting unit, 
+\acrshort{ptu} and power receiving unit, \acrshort{pru}. Each unit comprises of resonator, power conditioner 
+and control circuits as shown in figure \ref{fig:wpt_ptu_pru}. Both the resonators in PRU and PTU are tuned to operating 
+frequency, which create a physical transfer link. Power conditioner circuit in PTU includes at least power 
+amplifier and matching circuit, whereas in PRU, it includes matching circuit, rectifier and regulator. 
+Similarly both these units have control block which facilitates transfer procedure and communication between 
+these units.  In this work, design and analysis of PRU is the main objective.  \\
+%Since PRU cannot be realised without a transfer link, primary antenna creates a very simply PTU here.  \\
 
-The simulation of the PRU system is done is two steps. As this system can be functionally divided into two sub-system: 
-coupling system and Power Management System (\acrshort{pms}), fisrtly PMS is simulated excluding the coupled antennas 
-to characterise the performace of PMS. Secondly, the whole PRU system: PMS with coupled antenna is simulated to observe 
-the wireless power transfer and then management of this transferred power. Though it has already been told earlier, 
+\begin{figure} 
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/wpt_ptu_pru.pdf} 
+ \caption{WPT block diagram} 
+\label{fig:wpt_ptu_pru} 
+\end{figure}
+
+
+In figure \ref{fig:wpt_ptu_pru} above, the block highlighted in blue is the PRU system in this design. Secondary coil, Rx is the receiver resonator, and  
+rectifier and regulator is power conditioning block. The primary coil is driven by a power source and AC signal is generated at the secondary as discussed 
+earlier in antenna design section. The rectifier then rectifies this AC signal to DC. The DC output of the rectifier is then fed to LDO 
+to produce regulated DC output required to drive a load. The reference and biasing circuit generates required reference and biasing DC voltages for the LDO. \\
+
+The PRU unit is broken down into two sub units for step wise analysis. As seen in the block diagram, it is functionally divided into Transfer Link and 
+Power Management System (\acrshort{pms}). Firstly, PMS is simulated excluding the transfer link to characterise the performance of PMS. Secondly, the whole PRU system: PMS with transfer link created with coupled antenna, Tx and Rx, is simulated to observe the performance of whole PRU. Though it has already been told earlier, 
 one important thing must be mentioned here again before going further. Even though reference and biasing circuit has 
 been integrated into the PMS system, it has been designed with an option to override it externally. This externally 
-supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system baises 
-and reference will be explicitly noted. \\
+supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system biases 
+and reference will be explicitly noted when used. \\
 
-Figure [FIGURE] is testbench setup for PMS simualtion. PMS block in the picture includes rectifer, LDO and RB. The values external 
-biases and references and off-chip components are listed in table [TABLE]. The requirement and choice of these components 
-are described in their respecitve design section above.
+\section{Power Management System}
 
-\chapter{Wireless Power Receiving Unit}
+Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose here is to see Vrec and Vreg outputs while driving maximum load. The voltage biases outputs to examine the performance of BGR circuit which is disable now with external control signal Vctl low. The test bench setup is a shown in figure \label{fig:wpt_top_testbench} . 
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_top.pdf} 
+ \caption{WPT PMS implementation} 
+\label{fig:wpt_top} 
+\end{figure}
+
+\vspace{5mm}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_top_testbench.pdf} 
+ \caption{Test bench for PMS simulation } 
+\label{fig:wpt_top_testbench} 
+\end{figure}
+
+\subsection{Transient Response}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_V_wo_bgr_both.pdf} 
+ \caption{Transient Vrec and Vreg} 
+\label{fig:wpt_V_wo} 
+\end{figure}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_ripple_wo_bgr_both.pdf} 
+ \caption{Ripple in Vrec and Vreg} 
+\label{fig:wpt_ripple_wo} 
+\end{figure}
 
 
-% ***********************************************************************  CHIP VERIFICATION  ***********************************************************************************
+%\chapter{Chip Production, Test and Verification}
 
-\part{WPT Chip Production, Test and Verification} 
+
+% ***********************************************************************  CONCLUSION ***********************************************************************************
 
 %\part{Conclusion}
 %\section{Concluding Remark}

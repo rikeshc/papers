@@ -1,30 +1,24 @@
-\BOOKMARK [-1][-]{part.1}{I Introduction and Background}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Background}{part.1}% 3
-\BOOKMARK [-1][-]{part.2}{II Component Design and Analysis}{}% 4
-\BOOKMARK [0][-]{chapter.3}{Rectifier}{part.2}% 5
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.2}{Design}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.3}{Simulation result}{chapter.3}% 8
-\BOOKMARK [2][-]{subsection.3.3.1}{Transient performance}{section.3.3}% 9
-\BOOKMARK [2][-]{subsection.3.3.2}{DC performance}{section.3.3}% 10
-\BOOKMARK [0][-]{chapter.4}{Low Dropout Regulator}{part.2}% 11
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 12
-\BOOKMARK [1][-]{section.4.2}{Design}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.3}{Simulation result}{chapter.4}% 14
-\BOOKMARK [2][-]{subsection.4.3.1}{Transient response}{section.4.3}% 15
-\BOOKMARK [2][-]{subsection.4.3.2}{DC response}{section.4.3}% 16
-\BOOKMARK [2][-]{subsection.4.3.3}{AC response}{section.4.3}% 17
-\BOOKMARK [0][-]{chapter.5}{Antenna Design}{part.2}% 18
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.2}{Inductor model}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.3}{Inductive transfer link}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.4}{Magnetic resonance coupling}{chapter.5}% 22
-\BOOKMARK [-1][-]{part.3}{III WPT System Design and Implementation}{}% 23
-\BOOKMARK [0][-]{chapter.6}{Power Management System}{part.3}% 24
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Wireless Power Receiving Unit}{part.3}% 26
-\BOOKMARK [-1][-]{part.4}{IV WPT Chip Production, Test and Verification}{}% 27
-\BOOKMARK [-1][-]{part.5}{V Conclusion}{}% 28
-\BOOKMARK [0][-]{section.7.1}{Concluding Remark}{part.5}% 29
-\BOOKMARK [1][-]{section.7.2}{Future Work}{section.7.1}% 30
+\BOOKMARK [-1][-]{part.1}{I Component Design and Analysis}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Rectifier}{part.1}% 2
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Design}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Simulation result}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.3.1}{Transient performance}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.2}{DC performance}{section.1.3}% 7
+\BOOKMARK [0][-]{chapter.2}{Low Dropout Regulator}{part.1}% 8
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Design}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Simulation result}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Transient response}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{DC response}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.3}{AC response}{section.2.3}% 14
+\BOOKMARK [0][-]{chapter.3}{Antenna Design}{part.1}% 15
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Inductor model}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{Inductive transfer link}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Magnetic resonance coupling}{chapter.3}% 19
+\BOOKMARK [-1][-]{part.2}{II WPT System Design and Implementation}{}% 20
+\BOOKMARK [0][-]{chapter.4}{Power Receiving Unit Design}{part.2}% 21
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Power Management System}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{Transient Response}{section.4.2}% 24
