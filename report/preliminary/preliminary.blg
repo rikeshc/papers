@@ -1,17 +1,29 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'preliminary.blg'
-[60] biber-darwin:276> INFO - === Sun Jul  9, 2017, 22:56:06
-[60] Biber.pm:333> INFO - Reading 'preliminary.bcf'
-[182] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[206] Biber.pm:2977> INFO - Processing section 0
-[227] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
-[231] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[233] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
-[257] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
-[508] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[508] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[508] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[508] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[532] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
-[534] bbl.pm:596> INFO - Output to preliminary.bbl
-[535] Biber.pm:106> INFO - WARNINGS: 1
+[1] Config.pm:354> INFO - This is Biber 2.7
+[1] Config.pm:357> INFO - Logfile is 'preliminary.blg'
+[118] biber:303> INFO - === Wed Jul 12, 2017, 12:29:00
+[193] Biber.pm:359> INFO - Reading 'preliminary.bcf'
+[486] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[540] Biber.pm:3670> INFO - Processing section 0
+[582] Biber.pm:3840> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
+[599] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[618] bibtex.pm:1292> INFO - Found BibTeX data source 'preliminary.bib'
+[629] Utils.pm:164> WARN - month field 'Aug' in entry 'ldo_ti_pmos' is not an integer - this will probably not sort properly.
+[635] Utils.pm:164> WARN - month field 'Jan' in entry 'ldo_quiescent' is not an integer - this will probably not sort properly.
+[642] Utils.pm:164> WARN - month field 'Oct' in entry 'ant_inductance_calculation' is not an integer - this will probably not sort properly.
+[651] Utils.pm:164> WARN - month field 'Nov' in entry 'ldo_bulkmod' is not an integer - this will probably not sort properly.
+[721] Utils.pm:164> WARN - ISBN '0470881321, 9780470881323' in entry 'baker_2010' is invalid - run biber with '--validate_datamodel' for details.
+[725] Utils.pm:164> WARN - month field 'Sept' in entry 'ldo_psu' is not an integer - this will probably not sort properly.
+[730] Utils.pm:164> WARN - month field 'Dec' in entry 'rectrcc' is not an integer - this will probably not sort properly.
+[736] Utils.pm:164> WARN - month field 'Aug' in entry 'rectboot' is not an integer - this will probably not sort properly.
+[743] Utils.pm:164> WARN - month field 'April' in entry 'ant_optimal_resonance' is not an integer - this will probably not sort properly.
+[752] Utils.pm:164> WARN - month field 'Aug' in entry 'rectcomp' is not an integer - this will probably not sort properly.
+[758] Utils.pm:164> WARN - month field 'Sept' in entry 'ant_PSC_geometry' is not an integer - this will probably not sort properly.
+[764] Utils.pm:164> WARN - ISBN '0072380322, 9780072380323' in entry 'razavi_2001' is invalid - run biber with '--validate_datamodel' for details.
+[777] Utils.pm:164> WARN - month field 'May' in entry 'ant_SZ_formula' is not an integer - this will probably not sort properly.
+[842] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[842] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[843] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-UK'
+[843] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-UK'
+[877] bbl.pm:608> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
+[887] bbl.pm:712> INFO - Output to preliminary.bbl
+[888] Biber.pm:109> INFO - WARNINGS: 13

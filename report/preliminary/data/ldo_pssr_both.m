@@ -7,8 +7,8 @@ load('ldo_pssr_pex.mat');
 
 %%
 plotwidth = 1;
-logdB = 20*log10(Re_sch);
-logdBp = 20*log10(Re_pex);
+logdB = 20*log10(sqrt(Re_sch.^2 + Img_sch.^2));
+logdBp = 20*log10(sqrt(Re_pex.^2 + Img_pex.^2));
 f1 = figure(1);
 semilogx(freq_sch, logdB);hold on;
 semilogx(freq_pex, logdBp, '--');

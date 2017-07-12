@@ -7,12 +7,13 @@ load('ldo_tran_pex.mat');
 %%
 plotwidth = 1;
 time = t_sch * 10^6;
-timep = t_sch_pex*10^6;
+timep = t_pex*10^6;
 f1 = figure(1);
-% p1 = plot(time, vreg_100u_sch, 'r'); hold on;
-p1 =   plot(time, vreg_10m_sch, 'b'); hold on;
-     %plot(timep, vreg_100u_pex, 'r--');
-     plot(timep, vreg_10m_pex, 'r--');
+ p1 = plot(time, vreg_10m_sch, 'b'); hold on;
+      %plot(time, vreg_100u_sch, 'r'); 
+      plot(timep, vreg_10m_pex, 'r--');
+      %plot(timep, vreg_100u_pex, 'r--');
+      %hold off;
 set(p1, 'linewidth', plotwidth);
 grid on;
 
@@ -29,9 +30,9 @@ txt2 = sprintf('%d us', round(time(index2)));
 txt2p = sprintf('%d us', round(timep(index2p)));
 
 % text(75, 1.85, txt1, 'color', 'r');
-text(93, 1.87, txt2, 'color', 'b');
+text(180, 1.87, txt2, 'color', 'b');
 % text(75, 1.85, txt1p, 'color', 'r');
-text(105, 1.87, txt2p, 'color', 'r');
+text(210, 1.87, txt2p, 'color', 'r');
 
 % plot(time(index1), vreg_100u_sch(index1), '*r');
 plot(time(index2), vreg_10m_sch(index2), '*b');
