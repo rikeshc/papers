@@ -17,14 +17,14 @@ txt1 = sprintf('Schematic Vrec, Avg = %.3f V', avg_Vrec_sch);
 txt2 = sprintf('Schematic Vreg, Avg = %.3f V', avg_Vreg_sch);
 
 f1 = figure(1); % all voltage wave
-p1 = plot(time, Vrec_sch, time, Vreg_sch);
+p1 = plot(time, Vrec_sch, time, Vreg_sch, time, Vac_sch);
 set(p1, 'linewidth', plotwidth);
 grid on;
 legend(txt1, txt2, 'location', 'best');
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 %xlim([1.5, 2.5]); 
-ylim([-0.2, 2.5]);
+ylim([-3, 3]);
 title('Vrec and Vreg', 'FontSize', 10);
 
 %%  Ripple plot
@@ -58,7 +58,19 @@ grid on;
 xlim([299.5, 299.8]);
 title('Regulated voltage', 'FontSize', 10);
 
+%% Vin and Vac
+f3 = figure(3);
+from = find(300==round(time, 3), 1);
+to = find(300.075==round(time, 3), 1);
+plot(time(from:to), Vin1_sch(from:to), time(from:to), Vin2_sch(from:to), time(from:to), Vac_sch(from:to));
+xlabel('Time (us)'); 
+ylabel('Voltage (V)');
+grid on;
+xlim([300, 300.074]);
+title('Inputs voltages', 'FontSize', 10);
+
 %% saving plot to a location
+
 set(f1,'Units','Inches');
 pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);

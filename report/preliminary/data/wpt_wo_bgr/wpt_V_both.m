@@ -2,7 +2,7 @@
 
 %% Load 
 clear all;
-load('V_sch.mat'); 
+%load('V_sch.mat'); 
 load('V_pex.mat'); 
 % data includes 0u to 350u trans
 
@@ -79,6 +79,22 @@ ylabel('Voltage (V)');
 grid on;
 xlim([299.5, 299.8]);
 title('Regulated voltage', 'FontSize', 10);
+
+%% Vin and Vac
+f3 = figure(3);
+from = find(300==round(time, 3), 1);
+to = find(300.075==round(time, 3), 1);
+fromp = find(300==round(timep, 3), 1);
+top = find(300.075==round(timep, 3), 1);
+
+p4 = plot(time(from:to), Vin1_sch(from:to), 'r', time(from:to), Vin2_sch(from:to), 'b', time(from:to), Vac_sch(from:to), 'g'); hold on;
+    plot(timep(fromp:top), Vin1_pex(fromp:top), 'r--', timep(fromp:top), Vin2_pex(fromp:top), 'b--', timep(fromp:top), Vac_pex(fromp:top), 'g--')
+xlabel('Time (us)'); 
+ylabel('Voltage (V)');
+grid on;
+xlim([300, 300.074]);
+title('Inputs voltages', 'FontSize', 10);
+legend('Vin1, Pre', 'Vin2, Pre','Vac Pre', 'Vin1, Post', 'Vin2, Post','Vac, Post', 'location', 'best');
 
 %% saving plot to a location
 set(f1,'Units','Inches');
