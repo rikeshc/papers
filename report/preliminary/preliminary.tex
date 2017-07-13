@@ -54,6 +54,8 @@
 \newacronym{ipt}{IPT}{Inductive Power Transfer}
 \newacronym{pru}{PRU}{Power Receiving Unit}
 \newacronym{ptu}{PTU}{Power Transfer Unit}
+\newacronym{jlcc}{JLCC}{J-Lead Chip Carrier}
+\newacronym{mlcc}{MLCC}{Multi-Layer Ceramic Capacitor}
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -783,7 +785,7 @@ and reference will be explicitly noted when used. \\
 
 \section{Power Management System}
 
-Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving maximum load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are biases voltages to examine the performance of BGR circuit which is disabled now with external control signal Vctl low.  
+Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving maximum load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are biases voltages to examine the performance of BGR circuit which is disabled now with external control signal Vctl low.  \\
 
 \begin{figure} [H]
   \centering
@@ -819,12 +821,25 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 
 \section{PRU Unit}
 
+Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and componoent values remain the same as in PMS simulation. \\
+
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/wpt_top_link.pdf} 
  \caption{Test bench for complete PRU unit } 
 \label{fig:wpt_top_link} 
 \end{figure}
+
+The parasitic extraction of the compete layout also includes the tracks from pad to core inputs. The pad-frame layout provided by the fab was used to accurately draw the tracks from pad to core I/O terminals. \\
+
+% *********************************************************************** CHIP production and test  ***********************************************************************
+
+\section{Chip Production}
+After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure [CHIP MICRO PCITURE] .\\
+
+While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure [figure].\\
+
+
 
 \clearpage
 \newpage
