@@ -783,7 +783,7 @@ and reference will be explicitly noted when used. \\
 
 \section{Power Management System}
 
-Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose here is to see Vrec and Vreg outputs while driving maximum load. The voltage biases outputs to examine the performance of BGR circuit which is disable now with external control signal Vctl low. The test bench setup is a shown in figure \label{fig:wpt_top_testbench} . 
+Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving maximum load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are biases voltages to examine the performance of BGR circuit which is disabled now with external control signal Vctl low.  
 
 \begin{figure} [H]
   \centering
@@ -817,6 +817,14 @@ Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose h
 \label{fig:wpt_ripple_wo} 
 \end{figure}
 
+\section{PRU Unit}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_top_link.pdf} 
+ \caption{Test bench for complete PRU unit } 
+\label{fig:wpt_top_link} 
+\end{figure}
 
 \clearpage
 \newpage

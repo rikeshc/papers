@@ -450,6 +450,9 @@ INPUT ./img/wpt_V_wo_bgr_both.pdf
 INPUT img/wpt_ripple_wo_bgr_both.pdf
 INPUT ./img/wpt_ripple_wo_bgr_both.pdf
 INPUT ./img/wpt_ripple_wo_bgr_both.pdf
+INPUT img/wpt_top_link.pdf
+INPUT ./img/wpt_top_link.pdf
+INPUT ./img/wpt_top_link.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
