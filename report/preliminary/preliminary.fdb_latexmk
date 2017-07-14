@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber preliminary"] 1499976828 "preliminary.bcf" "preliminary.bbl" "preliminary" 1499983816
-  "preliminary.bcf" 1499983815 101592 dba83c1c821f983626943d49b6780bbd ""
+["biber preliminary"] 1499976828 "preliminary.bcf" "preliminary.bbl" "preliminary" 1500070334
+  "preliminary.bcf" 1500070334 101592 dba83c1c821f983626943d49b6780bbd ""
   "preliminary.bib" 1499210108 9284 8e7c048318d77620be5a7f0f943d82ed ""
   (generated)
   "preliminary.blg"
   "preliminary.bbl"
-["pdflatex"] 1499983812 "preliminary.tex" "preliminary.pdf" "preliminary" 1499983816
+["pdflatex"] 1500070331 "preliminary.tex" "preliminary.pdf" "preliminary" 1500070334
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -223,19 +223,19 @@
   "img/wpt_top.pdf" 1499632235 20839 c9af39371fdd05a87220372c8d4ef85b ""
   "img/wpt_top_link.pdf" 1499891998 35016 9cbdddaa8110e63785e5bdf2229a8f4c ""
   "img/wpt_top_testbench.pdf" 1499635853 31658 e262f031142a9d9baa44ecf1ae1ec475 ""
-  "preliminary.aux" 1499983815 17931 cd5d6fecef4ad4caafa536cb8b909303 ""
+  "preliminary.aux" 1500070334 17928 73857414a7baa4ef061c6b1372c1f26c ""
   "preliminary.bbl" 1499976829 21138 df9cad82108d7c25e9675d3da26c8285 "biber preliminary"
-  "preliminary.lof" 1499983815 4709 d51c985b47e728ef84a4719a30e58ad2 ""
-  "preliminary.lot" 1499983815 1147 252e40b1d6b129dc50312c6fa17915aa ""
-  "preliminary.out" 1499983815 1152 f6f4bb671fdcd4e4171dc721f4823376 ""
-  "preliminary.run.xml" 1499983815 2419 71c112e24e710fb589c2b2496bd941ef ""
-  "preliminary.tex" 1499983717 57440 61f840c69afbb0106c916752811d28ba ""
+  "preliminary.lof" 1500070334 4709 d51c985b47e728ef84a4719a30e58ad2 ""
+  "preliminary.lot" 1500070334 1147 252e40b1d6b129dc50312c6fa17915aa ""
+  "preliminary.out" 1500070334 1149 c6fa507588739b42bd800c6692051ff3 ""
+  "preliminary.run.xml" 1500070334 2419 71c112e24e710fb589c2b2496bd941ef ""
+  "preliminary.tex" 1500070327 57638 5d1b987844778759498649b8cccf463e ""
   (generated)
-  "preliminary.aux"
-  "preliminary.out"
-  "preliminary.lof"
   "preliminary.lot"
-  "preliminary.pdf"
-  "preliminary.log"
-  "preliminary.run.xml"
   "preliminary.bcf"
+  "preliminary.aux"
+  "preliminary.run.xml"
+  "preliminary.out"
+  "preliminary.pdf"
+  "preliminary.lof"
+  "preliminary.log"

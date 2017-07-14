@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  14 JUL 2017 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  15 JUL 2017 00:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1939,14 +1939,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 602--615
  []
 
 [30 <./img/ant_non_ideal.pdf>]
-<img/ant_single.png, id=1009, 1302.8675pt x 836.12375pt>
+<img/ant_single.png, id=1008, 1302.8675pt x 836.12375pt>
 File: img/ant_single.png Graphic file (type png)
 
 <use img/ant_single.png>
 Package pdftex.def Info: img/ant_single.png used on input line 618.
 (pdftex.def)             Requested size: 191.10214pt x 122.63185pt.
 
-<img/ant_single.pdf, id=1011, 190.09608pt x 121.66023pt>
+<img/ant_single.pdf, id=1010, 190.09608pt x 121.66023pt>
 File: img/ant_single.pdf Graphic file (type pdf)
 
 <use img/ant_single.pdf>
@@ -1958,14 +1958,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 646--653
  []
 
 [31 <./img/ant_single.png> <./img/ant_single.pdf>]
-<img/ant_couple.png, id=1058, 1289.81876pt x 884.30376pt>
+<img/ant_couple.png, id=1057, 1289.81876pt x 884.30376pt>
 File: img/ant_couple.png Graphic file (type png)
 
 <use img/ant_couple.png>
 Package pdftex.def Info: img/ant_couple.png used on input line 657.
 (pdftex.def)             Requested size: 191.10214pt x 131.00714pt.
 
-<img/ant_couple.pdf, id=1059, 190.09608pt x 123.48534pt>
+<img/ant_couple.pdf, id=1058, 190.09608pt x 123.48534pt>
 File: img/ant_couple.pdf Graphic file (type pdf)
 
 <use img/ant_couple.pdf>
@@ -1976,12 +1976,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 682--686
 
  []
 
-
+[32 <./img/ant_couple.png> <./img/ant_couple.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 687--696
 
  []
 
-[32 <./img/ant_couple.png> <./img/ant_couple.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 699--702
 
  []
@@ -1991,12 +1991,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--712
 
  []
 
-
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 713--716
 
  []
 
-[33] <img/ant_couple_resonant.pdf, id=1116, 259.59846pt x 93.67778pt>
+<img/ant_couple_resonant.pdf, id=1116, 259.59846pt x 93.67778pt>
 File: img/ant_couple_resonant.pdf Graphic file (type pdf)
 
 <use img/ant_couple_resonant.pdf>
@@ -2009,7 +2009,12 @@ File: img/ant_S_loss.png Graphic file (type png)
 <use img/ant_S_loss.png>
 Package pdftex.def Info: img/ant_S_loss.png used on input line 727.
 (pdftex.def)             Requested size: 350.99762pt x 253.36093pt.
- [34 <./img/ant_couple_resonant.pdf> <./img/ant_S_loss.png (PNG copy)>] [35]
+
+Overfull \hbox (429.89525pt too wide) in paragraph at lines 737--747
+ [] 
+ []
+
+[34 <./img/ant_couple_resonant.pdf> <./img/ant_S_loss.png (PNG copy)>] [35]
 Overfull \hbox (7.31665pt too wide) in paragraph at lines 757--765
 \T1/pnc/m/n/12 Wireless power trans-fer, []WPT sys-tem al-ways con-sti-tutes tw
 o main units:
@@ -2186,7 +2191,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 859.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 859.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 859.
 Package rerunfilecheck Info: File `preliminary.out' has not changed.
-(rerunfilecheck)             Checksum: F6F4BB671FDCD4E4171DC721F4823376;1152.
+(rerunfilecheck)             Checksum: C6FA507588739B42BD800C6692051FF3;1149.
 Package logreq Info: Writing requests to 'preliminary.run.xml'.
 \openout1 = `preliminary.run.xml'.
 
@@ -2210,7 +2215,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/ncntrsbk/uncri8a.pfb>
-Output written on preliminary.pdf (48 pages, 2479185 bytes).
+Output written on preliminary.pdf (48 pages, 2479421 bytes).
 PDF statistics:
  1427 PDF objects out of 1440 (max. 8388607)
  1244 compressed objects within 13 object streams
