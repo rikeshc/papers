@@ -740,7 +740,7 @@ $Cp1$ $Cp2$ and $Cs1$	  	& 			\\ \hline
 Resonant frequency		& 13.56 MHz		\\ \hline
 Primary reflection loss		&			\\ \hline
 Secondary reflection loss	& 			\\ \hline
-Primary to secondary gaining	& 			\\ \hline
+Primary to secondary gaining	& 		http://beta.goal.com/en/news/mbappe-born-to-be-the-best-player-in-the-world-gallas/oe8j9sj027pc14pmuzhmgnon9	\\ \hline
 Q-factor			&			\\
 \hline \hline
 \end{tabular}
@@ -834,7 +834,7 @@ The parasitic extraction of the compete layout also includes the tracks from pad
 
 % *********************************************************************** CHIP production and test  ***********************************************************************
 
-\section{Chip Production}
+\section{Chip and PCB}
 After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure [CHIP MICRO PCITURE] .\\
 
 While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure [figure].\\
