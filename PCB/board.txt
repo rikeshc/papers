@@ -1,0 +1,26 @@
+Partlist exported from /Users/rikeshc/Documents/eagle/WPT_schematic/board.sch at 16/07/2017 11:32
+
+Qty Value       Device            Package        Parts                                                      Description                                         MF MPN OC_NEWARK
+1               EG1218S           EG1218         S1                                                         SLIDING SWITCH                                             unknown  
+1               PINHD-1X2         1X02           TEST                                                       PIN HEADER                                                 unknown  
+2               PINHD-1X3         1X03           REG_SUP, VSUP                                              PIN HEADER                                                 unknown  
+2               PINHD-1X4         1X04           BIAS_OUT, CRIPS                                            PIN HEADER                                                 unknown  
+1               PINHD-1X6         1X06           BIASES                                                     PIN HEADER                                                          
+1               PINHD-2X10        2X10           EXTRAPINS                                                  PIN HEADER                                                          
+1               PINHD-2X3         2X03           OUTPUTS                                                    PIN HEADER                                                 unknown  
+5               R-TRIMM3224W      RTRIM3224W     POT1, POT2, POT3, POT5, POT6                               Trimm resistor                                             unknown  
+4               SMACONNECTOR_EDGE SMA_EDGELAUNCH VIN2, X3, X4, X5                                           SMA Connector                                                       
+1   .01uF       C-USC0805         C0805          C7                                                         CAPACITOR, American symbol                                 unknown  
+2   .1uF        C-USC0805         C0805          C3, C19                                                    CAPACITOR, American symbol                                 unknown  
+1   1.43 M      R-US_R0805        R0805          R5                                                         RESISTOR, American symbol                                  unknown  
+1   1.57 M      R-US_R0805        R0805          R4                                                         RESISTOR, American symbol                                  unknown  
+1   10 M        R-US_R0805        R0805          R3                                                         RESISTOR, American symbol                                  unknown  
+1   100nF       C-USC0805         C0805          C1                                                         CAPACITOR, American symbol                                 unknown  
+1   10uF        C-USC0805         C0805          C18                                                        CAPACITOR, American symbol                                 unknown  
+13  1uF         C-USC0805         C0805          C2, C4, C5, C6, C9, C10, C11, C12, C13, C14, C15, C16, C17 CAPACITOR, American symbol                                 unknown  
+1   240         R-US_R0805        R0805          R2                                                         RESISTOR, American symbol                                  unknown  
+1   4.86 M      R-US_R0805        R0805          R6                                                         RESISTOR, American symbol                                  unknown  
+1   BALUN       BALUN             BALUN          BALUN1                                                                                                                         
+1   LM317MBSTT3 LM317MBSTT3       SOT223         LREG1                                                      500 mA Adjustable Output Positive Voltage Regulator        unknown  
+1   WPT84       WPT84             PLCC84         WPT_PRU                                                                                                               unknown  
+1   ffff        SMACONNECTOR_EDGE SMA_EDGELAUNCH VIN1                                                       SMA Connector                                                       
