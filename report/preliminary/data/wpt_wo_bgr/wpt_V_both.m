@@ -2,7 +2,7 @@
 
 %% Load 
 clear all;
-%load('V_sch.mat'); 
+load('V_sch.mat'); 
 load('V_pex.mat'); 
 % data includes 0u to 350u trans
 
@@ -11,8 +11,8 @@ load('V_pex.mat');
 plotwidth = 1;
 time = t_sch*10^6;
 timep = t_pex*10^6;
-start = find(300==round(time), 1);
-startp = find(300==round(timep), 1);
+start = find(400==round(time), 1);
+startp = find(400==round(timep), 1);
 
 Vac_sch = Vin1_sch-Vin2_sch;
 Vac_pex = Vin1_pex-Vin2_pex;
@@ -40,10 +40,10 @@ ylim([-0.2, 2.5]);
 title('Vrec and Vreg', 'FontSize', 10);
 
 %%  Ripple plot
-from = find(300==round(time), 1);
-to = find(300.075==round(time, 3), 1);
-fromp = find(300==round(timep), 1);
-top = find(300.075==round(timep, 3), 1);
+from = find(400==round(time), 1);
+to = find(400.075==round(time, 3), 1);
+fromp = find(400==round(timep), 1);
+top = find(400.075==round(timep, 3), 1);
 
 rip_Vrec_sch = max(Vrec_sch(from:to))-min(Vrec_sch(from:to));
 rip_Vreg_sch = max(Vreg_sch(from:to))-min(Vreg_sch(from:to));
@@ -65,7 +65,7 @@ legend(leg1, leg1p,'location', 'best');
 %xlabel('time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([299.5, 299.8]);
+xlim([399.5, 399.8]);
 title('Rectified voltage', 'FontSize', 10);
 
 subplot(2, 1, 2);
@@ -77,22 +77,22 @@ legend(leg2, leg2p, 'location', 'best');
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([299.5, 299.8]);
+xlim([399.5, 399.8]);
 title('Regulated voltage', 'FontSize', 10);
 
 %% Vin and Vac
 f3 = figure(3);
-from = find(300==round(time, 3), 1);
-to = find(300.075==round(time, 3), 1);
-fromp = find(300==round(timep, 3), 1);
-top = find(300.075==round(timep, 3), 1);
+from = find(400==round(time, 3), 1);
+to = find(400.075==round(time, 3), 1);
+fromp = find(400==round(timep, 3), 1);
+top = find(400.075==round(timep, 3), 1);
 
 p4 = plot(time(from:to), Vin1_sch(from:to), 'r', time(from:to), Vin2_sch(from:to), 'b', time(from:to), Vac_sch(from:to), 'g'); hold on;
     plot(timep(fromp:top), Vin1_pex(fromp:top), 'r--', timep(fromp:top), Vin2_pex(fromp:top), 'b--', timep(fromp:top), Vac_pex(fromp:top), 'g--')
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([300, 300.074]);
+xlim([400, 400.074]);
 title('Inputs voltages', 'FontSize', 10);
 legend('Vin1, Pre', 'Vin2, Pre','Vac Pre', 'Vin1, Post', 'Vin2, Post','Vac, Post', 'location', 'best');
 
@@ -108,3 +108,9 @@ pos = get(f2,'Position');
 set(f2,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f2, 'wpt_ripple_wo_bgr_both.pdf', '-dpdf');
 movefile('wpt_ripple_wo_bgr_both.pdf','../../img/wpt_ripple_wo_bgr_both.pdf');
+
+set(f3,'Units','Inches');
+pos = get(f3,'Position');
+set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
+print(f3, 'wpt_inputs_wo_bgr_both.pdf', '-dpdf');
+movefile('wpt_inputs_wo_bgr_both.pdf','../../img/wpt_inputs_wo_bgr_both.pdf');
