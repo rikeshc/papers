@@ -3,7 +3,9 @@
 %% Created for Rikesh Chauhan at 2016-08-16 17:45:53 +0200 
 %% Saved with string encoding Unicode (UTF-8) 
 
-@Article{ldo_ti_pmos,
+%***************************************************   URLs  *************************************************** 
+
+@misc{ldo_ti_pmos,
   author = 	 {Brian M. King},
   title = 	 {Advantages of using PMOS-type low-dropout inear regulators in battery applications},
   journal = 	 {Texas Instruments Analog Applications Journal: Power Management},
@@ -17,7 +19,7 @@
   OPTannote = 	 {}
 }
 
-@Article{ldo_ti_pssr,
+@misc{ldo_ti_pssr,
   author = 	 {John C. Teel},
   title = 	 {Understanding power supply ripple rejection in linear regulators},
   journal = 	 {Texas Instruments Analog Applications Journal: Power Management},
@@ -32,7 +34,7 @@
 }
 
 
-@Article{ldo_ti_stability,
+@misc{ldo_ti_stability,
   author = 	 {Everett Rogers},
   title = 	 {Stability analysis of low-dropout linear regulators with a PMOS pass element},
   journal = 	 {Texas Instruments Analog Applications Journal: Power Management},
@@ -50,10 +52,23 @@
 @misc{ldo_psu,
   author = 	 {Ian Poole},
   title = 	 {PSU | Linear Power Supply, Radio-electronics.com},
-  howpublished = { \url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}},
   Month = {Sept},
   year = 	 {2012},
-  note = 	 {Accessed: 13-Aug-2016}}
+  note = 	 {Retrived from: \url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php} },
+  %note = 	 {Accessed: 13-Aug-2016}
+  }
+  
+  @misc{iot_intro,
+  author = 	 {Lopez Research},
+  title = 	 {An Introduction to the Internet of Things (IOT)},
+  Month = {Nov},
+  year = 	 {2013},
+  note = 	 {Retrived from: \url{http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf} },
+  %note = 	 {Accessed: 10-June-2017}
+  }
+
+
+%***************************************************   articles  *************************************************** 
 
 @article{rectcomp,
 	Author = {H. M. Lee and M. Ghovanloo},
@@ -132,48 +147,6 @@ month={Nov},
 }
 
 
-@book{baker_2010,
- author = {Baker, R. Jacob},
- title = {CMOS Circuit Design, Layout, and Simulation},
- year = {2010},
- isbn = {0470881321, 9780470881323},
- edition = {3rd},
- publisher = {Wiley-IEEE Press},
-} 
-
-
-@book{razavi_2001,
- author = {Razavi, Behzad},
- title = {Design of Analog CMOS Integrated Circuits},
- year = {2001},
- isbn = {0072380322, 9780072380323},
- edition = {1},
- publisher = {McGraw-Hill, Inc.},
- address = {New York, NY, USA},
-} 
-
-
-@book{johns_2012,
-  title={Analog integrated circuit design},
-  author={Johns, David A and Martin, Ken},
-  edition = {2E},
-  year={2012},
-  isbn = {978-1-118-09233-0},
-  publisher={John Wiley \& Sons}
-}
-
-
-@book{gray_2009,
- author = {Gray, Paul R. and Hurst, Paul J. and Lewis, Stephen H. and Meyer, Robert G.},
- title = {Analysis and Design of Analog Integrated Circuits},
- year = {2009},
- isbn = {978-0-470-24599-6},
- edition = {5th},
- publisher = {Wiley Publishing},
- address = {New York, NY, USA},
-} 
-
-
 @ARTICLE{ldo_quiescent,
 author={G. A. Rincon-Mora and P. E. Allen},
 journal={IEEE Journal of Solid-State Circuits},
@@ -234,4 +207,70 @@ pages={2256-2259},
 keywords={S-parameters;equivalent circuits;inductors;CMOS inductor performance estimation;RF CMOS inductors;S-parameters;Z-parameters;CMOS technology;Differential equations;Electrical resistance measurement;Inductors;Integrated circuit measurements;Parameter extraction;Q factor;Radio frequency;Scattering parameters;Semiconductor device modeling},
 doi={10.1109/ISCAS.2007.378732},
 ISSN={0271-4302},
-month={May},}
+month={May},
+}
+
+@INPROCEEDINGS{review_energy_harvest,
+author = {Mateu, Loreto and Moll, Francesc},
+year = {2005},
+month = {06},
+%doi={10.1.1.467.3190}, % not found
+pages = {},
+title = {Review of energy harvesting techniques and applications for Microelectronics},
+volume = {5837},
+booktitle = {Proceedings of SPIE - The International Society for Optical Engineering}
+}
+
+
+%***************************************************   BOOK  *************************************************** 
+
+@book{baker_2010,
+ author = {Baker, R. Jacob},
+ title = {CMOS Circuit Design, Layout, and Simulation},
+ year = {2010},
+ isbn = {0470881321, 9780470881323},
+ edition = {3rd},
+ publisher = {Wiley-IEEE Press},
+} 
+
+
+@book{razavi_2001,
+ author = {Razavi, Behzad},
+ title = {Design of Analog CMOS Integrated Circuits},
+ year = {2001},
+ isbn = {0072380322, 9780072380323},
+ edition = {1},
+ publisher = {McGraw-Hill, Inc.},
+ address = {New York, NY, USA},
+} 
+
+
+@book{johns_2012,
+  title={Analog integrated circuit design},
+  author={Johns, David A and Martin, Ken},
+  edition = {2E},
+  year={2012},
+  isbn = {978-1-118-09233-0},
+  publisher={John Wiley \& Sons}
+}
+
+
+@book{gray_2009,
+ author = {Gray, Paul R. and Hurst, Paul J. and Lewis, Stephen H. and Meyer, Robert G.},
+ title = {Analysis and Design of Analog Integrated Circuits},
+ year = {2009},
+ isbn = {978-0-470-24599-6},
+ edition = {5th},
+ publisher = {Wiley Publishing},
+ address = {New York, NY, USA},
+} 
+
+@book{rabaey_2009,
+ author = {Rabaey, Jan},
+ title = {Low Power Design Essentials},
+ year = {2009},
+ doi={10.1007/978-0-387-71713-5},
+ isbn = {0387717129,  9780387717128},
+ edition = {1st},
+ publisher = {Springer Publishing Company, Incorporated},
+} 

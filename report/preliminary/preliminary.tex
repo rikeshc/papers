@@ -101,6 +101,48 @@ A brief discussion of rectifier design is followed next.
 
 \clearpage
 \newpage
+% *********************************************************************** BACKGROUND  *********************************************************************
+
+\subsection{Motivation}
+
+The ongoing modern technological advancements have led us into dramatic and drastic electronic device development trend.  On the one hand devices are getting smaller, lighter and low-powered, while on the other hand more and more functionality with increased speed are being integrated. And above all these, going wireless whenever and whatever possible is the market trend. Specially in commercial electronics, it looks like quest for the ultimate gadget, miniaturised low-powered multi-functional wireless device, is not going to stop anytime soon. Thanks to non-stop research and development in manufacturing, material and technology. \\
+
+
+\subsubsection{Technology Trend}
+
+Reduction in size and weight has been most dramatic that in course of some decades miniaturisation trend went from a room-sized fixed electronic into a wearable device. Most important milestone contributing for lighter and tighter devices is development of transistor in Bell Lab in 1950s replacing large and bulky vacuum tubes. Similarly development first integrated circuit, IC, in 1965 added another stepping stone towards miniaturisation of electronic device, making it possible to integrated hundreds of transistors on a single silicon substrate of some square mm. Since then as stated by Moorse's law, IC size is continuously shrinking. A typical modern IC now consists of billions of transistors of some  tens of nm feature size. \\
+
+On the contrary to shrinking device size, integrated functionality and device speed is increasing proportionally. The introduction of SoCs created of new dawn of multi-functionality IC by integrating many electronic components and/or systems on a single silicon substrate. Similarly multi-core CPU with parallel programmed instruction  significantly increased work payload as stated by Amdahl's law. Similarly recent developments in IoT has introduced whole new dimension on multi-functionality by connecting many devices to a same local network or the internet\cite{iot_intro}. \\
+
+In terms of power consumption, though power density has increased due to increased transistor density and speed, power consumption per transistor and energy per operation, EOP, has significantly reduced. It is due to gradual shrinking in feature size and decrease in supply voltage. Similarly there has been a lot progress in LP design introducing new power optimal design techniques both at logic/circuit level and architecture level. Lately run time power optimisation technique by tracing realtime work load like dynamic voltage scaling and switching between different operation modes (sleep, nap, doze and active) have been popularly used to reduce power consumption\cite{rabaey_2009}. \\
+
+%http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf
+
+In spite of dramatic technological advancement batteries are still used as power source to drive electronics devices. It is not like there has been no progress in battery technology. There has been a lot improvements like increased volumetric energy density thereby reducing size, increased gravimetric energy density thereby reducing weight, reduced self discharge thereby increasing life time and increased charged cycle thereby increasing reuse.[CITE]. Today Li-ion has better choice for powering devices because of it better combined above mentioned characteristics. \\
+
+Though there has been progress in battery technology, use of battery in todays' handheld and portable devices have disadvantages. Batteries contribute significant proportion of total weight and size of the device. They occupy more space, require regular recharge and in the long run need replacement. WPT helps to overcome some of these limitations. For example instead of removing and recharging batteries, they can be recharged with harvested energy without removing them. Going one step further ahead, batteries can be completely replaced in a electronic device and power the device wirelessly. This way implementation of WPT helps to minimise the problems of battery powered device and in the best case completely removes the problems. \\
+
+
+\subsection{Energy Harvesting}
+
+Today many different energy harvesting techniques have been studied and implemented. There has been tremendous success in harvesting low power from ambient sources and a lot of effort and resources is being used for harvesting high power. As discussed earlier the technological advancement has given us low power electronics. These LP devices can now be powered solely by harvested energy, eventually making battery-less wirelessly powered electronic device a reality. \\
+
+Energy harvesting system generally constitutes of energy source, transducer and power conditioning unit. Energy source can either be artificial like human walking or natural like sunlight. Transducer are devices which converts the energy from source which may be to electrical energy. And power conditioning unit process the harvested energy so that it can be used either to directly power a load or to store the energy. \\
+
+Depending upon the type of energy harvested from the surrounding environment, energy harvesting devices can be broadly classified into kinetic, electromagnetic and thermal energy sources\cite{review_energy_harvest}. In kinetic energy harvesting, kinetic energy due to mechanical deformation of transducer is converted into electrical energy. Piezoelectrical material is good example of transducer for kinetic energy harvesting. Piezoelectrical materials are those which exhibit piezoelectric effect: when subjected to mechanical strain, it generates electrical charge proportional to applied strain. Strain is applied with either compression, slap or bending of the material. \\
+
+
+Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy harvesting is the most popular and widely successful EM energy harvesting for large scale energy generation. It makes use of semiconductor device called solar cells as transducer. These transducer converts incident light energy to electric energy due to photoelectric effect: when light is incident on semiconductor, electrons are emitted from the surface.  Its application ranges from LP wrist watch to grid of photovoltaic system. The other popular example is harvesting from ISM RF radiation, which are available almost everywhere in modern cities, to power RFIDs. In this technique, antenna or rectenna are used as transducer. However harvesting from ISM radiation has been limited to very low power only. \\
+
+Similarly in thermal energy harvesting, thermal energy from any source in the environment is converted to useful electric energy. Thermopile is an example of thermal energy harvesting using thermocouples in series as transducer. Thermocouple is a electric device with two different conductors forming junctions. A thermocouple generates voltage proportional to temperature between junctions, known as Seeback effect. Connecting thermocouples in series increased the harvested voltage as in thermopile. \\
+
+Though it has been discussed above about powering micro-electronics devices with harvested energy from ambient sources, the reality with commercial micro-electronic device is a different story. Very low power and some low power micro-electronic only have the privilege of integrating energy harvesting techniques so far. It is still limited to research and development phase for moderate to high power harvesting for micro electronic devices. If we observe the trend of technology development in reducing power consumption of micro devices and at the same time, the progress in R\&D with promising results in power harvesting, we can definitely expect that harvested power will meet power requirement of electronic devices in near future. But consumers' desire for battery-less and wireless electronics has made the commercial electronics producers to make most use of latest advancements. This has led to integration of latest development with already matured technology for the sake of consumers' satisfaction and for bigger share of the market. And hence wireless power transfer has gained much popularity. \\
+
+
+\subsection{Wireless Power Transfer}
+
+\clearpage
+\newpage
 % *********************************************************************** RECTIFIER  ***********************************************************************
 
 \section{Rectifier}

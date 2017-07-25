@@ -19,6 +19,59 @@
 
 \refsection{0}
   \sortlist{none}{none}
+    \entry{iot_intro}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6acb3a32a71d1ef41d7c9c8136639b67}{Research}{R\bibinitperiod}{Lopez}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6acb3a32a71d1ef41d7c9c8136639b67}
+      \strng{fullhash}{6acb3a32a71d1ef41d7c9c8136639b67}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Retrived from: \url{http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf}}
+      \field{title}{An Introduction to the Internet of Things (IOT)}
+      \field{year}{2013}
+    \endentry
+    \entry{rabaey_2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3bba79e0c28ae09bb2c98029b1739c53}{Rabaey}{R\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{3bba79e0c28ae09bb2c98029b1739c53}
+      \strng{fullhash}{3bba79e0c28ae09bb2c98029b1739c53}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{isbn}{0387717129, 9780387717128}
+      \field{title}{Low Power Design Essentials}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1007/978-0-387-71713-5
+      \endverb
+    \endentry
+    \entry{review_energy_harvest}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9dba5fa8733478d01c804e408fb0d9a0}{Mateu}{M\bibinitperiod}{Loreto}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=aca81d38f705a35fdfe5aa5e22939b0f}{Moll}{M\bibinitperiod}{Francesc}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{46084a754ed7717345d79c4e93ce2b49}
+      \strng{fullhash}{46084a754ed7717345d79c4e93ce2b49}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of SPIE - The International Society for Optical Engineering}
+      \field{month}{06}
+      \field{title}{Review of energy harvesting techniques and applications for Microelectronics}
+      \field{volume}{5837}
+      \field{year}{2005}
+    \endentry
     \entry{rectboot}{article}{}
       \name{author}{3}{}{%
         {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
@@ -126,9 +179,8 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}}
       \field{month}{09}
-      \field{note}{Accessed: 13-Aug-2016}
+      \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}}
       \field{title}{PSU | Linear Power Supply, Radio-electronics.com}
       \field{year}{2012}
     \endentry
@@ -201,7 +253,7 @@
       \field{title}{Design of Analog CMOS Integrated Circuits}
       \field{year}{2001}
     \endentry
-    \entry{ldo_ti_pmos}{article}{}
+    \entry{ldo_ti_pmos}{misc}{}
       \name{author}{1}{}{%
         {{hash=e3f2cbd0a5f06cb50bfe4b72702da6e7}{King}{K\bibinitperiod}{Brian\bibnamedelima M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
       }
@@ -217,7 +269,7 @@
       \field{title}{Advantages of using PMOS-type low-dropout inear regulators in battery applications}
       \field{year}{2000}
     \endentry
-    \entry{ldo_ti_stability}{article}{}
+    \entry{ldo_ti_stability}{misc}{}
       \name{author}{1}{}{%
         {{hash=1d41f94c680efef59f760b962897140d}{Rogers}{R\bibinitperiod}{Everett}{E\bibinitperiod}{}{}{}{}}%
       }
@@ -232,7 +284,7 @@
       \field{title}{Stability analysis of low-dropout linear regulators with a PMOS pass element}
       \field{year}{1999}
     \endentry
-    \entry{ldo_ti_pssr}{article}{}
+    \entry{ldo_ti_pssr}{misc}{}
       \name{author}{1}{}{%
         {{hash=14168c1dc2a0409ac6261ce363d7ea5c}{Teel}{T\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
       }
