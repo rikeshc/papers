@@ -72,6 +72,130 @@
       \field{volume}{5837}
       \field{year}{2005}
     \endentry
+    \entry{wpt_fund_std}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e9624de7b2f567e77587eeb44b2a2903}{Lu}{L\bibinitperiod}{X.}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=b1e1d788317ca0bbc6c0afec53571f5d}{Wang}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ffb5c8afd6111b12e60827ce8415d51a}{Niyato}{N\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=3faa49d0b0fa08884ffa66d9fd24458c}{Kim}{K\bibinitperiod}{D.\bibnamedelimi I.}{D\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=6c62aa202564694e3286ddd4a1d6bf6a}{Han}{H\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3467f4f56aa2cfa02ebd525914c74cef}
+      \strng{fullhash}{fb9fd9da57edd51a3950b5afa3a25716}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1553-877X}
+      \field{journaltitle}{IEEE Communications Surveys Tutorials}
+      \field{month}{Secondquarter}
+      \field{number}{2}
+      \field{title}{Wireless Charging Technologies: Fundamentals, Standards, and Network Applications}
+      \field{volume}{18}
+      \field{year}{2016}
+      \field{pages}{1413\bibrangedash 1452}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1109/COMST.2015.2499783
+      \endverb
+      \keyw{air gaps;inductive power transmission;radiofrequency power transmission;scheduling;secondary cells;air gap;electrical device;energy bottleneck;energy replenishment;mobile charger dispatch strategy;portable battery-powered device;power management;power transmission;static charger scheduling strategy;wireless charger deployment strategy;wireless charging technology;wireless communication system;Couplings;Energy harvesting;Inductive charging;Microwave theory and techniques;Radio frequency;Wireless communication;Wireless sensor networks;A4WP;Magnetic MIMO;PMA;Qi;RF/Microwave radiation;Wireless Charging;Wireless charging;Witricity;energy beamforming;energy harvesting;inductive coupling;resonance coupling;simultaneous wireless information and power transfer (SWIPT);wireless power transfer;wireless powered communication network (WPCN)}
+    \endentry
+    \entry{rfid_2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=41ecbab034ca384b6721520f4d82a83f}{Finkenzeller}{F\bibinitperiod}{Klaus}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons Ltd}%
+      }
+      \strng{namehash}{41ecbab034ca384b6721520f4d82a83f}
+      \strng{fullhash}{41ecbab034ca384b6721520f4d82a83f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{9780470665121}
+      \field{title}{RFID Handbook: Fundamentals and Applications in Contactless Smart Cards, Radio Frequency Identification and Near-Field Communication}
+      \field{year}{2010}
+    \endentry
+    \entry{wpt_witricity}{article}{}
+      \name{author}{4}{}{%
+        {{hash=716844edf3a130ba3d35338303463907}{Ho}{H\bibinitperiod}{S.\bibnamedelimi L.}{S\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=8845475b32556b4a8eb724ec4cb86611}{Wang}{W\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=73d01f7acaeb2a8acea7c1591f0948c4}{Fu}{F\bibinitperiod}{W.\bibnamedelimi N.}{W\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=85a942b10b2492795c8d0c42e33ee5b6}{Sun}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{661084d3a532f41cbb98e765aa13db9a}
+      \strng{fullhash}{15bcfdcf0a30b5fc269ede98d31d32be}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9464}
+      \field{journaltitle}{IEEE Transactions on Magnetics}
+      \field{month}{05}
+      \field{number}{5}
+      \field{title}{A Comparative Study Between Novel Witricity and Traditional Inductive Magnetic Coupling in Wireless Charging}
+      \field{volume}{47}
+      \field{year}{2011}
+      \field{pages}{1522\bibrangedash 1525}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/TMAG.2010.2091495
+      \endverb
+      \keyw{battery chargers;finite element analysis;inductive power transmission;magnetic devices;power transformers;resonators;FEA;Witricity magnetic coupling;coils;finite element analysis;implant devices;magnetic inductive coupling energy transmission devices;nonradiative energy transfer;nonradiative energy transformer;resonant frequency;resonant-field evanescent tails;resonator;wireless charging;wireless energy transfer;Coils;Couplings;Magnetic resonance;Magnetic separation;Receivers;Wireless communication;Inductive magnetic coupling;resonant wireless energy transfer;strong coupling;witricity}
+    \endentry
+    \entry{wpt_mutliple_device_charging}{article}{}
+      \name{author}{4}{}{%
+        {{hash=648b5b92c3ab1a0b4ceba4e1b16034cd}{Cannon}{C\bibinitperiod}{B.\bibnamedelimi L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=e9ec1dc80d1e1f13992f26125ccac81d}{Hoburg}{H\bibinitperiod}{J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=2f66f5287be30fb0e4f904d64705629e}{Stancil}{S\bibinitperiod}{D.\bibnamedelimi D.}{D\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=3585f27023d8b2ab2a6b1a853872cbce}{Goldstein}{G\bibinitperiod}{S.\bibnamedelimi C.}{S\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c692d9997007b57a35cd940118821f72}
+      \strng{fullhash}{53c9b716ad3a468de98c83e9e12762d1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0885-8993}
+      \field{journaltitle}{IEEE Transactions on Power Electronics}
+      \field{month}{07}
+      \field{number}{7}
+      \field{title}{Magnetic Resonant Coupling As a Potential Means for Wireless Power Transfer to Multiple Small Receivers}
+      \field{volume}{24}
+      \field{year}{2009}
+      \field{pages}{1819\bibrangedash 1825}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/TPEL.2009.2017195
+      \endverb
+      \keyw{inductive power transmission;circuit models;load coil;magnetic resonant coupling;multiple receiver system;resonant frequency splitting;source coil;transfer frequency responses;wireless power transfer;Capacitance;Capacitors;Coils;Coupling circuits;Frequency measurement;Magnetic resonance;Power supplies;Power system modeling;RLC circuits;Resonant frequency;Microrobotics;resonant coupling;swarm robotics;wireless power}
+    \endentry
+    \entry{wpt_cpt}{article}{}
+      \name{author}{1}{}{%
+        {{hash=268fe794d4a885c2c0d5afcca8bc0d12}{Theodoridis}{T\bibinitperiod}{M.\bibnamedelimi P.}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{268fe794d4a885c2c0d5afcca8bc0d12}
+      \strng{fullhash}{268fe794d4a885c2c0d5afcca8bc0d12}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0885-8993}
+      \field{journaltitle}{IEEE Transactions on Power Electronics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Effective Capacitive Power Transfer}
+      \field{volume}{27}
+      \field{year}{2012}
+      \field{pages}{4906\bibrangedash 4913}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TPEL.2012.2192502
+      \endverb
+      \keyw{capacitor switching;power systems;CPT system;capacitance 100 pF;capacitive power transfer system;frequency 1 MHz;interface capacitance;interface frequency;low-impedance load;power delivery;power throughput;switching device rating;Capacitance;Capacitors;Integrated circuits;Magnetic cores;Power generation;Robots;Topology;Capacitive power transfer (CPT);contactless charging;contactless power transfer}
+    \endentry
     \entry{rectboot}{article}{}
       \name{author}{3}{}{%
         {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%

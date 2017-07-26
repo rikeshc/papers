@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  26 JUL 2017 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  27 JUL 2017 00:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1436,28 +1436,28 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 (./preliminary.aux)
 \openout1 = `preliminary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 75.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Try loading font information for T1+pnc on input line 67.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for T1+pnc on input line 75.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pnc.fd
 File: t1pnc.fd 2001/06/04 font definitions for T1/pnc.
@@ -1501,8 +1501,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'preliminary.bbl' found.
  (./preliminary.bbl)
-Package biblatex Info: Reference section=0 on input line 67.
-Package biblatex Info: Reference segment=0 on input line 67.
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
 \AtBeginShipoutBox=\box58
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
@@ -1514,7 +1514,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 )
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 75.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1524,9 +1524,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count354
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./preliminary.out) (./preliminary.out)
 \@outlinefile=\write4
@@ -1535,16 +1535,16 @@ LaTeX Info: Redefining \nameref on input line 67.
 \c__siunitx_mathsf_int=\count355
 \c__siunitx_mathtt_int=\count356
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 78.
 
-<img/block_diagram.pdf, id=101, 575.14874pt x 265.99374pt>
+<img/block_diagram.pdf, id=109, 575.14874pt x 265.99374pt>
 File: img/block_diagram.pdf Graphic file (type pdf)
 
 <use img/block_diagram.pdf>
-Package pdftex.def Info: img/block_diagram.pdf used on input line 75.
+Package pdftex.def Info: img/block_diagram.pdf used on input line 83.
 (pdftex.def)             Requested size: 390.0pt x 180.37006pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -1553,32 +1553,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/b
 lock_diagram.pdf>] [2]
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 106.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 114.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 111.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 119.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-[3
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -1589,686 +1572,792 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Overfull \hbox (2.67247pt too wide) in paragraph at lines 137--138
+Overfull \hbox (2.67247pt too wide) in paragraph at lines 145--146
 \T1/pnc/m/n/12 mo-pile is an ex-ample of thermal en-ergy har-vest-ing us-ing th
 er-mo-couples
  []
 
 
-Overfull \hbox (7.8681pt too wide) in paragraph at lines 137--138
+Overfull \hbox (7.8681pt too wide) in paragraph at lines 145--146
 \T1/pnc/m/n/12 fect. Con-nect-ing ther-mo-couples in series in-creased the har-
 ves-ted voltage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-[5] [6]
-Overfull \hbox (3.09196pt too wide) in paragraph at lines 149--150
-\T1/pnc/m/n/12 The most ba-sic rec-ti-fier is con-ven-tional full wave bridge s
-truc-ture where
+Overfull \hbox (5.75328pt too wide) in paragraph at lines 147--148
+[]\T1/pnc/m/n/12 Though it has been dis-cussed above about power-ing micro-elec
+tronics
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[7
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
-<img/rectifier_full_bridge.pdf, id=172, 369.38pt x 233.87375pt>
-File: img/rectifier_full_bridge.pdf Graphic file (type pdf)
+[6]
+Overfull \hbox (1.05237pt too wide) in paragraph at lines 164--165
+\T1/pnc/m/n/12 tric en-ergy is trans-ferred by coup-ling of mag-netic field fro
+m the primary
+ []
 
-<use img/rectifier_full_bridge.pdf>
-Package pdftex.def Info: img/rectifier_full_bridge.pdf used on input line 163.
-(pdftex.def)             Requested size: 191.10214pt x 120.99767pt.
 
-<img/rectifier_full_cc.pdf, id=173, 369.38pt x 240.9pt>
-File: img/rectifier_full_cc.pdf Graphic file (type pdf)
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
-<use img/rectifier_full_cc.pdf>
-Package pdftex.def Info: img/rectifier_full_cc.pdf used on input line 165.
-(pdftex.def)             Requested size: 191.10214pt x 124.6328pt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-[8 <./img/rectifier_full_bridge.pdf> <./img/rectifier_full_cc.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-<img/rectifier_schematic.pdf, id=209, 361.35pt x 154.5775pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Overfull \hbox (2.67152pt too wide) in paragraph at lines 184--185
+\T1/pnc/m/n/12 directive ra-di-at-ive power trans-fer. Non-directive power tran
+s-fer is same
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+[8]
+Overfull \hbox (3.09196pt too wide) in paragraph at lines 196--197
+\T1/pnc/m/n/12 The most ba-sic rec-ti-fier is con-ven-tional full wave bridge s
+truc-ture where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+<img/rectifier_full_bridge.pdf, id=202, 369.38pt x 233.87375pt>
+File: img/rectifier_full_bridge.pdf Graphic file (type pdf)
+
+<use img/rectifier_full_bridge.pdf>
+Package pdftex.def Info: img/rectifier_full_bridge.pdf used on input line 210.
+(pdftex.def)             Requested size: 191.10214pt x 120.99767pt.
+
+<img/rectifier_full_cc.pdf, id=203, 369.38pt x 240.9pt>
+File: img/rectifier_full_cc.pdf Graphic file (type pdf)
+
+<use img/rectifier_full_cc.pdf>
+Package pdftex.def Info: img/rectifier_full_cc.pdf used on input line 212.
+(pdftex.def)             Requested size: 191.10214pt x 124.6328pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+[10 <./img/rectifier_full_bridge.pdf> <./img/rectifier_full_cc.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+<img/rectifier_schematic.pdf, id=237, 361.35pt x 154.5775pt>
 File: img/rectifier_schematic.pdf Graphic file (type pdf)
 
 <use img/rectifier_schematic.pdf>
-Package pdftex.def Info: img/rectifier_schematic.pdf used on input line 176.
+Package pdftex.def Info: img/rectifier_schematic.pdf used on input line 223.
 (pdftex.def)             Requested size: 390.0pt x 166.83505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-[9 <./img/rectifier_schematic.pdf>]
-<img/rectifier_rcc5.pdf, id=225, 361.35pt x 281.05pt>
+[11 <./img/rectifier_schematic.pdf>]
+<img/rectifier_rcc5.pdf, id=253, 361.35pt x 281.05pt>
 File: img/rectifier_rcc5.pdf Graphic file (type pdf)
 
 <use img/rectifier_rcc5.pdf>
-Package pdftex.def Info: img/rectifier_rcc5.pdf used on input line 185.
+Package pdftex.def Info: img/rectifier_rcc5.pdf used on input line 232.
 (pdftex.def)             Requested size: 390.0pt x 303.33649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-[10 <./img/rectifier_rcc5.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--220
+[12 <./img/rectifier_rcc5.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 259--267
 
  []
 
-<img/rectifier_testbench.pdf, id=244, 369.38pt x 117.43875pt>
+<img/rectifier_testbench.pdf, id=272, 369.38pt x 117.43875pt>
 File: img/rectifier_testbench.pdf Graphic file (type pdf)
 
 <use img/rectifier_testbench.pdf>
-Package pdftex.def Info: img/rectifier_testbench.pdf used on input line 223.
+Package pdftex.def Info: img/rectifier_testbench.pdf used on input line 270.
 (pdftex.def)             Requested size: 390.0pt x 123.99525pt.
 
-<img/rectifier_VI.pdf, id=245, 427.5975pt x 309.155pt>
+<img/rectifier_VI.pdf, id=273, 427.5975pt x 309.155pt>
 File: img/rectifier_VI.pdf Graphic file (type pdf)
 
 <use img/rectifier_VI.pdf>
-Package pdftex.def Info: img/rectifier_VI.pdf used on input line 230.
+Package pdftex.def Info: img/rectifier_VI.pdf used on input line 277.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
  []
 
-<img/rectifier_V_post.pdf, id=254, 427.5975pt x 309.155pt>
+<img/rectifier_V_post.pdf, id=283, 427.5975pt x 309.155pt>
 File: img/rectifier_V_post.pdf Graphic file (type pdf)
 
 <use img/rectifier_V_post.pdf>
-Package pdftex.def Info: img/rectifier_V_post.pdf used on input line 240.
+Package pdftex.def Info: img/rectifier_V_post.pdf used on input line 287.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [12 <./img/rectifier_testbench.pdf> <./img/rectifier_VI.pdf>] <img/rectifier_r
-ipple.pdf, id=295, 427.5975pt x 309.155pt>
+ [14 <./img/rectifier_testbench.pdf> <./img/rectifier_VI.pdf>] <img/rectifier_r
+ipple.pdf, id=324, 427.5975pt x 309.155pt>
 File: img/rectifier_ripple.pdf Graphic file (type pdf)
 
 <use img/rectifier_ripple.pdf>
-Package pdftex.def Info: img/rectifier_ripple.pdf used on input line 247.
+Package pdftex.def Info: img/rectifier_ripple.pdf used on input line 294.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [13 <./img/rectifier_V_post.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 254--259
+ [15 <./img/rectifier_V_post.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 301--306
 
  []
 
-<img/rectifier_ce.pdf, id=318, 427.5975pt x 309.155pt>
+<img/rectifier_ce.pdf, id=346, 427.5975pt x 309.155pt>
 File: img/rectifier_ce.pdf Graphic file (type pdf)
 
 <use img/rectifier_ce.pdf>
-Package pdftex.def Info: img/rectifier_ce.pdf used on input line 262.
+Package pdftex.def Info: img/rectifier_ce.pdf used on input line 309.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [14 <./img/rectifier_ripple.pdf>] [15 <./img/rectifier_ce.pdf>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 297--302
+ [16 <./img/rectifier_ripple.pdf>] [17 <./img/rectifier_ce.pdf>] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--310
+Underfull \hbox (badness 10000) in paragraph at lines 350--357
 
  []
 
-<img/ldo.pdf, id=371, 433.62pt x 259.97125pt>
+<img/ldo.pdf, id=399, 433.62pt x 259.97125pt>
 File: img/ldo.pdf Graphic file (type pdf)
  <use img/ldo.pdf>
-Package pdftex.def Info: img/ldo.pdf used on input line 313.
+Package pdftex.def Info: img/ldo.pdf used on input line 360.
 (pdftex.def)             Requested size: 350.99762pt x 210.44464pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--323
+Underfull \hbox (badness 10000) in paragraph at lines 365--370
 
  []
 
-[17
+[19
 
  <./img/ldo.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
 
  []
 
-<img/ldo_schematic.pdf, id=396, 369.38pt x 191.71625pt>
+<img/ldo_schematic.pdf, id=426, 369.38pt x 191.71625pt>
 File: img/ldo_schematic.pdf Graphic file (type pdf)
 
 <use img/ldo_schematic.pdf>
-Package pdftex.def Info: img/ldo_schematic.pdf used on input line 332.
+Package pdftex.def Info: img/ldo_schematic.pdf used on input line 379.
 (pdftex.def)             Requested size: 390.0pt x 202.41963pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--347
+Underfull \hbox (badness 10000) in paragraph at lines 386--394
 
  []
 
-[18 <./img/ldo_schematic.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+pnc on input line 361.
+[20 <./img/ldo_schematic.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+pnc on input line 408.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1pnc.fd
 File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 372--380
+Underfull \hbox (badness 10000) in paragraph at lines 419--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--390
+Underfull \hbox (badness 10000) in paragraph at lines 428--437
 
  []
 
-[19] <img/ldo_testbench.pdf, id=424, 361.35pt x 112.42pt>
+[21] <img/ldo_testbench.pdf, id=452, 361.35pt x 112.42pt>
 File: img/ldo_testbench.pdf Graphic file (type pdf)
 
 <use img/ldo_testbench.pdf>
-Package pdftex.def Info: img/ldo_testbench.pdf used on input line 393.
+Package pdftex.def Info: img/ldo_testbench.pdf used on input line 440.
 (pdftex.def)             Requested size: 350.99762pt x 109.19994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--414
+Underfull \hbox (badness 10000) in paragraph at lines 445--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--421
+Underfull \hbox (badness 10000) in paragraph at lines 464--468
 
  []
 
-[20 <./img/ldo_testbench.pdf>]
-<img/ldo_transient_both.pdf, id=442, 427.5975pt x 309.155pt>
+[22 <./img/ldo_testbench.pdf>]
+<img/ldo_transient_both.pdf, id=470, 427.5975pt x 309.155pt>
 File: img/ldo_transient_both.pdf Graphic file (type pdf)
 
 <use img/ldo_transient_both.pdf>
-Package pdftex.def Info: img/ldo_transient_both.pdf used on input line 424.
+Package pdftex.def Info: img/ldo_transient_both.pdf used on input line 471.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--434
+Underfull \hbox (badness 10000) in paragraph at lines 476--481
 
  []
 
-[21 <./img/ldo_transient_both.pdf>]
-<img/ldo_loadr_both.pdf, id=474, 427.5975pt x 309.155pt>
+[23 <./img/ldo_transient_both.pdf>]
+<img/ldo_loadr_both.pdf, id=502, 427.5975pt x 309.155pt>
 File: img/ldo_loadr_both.pdf Graphic file (type pdf)
 
 <use img/ldo_loadr_both.pdf>
-Package pdftex.def Info: img/ldo_loadr_both.pdf used on input line 440.
+Package pdftex.def Info: img/ldo_loadr_both.pdf used on input line 487.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
 
-<img/ldo_liner_both.pdf, id=475, 427.5975pt x 309.155pt>
+<img/ldo_liner_both.pdf, id=503, 427.5975pt x 309.155pt>
 File: img/ldo_liner_both.pdf Graphic file (type pdf)
 
 <use img/ldo_liner_both.pdf>
-Package pdftex.def Info: img/ldo_liner_both.pdf used on input line 447.
+Package pdftex.def Info: img/ldo_liner_both.pdf used on input line 494.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [22 <./img/ldo_loadr_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 454--460
+ [24 <./img/ldo_loadr_both.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 501--507
 
  []
 
-<img/ldo_dc_both.pdf, id=511, 427.5975pt x 309.155pt>
+<img/ldo_dc_both.pdf, id=540, 427.5975pt x 309.155pt>
 File: img/ldo_dc_both.pdf Graphic file (type pdf)
 
 <use img/ldo_dc_both.pdf>
-Package pdftex.def Info: img/ldo_dc_both.pdf used on input line 465.
+Package pdftex.def Info: img/ldo_dc_both.pdf used on input line 512.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [23 <./img/ldo_liner_both.pdf>]
-<img/ldo_Iload_both.pdf, id=546, 427.5975pt x 309.155pt>
+ [25 <./img/ldo_liner_both.pdf>]
+<img/ldo_Iload_both.pdf, id=575, 427.5975pt x 309.155pt>
 File: img/ldo_Iload_both.pdf Graphic file (type pdf)
 
 <use img/ldo_Iload_both.pdf>
-Package pdftex.def Info: img/ldo_Iload_both.pdf used on input line 472.
+Package pdftex.def Info: img/ldo_Iload_both.pdf used on input line 519.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [24 <./img/ldo_dc_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 479--482
+ [26 <./img/ldo_dc_both.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--489
+Underfull \hbox (badness 10000) in paragraph at lines 530--536
 
  []
 
-[25 <./img/ldo_Iload_both.pdf>]
-<img/ldo_ac.pdf, id=607, 427.5975pt x 309.155pt>
+[27 <./img/ldo_Iload_both.pdf>]
+<img/ldo_ac.pdf, id=635, 427.5975pt x 309.155pt>
 File: img/ldo_ac.pdf Graphic file (type pdf)
  <use img/ldo_ac.pdf>
-Package pdftex.def Info: img/ldo_ac.pdf used on input line 492.
+Package pdftex.def Info: img/ldo_ac.pdf used on input line 539.
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
 
-<img/ldo_pssr_both.pdf, id=608, 421.575pt x 316.18124pt>
+<img/ldo_pssr_both.pdf, id=636, 421.575pt x 316.18124pt>
 File: img/ldo_pssr_both.pdf Graphic file (type pdf)
 
 <use img/ldo_pssr_both.pdf>
-Package pdftex.def Info: img/ldo_pssr_both.pdf used on input line 499.
+Package pdftex.def Info: img/ldo_pssr_both.pdf used on input line 546.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
- [26 <./img/ldo_ac.pdf>] [27 <./img/ldo_pssr_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+ [28 <./img/ldo_ac.pdf>] [29 <./img/ldo_pssr_both.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
 
-Overfull \hbox (2.60027pt too wide) in paragraph at lines 539--540
+Overfull \hbox (2.60027pt too wide) in paragraph at lines 586--587
 \T1/pnc/m/n/12 cur-rent source is gen-er-ated first and then this cur-rent is p
 assed through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
-<img/sch_bgr_label.pdf, id=898, 559.219pt x 274.59859pt>
+<img/sch_bgr_label.pdf, id=926, 559.219pt x 274.59859pt>
 File: img/sch_bgr_label.pdf Graphic file (type pdf)
 
 <use img/sch_bgr_label.pdf>
-Package pdftex.def Info: img/sch_bgr_label.pdf used on input line 545.
+Package pdftex.def Info: img/sch_bgr_label.pdf used on input line 592.
 (pdftex.def)             Requested size: 390.0pt x 191.51376pt.
 
-Overfull \hbox (14.70757pt too wide) in paragraph at lines 550--551
-\T1/pnc/m/n/12 con-trolled cur-rent mir-ror [[][]11[][], pp. 391-392]. The cur-
+Overfull \hbox (14.70757pt too wide) in paragraph at lines 597--598
+\T1/pnc/m/n/12 con-trolled cur-rent mir-ror [[][]16[][], pp. 391-392]. The cur-
 rent is $\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 V[]ln\OT1/cmr/m/
 n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =R[]$\T1/pnc/m/n/12 ,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
 
  []
 
-[29
+[31
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
-<img/bgr_temp.pdf, id=912, 542.025pt x 289.08pt>
+<img/bgr_temp.pdf, id=941, 542.025pt x 289.08pt>
 File: img/bgr_temp.pdf Graphic file (type pdf)
  <use img/bgr_temp.pdf>
-Package pdftex.def Info: img/bgr_temp.pdf used on input line 558.
+Package pdftex.def Info: img/bgr_temp.pdf used on input line 605.
 (pdftex.def)             Requested size: 350.99762pt x 187.20282pt.
 
-[30 <./img/sch_bgr_label.pdf>] <img/bgr_dc.pdf, id=945, 542.025pt x 361.35pt>
+[32 <./img/sch_bgr_label.pdf>] <img/bgr_dc.pdf, id=975, 542.025pt x 361.35pt>
 File: img/bgr_dc.pdf Graphic file (type pdf)
 
 <use img/bgr_dc.pdf>
-Package pdftex.def Info: img/bgr_dc.pdf used on input line 565.
+Package pdftex.def Info: img/bgr_dc.pdf used on input line 612.
 (pdftex.def)             Requested size: 390.0pt x 260.0064pt.
- <img/bgr_tran.pdf, id=946, 542.025pt x 361.35pt>
+ <img/bgr_tran.pdf, id=976, 542.025pt x 361.35pt>
 File: img/bgr_tran.pdf Graphic file (type pdf)
 
 <use img/bgr_tran.pdf>
-Package pdftex.def Info: img/bgr_tran.pdf used on input line 572.
+Package pdftex.def Info: img/bgr_tran.pdf used on input line 619.
 (pdftex.def)             Requested size: 350.99762pt x 234.00354pt.
- [31 <./img/bgr_temp.pdf>] [32 <./img/bgr_dc.pdf> <./img/bgr_tran.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 602--607
+ [33 <./img/bgr_temp.pdf>] [34 <./img/bgr_dc.pdf> <./img/bgr_tran.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 649--654
 
  []
 
 
-Overfull \hbox (5.42241pt too wide) in paragraph at lines 608--613
+Overfull \hbox (5.42241pt too wide) in paragraph at lines 655--660
 \T1/pnc/m/n/12 voltage/current is in-duced in the coil. In other word, power fr
 om primary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--613
+Underfull \hbox (badness 10000) in paragraph at lines 655--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--623
+Underfull \hbox (badness 10000) in paragraph at lines 661--670
 
  []
 
 
-Overfull \hbox (3.59665pt too wide) in paragraph at lines 624--629
+Overfull \hbox (3.59665pt too wide) in paragraph at lines 671--676
 \T1/pnc/m/n/12 ciency at the op-er-at-ing fre-quency. The an-tenna di-men-sions
  are provided
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--629
+Underfull \hbox (badness 10000) in paragraph at lines 671--676
 
  []
 
-[33
+[35
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 632--635
+Underfull \hbox (badness 10000) in paragraph at lines 679--682
 
  []
 
-<img/ant_non_ideal.pdf, id=997, 274.70448pt x 84.8765pt>
+<img/ant_non_ideal.pdf, id=1025, 274.70448pt x 84.8765pt>
 File: img/ant_non_ideal.pdf Graphic file (type pdf)
 
 <use img/ant_non_ideal.pdf>
-Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 639.
+Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 686.
 (pdftex.def)             Requested size: 350.99762pt x 108.45503pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--657
+Underfull \hbox (badness 10000) in paragraph at lines 691--704
 
  []
 
-[34 <./img/ant_non_ideal.pdf>]
-<img/ant_single.png, id=1047, 1302.8675pt x 836.12375pt>
+[36 <./img/ant_non_ideal.pdf>]
+<img/ant_single.png, id=1075, 1302.8675pt x 836.12375pt>
 File: img/ant_single.png Graphic file (type png)
 
 <use img/ant_single.png>
-Package pdftex.def Info: img/ant_single.png used on input line 660.
+Package pdftex.def Info: img/ant_single.png used on input line 707.
 (pdftex.def)             Requested size: 191.10214pt x 122.63185pt.
 
-<img/ant_single.pdf, id=1049, 190.09608pt x 121.66023pt>
+<img/ant_single.pdf, id=1077, 190.09608pt x 121.66023pt>
 File: img/ant_single.pdf Graphic file (type pdf)
 
 <use img/ant_single.pdf>
-Package pdftex.def Info: img/ant_single.pdf used on input line 662.
+Package pdftex.def Info: img/ant_single.pdf used on input line 709.
 (pdftex.def)             Requested size: 191.10214pt x 122.30408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--695
+Underfull \hbox (badness 10000) in paragraph at lines 735--742
 
  []
 
-[35 <./img/ant_single.png> <./img/ant_single.pdf>]
-<img/ant_couple.png, id=1096, 1289.81876pt x 884.30376pt>
+[37 <./img/ant_single.png> <./img/ant_single.pdf>]
+<img/ant_couple.png, id=1125, 1289.81876pt x 884.30376pt>
 File: img/ant_couple.png Graphic file (type png)
 
 <use img/ant_couple.png>
-Package pdftex.def Info: img/ant_couple.png used on input line 699.
+Package pdftex.def Info: img/ant_couple.png used on input line 746.
 (pdftex.def)             Requested size: 191.10214pt x 131.00714pt.
 
-<img/ant_couple.pdf, id=1097, 190.09608pt x 123.48534pt>
+<img/ant_couple.pdf, id=1126, 190.09608pt x 123.48534pt>
 File: img/ant_couple.pdf Graphic file (type pdf)
 
 <use img/ant_couple.pdf>
-Package pdftex.def Info: img/ant_couple.pdf used on input line 701.
+Package pdftex.def Info: img/ant_couple.pdf used on input line 748.
 (pdftex.def)             Requested size: 191.10214pt x 124.13885pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--728
+Underfull \hbox (badness 10000) in paragraph at lines 771--775
 
  []
 
-[36 <./img/ant_couple.png> <./img/ant_couple.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 729--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 741--744
+[38 <./img/ant_couple.png> <./img/ant_couple.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 776--785
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--754
+Underfull \hbox (badness 10000) in paragraph at lines 788--791
 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 755--758
+
+Underfull \hbox (badness 10000) in paragraph at lines 793--801
 
  []
 
-<img/ant_couple_resonant.pdf, id=1155, 259.59846pt x 93.67778pt>
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 802--805
+
+ []
+
+<img/ant_couple_resonant.pdf, id=1183, 259.59846pt x 93.67778pt>
 File: img/ant_couple_resonant.pdf Graphic file (type pdf)
 
 <use img/ant_couple_resonant.pdf>
-Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 762.
+Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 809.
 (pdftex.def)             Requested size: 312.00119pt x 112.58856pt.
 
-<img/ant_S_loss.png, id=1156, 427.5975pt x 308.65312pt>
+<img/ant_S_loss.png, id=1184, 427.5975pt x 308.65312pt>
 File: img/ant_S_loss.png Graphic file (type png)
 
 <use img/ant_S_loss.png>
-Package pdftex.def Info: img/ant_S_loss.png used on input line 769.
+Package pdftex.def Info: img/ant_S_loss.png used on input line 816.
 (pdftex.def)             Requested size: 350.99762pt x 253.36093pt.
 
-Overfull \hbox (429.89525pt too wide) in paragraph at lines 779--789
+Overfull \hbox (429.89525pt too wide) in paragraph at lines 826--836
  [] 
  []
 
-[38 <./img/ant_couple_resonant.pdf> <./img/ant_S_loss.png (PNG copy)>] [39]
-Overfull \hbox (7.31665pt too wide) in paragraph at lines 799--807
+[40 <./img/ant_couple_resonant.pdf> <./img/ant_S_loss.png (PNG copy)>] [41]
+Overfull \hbox (7.31665pt too wide) in paragraph at lines 846--854
 \T1/pnc/m/n/12 Wireless power trans-fer, []WPT sys-tem al-ways con-sti-tutes tw
 o main units:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 799--807
+Underfull \hbox (badness 10000) in paragraph at lines 846--854
 
  []
 
-<img/wpt_ptu_pru.pdf, id=1202, 332.64075pt x 304.98874pt>
+<img/wpt_ptu_pru.pdf, id=1231, 332.64075pt x 304.98874pt>
 File: img/wpt_ptu_pru.pdf Graphic file (type pdf)
 
 <use img/wpt_ptu_pru.pdf>
-Package pdftex.def Info: img/wpt_ptu_pru.pdf used on input line 810.
+Package pdftex.def Info: img/wpt_ptu_pru.pdf used on input line 857.
 (pdftex.def)             Requested size: 350.99762pt x 321.82988pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 816--820
+Underfull \hbox (badness 10000) in paragraph at lines 863--867
 
  []
 
-[40
+[42
 
  <./img/wpt_ptu_pru.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 821--827
+Underfull \hbox (badness 10000) in paragraph at lines 868--874
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 830--831
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
 
  []
 
-<img/wpt_top.pdf, id=1237, 369.38pt x 174.6525pt>
+<img/wpt_top.pdf, id=1265, 369.38pt x 174.6525pt>
 File: img/wpt_top.pdf Graphic file (type pdf)
  <use img/wpt_top.pdf>
-Package pdftex.def Info: img/wpt_top.pdf used on input line 834.
+Package pdftex.def Info: img/wpt_top.pdf used on input line 881.
 (pdftex.def)             Requested size: 390.0pt x 184.40321pt.
 
-[41] <img/wpt_top_testbench.pdf, id=1244, 369.38pt x 202.7575pt>
+[43] <img/wpt_top_testbench.pdf, id=1273, 369.38pt x 202.7575pt>
 File: img/wpt_top_testbench.pdf Graphic file (type pdf)
 
 <use img/wpt_top_testbench.pdf>
-Package pdftex.def Info: img/wpt_top_testbench.pdf used on input line 843.
+Package pdftex.def Info: img/wpt_top_testbench.pdf used on input line 890.
 (pdftex.def)             Requested size: 390.0pt x 214.0773pt.
 
-<img/wpt_V_wo_bgr_both.pdf, id=1245, 421.575pt x 316.18124pt>
+<img/wpt_V_wo_bgr_both.pdf, id=1274, 421.575pt x 316.18124pt>
 File: img/wpt_V_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_V_wo_bgr_both.pdf>
-Package pdftex.def Info: img/wpt_V_wo_bgr_both.pdf used on input line 852.
+Package pdftex.def Info: img/wpt_V_wo_bgr_both.pdf used on input line 899.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
- [42 <./img/wpt_top.pdf> <./img/wpt_top_testbench.pdf>] <img/wpt_ripple_wo_bgr_
-both.pdf, id=1266, 427.5975pt x 309.155pt>
+ [44 <./img/wpt_top.pdf> <./img/wpt_top_testbench.pdf>] <img/wpt_ripple_wo_bgr_
+both.pdf, id=1295, 427.5975pt x 309.155pt>
 File: img/wpt_ripple_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_ripple_wo_bgr_both.pdf>
-Package pdftex.def Info: img/wpt_ripple_wo_bgr_both.pdf used on input line 859.
+Package pdftex.def Info: img/wpt_ripple_wo_bgr_both.pdf used on input line 906.
 
 (pdftex.def)             Requested size: 390.0pt x 281.97304pt.
- [43 <./img/wpt_V_wo_bgr_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 866--867
+ [45 <./img/wpt_V_wo_bgr_both.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 913--914
 
  []
 
-<img/wpt_top_link.pdf, id=1291, 369.38pt x 204.765pt>
+<img/wpt_top_link.pdf, id=1319, 369.38pt x 204.765pt>
 File: img/wpt_top_link.pdf Graphic file (type pdf)
 
 <use img/wpt_top_link.pdf>
-Package pdftex.def Info: img/wpt_top_link.pdf used on input line 870.
+Package pdftex.def Info: img/wpt_top_link.pdf used on input line 917.
 (pdftex.def)             Requested size: 390.0pt x 216.19687pt.
- [44 <./img/wpt_ripple_wo_bgr_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 875--876
+ [46 <./img/wpt_ripple_wo_bgr_both.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--881
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 882--883
+Underfull \hbox (badness 10000) in paragraph at lines 929--930
 
  []
 
-[45 <./img/wpt_top_link.pdf>] [46]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 889.
+[47 <./img/wpt_top_link.pdf>] [48]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 936.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (3.08548pt too wide) in paragraph at lines 890--890
+Overfull \hbox (3.08548pt too wide) in paragraph at lines 937--937
 \T1/pcr/m/n/12 solutions / trends / iot / introduction _ to _ IoT _ november .
  []
 
 
-Overfull \hbox (25.6572pt too wide) in paragraph at lines 890--890
+Overfull \hbox (25.6572pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 ing Com-pany, In-cor-por-ated, 2009. \T1/pnc/m/sc/12 isbn\T1/pnc
 /m/n/12 : 0387717129, 9780387717128.
  []
 
 
-Overfull \hbox (10.4139pt too wide) in paragraph at lines 890--890
+Package biblatex Warning: Month out of range or not an integer
+(biblatex)                at entry 'wpt_fund_std' on input line 936.
+
+
+Overfull \hbox (12.2264pt too wide) in paragraph at lines 937--937
+[]\T1/pnc/m/n/12 X. Lu et al. `  Wire-less Char-ging Tech-no-lo-gies: Fun-da-me
+nt-als, Stand-
+ []
+
+
+Overfull \hbox (1.42139pt too wide) in paragraph at lines 937--937
+[]\T1/pnc/m/n/12 M. P. Theodor-idis. `  Ef-fect-ive Ca-pa-cit-ive Power Trans-f
+er'. In: \T1/pnc/m/it/12 IEEE
+ []
+
+[49
+
+]
+Overfull \hbox (10.4139pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 Capacitor-Less LDO Reg-u-lator Us-ing Bulk-Modulation Tech-nique
 '.
  []
 
-[47
 
-]
-Overfull \hbox (10.69965pt too wide) in paragraph at lines 890--890
+Overfull \hbox (10.69965pt too wide) in paragraph at lines 937--937
 []\T1/pnc/m/n/12 Behzad Razavi. \T1/pnc/m/it/12 Design of Ana-log CMOS In-teg-r
 ated Cir-cuits\T1/pnc/m/n/12 . 1st ed.
  []
 
-
-Overfull \hbox (5.4319pt too wide) in paragraph at lines 890--890
+[50]
+Overfull \hbox (5.4319pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 1999), pp. 1419^^U1424. \T1/pnc/m/sc/12 issn\T1/pnc/m/n/12 : 001
 8-9200. \T1/pnc/m/sc/12 doi\T1/pnc/m/n/12 : [][]$\T1/pcr/m/n/12 10 . 1109 / 4 .
  792620$[][]\T1/pnc/m/n/12 . 
  []
 
 
-Overfull \hbox (1.33951pt too wide) in paragraph at lines 890--890
+Overfull \hbox (1.33951pt too wide) in paragraph at lines 937--937
 []\T1/pnc/m/n/12 R. F. Xue, K. W. Cheng and M. Je. `  High-Efficiency Wire-less
  Power
  []
 
 
-Overfull \hbox (14.56563pt too wide) in paragraph at lines 890--890
+Overfull \hbox (14.56563pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 Trans-fer for Bio-med-ical Im-plants by Op-timal Res-on-ant Load
  Trans-
  []
 
 
-Overfull \hbox (1.54292pt too wide) in paragraph at lines 890--890
+Overfull \hbox (1.54292pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 Trans-mis-sion'. In: \T1/pnc/m/it/12 IEEE Trans-ac-tions on Bio-
 med-ical Cir-cuits and
  []
 
-[48]
-Overfull \hbox (1.38338pt too wide) in paragraph at lines 890--890
+
+Overfull \hbox (1.38338pt too wide) in paragraph at lines 937--937
 \T1/pnc/m/n/12 3rd. Wiley-IEEE Press, 2010. \T1/pnc/m/sc/12 isbn\T1/pnc/m/n/12 
 : 0470881321, 9780470881323. 
  []
 
-[49] (./preliminary.lof)
+[51] (./preliminary.lof)
 \tf@lof=\write5
 \openout5 = `preliminary.lof'.
 
- [50] (./preliminary.lot)
+ [52] (./preliminary.lot)
 \tf@lot=\write6
 \openout6 = `preliminary.lot'.
 
- [51]
+ [53]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls). 
-on input line 899.
+on input line 946.
 
-[52]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 901.
- [53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 901.
+[54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 948.
+ [55]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 948.
  (./preliminary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 901.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 901.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 948.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 948.
 Package rerunfilecheck Info: File `preliminary.out' has not changed.
-(rerunfilecheck)             Checksum: BBF2B11CCBCCC0281DC017CC2E395A7D;1425.
+(rerunfilecheck)             Checksum: FE91A99F805D5FBE45DAE101E8377778;1615.
 Package logreq Info: Writing requests to 'preliminary.run.xml'.
 \openout1 = `preliminary.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27795 strings out of 493089
- 513463 string characters out of 6134842
- 958732 words of memory out of 5000000
- 30700 multiletter control sequences out of 15000+600000
+ 28027 strings out of 493089
+ 519249 string characters out of 6134842
+ 960959 words of memory out of 5000000
+ 30923 multiletter control sequences out of 15000+600000
  40597 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,85p,10422b,1601s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2283,10 +2372,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/ncntrsbk/uncri8a.pfb>
-Output written on preliminary.pdf (53 pages, 2672463 bytes).
+Output written on preliminary.pdf (55 pages, 2682121 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
- 1292 compressed objects within 13 object streams
- 153 named destinations out of 1000 (max. 500000)
- 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1516 PDF objects out of 1728 (max. 8388607)
+ 1325 compressed objects within 14 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 394 words of extra memory for PDF output out of 10000 (max. 10000000)
 

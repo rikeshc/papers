@@ -56,6 +56,14 @@
 \newacronym{ptu}{PTU}{Power Transfer Unit}
 \newacronym{jlcc}{JLCC}{J-Lead Chip Carrier}
 \newacronym{mlcc}{MLCC}{Multi-Layer Ceramic Capacitor}
+\newacronym{nordic}{NORDIC}{Nordic Semiconductor}
+\newacronym{soc}{SOC}{System on a Chip}
+\newacronym{rfid}{RFID}{Radio Frequency Identification}
+\newacronym{rf}{RF}{Radio Frequency}
+\newacronym{ism}{ISM}{Industrial, Scientific and Medical }
+%\newacronym{fcc}{FFC}{Federal Communications Commission}
+\newacronym{fcc}{FCC}{Federal Communications Commission}
+\newacronym{ieee}{IEEE}{ Institute of Electrical and Electronics Engineers}
 
 \title{Preliminary report on master project}
 \author{Rikesh Chauhan}
@@ -132,7 +140,7 @@ Energy harvesting system generally constitutes of energy source, transducer and 
 Depending upon the type of energy harvested from the surrounding environment, energy harvesting devices can be broadly classified into kinetic, electromagnetic and thermal energy sources\cite{review_energy_harvest}. In kinetic energy harvesting, kinetic energy due to mechanical deformation of transducer is converted into electrical energy. Piezoelectrical material is good example of transducer for kinetic energy harvesting. Piezoelectrical materials are those which exhibit piezoelectric effect: when subjected to mechanical strain, it generates electrical charge proportional to applied strain. Strain is applied with either compression, slap or bending of the material. \\
 
 
-Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy harvesting is the most popular and widely successful EM energy harvesting for large scale energy generation. It makes use of semiconductor device called solar cells as transducer. These transducer converts incident light energy to electric energy due to photoelectric effect: when light is incident on semiconductor, electrons are emitted from the surface.  Its application ranges from LP wrist watch to grid of photovoltaic system. The other popular example is harvesting from ISM RF radiation, which are available almost everywhere in modern cities, to power RFIDs. In this technique, antenna or rectenna are used as transducer. However harvesting from ISM radiation has been limited to very low power only. \\
+Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy harvesting is the most popular and widely successful EM energy harvesting for large scale energy generation. It makes use of semiconductor device called solar cells as transducer. These transducer converts incident light energy to electric energy due to photoelectric effect: when light is incident on semiconductor, electrons are emitted from the surface.  Its application ranges from LP wrist watch to grid of photovoltaic system. The other popular example is harvesting from  RF radiation, which are available almost everywhere in modern cities, to power RFIDs. In this technique, antenna or rectenna are used as transducer. However harvesting from RF radiation has been limited to very low power only. \\
 
 Similarly in thermal energy harvesting, thermal energy from any source in the environment is converted to useful electric energy. Thermopile is an example of thermal energy harvesting using thermocouples in series as transducer. Thermocouple is a electric device with two different conductors forming junctions. A thermocouple generates voltage proportional to temperature between junctions, known as Seeback effect. Connecting thermocouples in series increased the harvested voltage as in thermopile. \\
 
@@ -140,6 +148,45 @@ Though it has been discussed above about powering micro-electronics devices with
 
 
 \subsection{Wireless Power Transfer}
+
+
+As discussed earlier since the evolution of battery technology is not at par with rest of the development in microelectronic devices and energy harvesting techniques from natural sources has not yet evolved to maturity, wireless power transfer is in widespread use. \\
+
+Wireless power transfer is technique of cordlessly transferring electric energy across a air gap either to drive a load or to charge a battery. In energy harvesting section above, the discussion was more involved into power extraction from natural sources whereas in WPT, the source of power is purposefully created to transfer power from it. Wireless power transfer methods implemented today can be broadly classified into radiative and non-radiative power transfer on the basis of transfer distance which can be further sub-classified on the basis of power transfer principle \cite{wpt_fund_std} as discussed below.\\
+
+
+\subsubsection{Non-radiative wireless power transfer}
+
+Non radiative method of wireless power transfer based on magnetic field coupling between two coils within the distance of coil dimension. Since magnetic field diminishes rapidly after distance greater than radius of coil, assuming that distance is less than near field and far field boundary, $\lambda /2\pi$  \cite[pp. 63]{rfid_2010}, better coupling and hence power transfer can happen only within this short distance, and thus it is also called near field power transfer. Near field also means that radiative EM wave is not yet fully created and hence the name non-radiative WPT. As energy transfer in magnetic field is non radiative, it is safe even to transfer higher power as there is no RF exposure. This is one of the main reason of its widespread application today. \\
+
+Inductive power transfer, IPT
+
+IPT is based on electromagnetic induction between two coils. Electric energy is transferred by coupling of magnetic field from the primary to secondary coil. As stated by Faraday law of induction, alternating current flowing in primary coil generates varying magnetic filed which is when coupled with secondary coil includes voltage/current across the secondary coil. \\
+
+In such conventional inductive coupling, larger air gap and difficulty in perfect alignment between the coils contribute to weak coupling, which directly translates into poor power transfer efficiency. This is why it is mostly used in LP devices and for short range in tens of mm transfer like RFIDs. \\
+
+Magnetic resonance power transfer
+
+The principle of magnetic resonance power transfer is same as IPT but with strong coupling between the coils. Instead of simple coil as in IPT, resonance is created at both primary and secondary coil at the same operating frequency. Such resonant IPT is often concisely called as  Witricity, for wireless electricity and is less affected by coil misalignment and physical distance compared to conventional IPT  \cite{wpt_witricity}. A very key application of resonant IPT is that it can be used to simultaneously transfer/charge multiple power receivers from a single large source coil \cite{wpt_mutliple_device_charging}. \\
+
+Because of it strong coupling between the coils, it can effectively transfer power for mid range in tens of cm. It is mostly used in  wireless charging of medical implants and consumer electronics. \\
+
+Capacitive power transfer, CPT
+
+In capacitive power transfer, power transfer is done through capacitive coupling of power sending and receiving side by using capacitive plates as transferring interface. For low power transfer, it is seen effective over IPT because of lower cost, smaller size and no shielding for EMI. However for higher power transfer is limited due to requirement of larger plate area and very close coupling \cite{wpt_cpt}. \\
+
+\subsubsection{Radiative wireless power transfer}
+
+Radiative power transfer used RF EM wave as a medium to deliver power. In contrary to near field, power is transferred through E-field of EM wave. The E-field can only develop after $\lambda /2\pi$ distance, at far field region, from the source \cite[pp. 112]{rfid_2010}, and energy can only be harvested in this far field region, it is called far field power transfer. However as EM wave is radiative and high power RF exposure has safety concerns on human. \\
+
+Non-directive and directive radiative WPT
+
+Radiative power transfer can be divided into directive and non-directive radiative power transfer. Non-directive power transfer is same as discussed in EM energy harvesting, where energy is harvested from isotropically radiated RF wave in the surrounding.   Whereas in directive power transfer, dedicated transmitter antenna/antenna array is used to transmit EM wave to a particular direction of receiver antenna location. This is point to point far field transfer technique is also called energy beam-forming and has better transfer efficiency than non-directive method. \\
+
+Health concerns as governed by \acrshort{fcc} and \acrshort{ieee} safety regulation policy on human exposure has limited its used to low power harvesting over longer distance using RF wave. But, as RF wave is also information carrier wave in wireless communication, its capacity to transmit both data and power simultaneously is expected to introduce new application in wireless communication field  \cite{wpt_fund_std}. \\
+
+
+
 
 \clearpage
 \newpage
