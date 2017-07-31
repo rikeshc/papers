@@ -196,6 +196,57 @@
       \endverb
       \keyw{capacitor switching;power systems;CPT system;capacitance 100 pF;capacitive power transfer system;frequency 1 MHz;interface capacitance;interface frequency;low-impedance load;power delivery;power throughput;switching device rating;Capacitance;Capacitors;Integrated circuits;Magnetic cores;Power generation;Robots;Topology;Capacitive power transfer (CPT);contactless charging;contactless power transfer}
     \endentry
+    \entry{wpt_qi}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{note}{Retrived from: \url{https://www.wirelesspowerconsortium.com/developers/specification.html}}
+    \endentry
+    \entry{wpt_qi_ian}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a228ac6375cd9158362089dcff659e48}
+      \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/qi-wireless-charging-standard.php}}
+      \field{title}{Qi Wireless Charging Standard}
+    \endentry
+    \entry{wpt_a4wp_ian}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a228ac6375cd9158362089dcff659e48}
+      \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/a4wp-wireless-charging.php}}
+      \field{title}{A4WP Wireless Charging Tutorial}
+    \endentry
+    \entry{merge_a4wp_pma}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=60b7dc8bf2a03f113af3e967f1f7db78}{McCormick}{M\bibinitperiod}{Rich}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{60b7dc8bf2a03f113af3e967f1f7db78}
+      \strng{fullhash}{60b7dc8bf2a03f113af3e967f1f7db78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Retrived from: \url{https://www.theverge.com/2015/11/3/9666960/airfuel-alliance-formed-a4wp-pma-wireless-charging}}
+      \field{title}{Former wireless charging rivals join forces as new AirFuel Alliance}
+      \field{year}{2015}
+    \endentry
+    \entry{airfuel}{misc}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{note}{Retrived from: \url{https://www.airfuel.org}}
+    \endentry
     \entry{rectboot}{article}{}
       \name{author}{3}{}{%
         {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
@@ -303,10 +354,8 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{09}
       \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}}
       \field{title}{PSU | Linear Power Supply, Radio-electronics.com}
-      \field{year}{2012}
     \endentry
     \entry{ldo_bulkmod}{article}{}
       \name{author}{2}{}{%

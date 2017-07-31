@@ -1,18 +1,26 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'preliminary.blg'
-[57] biber-darwin:276> INFO - === Thu Jul 27, 2017, 00:54:10
-[57] Biber.pm:333> INFO - Reading 'preliminary.bcf'
-[177] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[201] Biber.pm:2977> INFO - Processing section 0
-[224] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
-[227] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[232] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
-[267] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
-[268] Utils.pm:146> WARN - The field 'pages' in entry 'review_energy_harvest' cannot be null, deleting it
-[577] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[577] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[577] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[577] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[613] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
-[617] bbl.pm:596> INFO - Output to preliminary.bbl
-[617] Biber.pm:106> INFO - WARNINGS: 2
+[59] biber-darwin:276> INFO - === Fri Jul 28, 2017, 14:56:20
+[60] Biber.pm:333> INFO - Reading 'preliminary.bcf'
+[173] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[196] Biber.pm:2977> INFO - Processing section 0
+[221] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
+[225] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[229] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
+[269] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
+[270] Utils.pm:146> WARN - The field 'author' in entry 'airfuel' cannot be null, deleting it
+[270] Utils.pm:146> WARN - The field 'month' in entry 'airfuel' cannot be null, deleting it
+[270] Utils.pm:146> WARN - The field 'title' in entry 'airfuel' cannot be null, deleting it
+[270] Utils.pm:146> WARN - The field 'year' in entry 'airfuel' cannot be null, deleting it
+[270] Utils.pm:146> WARN - The field 'author' in entry 'wpt_qi' cannot be null, deleting it
+[271] Utils.pm:146> WARN - The field 'month' in entry 'wpt_qi' cannot be null, deleting it
+[271] Utils.pm:146> WARN - The field 'title' in entry 'wpt_qi' cannot be null, deleting it
+[271] Utils.pm:146> WARN - The field 'year' in entry 'wpt_qi' cannot be null, deleting it
+[271] Utils.pm:146> WARN - The field 'pages' in entry 'review_energy_harvest' cannot be null, deleting it
+[648] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[648] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[648] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
+[648] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
+[697] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
+[702] bbl.pm:596> INFO - Output to preliminary.bbl
+[702] Biber.pm:106> INFO - WARNINGS: 10

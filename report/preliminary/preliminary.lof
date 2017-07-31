@@ -1,42 +1,42 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
 \contentsline {figure}{\numberline {1}{\ignorespaces Block diagram of complete design\relax }}{1}{figure.caption.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{10}{figure.caption.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conventional full wave bridge rectifier}}}{10}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gate cross coupled full wave rectifier}}}{10}{subfigure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Gate cross coupled full wave active rectifer]\relax }}{11}{figure.caption.4}
-\contentsline {figure}{\numberline {4}{\ignorespaces Comparator circuit, RCC \relax }}{12}{figure.caption.5}
-\contentsline {figure}{\numberline {5}{\ignorespaces Testbench for rectifier\relax }}{14}{figure.caption.7}
-\contentsline {figure}{\numberline {6}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{14}{figure.caption.8}
-\contentsline {figure}{\numberline {7}{\ignorespaces Voltages waveform for pre and post layout\relax }}{15}{figure.caption.9}
-\contentsline {figure}{\numberline {8}{\ignorespaces Rectified DC output for pre and post layout\relax }}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {9}{\ignorespaces Voltage and power conversion efficiency\relax }}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces Generic LDO with pMOS pass device\relax }}{19}{figure.caption.13}
-\contentsline {figure}{\numberline {11}{\ignorespaces CMOS implemenation of LDO\relax }}{20}{figure.caption.14}
-\contentsline {figure}{\numberline {12}{\ignorespaces LDO testbench setup\relax }}{22}{figure.caption.16}
-\contentsline {figure}{\numberline {13}{\ignorespaces LDO transient simulation\relax }}{23}{figure.caption.17}
-\contentsline {figure}{\numberline {14}{\ignorespaces LDO step load regulation\relax }}{24}{figure.caption.18}
-\contentsline {figure}{\numberline {15}{\ignorespaces LDO step line regulation\relax }}{25}{figure.caption.19}
-\contentsline {figure}{\numberline {16}{\ignorespaces Regulated voltage with supply variation\relax }}{26}{figure.caption.20}
-\contentsline {figure}{\numberline {17}{\ignorespaces Regulated voltage with load variation\relax }}{27}{figure.caption.21}
-\contentsline {figure}{\numberline {18}{\ignorespaces LDO stability before and after compensation\relax }}{28}{figure.caption.22}
-\contentsline {figure}{\numberline {19}{\ignorespaces PSSR performance\relax }}{29}{figure.caption.23}
-\contentsline {figure}{\numberline {20}{\ignorespaces BGR and bias generation circuit\relax }}{32}{figure.caption.25}
-\contentsline {figure}{\numberline {21}{\ignorespaces BGR over temperature varitaion\relax }}{33}{figure.caption.26}
-\contentsline {figure}{\numberline {22}{\ignorespaces BGR DC performance\relax }}{34}{figure.caption.27}
-\contentsline {figure}{\numberline {23}{\ignorespaces BGR transient performance\relax }}{34}{figure.caption.28}
-\contentsline {figure}{\numberline {24}{\ignorespaces Real antenna model\relax }}{36}{figure.caption.30}
-\contentsline {figure}{\numberline {25}{\ignorespaces Antenna model\relax }}{37}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{37}{subfigure.25.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{37}{subfigure.25.2}
-\contentsline {figure}{\numberline {26}{\ignorespaces Antenna coupling model\relax }}{38}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{38}{subfigure.26.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{38}{subfigure.26.2}
-\contentsline {figure}{\numberline {27}{\ignorespaces Resonant coupled inductive link\relax }}{40}{figure.caption.35}
-\contentsline {figure}{\numberline {28}{\ignorespaces Power loss before and after matching\relax }}{40}{figure.caption.36}
-\contentsline {figure}{\numberline {29}{\ignorespaces WPT block diagram\relax }}{42}{figure.caption.38}
-\contentsline {figure}{\numberline {30}{\ignorespaces WPT PMS implementation\relax }}{44}{figure.caption.39}
-\contentsline {figure}{\numberline {31}{\ignorespaces Test bench for PMS simulation \relax }}{44}{figure.caption.40}
-\contentsline {figure}{\numberline {32}{\ignorespaces Transient \relax }}{45}{figure.caption.41}
-\contentsline {figure}{\numberline {33}{\ignorespaces Ripple in Vrec and Vreg\relax }}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {34}{\ignorespaces Test bench for complete PRU unit \relax }}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {2}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{12}{figure.caption.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conventional full wave bridge rectifier}}}{12}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gate cross coupled full wave rectifier}}}{12}{subfigure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Gate cross coupled full wave active rectifer]\relax }}{13}{figure.caption.4}
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparator circuit, RCC \relax }}{14}{figure.caption.5}
+\contentsline {figure}{\numberline {5}{\ignorespaces Testbench for rectifier\relax }}{16}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{16}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Voltages waveform for pre and post layout\relax }}{17}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces Rectified DC output for pre and post layout\relax }}{18}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces Voltage and power conversion efficiency\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces Generic LDO with pMOS pass device\relax }}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {11}{\ignorespaces CMOS implemenation of LDO\relax }}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {12}{\ignorespaces LDO testbench setup\relax }}{24}{figure.caption.16}
+\contentsline {figure}{\numberline {13}{\ignorespaces LDO transient simulation\relax }}{25}{figure.caption.17}
+\contentsline {figure}{\numberline {14}{\ignorespaces LDO step load regulation\relax }}{26}{figure.caption.18}
+\contentsline {figure}{\numberline {15}{\ignorespaces LDO step line regulation\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {16}{\ignorespaces Regulated voltage with supply variation\relax }}{28}{figure.caption.20}
+\contentsline {figure}{\numberline {17}{\ignorespaces Regulated voltage with load variation\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {18}{\ignorespaces LDO stability before and after compensation\relax }}{30}{figure.caption.22}
+\contentsline {figure}{\numberline {19}{\ignorespaces PSSR performance\relax }}{31}{figure.caption.23}
+\contentsline {figure}{\numberline {20}{\ignorespaces BGR and bias generation circuit\relax }}{34}{figure.caption.25}
+\contentsline {figure}{\numberline {21}{\ignorespaces BGR over temperature varitaion\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {22}{\ignorespaces BGR DC performance\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {23}{\ignorespaces BGR transient performance\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {24}{\ignorespaces Real antenna model\relax }}{38}{figure.caption.30}
+\contentsline {figure}{\numberline {25}{\ignorespaces Antenna model\relax }}{39}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{39}{subfigure.25.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{39}{subfigure.25.2}
+\contentsline {figure}{\numberline {26}{\ignorespaces Antenna coupling model\relax }}{40}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{40}{subfigure.26.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{40}{subfigure.26.2}
+\contentsline {figure}{\numberline {27}{\ignorespaces Resonant coupled inductive link\relax }}{42}{figure.caption.35}
+\contentsline {figure}{\numberline {28}{\ignorespaces Power loss before and after matching\relax }}{42}{figure.caption.36}
+\contentsline {figure}{\numberline {29}{\ignorespaces WPT block diagram\relax }}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {30}{\ignorespaces WPT PMS implementation\relax }}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {31}{\ignorespaces Test bench for PMS simulation \relax }}{46}{figure.caption.40}
+\contentsline {figure}{\numberline {32}{\ignorespaces Transient \relax }}{47}{figure.caption.41}
+\contentsline {figure}{\numberline {33}{\ignorespaces Ripple in Vrec and Vreg\relax }}{48}{figure.caption.42}
+\contentsline {figure}{\numberline {34}{\ignorespaces Test bench for complete PRU unit \relax }}{49}{figure.caption.43}

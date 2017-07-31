@@ -173,7 +173,7 @@ Because of it strong coupling between the coils, it can effectively transfer pow
 
 Capacitive power transfer, CPT
 
-In capacitive power transfer, power transfer is done through capacitive coupling of power sending and receiving side by using capacitive plates as transferring interface. For low power transfer, it is seen effective over IPT because of lower cost, smaller size and no shielding for EMI. However for higher power transfer is limited due to requirement of larger plate area and very close coupling \cite{wpt_cpt}. \\
+In capacitive power transfer, power transfer is done through capacitive coupling, use of E-field, between sending and receiving plates as transferring interface. For low power transfer, it is seen effective over IPT because of lower cost, smaller size and no shielding for EMI. However for higher power transfer is limited due to requirement of larger plate area and very close coupling \cite{wpt_cpt}. \\
 
 \subsubsection{Radiative wireless power transfer}
 
@@ -185,7 +185,32 @@ Radiative power transfer can be divided into directive and non-directive radiati
 
 Health concerns as governed by \acrshort{fcc} and \acrshort{ieee} safety regulation policy on human exposure has limited its used to low power harvesting over longer distance using RF wave. But, as RF wave is also information carrier wave in wireless communication, its capacity to transmit both data and power simultaneously is expected to introduce new application in wireless communication field  \cite{wpt_fund_std}. \\
 
+\subsection{WPT Applications}
 
+It is seen today that IPT and magnetic resonance IPT are mostly used because of easier implementation, lower cost, wide range power transfer capability. For high power transfer in order of kilowatt, IPT is mostly used in the field of industrial automation  and automotive like electric vehicle, EV, charging.  Similarly both IPT and magnetic resonance IPT are used for transferring power medium power up-to tens of watt. Their typical uses have been in charging battery in medical equipments and consumers electronics. In case of microelectronics devices like medical implants and body sensors, magnetic resonance IPT is mostly used both to charge a battery or directly drive the device. \\
+
+In context of radiative power transfer, non-directive technique is mostly used in low power sensors and implants. Because of the low power requirement, mostly omnipresent RF signals are used to harvest energy. This technique has been used in both perpetually supplying power like in body sensor which continuously monitor some activity or sporadically supplying power like in RFID and body implants which work only when required. [CITE] reports future application of microwave power transfer can be in SPS (Solar Power Satellite) system and SHARP (Stationary High Altitude Relay Platform). SPS uses satellite for harvesting solar energy in space and transfer that power to earth. Similarly SHARP is stationary charging station for unmanned aerial vehicles in stratosphere region by beaming power from earth.    \\
+
+\subsection{Charger Standards}
+
+%http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/basics-tutorial.php
+
+When wireless charging was introduced into consumer daily appliances, it was quickly realised the need of standard design protocols to maintain uniformity and avoid confusion for the manufacturers. Here are some mostly used standards in the market. All commercial standards discussed below use both IPT and resonant IPT techniques for charging, and have two elements: transmitter for transferring power and receiver device usually integrated into mobile, handheld or wearable devices. Both the transmitter and the receiver use the same control and management protocol in order to detect compatible electronic devices, exchange charging state information and control charging process. \\
+
+Qi
+
+Qi standard was introduced by Wireless Power Consortium in August 2008. It has standardised two categories of chargers: low power charger for mobile and music players and medium power charger. The power transfer was based on IPT and now is operating with magnetic resonance IPT too. Qi standard allow transmitter/charger to be either single fixed coil, single moving coil or array of coils. The transmitter coil type determines determines the positioning of the receiver, either guided or free. Qi charger also have foreign object detection feature \cite{wpt_qi}. Qi uses the same frequency for communication and power transfer, 80-300 KHz \cite{wpt_qi_ian}. \\
+
+A4WP
+
+A4WP is acronym for Alliance for Alliance for Wireless Power which has introduced another independent wireless charging protocol. It uses magnetic resonance IPT technique for power transfer. The main differences between A4WP from Qi are multiple device charging from a single charger, also called power transmitting unit, PTU and longer charging range. Similarly there are different category of PTUs from 1 to 5, most of them still on roadmap and supports wireless charging from low power to high power. A4WP used different frequency band for communication and power transfer, which are 2.4 GHz and 6.78 MHz respectively  \cite{wpt_a4wp_ian}.\\
+
+AirFuel Alliance
+
+AirFuel Alliance is newly crated wireless charging standard buy merging Alliance for Alliance for Wireless Power, A4WP and Power Matters Alliance, PMA in 2015 with backing of major device manufacturers  \cite{merge_a4wp_pma}. Like A4WP, PMA  was IPT based independent wireless charging standard. AirFuel Alliance is believed to fight the market dominance of Qi standard. AirFuel is expecting to expand charging standard beyond consumer electronics to industrial, medical and military applications \cite{airfuel}.\\
+
+%https://www.chargespot.com/news/airfuel-and-what-it-means-for-the-wireless-charging-industry/
+%https://www.airfuel.org/index.php/home/about-us-2
 
 
 \clearpage
