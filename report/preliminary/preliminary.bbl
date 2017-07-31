@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,21 +18,40 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global/}
+  \sortlist{none}{none}
+    \entry{mobile_performance}{article}{}
+      \name{author}{2}{}{%
+        {{hash=335dd8fd2c047a438ff16b6e8262ff54}{Paradiso}{P\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=0ad607c86c7c4f4c5b3c8c6abea6625d}{Starner}{S\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{131c4c9de463052c6d6d7907485176e8}
+      \strng{fullhash}{131c4c9de463052c6d6d7907485176e8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1536-1268}
+      \field{journaltitle}{IEEE Pervasive Computing}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{Energy scavenging for mobile and wireless electronics}
+      \field{volume}{4}
+      \field{year}{2005}
+      \field{pages}{18\bibrangedash 27}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MPRV.2005.9
+      \endverb
+      \keyw{electric power generation;energy management systems;low-power electronics;mobile computing;renewable energy sources;thermoelectric conversion;wireless sensor networks;battery-powered electronics;energy harvesting;low-power electronics;mobile electronics;power management;renewable energy resources;sensor networks;water wheel;windmill;Analog-digital conversion;Battery management systems;Clocks;Design optimization;Energy management;Humans;Power system management;Renewable energy resources;Voltage;Wireless sensor networks;energy scavenging;human-powered systems;low-power electronics;parasitic power;power harvesting;ubiquitous computing sensors}
+    \endentry
     \entry{iot_intro}{misc}{}
       \name{author}{1}{}{%
-        {{hash=6acb3a32a71d1ef41d7c9c8136639b67}{%
-           family={Research},
-           familyi={R\bibinitperiod},
-           given={Lopez},
-           giveni={L\bibinitperiod}}}%
+        {{hash=6acb3a32a71d1ef41d7c9c8136639b67}{Research}{R\bibinitperiod}{Lopez}{L\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{6acb3a32a71d1ef41d7c9c8136639b67}
       \strng{fullhash}{6acb3a32a71d1ef41d7c9c8136639b67}
-      \strng{authornamehash}{6acb3a32a71d1ef41d7c9c8136639b67}
-      \strng{authorfullhash}{6acb3a32a71d1ef41d7c9c8136639b67}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
@@ -42,23 +61,18 @@
     \endentry
     \entry{rabaey_2009}{book}{}
       \name{author}{1}{}{%
-        {{hash=3bba79e0c28ae09bb2c98029b1739c53}{%
-           family={Rabaey},
-           familyi={R\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod}}}%
+        {{hash=3bba79e0c28ae09bb2c98029b1739c53}{Rabaey}{R\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {Springer Publishing Company, Incorporated}%
       }
       \strng{namehash}{3bba79e0c28ae09bb2c98029b1739c53}
       \strng{fullhash}{3bba79e0c28ae09bb2c98029b1739c53}
-      \strng{authornamehash}{3bba79e0c28ae09bb2c98029b1739c53}
-      \strng{authorfullhash}{3bba79e0c28ae09bb2c98029b1739c53}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{chapter}{3,5,8,10}
       \field{edition}{1st}
       \field{isbn}{0387717129, 9780387717128}
       \field{title}{Low Power Design Essentials}
@@ -69,23 +83,13 @@
     \endentry
     \entry{review_energy_harvest}{inproceedings}{}
       \name{author}{2}{}{%
-        {{hash=9dba5fa8733478d01c804e408fb0d9a0}{%
-           family={Mateu},
-           familyi={M\bibinitperiod},
-           given={Loreto},
-           giveni={L\bibinitperiod}}}%
-        {{hash=aca81d38f705a35fdfe5aa5e22939b0f}{%
-           family={Moll},
-           familyi={M\bibinitperiod},
-           given={Francesc},
-           giveni={F\bibinitperiod}}}%
+        {{hash=9dba5fa8733478d01c804e408fb0d9a0}{Mateu}{M\bibinitperiod}{Loreto}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=aca81d38f705a35fdfe5aa5e22939b0f}{Moll}{M\bibinitperiod}{Francesc}{F\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{46084a754ed7717345d79c4e93ce2b49}
       \strng{fullhash}{46084a754ed7717345d79c4e93ce2b49}
-      \strng{authornamehash}{46084a754ed7717345d79c4e93ce2b49}
-      \strng{authorfullhash}{46084a754ed7717345d79c4e93ce2b49}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of SPIE - The International Society for Optical Engineering}
@@ -94,40 +98,33 @@
       \field{volume}{5837}
       \field{year}{2005}
     \endentry
+    \entry{power_density}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e6e8f061f5dc7d24c03e6f6b14bff0f9}{Limited}{L\bibinitperiod}{Drayson\bibnamedelima Technologies}{D\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e6e8f061f5dc7d24c03e6f6b14bff0f9}
+      \strng{fullhash}{e6e8f061f5dc7d24c03e6f6b14bff0f9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RF Energy Harvesting for the Low Energy Internet of Things}
+      \field{year}{2015}
+      \field{pages}{7}
+      \range{pages}{1}
+    \endentry
     \entry{wpt_fund_std}{article}{}
       \name{author}{5}{}{%
-        {{hash=e9624de7b2f567e77587eeb44b2a2903}{%
-           family={Lu},
-           familyi={L\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod}}}%
-        {{hash=b1e1d788317ca0bbc6c0afec53571f5d}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=ffb5c8afd6111b12e60827ce8415d51a}{%
-           family={Niyato},
-           familyi={N\bibinitperiod},
-           given={D.},
-           giveni={D\bibinitperiod}}}%
-        {{hash=3faa49d0b0fa08884ffa66d9fd24458c}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={D.\bibnamedelimi I.},
-           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=6c62aa202564694e3286ddd4a1d6bf6a}{%
-           family={Han},
-           familyi={H\bibinitperiod},
-           given={Z.},
-           giveni={Z\bibinitperiod}}}%
+        {{hash=e9624de7b2f567e77587eeb44b2a2903}{Lu}{L\bibinitperiod}{X.}{X\bibinitperiod}{}{}{}{}}%
+        {{hash=b1e1d788317ca0bbc6c0afec53571f5d}{Wang}{W\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=ffb5c8afd6111b12e60827ce8415d51a}{Niyato}{N\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=3faa49d0b0fa08884ffa66d9fd24458c}{Kim}{K\bibinitperiod}{D.\bibnamedelimi I.}{D\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{hash=6c62aa202564694e3286ddd4a1d6bf6a}{Han}{H\bibinitperiod}{Z.}{Z\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{3467f4f56aa2cfa02ebd525914c74cef}
       \strng{fullhash}{fb9fd9da57edd51a3950b5afa3a25716}
-      \strng{authornamehash}{3467f4f56aa2cfa02ebd525914c74cef}
-      \strng{authorfullhash}{fb9fd9da57edd51a3950b5afa3a25716}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1553-877X}
@@ -146,21 +143,15 @@
     \endentry
     \entry{rfid_2010}{book}{}
       \name{author}{1}{}{%
-        {{hash=41ecbab034ca384b6721520f4d82a83f}{%
-           family={Finkenzeller},
-           familyi={F\bibinitperiod},
-           given={Klaus},
-           giveni={K\bibinitperiod}}}%
+        {{hash=41ecbab034ca384b6721520f4d82a83f}{Finkenzeller}{F\bibinitperiod}{Klaus}{K\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {John Wiley \& Sons Ltd}%
       }
       \strng{namehash}{41ecbab034ca384b6721520f4d82a83f}
       \strng{fullhash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authornamehash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authorfullhash}{41ecbab034ca384b6721520f4d82a83f}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd}
@@ -170,38 +161,20 @@
     \endentry
     \entry{wpt_witricity}{article}{}
       \name{author}{4}{}{%
-        {{hash=716844edf3a130ba3d35338303463907}{%
-           family={Ho},
-           familyi={H\bibinitperiod},
-           given={S.\bibnamedelimi L.},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=8845475b32556b4a8eb724ec4cb86611}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=73d01f7acaeb2a8acea7c1591f0948c4}{%
-           family={Fu},
-           familyi={F\bibinitperiod},
-           given={W.\bibnamedelimi N.},
-           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=85a942b10b2492795c8d0c42e33ee5b6}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+        {{hash=716844edf3a130ba3d35338303463907}{Ho}{H\bibinitperiod}{S.\bibnamedelimi L.}{S\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=8845475b32556b4a8eb724ec4cb86611}{Wang}{W\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=73d01f7acaeb2a8acea7c1591f0948c4}{Fu}{F\bibinitperiod}{W.\bibnamedelimi N.}{W\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=85a942b10b2492795c8d0c42e33ee5b6}{Sun}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{661084d3a532f41cbb98e765aa13db9a}
       \strng{fullhash}{15bcfdcf0a30b5fc269ede98d31d32be}
-      \strng{authornamehash}{661084d3a532f41cbb98e765aa13db9a}
-      \strng{authorfullhash}{15bcfdcf0a30b5fc269ede98d31d32be}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9464}
       \field{journaltitle}{IEEE Transactions on Magnetics}
-      \field{month}{5}
+      \field{month}{05}
       \field{number}{5}
       \field{title}{A Comparative Study Between Novel Witricity and Traditional Inductive Magnetic Coupling in Wireless Charging}
       \field{volume}{47}
@@ -215,38 +188,20 @@
     \endentry
     \entry{wpt_mutliple_device_charging}{article}{}
       \name{author}{4}{}{%
-        {{hash=648b5b92c3ab1a0b4ceba4e1b16034cd}{%
-           family={Cannon},
-           familyi={C\bibinitperiod},
-           given={B.\bibnamedelimi L.},
-           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=e9ec1dc80d1e1f13992f26125ccac81d}{%
-           family={Hoburg},
-           familyi={H\bibinitperiod},
-           given={J.\bibnamedelimi F.},
-           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=2f66f5287be30fb0e4f904d64705629e}{%
-           family={Stancil},
-           familyi={S\bibinitperiod},
-           given={D.\bibnamedelimi D.},
-           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=3585f27023d8b2ab2a6b1a853872cbce}{%
-           family={Goldstein},
-           familyi={G\bibinitperiod},
-           given={S.\bibnamedelimi C.},
-           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=648b5b92c3ab1a0b4ceba4e1b16034cd}{Cannon}{C\bibinitperiod}{B.\bibnamedelimi L.}{B\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{hash=e9ec1dc80d1e1f13992f26125ccac81d}{Hoburg}{H\bibinitperiod}{J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=2f66f5287be30fb0e4f904d64705629e}{Stancil}{S\bibinitperiod}{D.\bibnamedelimi D.}{D\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=3585f27023d8b2ab2a6b1a853872cbce}{Goldstein}{G\bibinitperiod}{S.\bibnamedelimi C.}{S\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{c692d9997007b57a35cd940118821f72}
       \strng{fullhash}{53c9b716ad3a468de98c83e9e12762d1}
-      \strng{authornamehash}{c692d9997007b57a35cd940118821f72}
-      \strng{authorfullhash}{53c9b716ad3a468de98c83e9e12762d1}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0885-8993}
       \field{journaltitle}{IEEE Transactions on Power Electronics}
-      \field{month}{7}
+      \field{month}{07}
       \field{number}{7}
       \field{title}{Magnetic Resonant Coupling As a Potential Means for Wireless Power Transfer to Multiple Small Receivers}
       \field{volume}{24}
@@ -260,18 +215,12 @@
     \endentry
     \entry{wpt_cpt}{article}{}
       \name{author}{1}{}{%
-        {{hash=268fe794d4a885c2c0d5afcca8bc0d12}{%
-           family={Theodoridis},
-           familyi={T\bibinitperiod},
-           given={M.\bibnamedelimi P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=268fe794d4a885c2c0d5afcca8bc0d12}{Theodoridis}{T\bibinitperiod}{M.\bibnamedelimi P.}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{268fe794d4a885c2c0d5afcca8bc0d12}
       \strng{fullhash}{268fe794d4a885c2c0d5afcca8bc0d12}
-      \strng{authornamehash}{268fe794d4a885c2c0d5afcca8bc0d12}
-      \strng{authorfullhash}{268fe794d4a885c2c0d5afcca8bc0d12}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0885-8993}
@@ -289,25 +238,18 @@
       \keyw{capacitor switching;power systems;CPT system;capacitance 100 pF;capacitive power transfer system;frequency 1 MHz;interface capacitance;interface frequency;low-impedance load;power delivery;power throughput;switching device rating;Capacitance;Capacitors;Integrated circuits;Magnetic cores;Power generation;Robots;Topology;Capacitive power transfer (CPT);contactless charging;contactless power transfer}
     \endentry
     \entry{wpt_qi}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{note}{Retrived from: \url{https://www.wirelesspowerconsortium.com/developers/specification.html}}
-      \field{year}{}
     \endentry
     \entry{wpt_qi_ian}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a228ac6375cd9158362089dcff659e48}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{a228ac6375cd9158362089dcff659e48}
       \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authornamehash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authorfullhash}{a228ac6375cd9158362089dcff659e48}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/qi-wireless-charging-standard.php}}
@@ -315,18 +257,12 @@
     \endentry
     \entry{wpt_a4wp_ian}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a228ac6375cd9158362089dcff659e48}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{a228ac6375cd9158362089dcff659e48}
       \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authornamehash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authorfullhash}{a228ac6375cd9158362089dcff659e48}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/a4wp-wireless-charging.php}}
@@ -334,18 +270,12 @@
     \endentry
     \entry{merge_a4wp_pma}{misc}{}
       \name{author}{1}{}{%
-        {{hash=60b7dc8bf2a03f113af3e967f1f7db78}{%
-           family={McCormick},
-           familyi={M\bibinitperiod},
-           given={Rich},
-           giveni={R\bibinitperiod}}}%
+        {{hash=60b7dc8bf2a03f113af3e967f1f7db78}{McCormick}{M\bibinitperiod}{Rich}{R\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{60b7dc8bf2a03f113af3e967f1f7db78}
       \strng{fullhash}{60b7dc8bf2a03f113af3e967f1f7db78}
-      \strng{authornamehash}{60b7dc8bf2a03f113af3e967f1f7db78}
-      \strng{authorfullhash}{60b7dc8bf2a03f113af3e967f1f7db78}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
@@ -354,40 +284,25 @@
       \field{year}{2015}
     \endentry
     \entry{airfuel}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{note}{Retrived from: \url{https://www.airfuel.org}}
-      \field{year}{}
     \endentry
     \entry{rectboot}{article}{}
       \name{author}{3}{}{%
-        {{hash=c0a78eca0486178043b226c9e21bda60}{%
-           family={Hashemi},
-           familyi={H\bibinitperiod},
-           given={S.\bibnamedelimi S.},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=cf76b1e54b0ce6d4db6d6e4eeb30f0ef}{%
-           family={Sawan},
-           familyi={S\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=521890551e7f6695f10743c4d4fbf4bc}{%
-           family={Savaria},
-           familyi={S\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
+        {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=cf76b1e54b0ce6d4db6d6e4eeb30f0ef}{Sawan}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=521890551e7f6695f10743c4d4fbf4bc}{Savaria}{S\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{3b3862562520161d58993614bab01fba}
       \strng{fullhash}{3b3862562520161d58993614bab01fba}
-      \strng{authornamehash}{3b3862562520161d58993614bab01fba}
-      \strng{authorfullhash}{3b3862562520161d58993614bab01fba}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1932-4545}
       \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
-      \field{month}{8}
+      \field{month}{08}
       \field{number}{4}
       \field{title}{A High-Efficiency Low-Voltage CMOS Rectifier for Harvesting Energy in Implantable Devices}
       \field{volume}{6}
@@ -400,28 +315,14 @@
     \endentry
     \entry{rectrcc}{article}{}
       \name{author}{3}{}{%
-        {{hash=e74217f34f480bcabcef30ff7e239397}{%
-           family={Lam},
-           familyi={L\bibinitperiod},
-           given={Y.\bibnamedelimi H.},
-           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=5c6eb071c07ec7db17b27ca831bce8d1}{%
-           family={Ki},
-           familyi={K\bibinitperiod},
-           given={W.\bibnamedelimi H.},
-           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=872442c7da289ef06d6ca4620fda7831}{%
-           family={Tsui},
-           familyi={T\bibinitperiod},
-           given={C.\bibnamedelimi Y.},
-           giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e74217f34f480bcabcef30ff7e239397}{Lam}{L\bibinitperiod}{Y.\bibnamedelimi H.}{Y\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=5c6eb071c07ec7db17b27ca831bce8d1}{Ki}{K\bibinitperiod}{W.\bibnamedelimi H.}{W\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=872442c7da289ef06d6ca4620fda7831}{Tsui}{T\bibinitperiod}{C.\bibnamedelimi Y.}{C\bibinitperiod\bibinitdelim Y\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{938f83869de1a01fd909dd39c701c614}
       \strng{fullhash}{938f83869de1a01fd909dd39c701c614}
-      \strng{authornamehash}{938f83869de1a01fd909dd39c701c614}
-      \strng{authorfullhash}{938f83869de1a01fd909dd39c701c614}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-7747}
@@ -439,28 +340,18 @@
     \endentry
     \entry{rectcomp}{article}{}
       \name{author}{2}{}{%
-        {{hash=7c87b550ef99004eabf2b0d0c7d4dfb9}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={H.\bibnamedelimi M.},
-           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{%
-           family={Ghovanloo},
-           familyi={G\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+        {{hash=7c87b550ef99004eabf2b0d0c7d4dfb9}{Lee}{L\bibinitperiod}{H.\bibnamedelimi M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{Ghovanloo}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{395022f2d99a39ff358ec0f98c13908c}
       \strng{fullhash}{395022f2d99a39ff358ec0f98c13908c}
-      \strng{authornamehash}{395022f2d99a39ff358ec0f98c13908c}
-      \strng{authorfullhash}{395022f2d99a39ff358ec0f98c13908c}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-8328}
       \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
-      \field{month}{8}
+      \field{month}{08}
       \field{number}{8}
       \field{title}{An Integrated Power-Efficient Active Rectifier With Offset-Controlled High Speed Comparators for Inductively Powered Applications}
       \field{volume}{58}
@@ -473,23 +364,13 @@
     \endentry
     \entry{rectsize}{article}{}
       \name{author}{2}{}{%
-        {{hash=02b67fa032775069062f343440d656b7}{%
-           family={Bawa},
-           familyi={B\bibinitperiod},
-           given={Gaurav},
-           giveni={G\bibinitperiod}}}%
-        {{hash=6f2fe220eacd162a22aec01cac9286d2}{%
-           family={Ghovanloo},
-           familyi={G\bibinitperiod},
-           given={Maysam},
-           giveni={M\bibinitperiod}}}%
+        {{hash=02b67fa032775069062f343440d656b7}{Bawa}{B\bibinitperiod}{Gaurav}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=6f2fe220eacd162a22aec01cac9286d2}{Ghovanloo}{G\bibinitperiod}{Maysam}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{2e75f36585a65c217be8d96a7490bc18}
       \strng{fullhash}{2e75f36585a65c217be8d96a7490bc18}
-      \strng{authornamehash}{2e75f36585a65c217be8d96a7490bc18}
-      \strng{authorfullhash}{2e75f36585a65c217be8d96a7490bc18}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1573-1979}
@@ -506,18 +387,12 @@
     \endentry
     \entry{ldo_psu}{misc}{}
       \name{author}{1}{}{%
-        {{hash=a228ac6375cd9158362089dcff659e48}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
+        {{hash=a228ac6375cd9158362089dcff659e48}{Poole}{P\bibinitperiod}{Ian}{I\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{a228ac6375cd9158362089dcff659e48}
       \strng{fullhash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authornamehash}{a228ac6375cd9158362089dcff659e48}
-      \strng{authorfullhash}{a228ac6375cd9158362089dcff659e48}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Retrived from: \url{http://www.radio-electronics.com/info/power-management/linear-power-supply-psu/basics-tutorial.php}}
@@ -525,23 +400,13 @@
     \endentry
     \entry{ldo_bulkmod}{article}{}
       \name{author}{2}{}{%
-        {{hash=07680b70d446b2b5eaa15831db4465a3}{%
-           family={Keikhosravy},
-           familyi={K\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=56a2df54c0d9e3b45fe7b30570825ff0}{%
-           family={Mirabbasi},
-           familyi={M\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
+        {{hash=07680b70d446b2b5eaa15831db4465a3}{Keikhosravy}{K\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=56a2df54c0d9e3b45fe7b30570825ff0}{Mirabbasi}{M\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{666b2ea8f89a4a8f7ac9a20890f960a6}
       \strng{fullhash}{666b2ea8f89a4a8f7ac9a20890f960a6}
-      \strng{authornamehash}{666b2ea8f89a4a8f7ac9a20890f960a6}
-      \strng{authorfullhash}{666b2ea8f89a4a8f7ac9a20890f960a6}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-8328}
@@ -559,28 +424,18 @@
     \endentry
     \entry{ldo_quiescent}{article}{}
       \name{author}{2}{}{%
-        {{hash=91dcf17eb57b268dd6818d757b20a3c9}{%
-           family={Rincon-Mora},
-           familyi={R\bibinithyphendelim M\bibinitperiod},
-           given={G.\bibnamedelimi A.},
-           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=24d7a021141c92495f629971adf37575}{%
-           family={Allen},
-           familyi={A\bibinitperiod},
-           given={P.\bibnamedelimi E.},
-           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=91dcf17eb57b268dd6818d757b20a3c9}{Rincon-Mora}{R\bibinithyphendelim M\bibinitperiod}{G.\bibnamedelimi A.}{G\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=24d7a021141c92495f629971adf37575}{Allen}{A\bibinitperiod}{P.\bibnamedelimi E.}{P\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{a2451d0d5efd8f03785ff65009131d57}
       \strng{fullhash}{a2451d0d5efd8f03785ff65009131d57}
-      \strng{authornamehash}{a2451d0d5efd8f03785ff65009131d57}
-      \strng{authorfullhash}{a2451d0d5efd8f03785ff65009131d57}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9200}
       \field{journaltitle}{IEEE Journal of Solid-State Circuits}
-      \field{month}{1}
+      \field{month}{01}
       \field{number}{1}
       \field{title}{A low-voltage, low quiescent current, low drop-out regulator}
       \field{volume}{33}
@@ -593,11 +448,7 @@
     \endentry
     \entry{razavi_2001}{book}{}
       \name{author}{1}{}{%
-        {{hash=c7a8cbdc611fb566c84f257674d0a44f}{%
-           family={Razavi},
-           familyi={R\bibinitperiod},
-           given={Behzad},
-           giveni={B\bibinitperiod}}}%
+        {{hash=c7a8cbdc611fb566c84f257674d0a44f}{Razavi}{R\bibinitperiod}{Behzad}{B\bibinitperiod}{}{}{}{}}%
       }
       \list{location}{1}{%
         {New York, NY, USA}%
@@ -607,10 +458,8 @@
       }
       \strng{namehash}{c7a8cbdc611fb566c84f257674d0a44f}
       \strng{fullhash}{c7a8cbdc611fb566c84f257674d0a44f}
-      \strng{authornamehash}{c7a8cbdc611fb566c84f257674d0a44f}
-      \strng{authorfullhash}{c7a8cbdc611fb566c84f257674d0a44f}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1}
@@ -620,40 +469,28 @@
     \endentry
     \entry{ldo_ti_pmos}{misc}{}
       \name{author}{1}{}{%
-        {{hash=e3f2cbd0a5f06cb50bfe4b72702da6e7}{%
-           family={King},
-           familyi={K\bibinitperiod},
-           given={Brian\bibnamedelima M.},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e3f2cbd0a5f06cb50bfe4b72702da6e7}{King}{K\bibinitperiod}{Brian\bibnamedelima M.}{B\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{e3f2cbd0a5f06cb50bfe4b72702da6e7}
       \strng{fullhash}{e3f2cbd0a5f06cb50bfe4b72702da6e7}
-      \strng{authornamehash}{e3f2cbd0a5f06cb50bfe4b72702da6e7}
-      \strng{authorfullhash}{e3f2cbd0a5f06cb50bfe4b72702da6e7}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Texas Instruments Analog Applications Journal: Power Management}
-      \field{month}{8}
+      \field{month}{08}
       \field{note}{Retrived from: \url{http://www.ti.com/sc/docs/apps/msp/journal/aug2000/aug_04.pdf}}
       \field{title}{Advantages of using PMOS-type low-dropout inear regulators in battery applications}
       \field{year}{2000}
     \endentry
     \entry{ldo_ti_stability}{misc}{}
       \name{author}{1}{}{%
-        {{hash=1d41f94c680efef59f760b962897140d}{%
-           family={Rogers},
-           familyi={R\bibinitperiod},
-           given={Everett},
-           giveni={E\bibinitperiod}}}%
+        {{hash=1d41f94c680efef59f760b962897140d}{Rogers}{R\bibinitperiod}{Everett}{E\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{1d41f94c680efef59f760b962897140d}
       \strng{fullhash}{1d41f94c680efef59f760b962897140d}
-      \strng{authornamehash}{1d41f94c680efef59f760b962897140d}
-      \strng{authorfullhash}{1d41f94c680efef59f760b962897140d}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Texas Instruments Analog Applications Journal: Power Management}
@@ -663,18 +500,12 @@
     \endentry
     \entry{ldo_ti_pssr}{misc}{}
       \name{author}{1}{}{%
-        {{hash=14168c1dc2a0409ac6261ce363d7ea5c}{%
-           family={Teel},
-           familyi={T\bibinitperiod},
-           given={John\bibnamedelima C.},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=14168c1dc2a0409ac6261ce363d7ea5c}{Teel}{T\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{14168c1dc2a0409ac6261ce363d7ea5c}
       \strng{fullhash}{14168c1dc2a0409ac6261ce363d7ea5c}
-      \strng{authornamehash}{14168c1dc2a0409ac6261ce363d7ea5c}
-      \strng{authorfullhash}{14168c1dc2a0409ac6261ce363d7ea5c}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Texas Instruments Analog Applications Journal: Power Management}
@@ -684,26 +515,10 @@
     \endentry
     \entry{gray_2009}{book}{}
       \name{author}{4}{}{%
-        {{hash=61b258095f4bd42c9800a9d8e583c78b}{%
-           family={Gray},
-           familyi={G\bibinitperiod},
-           given={Paul\bibnamedelima R.},
-           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=ec19ce97302153b7442143f9455ee916}{%
-           family={Hurst},
-           familyi={H\bibinitperiod},
-           given={Paul\bibnamedelima J.},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=9916eeb2e35840d89ea44bcdc075bd19}{%
-           family={Lewis},
-           familyi={L\bibinitperiod},
-           given={Stephen\bibnamedelima H.},
-           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=3f66443365184d2eba3702dc6abccce6}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Robert\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=61b258095f4bd42c9800a9d8e583c78b}{Gray}{G\bibinitperiod}{Paul\bibnamedelima R.}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=ec19ce97302153b7442143f9455ee916}{Hurst}{H\bibinitperiod}{Paul\bibnamedelima J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=9916eeb2e35840d89ea44bcdc075bd19}{Lewis}{L\bibinitperiod}{Stephen\bibnamedelima H.}{S\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=3f66443365184d2eba3702dc6abccce6}{Meyer}{M\bibinitperiod}{Robert\bibnamedelima G.}{R\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
       }
       \list{location}{1}{%
         {New York, NY, USA}%
@@ -713,10 +528,8 @@
       }
       \strng{namehash}{73ef58e3c3987b3b56ac6407ac97c007}
       \strng{fullhash}{96919e8368716a37f1717c612a8d37dd}
-      \strng{authornamehash}{73ef58e3c3987b3b56ac6407ac97c007}
-      \strng{authorfullhash}{96919e8368716a37f1717c612a8d37dd}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{5th}
@@ -726,33 +539,19 @@
     \endentry
     \entry{ant_SZ_formula}{inproceedings}{}
       \name{author}{3}{}{%
-        {{hash=82c9f1cb5177c26cdd145adb3b1db583}{%
-           family={Drakaki},
-           familyi={D\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9c6b8a37b7fe097c109cbdf9eef5de70}{%
-           family={Hatzopoulos},
-           familyi={H\bibinitperiod},
-           given={A.\bibnamedelimi A.},
-           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=98d539adbed9f54cedf098acc1f0e0a8}{%
-           family={Siskos},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
+        {{hash=82c9f1cb5177c26cdd145adb3b1db583}{Drakaki}{D\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9c6b8a37b7fe097c109cbdf9eef5de70}{Hatzopoulos}{H\bibinitperiod}{A.\bibnamedelimi A.}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=98d539adbed9f54cedf098acc1f0e0a8}{Siskos}{S\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{3b92f2c8d12fc3807fcf297c16f1a940}
       \strng{fullhash}{3b92f2c8d12fc3807fcf297c16f1a940}
-      \strng{authornamehash}{3b92f2c8d12fc3807fcf297c16f1a940}
-      \strng{authorfullhash}{3b92f2c8d12fc3807fcf297c16f1a940}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2007 IEEE International Symposium on Circuits and Systems}
       \field{issn}{0271-4302}
-      \field{month}{5}
+      \field{month}{05}
       \field{title}{CMOS Inductor Performance Estimation using Z- and S-parameters}
       \field{year}{2007}
       \field{pages}{2256\bibrangedash 2259}
@@ -764,35 +563,15 @@
     \endentry
     \entry{ant_inductance_calculation}{article}{}
       \name{author}{4}{}{%
-        {{hash=a3ac9c7705d3760259340eb6f93c6225}{%
-           family={Mohan},
-           familyi={M\bibinitperiod},
-           given={S.\bibnamedelimi S.},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=154dd9e73418411341804db7c06da689}{%
-           family={Mar\bibnamedelima Hershenson},
-           familyi={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           prefix={del},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=6db639dc7728de8b159c7de14dc0b1a4}{%
-           family={Boyd},
-           familyi={B\bibinitperiod},
-           given={S.\bibnamedelimi P.},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=05efad2853792b5cfd51c89f14ac5472}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={T.\bibnamedelimi H.},
-           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a3ac9c7705d3760259340eb6f93c6225}{Mohan}{M\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=154dd9e73418411341804db7c06da689}{Mar\bibnamedelima Hershenson}{M\bibinitperiod\bibinitdelim H\bibinitperiod}{M.}{M\bibinitperiod}{del}{d\bibinitperiod}{}{}}%
+        {{hash=6db639dc7728de8b159c7de14dc0b1a4}{Boyd}{B\bibinitperiod}{S.\bibnamedelimi P.}{S\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=05efad2853792b5cfd51c89f14ac5472}{Lee}{L\bibinitperiod}{T.\bibnamedelimi H.}{T\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{ed5e637f10ed17fbecad741218b6e3ca}
       \strng{fullhash}{63bb1674152bb85c159818f47ab8ccf5}
-      \strng{authornamehash}{ed5e637f10ed17fbecad741218b6e3ca}
-      \strng{authorfullhash}{63bb1674152bb85c159818f47ab8ccf5}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0018-9200}
@@ -811,33 +590,19 @@
     \endentry
     \entry{ant_optimal_resonance}{article}{}
       \name{author}{3}{}{%
-        {{hash=ee9e8aa069c9bb7efaa3a991bd10fbf0}{%
-           family={Xue},
-           familyi={X\bibinitperiod},
-           given={R.\bibnamedelimi F.},
-           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=9f381d8d0c9ba74da6e3230b07056019}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={K.\bibnamedelimi W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=349a12032447529d9f4497072c395f9a}{%
-           family={Je},
-           familyi={J\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+        {{hash=ee9e8aa069c9bb7efaa3a991bd10fbf0}{Xue}{X\bibinitperiod}{R.\bibnamedelimi F.}{R\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+        {{hash=9f381d8d0c9ba74da6e3230b07056019}{Cheng}{C\bibinitperiod}{K.\bibnamedelimi W.}{K\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=349a12032447529d9f4497072c395f9a}{Je}{J\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{b9405f1617451f8b5e5875603b26e16f}
       \strng{fullhash}{b9405f1617451f8b5e5875603b26e16f}
-      \strng{authornamehash}{b9405f1617451f8b5e5875603b26e16f}
-      \strng{authorfullhash}{b9405f1617451f8b5e5875603b26e16f}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1549-8328}
       \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
-      \field{month}{4}
+      \field{month}{04}
       \field{number}{4}
       \field{title}{High-Efficiency Wireless Power Transfer for Biomedical Implants by Optimal Resonant Load Transformation}
       \field{volume}{60}
@@ -851,28 +616,18 @@
     \endentry
     \entry{ant_PSC_geometry}{article}{}
       \name{author}{2}{}{%
-        {{hash=a86a4f95e36a7e2232c947d50e5f251c}{%
-           family={Jow},
-           familyi={J\bibinitperiod},
-           given={U.\bibnamedelimi M.},
-           giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{%
-           family={Ghovanloo},
-           familyi={G\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+        {{hash=a86a4f95e36a7e2232c947d50e5f251c}{Jow}{J\bibinitperiod}{U.\bibnamedelimi M.}{U\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{Ghovanloo}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{18c5669573367ea75eb4fad095a4f9f6}
       \strng{fullhash}{18c5669573367ea75eb4fad095a4f9f6}
-      \strng{authornamehash}{18c5669573367ea75eb4fad095a4f9f6}
-      \strng{authorfullhash}{18c5669573367ea75eb4fad095a4f9f6}
-      \field{sortinit}{4}
-      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1932-4545}
       \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
-      \field{month}{9}
+      \field{month}{09}
       \field{number}{3}
       \field{title}{Design and Optimization of Printed Spiral Coils for Efficient Transcutaneous Inductive Power Transmission}
       \field{volume}{1}
@@ -886,21 +641,15 @@
     \endentry
     \entry{baker_2010}{book}{}
       \name{author}{1}{}{%
-        {{hash=95e0d3bf2c279c467eccf405c815079e}{%
-           family={Baker},
-           familyi={B\bibinitperiod},
-           given={R.\bibnamedelimi Jacob},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=95e0d3bf2c279c467eccf405c815079e}{Baker}{B\bibinitperiod}{R.\bibnamedelimi Jacob}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {Wiley-IEEE Press}%
       }
       \strng{namehash}{95e0d3bf2c279c467eccf405c815079e}
       \strng{fullhash}{95e0d3bf2c279c467eccf405c815079e}
-      \strng{authornamehash}{95e0d3bf2c279c467eccf405c815079e}
-      \strng{authorfullhash}{95e0d3bf2c279c467eccf405c815079e}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd}
@@ -910,26 +659,16 @@
     \endentry
     \entry{johns_2012}{book}{}
       \name{author}{2}{}{%
-        {{hash=43ac1527c314848943bc6b60d01bbd90}{%
-           family={Johns},
-           familyi={J\bibinitperiod},
-           given={David\bibnamedelima A},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=417386cd55d38dbbe1bbebccbbc8e8ed}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod}}}%
+        {{hash=43ac1527c314848943bc6b60d01bbd90}{Johns}{J\bibinitperiod}{David\bibnamedelima A}{D\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=417386cd55d38dbbe1bbebccbbc8e8ed}{Martin}{M\bibinitperiod}{Ken}{K\bibinitperiod}{}{}{}{}}%
       }
       \list{publisher}{1}{%
         {John Wiley \& Sons}%
       }
       \strng{namehash}{9cbb03b36034b841aa4c6aee137d4a4f}
       \strng{fullhash}{9cbb03b36034b841aa4c6aee137d4a4f}
-      \strng{authornamehash}{9cbb03b36034b841aa4c6aee137d4a4f}
-      \strng{authorfullhash}{9cbb03b36034b841aa4c6aee137d4a4f}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2E}

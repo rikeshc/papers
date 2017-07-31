@@ -124,8 +124,8 @@ Reduction in size and weight has been most dramatic that in course of some decad
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/comp_tech_batt.png}
-   \caption{Performance development trend}
+   \includegraphics[width=0.9\textwidth]{img/comp_tech_batt.png}
+   \caption{Mobile performance development trend \cite{mobile_performance}}
    \label{fig:comp_tech_batt}
 \end{figure}
 
@@ -147,12 +147,20 @@ Today many different energy harvesting techniques have been studied and implemen
 
 Energy harvesting system generally constitutes of energy source, transducer and power conditioning unit. Energy source can either be artificial like human walking or natural like sunlight. Transducer are devices which converts the energy from source which may be to electrical energy. And power conditioning unit process the harvested energy so that it can be used either to directly power a load or to store the energy. \\
 
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/visio_harvest_func.pdf}
+   \caption{Functional block diagram of energy harvesting system}
+   \label{fig:visio_harvest_func}
+\end{figure}
+
+
 Depending upon the type of energy harvested from the surrounding environment, energy harvesting devices can be broadly classified into kinetic, electromagnetic and thermal energy sources\cite{review_energy_harvest}. In kinetic energy harvesting, kinetic energy due to mechanical deformation of transducer is converted into electrical energy. Piezoelectrical material is good example of transducer for kinetic energy harvesting. Piezoelectrical materials are those which exhibit piezoelectric effect: when subjected to mechanical strain, it generates electrical charge proportional to applied strain. Strain is applied with either compression, slap or bending of the material. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/power_density_2.png}
-   \caption{Power density of energy sources and consumption of electronic devices}
+   \caption{Power density of energy sources and consumption of electronic devices \cite{power_density}}
    \label{fig:power_density}
 \end{figure}
 
@@ -174,6 +182,23 @@ Wireless power transfer is technique of cordlessly transferring electric energy 
 \subsubsection{Non-radiative wireless power transfer}
 
 Non radiative method of wireless power transfer based on magnetic field coupling between two coils within the distance of coil dimension. Since magnetic field diminishes rapidly after distance greater than radius of coil, assuming that distance is less than near field and far field boundary, $\lambda /2\pi$  \cite[pp. 63]{rfid_2010}, better coupling and hence power transfer can happen only within this short distance, and thus it is also called near field power transfer. Near field also means that radiative EM wave is not yet fully created and hence the name non-radiative WPT. As energy transfer in magnetic field is non radiative, it is safe even to transfer higher power as there is no RF exposure. This is one of the main reason of its widespread application today. \\
+
+\begin{figure} [htbp]
+	\begin{minipage}{\linewidth}
+  	\centering 
+ 	 \subfloat[Inductive coupling]  {\includegraphics[width=0.48\textwidth]{img/visio_ipt.pdf} \label{visio_ipt_model}}
+	 %\end{minipage}%
+  	\hfill
+	%\begin{minipage}{.5\linewidth}
+	%\centering
+ 	\subfloat[Magnetic resonance inductive coupling]  {\includegraphics[width=0.48\textwidth]{img/visio_ript.pdf}\label{visio_ript_model}}
+	\end{minipage}\par\medskip
+ 	%\hfill
+	\centering
+ 	\subfloat[Capacitive coupling ]  {\includegraphics[width=.48\textwidth]{img/visio_cpt.pdf}\label{visio_cpt_model}}
+ 	\caption{Near-field coupling models} 
+	\label{visio_model} 
+\end{figure}
 
 Inductive power transfer, IPT
 
@@ -213,7 +238,7 @@ It is seen today that IPT and magnetic resonance IPT are mostly used because of 
  \hfill
  \subfloat[IDT concept of wireless charging of bionic devices]  {\includegraphics[width=.32\textwidth]{img/wpt_bionics.jpg}\label{wpt_medical}}
  \caption{Commercial application of wireless power transfer} 
-\label{logo_charging_both} 
+\label{wpt_application} 
 \end{figure}
 
 
