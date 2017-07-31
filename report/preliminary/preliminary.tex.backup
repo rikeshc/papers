@@ -139,7 +139,6 @@ In spite of dramatic technological advancement batteries are still used as power
 
 Though there has been progress in battery technology, use of battery in todays' handheld and portable devices have disadvantages. Batteries contribute significant proportion of total weight and size of the device. They occupy more space, require regular recharge and in the long run need replacement. WPT helps to overcome some of these limitations. For example instead of removing and recharging batteries, they can be recharged with harvested energy without removing them. Going one step further ahead, batteries can be completely replaced in a electronic device and power the device wirelessly. This way implementation of WPT helps to minimise the problems of battery powered device and in the best case completely removes the problems. \\
 
-\newpage
 
 \subsection{Energy Harvesting}
 
@@ -205,16 +204,6 @@ Health concerns as governed by \acrshort{fcc} and \acrshort{ieee} safety regulat
 
 It is seen today that IPT and magnetic resonance IPT are mostly used because of easier implementation, lower cost, wide range power transfer capability. For high power transfer in order of kilowatt, IPT is mostly used in the field of industrial automation like automated material handling and industrial micro-robots  and automotive like electric vehicle charging.  Similarly both IPT and magnetic resonance IPT are used for transferring power medium power up-to tens of watt. Their typical uses have been in charging battery in medical equipments and consumers electronics. In case of microelectronics devices like medical implants, body sensors, pacemaker etc, magnetic resonance IPT is mostly used both to charge a battery or directly drive the device. \\
 
-\begin{figure} [htbp]
-  \centering 
-  \subfloat[Qualcomm EV charger]  {\includegraphics[width=.32\textwidth]{img/wpt_ev_qualcom.jpg} \label{wpt_ev}}
-  \hfill
- \subfloat[Qualcomm mobile phone charger with foreign object detection feature]  {\includegraphics[width=.32\textwidth]{img/wpt_mobile_qualcom.jpg}\label{wpt_mobile}}
- \hfill
- \subfloat[IDT concept of wireless charging of bionic devices]  {\includegraphics[width=.32\textwidth]{img/wpt_bionics.jpg}\label{wpt_medical}}
- \caption{Commercial application of wireless power transfer} 
-\label{logo_charging_both} 
-\end{figure}
 
 
 In context of radiative power transfer, non-directive technique is mostly used in low power sensors and implants. Because of the low power requirement, mostly omnipresent RF signals are used to harvest energy. This technique has been used in both perpetually supplying power like in body sensor which continuously monitor some activity or sporadically supplying power like in RFID and body implants which work only when required. [CITE] reports future application of microwave power transfer can be in SPS (Solar Power Satellite) system and SHARP (Stationary High Altitude Relay Platform). SPS uses satellite for harvesting solar energy in space and transfer that power to earth. Similarly SHARP is stationary charging station for unmanned aerial vehicles in stratosphere region by beaming power from earth.    \\
