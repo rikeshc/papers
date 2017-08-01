@@ -20,6 +20,21 @@
 \usepackage [nopostdot, acronym, nogroupskip, nonumberlist,] {glossaries}
 \usepackage{wrapfig}
 
+%fancy header and footer
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1} }
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyhead[LE]{\textbf{ \nouppercase{\leftmark}} }
+\fancyhead[RO]{\textbf{ \nouppercase{\leftmark}} }
+\fancypagestyle{plain}{ %
+  \fancyhf{} % remove everything
+  \renewcommand{\headrulewidth}{0pt} % remove lines as well
+  \renewcommand{\footrulewidth}{0pt}}
+
 \setacronymstyle{long-short}
 \glsdisablehyper
 
@@ -104,6 +119,7 @@
 \part{Introduction and Background}
 
 \chapter{Introduction}
+
 \section{Motivation}
 
 We start with the technology development trend in micorelectronics. The progress of different aspects of 
@@ -119,7 +135,7 @@ going cordless for suppling power for microelectronics.
 
 \subsection{Technology Trend}
 
-\subsubsection{Size and weight : Lighter and tighter}
+\subsubsection{Size and Weight : Lighter and Tighter}
 
 Reduction in size and weight has been most dramatic that in course of some decades miniaturisation trend went 
 from a room-sized fixed electronic into a wearable device. Most important milestone contributing for lighter and 
@@ -135,7 +151,7 @@ consists of billions of transistors of some  tens of nm feature size. \\
    \label{fig:comp_tech_batt}
 \end{figure}
 
-\subsubsection{Operation: Multi-functional and fast}
+\subsubsection{Operation: Multi-functional and Higher speed}
 
 On the contrary to shrinking device size, integrated functionality and device speed is increasing proportionally. 
 The introduction of SoCs created of new dawn of multi-functionality IC by integrating many electronic components 
@@ -156,7 +172,7 @@ consumption\cite{rabaey_2009}. \\
 
 %http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf
 
-\subsubsection{Power supply: Cut the cord}
+\subsubsection{Power supply: Cut the Cord}
 
 In spite of dramatic technological advancement, battery technology has not evolve equally as good, see figure 
 \ref{fig:comp_tech_batt}. It is not like there has been no progress in battery technology at all. There has been a lot improvements 
@@ -165,12 +181,12 @@ reducing weight, reduced self discharge thereby increasing life time and increas
 increasing reuse.[CITE]. Today Li-ion has better choice for powering devices because of it better combined 
 above mentioned characteristics and hence used excessively in portable and wearable devices. \\
 
-But use of battery in todays'  portable and wearable devices is constraining the overall developement of devices 
+But use of battery in todays'  portable and wearable devices is constraining the overall development of devices 
 [CITE]. Batteries contribute significant proportion of total weight and size of the device. They supply limited 
 power which means require regular recharge and in the long run need replacement. During recharge either device or 
-batterly has to be physically connected to power outlet. \\
+battery has to be physically connected to power outlet. \\
 
-A power source technology with high power density which perpetually and wirelessly power devices could eliminate 
+A power source with high power density which perpetually and wirelessly power devices could eliminate 
 all the above problems and challenges mentioned above. But how 
 far have we gone to achieve this? In the next chapter, we will discussed the techniques of energy harvesting and 
 wireless power transfer studied and implemented so far. Bluetooth Low Energy, BLE is taken as a 
@@ -184,7 +200,28 @@ reference device to drive and a power harvesting circuit is designed and impleme
 
 \section{Thesis outline}
 
-all chapter summary 
+A brief overview of this thesis report is presented below. For better organisation and clarity of content, it is divided into four parts 
+and eight chapters. 
+\begin{itemize}
+\item \textbf{Chapter 1} discusses the motivation behind this work. It compares technology trends and concludes
+the need of going cordless power source for modern microelectronics devices.
+\item \textbf{Chapter 2} presents the background for this work. It discusses various energy harvesting and 
+wireless power transfer techniques.
+\item \textbf{Chapter 3} onwards, design of functional blocks is discussed. It starts with design and 
+and analysis of rectifier topology used.
+\item \textbf{Chapter 4} is about design, implementation and analysis of LDO.
+\item \textbf{Chapter 5} discusses about modelling the antenna required and its performance. 
+\item \textbf{Chapter 6} presents design of wireless power harvesting system using the discrete functional blocks and simulation 
+results are presented. First only the power management system is simulated and then compete power transfer system with 
+inductive transfer link.
+\item \textbf{Chapter 7} discusses the production, test and verification of produced power harvesting chip. First test PCB and 
+chip layout is discussed. Then measurement data of the chip is presented and finally compared with the simulated results.
+\item \textbf{Chapter 8} presents summary and concluding remarks of this work including problems and challenges faced 
+along with prospective future work.
+
+\end{itemize}
+
+
 
 
 \chapter{Background}
@@ -295,7 +332,7 @@ Non radiative method of wireless power transfer based on magnetic field coupling
 	\centering
  	\subfloat[Capacitive coupling ]  {\includegraphics[width=.48\textwidth]{img/visio_cpt.pdf}\label{visio_cpt_model}}
  	\caption{Near-field coupling models} 
-	\label{visio_model} 
+	\label{visio_model_near} 
 \end{figure}
 
 \subsubsection{Inductive power transfer, IPT}
@@ -336,6 +373,13 @@ field region, from the source \cite[pp. 112]{rfid_2010}, and energy can only be 
 region, it is called far field power transfer. However as EM wave is radiative and high power RF exposure has 
 safety concerns on human. \\
 
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.65\textwidth]{img/visio_rf.pdf}
+   \caption{Far-field harvesting model}
+   \label{fig:visio_model_far}
+\end{figure}
+
 \subsubsection{Non-directive and directive radiative WPT}
 
 Radiative power transfer can be divided into directive and non-directive radiative power transfer. Non-directive 
@@ -361,7 +405,7 @@ medical equipments and consumers electronics. In case of microelectronics device
 sensors, pacemaker etc, magnetic resonance IPT is mostly used both to charge a battery or directly drive the 
 device. \\
 
-\begin{figure} [!htbp]
+\begin{figure} [htbp]
   \begin{minipage}{\linewidth}
   \centering 
   \subfloat[Qualcomm EV charger]  {\includegraphics[width=.47\textwidth]{img/wpt_ev_qualcom.jpg} \label{wpt_ev}}
@@ -374,7 +418,6 @@ device. \\
  \caption{Commercial application of wireless power transfer} 
 \label{wpt_application} 
 \end{figure}
-
 
 In context of radiative power transfer, non-directive technique is mostly used in low power sensors and implants. 
 Because of the low power requirement, mostly omnipresent RF signals are used to harvest energy. This technique 
@@ -479,8 +522,8 @@ externally supplied bias and reference will be the secondary option. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/block_diagram.pdf}
-   \caption{Block diagram of complete design}
+   \includegraphics[width=\textwidth]{img/visio_funct_wpt.pdf}
+   \caption{Functional block diagram of complete design}
    \label{fig:funct_block}
 \end{figure}
 
@@ -1121,7 +1164,7 @@ and reference will be explicitly noted when used. \\
 
 \section{Power Management System}
 
-Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose here is to see Vrec and Vreg outputs while driving maximum load. The voltage biases outputs to examine the performance of BGR circuit which is disable now with external control signal Vctl low. The test bench setup is a shown in figure \label{fig:wpt_top_testbench} . 
+Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving maximum load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are biases voltages to examine the performance of BGR circuit which is disabled now with external control signal Vctl low.  \\
 
 \begin{figure} [!htbp]
   \centering
@@ -1156,14 +1199,33 @@ Figure \label{fig:wpt_top} is the top level of PMS in this design. The purpose h
 \end{figure}
 
 
-%\chapter{Chip Production, Test and Verification}
+\section{PRU Unit}
+
+Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and componoent values remain the same as in PMS simulation. \\
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_top_link.pdf} 
+ \caption{Test bench for complete PRU unit } 
+\label{fig:wpt_top_link} 
+\end{figure}
+
+The parasitic extraction of the compete layout also includes the tracks from pad to core inputs. The pad-frame layout provided by the fab was used to accurately draw the tracks from pad to core I/O terminals. \\
+
+
+\chapter{Chip Production, Test and Verification}
+
+\section{Chip and PCB}
+After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure [CHIP MICRO PCITURE] .\\
+
+While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure [figure].\\
 
 
 % ***********************************************************************  CONCLUSION ***********************************************************************************
-
-%\part{Conclusion}
-%\section{Concluding Remark}
-%\section{Future Work}
+\part{Conclusion}
+\chapter{Conclusion}
+\section{Problem and challenges}
+\section{Future Work}
 
 \clearpage
 \newpage
