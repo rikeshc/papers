@@ -1,13 +1,16 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Rectifier design parameters\relax }}{7}{table.caption.7}
-\contentsline {table}{\numberline {1.2}{\ignorespaces Rectifier performance summary\relax }}{11}{table.caption.13}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces LDO design parameters\relax }}{15}{table.caption.16}
-\contentsline {table}{\numberline {2.2}{\ignorespaces LDO performance summary\relax }}{22}{table.caption.25}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Target specifications\relax }}{15}{table.caption.22}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Characterisation of antenna\relax }}{25}{table.caption.28}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Coupling parameters for varying coils distance\relax }}{26}{table.caption.30}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Performance of resonant inductive link\relax }}{28}{table.caption.33}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Rectifier design parameters\relax }}{23}{table.caption.27}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Rectifier performance summary\relax }}{27}{table.caption.33}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces LDO design parameters\relax }}{31}{table.caption.36}
+\contentsline {table}{\numberline {4.2}{\ignorespaces LDO performance summary\relax }}{38}{table.caption.45}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Characterisation of antenna\relax }}{41}{table.caption.48}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Coupling parameters for varying coils distance\relax }}{42}{table.caption.50}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Performance of resonant inductive link\relax }}{44}{table.caption.53}
 \addvspace {10\p@ }

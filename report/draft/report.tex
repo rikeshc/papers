@@ -17,7 +17,8 @@
 \usepackage{hyperref}
 %\hypersetup{colorlinks=true, linktoc=none, linkcolor=blue,} %my
 \hypersetup{pageanchor=false,colorlinks=true, linktoc=all, linkcolor=blue,}
-\usepackage [nopostdot, acronym, nogroupskip, nonumberlist,] {glossaries}              
+\usepackage [nopostdot, acronym, nogroupskip, nonumberlist,] {glossaries}
+\usepackage{wrapfig}
 
 \setacronymstyle{long-short}
 \glsdisablehyper
@@ -60,6 +61,16 @@
 \newacronym{ipt}{IPT}{Inductive Power Transfer}
 \newacronym{pru}{PRU}{Power Receiving Unit}
 \newacronym{ptu}{PTU}{Power Transfer Unit}
+\newacronym{jlcc}{JLCC}{J-Lead Chip Carrier}
+\newacronym{mlcc}{MLCC}{Multi-Layer Ceramic Capacitor}
+\newacronym{nordic}{NORDIC}{Nordic Semiconductor}
+\newacronym{soc}{SOC}{System on a Chip}
+\newacronym{rfid}{RFID}{Radio Frequency Identification}
+\newacronym{rf}{RF}{Radio Frequency}
+\newacronym{ism}{ISM}{Industrial, Scientific and Medical }
+%\newacronym{fcc}{FFC}{Federal Communications Commission}
+\newacronym{fcc}{FCC}{Federal Communications Commission}
+\newacronym{ieee}{IEEE}{ Institute of Electrical and Electronics Engineers}
 
 
 % *********************************************************************** COVER ABSTRACT PREFACE  ***********************************************************************
@@ -90,11 +101,393 @@
 
 % ************************************************************ INTRODUCTION AND BACKGROUND *************************************************************************
 
-%\part{Introduction and Background}
+\part{Introduction and Background}
 
-%\chapter{Introduction}
+\chapter{Introduction}
+\section{Motivation}
 
-%\chapter{Background}
+We start with the technology development trend in micorelectronics. The progress of different aspects of 
+technology is discussed and compared with power/battery development. We end the chapter concluding the need for
+going cordless for suppling power for microelectronics.
+% The ongoing modern technological advancements have led us into dramatic and drastic electronic device development 
+% trend.  On the one hand devices are getting smaller, lighter and low-powered, while on the other hand more and 
+% more functionality with increased speed are being integrated. And above all these, going wireless whenever and 
+% whatever possible is the market trend. Specially in commercial electronics, it looks like quest for the ultimate 
+% gadget, miniaturised low-powered multi-functional wireless device, is not going to stop anytime soon. Thanks to 
+% non-stop research and development in manufacturing, material and technology. \\
+
+
+\subsection{Technology Trend}
+
+\subsubsection{Size and weight : Lighter and tighter}
+
+Reduction in size and weight has been most dramatic that in course of some decades miniaturisation trend went 
+from a room-sized fixed electronic into a wearable device. Most important milestone contributing for lighter and 
+tighter devices is development of transistor in 1950s replacing large and bulky vacuum tubes, and  
+development first IC in 1965 making it possible to integrated hundreds of transistors on a single silicon substrate of 
+some square mm. Since then as stated by Moorse's law, IC size is continuously shrinking. A typical modern IC now 
+consists of billions of transistors of some  tens of nm feature size. \\
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.9\textwidth]{img/comp_tech_batt.png}
+   \caption{Mobile performance development trend \cite{mobile_performance}}
+   \label{fig:comp_tech_batt}
+\end{figure}
+
+\subsubsection{Operation: Multi-functional and fast}
+
+On the contrary to shrinking device size, integrated functionality and device speed is increasing proportionally. 
+The introduction of SoCs created of new dawn of multi-functionality IC by integrating many electronic components 
+and/or systems on a single silicon substrate. Similarly multi-core CPU with parallel programmed instruction  
+significantly increased work payload as stated by Amdahl's law. Similarly recent developments in IoT has 
+introduced whole new dimension on multi-functionality by connecting many devices to a same local network or 
+the internet\cite{iot_intro}. \\
+
+\subsubsection{Power consumption: Low-power}
+
+In terms of power consumption, though power density has increased due to increased transistor density and speed, 
+power consumption per transistor and energy per operation, EOP, has significantly reduced. It is due to gradual 
+shrinking in feature size and decrease in supply voltage. Similarly there has been a lot progress in LP design 
+introducing new power optimal design techniques both at logic/circuit level and architecture level. Lately run 
+time power optimisation technique by tracing realtime work load like dynamic voltage scaling and switching 
+between different operation modes (sleep, nap, doze and active) have been popularly used to reduce power 
+consumption\cite{rabaey_2009}. \\
+
+%http://www.cisco.com/c/dam/en_us/solutions/trends/iot/introduction_to_IoT_november.pdf
+
+\subsubsection{Power supply: Cut the cord}
+
+In spite of dramatic technological advancement, battery technology has not evolve equally as good, see figure 
+\ref{fig:comp_tech_batt}. It is not like there has been no progress in battery technology at all. There has been a lot improvements 
+like increased volumetric energy density thereby reducing size, increased gravimetric energy density thereby 
+reducing weight, reduced self discharge thereby increasing life time and increased charged cycle thereby 
+increasing reuse.[CITE]. Today Li-ion has better choice for powering devices because of it better combined 
+above mentioned characteristics and hence used excessively in portable and wearable devices. \\
+
+But use of battery in todays'  portable and wearable devices is constraining the overall developement of devices 
+[CITE]. Batteries contribute significant proportion of total weight and size of the device. They supply limited 
+power which means require regular recharge and in the long run need replacement. During recharge either device or 
+batterly has to be physically connected to power outlet. \\
+
+A power source technology with high power density which perpetually and wirelessly power devices could eliminate 
+all the above problems and challenges mentioned above. But how 
+far have we gone to achieve this? In the next chapter, we will discussed the techniques of energy harvesting and 
+wireless power transfer studied and implemented so far. Bluetooth Low Energy, BLE is taken as a 
+reference device to drive and a power harvesting circuit is designed and implememted for BLE. \\
+
+% WPT helps to overcome some of these limitations. For example instead of removing and recharging batteries, 
+% they can be recharged with 
+% harvested energy without removing them. Going one step further ahead, batteries can be completely replaced in 
+% a electronic device and power the device wirelessly. This way implementation of WPT helps to minimise the 
+% problems of battery powered device and in the best case completely removes the problems. \\
+
+\section{Thesis outline}
+
+all chapter summary 
+
+
+\chapter{Background}
+
+\section{Energy Harvesting}
+
+In this chapter, we discuss the options to elimanate or minimise the bottlenecks of battery used in portable and 
+wearbale devices. We start with energy harvesting techniques and then wireless power transfer techniques. \\
+
+There has been success in harvesting low power from ambient sources and a lot of effort and resources is being used for 
+harvesting high power. As discussed earlier the technological advancement has given us low power electronics. 
+These LP devices can now be powered solely by harvested energy, eventually making battery-less wirelessly powered 
+electronic device a reality. \\
+
+Energy harvesting system generally constitutes of energy source, transducer and power conditioning unit as shown 
+in figure \ref{fig:visio_harvest_func}. Energy 
+source can either be artificial like human walking or natural like sunlight. Transducer are devices which 
+converts the energy from source which may be to electrical energy. And power conditioning unit process the 
+harvested energy so that it can be used either to directly power a load or to store the energy. \\
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/visio_harvest_func.pdf}
+   \caption{Functional block diagram of energy harvesting system}
+   \label{fig:visio_harvest_func}
+\end{figure}
+
+
+Depending upon the type of energy harvested from the surrounding environment, energy harvesting devices can be 
+broadly classified into kinetic, electromagnetic and thermal energy sources\cite{review_energy_harvest}. These are 
+briefly discussed below.\\
+
+\subsection{Kinetic energy harvesting}
+In kinetic energy harvesting, kinetic energy due to mechanical deformation of transducer is converted into 
+electrical energy. Piezoelectrical material is good example of transducer for kinetic energy harvesting. 
+Piezoelectrical materials are those which exhibit piezoelectric effect: when subjected to mechanical strain, 
+it generates electrical charge proportional to applied strain. Strain is applied with either compression, slap 
+or bending of the material. \\
+
+
+\subsection{Harvesting from Radiation}
+Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy 
+harvesting is the most popular and widely successful EM energy harvesting for large scale energy generation. It 
+makes use of semiconductor device called solar cells as transducer. These transducer converts incident light 
+energy to electric energy due to photoelectric effect: when light is incident on semiconductor, electrons are 
+emitted from the surface.  Its application ranges from LP wrist watch to grid of photovoltaic system. The other 
+popular example is harvesting from  RF radiation, which are available almost everywhere in modern cities, to 
+power RFIDs. In this technique, antenna or rectenna are used as transducer. However harvesting from RF radiation 
+has been limited to very low power only. \\
+
+\subsection{Thermal energy harvesting}
+Similarly in thermal energy harvesting, thermal energy from any source in the environment is converted to useful 
+electric energy. Thermopile is an example of thermal energy harvesting using thermocouples in series as 
+transducer. Thermocouple is a electric device with two different conductors forming junctions. A thermocouple 
+generates voltage proportional to temperature between junctions, known as Seeback effect. Connecting 
+thermocouples in series increased the harvested voltage as in thermopile. \\
+
+\begin{figure}[H] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/power_density_2.png}
+   \caption{Power density of energy sources and consumption of electronic devices \cite{power_density}}
+   \label{fig:power_density}
+\end{figure}
+
+Figure \ref{fig:power_density} shows power density of different energy sources and power consumption of electronic 
+devices. It is seem  that the above discussed energy sources have a low power density which means very low power 
+and some low power micro-electronic devices only have the privilege of integrating energy harvesting techniques 
+so far. For most of the devices, the harvested power is not high enough to drive them yet. This means perpetual 
+high density energy source is yet not realisiable for most of the devices. But what about wireless transfer of 
+alreadry available power? We will discuss it ahead. 
+%we observe the trend of technology development in reducing power consumption of micro devices and at the same 
+%time, the progress in R\&D with promising results in power harvesting, we can definitely expect that harvested 
+%power will meet power requirement of electronic devices in near future. But consumers' desire for battery-less 
+%and wireless electronics has made the commercial electronics producers to make most use of latest advancements. 
+%5This has led to integration of latest development with already matured technology for the sake of consumers' 
+%satisfaction and for bigger share of the market. And hence wireless power transfer has gained much popularity. \\
+
+
+\section{Wireless Power Transfer}
+
+
+As discussed earlier since the evolution of battery technology is not at par with rest of the development in 
+microelectronic devices and energy harvesting techniques from natural sources has not yet evolved to high power
+density, wireless power transfer is by far best option to minimise challenges in battery powered devices. \\
+
+Wireless power transfer is technique of cordlessly transferring electric energy across a air gap either to drive 
+a load or to charge a battery. It eliminates the need of phycical power cables to recharge battery. and in the 
+best case completely remove the battery. Wireless power transfer methods implemented today can be broadly 
+classified into radiative and non-radiative power transfer on the basis of transfer distance which can be further 
+sub-classified on the basis of power transfer principle \cite{wpt_fund_std} as discussed below.\\
+
+
+\subsection{Non-radiative wireless power transfer}
+
+Non radiative method of wireless power transfer based on magnetic field coupling between two coils within the distance of coil dimension. Since magnetic field diminishes rapidly after distance greater than radius of coil, assuming that distance is less than near field and far field boundary, $\lambda /2\pi$  \cite[pp. 63]{rfid_2010}, better coupling and hence power transfer can happen only within this short distance, and thus it is also called near field power transfer. Near field also means that radiative EM wave is not yet fully created and hence the name non-radiative WPT. As energy transfer in magnetic field is non radiative, it is safe even to transfer higher power as there is no RF exposure. This is one of the main reason of its widespread application today. \\
+
+\begin{figure} [htbp]
+	\begin{minipage}{\linewidth}
+  	\centering 
+ 	 \subfloat[Inductive coupling]  {\includegraphics[width=0.48\textwidth]{img/visio_ipt.pdf} \label{visio_ipt_model}}
+	 %\end{minipage}%
+  	\hfill
+	%\begin{minipage}{.5\linewidth}
+	%\centering
+ 	\subfloat[Magnetic resonance inductive coupling]  {\includegraphics[width=0.48\textwidth]{img/visio_ript.pdf}\label{visio_ript_model}}
+	\end{minipage}\par\medskip
+ 	%\hfill
+	\centering
+ 	\subfloat[Capacitive coupling ]  {\includegraphics[width=.48\textwidth]{img/visio_cpt.pdf}\label{visio_cpt_model}}
+ 	\caption{Near-field coupling models} 
+	\label{visio_model} 
+\end{figure}
+
+\subsubsection{Inductive power transfer, IPT}
+
+IPT is based on electromagnetic induction between two coils. Electric energy is transferred by coupling of 
+magnetic field from the primary to secondary coil. As stated by Faraday law of induction, alternating current 
+flowing in primary coil generates varying magnetic filed which is when coupled with secondary coil includes 
+voltage/current across the secondary coil. \\
+
+In such conventional inductive coupling, larger air gap and difficulty in perfect alignment between the coils 
+contribute to weak coupling, which directly translates into poor power transfer efficiency. This is why it is 
+mostly used in LP devices and for short range in tens of mm transfer like RFIDs. \\
+
+\subsubsection{Magnetic resonance power transfer}
+
+The principle of magnetic resonance power transfer is same as IPT but with strong coupling between the coils. 
+Instead of simple coil as in IPT, resonance is created at both primary and secondary coil at the same operating 
+frequency. Such resonant IPT is often concisely called as  Witricity, for wireless electricity and is less 
+affected by coil misalignment and physical distance compared to conventional IPT  \cite{wpt_witricity}. A very 
+key application of resonant IPT is that it can be used to simultaneously transfer/charge multiple power 
+receivers from a single large source coil \cite{wpt_mutliple_device_charging}. \\
+
+Because of it strong coupling between the coils, it can effectively transfer power for mid range in tens of cm. 
+It is mostly used in  wireless charging of medical implants and consumer electronics. \\
+
+\subsubsection{Capacitive power transfer, CPT}
+
+In capacitive power transfer, power transfer is done through capacitive coupling, use of E-field, between sending 
+and receiving plates as transferring interface. For low power transfer, it is seen effective over IPT because of 
+lower cost, smaller size and no shielding for EMI. However for higher power transfer is limited due to 
+requirement of larger plate area and very close coupling \cite{wpt_cpt}. \\
+
+\subsection{Radiative wireless power transfer}
+
+Radiative power transfer used RF EM wave as a medium to deliver power. In contrary to near field, power is 
+transferred through E-field of EM wave. The E-field can only develop after $\lambda /2\pi$ distance, at far 
+field region, from the source \cite[pp. 112]{rfid_2010}, and energy can only be harvested in this far field 
+region, it is called far field power transfer. However as EM wave is radiative and high power RF exposure has 
+safety concerns on human. \\
+
+\subsubsection{Non-directive and directive radiative WPT}
+
+Radiative power transfer can be divided into directive and non-directive radiative power transfer. Non-directive 
+power transfer is same as discussed in EM energy harvesting, where energy is harvested from isotropically 
+radiated RF wave in the surrounding.   Whereas in directive power transfer, dedicated transmitter antenna/antenna 
+array is used to transmit EM wave to a particular direction of receiver antenna location. This is point to point 
+far field transfer technique is also called energy beam-forming and has better transfer efficiency than 
+non-directive method. \\
+
+Health concerns as governed by \acrshort{fcc} and \acrshort{ieee} safety regulation policy on human exposure has 
+limited its used to low power harvesting over longer distance using RF wave. But, as RF wave is also information 
+carrier wave in wireless communication, its capacity to transmit both data and power simultaneously is expected 
+to introduce new application in wireless communication field  \cite{wpt_fund_std}. \\
+
+\subsection{WPT Applications}
+
+It is seen today that IPT and magnetic resonance IPT are mostly used because of easier implementation, lower 
+cost, wide range power transfer capability. For high power transfer in order of kilowatt, IPT is mostly used 
+in the field of industrial automation like automated material handling and industrial micro-robots  and 
+automotive like electric vehicle charging.  Similarly both IPT and magnetic resonance IPT are used for 
+transferring power medium power up-to tens of watt. Their typical uses have been in charging battery in 
+medical equipments and consumers electronics. In case of microelectronics devices like medical implants, body 
+sensors, pacemaker etc, magnetic resonance IPT is mostly used both to charge a battery or directly drive the 
+device. \\
+
+\begin{figure} [!htbp]
+  \begin{minipage}{\linewidth}
+  \centering 
+  \subfloat[Qualcomm EV charger]  {\includegraphics[width=.47\textwidth]{img/wpt_ev_qualcom.jpg} \label{wpt_ev}}
+  \hfill
+ \subfloat[Qualcomm mobile phone charger with foreign object detection feature]  {\includegraphics[width=.47\textwidth]{img/wpt_mobile_qualcom.jpg}\label{wpt_mobile}}
+ \hfill
+ \end{minipage}\par\medskip
+ \centering
+ \subfloat[IDT concept of wireless charging of bionic devices]  {\includegraphics[width=.47\textwidth]{img/wpt_bionics.jpg}\label{wpt_medical}}
+ \caption{Commercial application of wireless power transfer} 
+\label{wpt_application} 
+\end{figure}
+
+
+In context of radiative power transfer, non-directive technique is mostly used in low power sensors and implants. 
+Because of the low power requirement, mostly omnipresent RF signals are used to harvest energy. This technique 
+has been used in both perpetually supplying power like in body sensor which continuously monitor some activity 
+or sporadically supplying power like in RFID and body implants which work only when required. [CITE] reports 
+future application of microwave power transfer can be in SPS (Solar Power Satellite) system and SHARP (Stationary 
+High Altitude Relay Platform). SPS uses satellite for harvesting solar energy in space and transfer that power 
+to earth. Similarly SHARP is stationary charging station for unmanned aerial vehicles in stratosphere region by 
+beaming power from earth.    \\
+
+\subsection{Charger Standards}
+
+%http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/basics-tutorial.php
+
+When wireless charging was introduced into consumer daily appliances, it was quickly realised the need of 
+standard design protocols to maintain uniformity and avoid confusion for the manufacturers. Here are some 
+mostly used standards in the market. All commercial standards discussed below use both IPT and resonant IPT 
+techniques for charging, and have two elements: transmitter for transferring power and receiver device usually 
+integrated into mobile, handheld or wearable devices. Both the transmitter and the receiver use the same control 
+and management protocol in order to detect compatible electronic devices, exchange charging state information 
+and control charging process. \\
+
+
+\subsubsection{Qi}
+
+\begin{wrapfigure}{R}{0.35\textwidth}
+  \vspace{-5pt}
+  \centering
+    \includegraphics[width=0.25\textwidth]{img/logo_qi.jpg}
+  \vspace{-5pt}
+  \caption{Qi}
+  \vspace{-5pt}
+\end{wrapfigure}
+
+Qi standard was introduced by Wireless Power Consortium in August 2008. It has standardised two categories of 
+chargers: low power charger for mobile and music players and medium power charger. The power transfer was based 
+on IPT and now is operating with magnetic resonance IPT too. Qi standard allow transmitter/charger to be either 
+single fixed coil, single moving coil or array of coils. The transmitter coil type determines determines the 
+positioning of the receiver, either guided or free. Qi charger also have foreign object detection feature 
+\cite{wpt_qi}. Qi uses the same frequency for communication and power transfer, 80-300 KHz \cite{wpt_qi_ian}. \\
+
+\subsubsection{A4WP}
+
+A4WP is acronym for Alliance for Alliance for Wireless Power which has introduced another independent wireless 
+charging protocol. It uses magnetic resonance IPT technique for power transfer. The main differences between 
+A4WP from Qi are multiple device charging from a single charger, also called power transmitting unit, PTU and 
+longer charging range. Similarly there are different category of PTUs from 1 to 5, most of them still on roadmap 
+and supports wireless charging from low power to high power. A4WP used different frequency band for communication 
+and power transfer, which are 2.4 GHz and 6.78 MHz respectively  \cite{wpt_a4wp_ian}.\\
+
+\subsubsection{AirFuel Alliance}
+
+\begin{wrapfigure}{R}{0.35\textwidth}
+  \vspace{-5pt}
+  \centering
+    \includegraphics[width=0.25\textwidth]{img/logo_airfuel.jpg}
+  \vspace{-5pt}
+  \caption{AirFuel}
+  \vspace{-5pt}
+\end{wrapfigure}
+
+AirFuel Alliance is newly crated wireless charging standard buy merging Alliance for Alliance for Wireless Power, 
+A4WP and Power Matters Alliance, PMA in 2015 with backing of major device manufacturers  \cite{merge_a4wp_pma}. 
+Like A4WP, PMA  was IPT based independent wireless charging standard. AirFuel Alliance is believed to fight the 
+market dominance of Qi standard. AirFuel is expecting to expand charging standard beyond consumer electronics to 
+industrial, medical and military applications \cite{airfuel}.\\
+
+%https://www.chargespot.com/news/airfuel-and-what-it-means-for-the-wireless-charging-industry/
+%https://www.airfuel.org/index.php/home/about-us-2
+
+\section{This project}
+As mentioned in the last chapter, a typical microelectronics system, BLE, used extensively in all portable and 
+wearable is taken as a reference load for this project. It requires 10 mA current from a supply of 1.8 V to drive 
+BLE system. The purpose of this work will be to make a wireless power transfer system for cordlessly driving BLE 
+or charging BLE battery. The target specification for this work is listed in table \ref{tab:proj_spec_tar}. \\
+
+\begin{table}[!htbp]
+\caption{Target specifications}
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+Technology 		& TSMC 90nm 9M-1P\\ \hline
+Chip area 		& TBA mm\textsuperscript{2} \\ \hline
+Input AC voltage	& 2.5 Vp \\ \hline
+Operating frequency  	& 13.56 MHz \\ \hline
+Maximum load 		& 10 mA \\ \hline
+Output DC voltage 	& 1.8 V \\ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:proj_spec_tar}
+\end{table}
+
+Figure \ref{fig:funct_block} is the functional block diagram of proposed implementation of wireless power transfer in 
+this work. From the discussion in wireless power transfer section, it is seen that IPT is the best option for 
+being mature, easy and safe implementation. Since tuning the IPT transfer link at the operating frequency 
+increases the transfer effieicency, magnetic resonance link is designed for this work. The antennas are designed 
+with the specifications provided by NORDIC. The power management system includes rectifier, LDO and reference and bias circuit. The biasing and reference circuit is designed solely for 
+learning the design technique without much effort on the accuracy of the generated biases and references. So 
+externally supplied bias and reference will be the secondary option. \\
+
+
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/block_diagram.pdf}
+   \caption{Block diagram of complete design}
+   \label{fig:funct_block}
+\end{figure}
+
+The chapter ahead discusses the design, analysis and implementation of the functional blocks in figure 
+\ref{fig:funct_block} starting with rectifier. The physics behiend each block is less discussed, however the 
+design choices and reasoning of choices will be clearly stated. 
+
 
 % *********************************************************************** RECTIFIER  ********************************************************************************************
 
