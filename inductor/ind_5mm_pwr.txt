@@ -1,0 +1,10 @@
+Cp_s = 133p
+Cp_p = 187p
+Cs_p = 290p
+
+pwr = 71.5 mW
+pload = 23.8 mW
+psrc = 36.7 mW
+
+pin = pwr-psrc = 34.8 mW
+
