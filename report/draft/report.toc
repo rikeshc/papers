@@ -46,15 +46,15 @@
 \contentsline {section}{\numberline {5.2}Inductor model}{40}{section.5.2}
 \contentsline {section}{\numberline {5.3}Inductive transfer link}{41}{section.5.3}
 \contentsline {section}{\numberline {5.4}Magnetic resonance coupling}{43}{section.5.4}
-\contentsline {part}{III\hspace {1em}WPT System Design and Implementation}{45}{part.3}
-\contentsline {chapter}{\numberline {6}Power Receiving Unit Design}{47}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{47}{section.6.1}
-\contentsline {section}{\numberline {6.2}Power Management System}{48}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Transient Response}{50}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}PRU Unit}{51}{section.6.3}
-\contentsline {chapter}{\numberline {7}Chip Production, Test and Verification}{53}{chapter.7}
-\contentsline {section}{\numberline {7.1}Chip and PCB}{53}{section.7.1}
-\contentsline {part}{IV\hspace {1em}Conclusion}{55}{part.4}
-\contentsline {chapter}{\numberline {8}Conclusion}{57}{chapter.8}
-\contentsline {section}{\numberline {8.1}Problem and challenges}{57}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{57}{section.8.2}
+\contentsline {part}{III\hspace {1em}WPT System Design and Implementation}{47}{part.3}
+\contentsline {chapter}{\numberline {6}Power Receiving Unit Design}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Power Management System}{50}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Transient Response}{52}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}PRU Unit}{53}{section.6.3}
+\contentsline {chapter}{\numberline {7}Chip Production, Test and Verification}{55}{chapter.7}
+\contentsline {section}{\numberline {7.1}Chip and PCB}{55}{section.7.1}
+\contentsline {part}{IV\hspace {1em}Conclusion}{57}{part.4}
+\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}
+\contentsline {section}{\numberline {8.1}Problem and challenges}{59}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{59}{section.8.2}
