@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  10 AUG 2017 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  10 AUG 2017 19:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2267,26 +2267,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 939--944
 
  []
 
-<img/ant_induction_print.pdf, id=1489, 335.66342pt x 215.15001pt>
-File: img/ant_induction_print.pdf Graphic file (type pdf)
+<img/ant_induction.pdf, id=1489, 166.36745pt x 123.23073pt>
+File: img/ant_induction.pdf Graphic file (type pdf)
 
-<use img/ant_induction_print.pdf>
-Package pdftex.def Info: img/ant_induction_print.pdf used on input line 947.
-(pdftex.def)             Requested size: 176.40198pt x 113.07034pt.
+<use img/ant_induction.pdf>
+Package pdftex.def Info: img/ant_induction.pdf used on input line 947.
+(pdftex.def)             Requested size: 176.40198pt x 130.66905pt.
 
-<img/ant_induction_model.pdf, id=1490, 165.83165pt x 87.81589pt>
+<img/ant_induction_model.pdf, id=1490, 171.07864pt x 122.87416pt>
 File: img/ant_induction_model.pdf Graphic file (type pdf)
 
 <use img/ant_induction_model.pdf>
 Package pdftex.def Info: img/ant_induction_model.pdf used on input line 949.
-(pdftex.def)             Requested size: 176.40198pt x 93.414pt.
-
-Underfull \vbox (badness 7273) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 176.40198pt x 126.69676pt.
  [39
 
 
- <./img/ant_induction_print.pdf> <./img/ant_induction_model.pdf>]
+ <./img/ant_induction.pdf> <./img/ant_induction_model.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 964--965
 
  []
@@ -2306,7 +2303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 997--1000
 
  []
 
-<img/ant_non_ideal.pdf, id=1594, 274.70448pt x 84.8765pt>
+<img/ant_non_ideal.pdf, id=1575, 274.70448pt x 84.8765pt>
 File: img/ant_non_ideal.pdf Graphic file (type pdf)
 
 <use img/ant_non_ideal.pdf>
@@ -2322,14 +2319,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1016--1029
 
  []
 
-<img/ant_single.png, id=1612, 1302.8675pt x 836.12375pt>
+<img/ant_single.png, id=1593, 1302.8675pt x 836.12375pt>
 File: img/ant_single.png Graphic file (type png)
 
 <use img/ant_single.png>
 Package pdftex.def Info: img/ant_single.png used on input line 1032.
 (pdftex.def)             Requested size: 176.40198pt x 113.20354pt.
 
-<img/ant_single.pdf, id=1613, 190.09608pt x 121.66023pt>
+<img/ant_single.pdf, id=1594, 190.09608pt x 121.66023pt>
 File: img/ant_single.pdf Graphic file (type pdf)
 
 <use img/ant_single.pdf>
@@ -2341,14 +2338,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1058--1065
  []
 
 [41 <./img/ant_non_ideal.pdf>]
-<img/ant_couple.png, id=1661, 1289.81876pt x 884.30376pt>
+<img/ant_couple.png, id=1642, 1289.81876pt x 884.30376pt>
 File: img/ant_couple.png Graphic file (type png)
 
 <use img/ant_couple.png>
 Package pdftex.def Info: img/ant_couple.png used on input line 1068.
 (pdftex.def)             Requested size: 176.40198pt x 120.94109pt.
 
-<img/ant_couple.pdf, id=1662, 190.09608pt x 123.48534pt>
+<img/ant_couple.pdf, id=1643, 190.09608pt x 123.48534pt>
 File: img/ant_couple.pdf Graphic file (type pdf)
 
 <use img/ant_couple.pdf>
@@ -2383,14 +2380,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1124--1127
 
  []
 
-<img/ant_couple_resonant.pdf, id=1745, 259.59846pt x 93.67778pt>
+<img/ant_couple_resonant.pdf, id=1726, 259.59846pt x 93.67778pt>
 File: img/ant_couple_resonant.pdf Graphic file (type pdf)
 
 <use img/ant_couple_resonant.pdf>
 Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 1130.
 (pdftex.def)             Requested size: 288.0011pt x 103.9278pt.
 
-<img/ant_S_loss.png, id=1746, 427.5975pt x 308.65312pt>
+<img/ant_S_loss.png, id=1727, 427.5975pt x 308.65312pt>
 File: img/ant_S_loss.png Graphic file (type png)
 
 <use img/ant_S_loss.png>
@@ -2411,7 +2408,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1172--1180
 
  []
 
-<img/wpt_ptu_pru.pdf, id=1799, 332.64075pt x 304.98874pt>
+<img/wpt_ptu_pru.pdf, id=1780, 332.64075pt x 304.98874pt>
 File: img/wpt_ptu_pru.pdf Graphic file (type pdf)
 
 <use img/wpt_ptu_pru.pdf>
@@ -2434,13 +2431,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1203--1204
 
  []
 
-<img/wpt_top.pdf, id=1806, 369.38pt x 174.6525pt>
+<img/wpt_top.pdf, id=1787, 369.38pt x 174.6525pt>
 File: img/wpt_top.pdf Graphic file (type pdf)
  <use img/wpt_top.pdf>
 Package pdftex.def Info: img/wpt_top.pdf used on input line 1207.
 (pdftex.def)             Requested size: 360.0pt x 170.21753pt.
 
-<img/wpt_top_testbench.pdf, id=1807, 369.38pt x 202.7575pt>
+<img/wpt_top_testbench.pdf, id=1788, 369.38pt x 202.7575pt>
 File: img/wpt_top_testbench.pdf Graphic file (type pdf)
 
 <use img/wpt_top_testbench.pdf>
@@ -2450,7 +2447,7 @@ Package pdftex.def Info: img/wpt_top_testbench.pdf used on input line 1216.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50 <./img/wpt_ptu_pru.pdf>]
-<img/wpt_V_wo_bgr_both.pdf, id=1836, 421.575pt x 316.18124pt>
+<img/wpt_V_wo_bgr_both.pdf, id=1817, 421.575pt x 316.18124pt>
 File: img/wpt_V_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_V_wo_bgr_both.pdf>
@@ -2460,7 +2457,7 @@ Package pdftex.def Info: img/wpt_V_wo_bgr_both.pdf used on input line 1225.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51 <./img/wpt_top.pdf> <./img/wpt_top_testbench.pdf>]
-<img/wpt_ripple_wo_bgr_both.pdf, id=1857, 427.5975pt x 309.155pt>
+<img/wpt_ripple_wo_bgr_both.pdf, id=1838, 427.5975pt x 309.155pt>
 File: img/wpt_ripple_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_ripple_wo_bgr_both.pdf>
@@ -2473,7 +2470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1240--1241
  []
 
 [52 <./img/wpt_V_wo_bgr_both.pdf> <./img/wpt_ripple_wo_bgr_both.pdf>]
-<img/wpt_top_link.pdf, id=1906, 369.38pt x 204.765pt>
+<img/wpt_top_link.pdf, id=1887, 369.38pt x 204.765pt>
 File: img/wpt_top_link.pdf Graphic file (type pdf)
 
 <use img/wpt_top_link.pdf>
@@ -2541,7 +2538,7 @@ Package logreq Info: Writing requests to 'report.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  29447 strings out of 493089
- 544167 string characters out of 6134842
+ 544137 string characters out of 6134842
  985286 words of memory out of 5000000
  32229 multiletter control sequences out of 15000+600000
  70223 words of font info for 118 fonts, out of 8000000 for 9000
@@ -2561,10 +2558,10 @@ urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncn
 trsbk/uncri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on report.pdf (76 pages, 9227246 bytes).
+Output written on report.pdf (76 pages, 9499841 bytes).
 PDF statistics:
- 2102 PDF objects out of 2487 (max. 8388607)
- 1810 compressed objects within 19 object streams
+ 2082 PDF objects out of 2487 (max. 8388607)
+ 1799 compressed objects within 18 object streams
  165 named destinations out of 1000 (max. 500000)
  617 words of extra memory for PDF output out of 10000 (max. 10000000)
 

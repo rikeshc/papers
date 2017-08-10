@@ -537,9 +537,9 @@ INPUT ./img/ldo_ac.pdf
 INPUT img/ldo_pssr_both.pdf
 INPUT ./img/ldo_pssr_both.pdf
 INPUT ./img/ldo_pssr_both.pdf
-INPUT img/ant_induction_print.pdf
-INPUT ./img/ant_induction_print.pdf
-INPUT ./img/ant_induction_print.pdf
+INPUT img/ant_induction.pdf
+INPUT ./img/ant_induction.pdf
+INPUT ./img/ant_induction.pdf
 INPUT img/ant_induction_model.pdf
 INPUT ./img/ant_induction_model.pdf
 INPUT ./img/ant_induction_model.pdf
