@@ -1,10 +1,10 @@
 %%
 clear all;
-s1b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s11.txt');
-s2b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s22.txt');
+s1b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s11b.txt');
+s2b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s22b.txt');
 s1a = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s11a.txt');
 s2a = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s22a.txt');
-s21b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s21.txt');
+s21b = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s21b.txt');
 s21a = importdata('/uio/hume/student-u18/rikeshc/ads/MyWorkspace_wrk/data_wpts/s21a.txt');
 
 %%
@@ -24,7 +24,10 @@ grid on;
 legend('S11', 'S22');
 %xlabel('Frequency, MHz');
 ylabel('Magnitude, dB');
-title('Before matching', 'FontSize', 10);
+xlim([10, 17]);
+title('Before tunning', 'FontSize', 10);
+
+
 
 subplot(2, 1, 2);
 plot(freq/10^6, S11a, freq/10^6, S22a)
@@ -32,7 +35,10 @@ grid on;
 legend('S11', 'S22');
 xlabel('Frequency, MHz');
 ylabel('Magnitude, dB');
-title('After matching' , 'FontSize', 10);
+xlim([10, 17]);
+ylim([-65, 0]);
+title('After tunning' , 'FontSize', 10);
+%txt2 = sprintf('Vrec Min = %.2f V', dc_sch(index2));
 
 %%
 f2 = figure(2);
@@ -41,8 +47,9 @@ grid on;
 legend('Before tunning', 'After tunning');
 xlabel('Frequency, MHz');
 ylabel('Magnitude, dB');
-title('S21', 'FontSize', 10);
-ylim([-14, 0]);
+title('Indutive link S21', 'FontSize', 10);
+ylim([-17, 0]);
+xlim([10, 17]);
 
 %%
 set(f1,'Units','Inches');
