@@ -1076,13 +1076,13 @@ of two coils, $ L_{12} = L_{21} = M $, coupling coefficient between the coils, $
 \begin{center}
 \begin{tabular}{c|c|c|c|c}
 \hline \hline
-Parameter 	& 1 mm		& 5 mm 		& 10 mm	 	& \si{\milli\meter}\\ \hline \hline
-$L_{1}$		& -		& 466-496	& -	 	& \si{\nano\henry} \\ \hline
-$L_{2}$		& -		& 460-489	& -	 	& \si{\nano\henry} \\ \hline
-$M$		& -		& 122		& -		& \si{\nano\henry} \\ \hline
-$k$		& -		& 0.25		& -		& -		   \\ \hline
-$Q_{L_{1}}$	& 		& 57-63		& -	 	& -		   \\ \hline
-$Q_{L_{2}}$	& 		& 61-67		&	 	&		   \\
+Parameter 	& 2 mm		& 5 mm 		& 10 mm	 	& \si{\milli\meter}\\ \hline \hline
+$L_{1}$		& 		& 466-496	& 499-503	 	& \si{\nano\henry} \\ \hline
+$L_{2}$		& -		& 460-489	& 493-498	 	& \si{\nano\henry} \\ \hline
+$M$		& -		& 122		& 50		& \si{\nano\henry} \\ \hline
+$k$		& -		& 0.25		& 0.10		& -		   \\ \hline
+$Q_{L_{1}}$	& 		& 57-63		& 62	 	& -		   \\ \hline
+$Q_{L_{2}}$	& 		& 61-67		& 67	 	&		   \\
 \hline \hline
 \end{tabular}
 \end{center}
@@ -1146,13 +1146,13 @@ The performance of magnetic resonant coupling link designed in this work is summ
 \begin{table}[!htbp]
 \caption{Performance of resonant inductive link} 
 \begin{center}
-\begin{tabular}{c|c}
+\begin{tabular}{c|c|c}
 \hline \hline
-$C_{P1}$, $C_{P2}$ and $C_{S1}$	  	& 			\\ \hline
-Resonant frequency, $\omega$		& 13.56 MHz		\\ \hline
-Primary reflection loss, $S11$		&			\\ \hline
-Secondary reflection loss, $S22$	& 			\\ \hline
-Primary to secondary gain, $S21$	& 			\\ \hline
+$C_{P1}$, $C_{P2}$ and $C_{S1}$	  	& 126, 190 and 288 	& \si{\pico\farad}	\\ \hline
+Resonant frequency, $\omega$		& 13.56 MHz		& MHz \\ \hline
+Primary reflection loss, $S11$		& -64			& dB  \\ \hline
+Secondary reflection loss, $S22$	& -24			& dB  \\ \hline
+Primary to secondary gain, $S21$	& 0.61 (0.93)		& dB  \\ \hline
 Q-factor, $Q$			&			\\
 \hline \hline
 \end{tabular}

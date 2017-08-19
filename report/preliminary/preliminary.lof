@@ -50,6 +50,8 @@
 \contentsline {figure}{\numberline {36}{\ignorespaces WPT block diagram\relax }}{47}{figure.caption.45}
 \contentsline {figure}{\numberline {37}{\ignorespaces WPT PMS implementation\relax }}{49}{figure.caption.46}
 \contentsline {figure}{\numberline {38}{\ignorespaces Test bench for PMS simulation \relax }}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {39}{\ignorespaces Transient \relax }}{50}{figure.caption.48}
-\contentsline {figure}{\numberline {40}{\ignorespaces Ripple in Vrec and Vreg\relax }}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {41}{\ignorespaces Test bench for complete PRU unit \relax }}{52}{figure.caption.50}
+\contentsline {figure}{\numberline {39}{\ignorespaces Vrec and Vreg voltages\relax }}{50}{figure.caption.48}
+\contentsline {figure}{\numberline {40}{\ignorespaces Input voltage waveforms\relax }}{51}{figure.caption.49}
+\contentsline {figure}{\numberline {41}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.50}
+\contentsline {figure}{\numberline {42}{\ignorespaces Ripple in Vrec and Vreg\relax }}{53}{figure.caption.51}
+\contentsline {figure}{\numberline {43}{\ignorespaces Test bench for complete PRU unit \relax }}{54}{figure.caption.52}
