@@ -99,7 +99,7 @@
 
 \section{Motivation}
 
-We start with the technology development trend in micorelectronics. The progress of different aspects of 
+We start with the technology development trend in microelectronics. The progress of different aspects of 
 technology is discussed and compared with power/battery development. We end the chapter concluding the need for
 going cordless for suppling power for microelectronics.
 % The ongoing modern technological advancements have led us into dramatic and drastic electronic device development 
@@ -1210,13 +1210,13 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/pms_PI.pdf} 
- \caption{Ripple in Vrec and Vreg} 
+ \caption{Current and power consumption} 
 \label{fig:pms_PI} 
 \end{figure}
 
 \section{PRU Unit}
 
-Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and componoent values remain the same as in PMS simulation. \\
+Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and component values remain the same as in PMS simulation. \\
 
 \begin{figure} [H]
   \centering
@@ -1226,6 +1226,37 @@ Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes P
 \end{figure}
 
 The parasitic extraction of the compete layout also includes the tracks from pad to core inputs. The pad-frame layout provided by the fab was used to accurately draw the tracks from pad to core I/O terminals. \\
+
+\section{Transient Response}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_v_both.pdf} 
+ \caption{Vrec and Vreg voltages} 
+\label{fig:pms_vout} 
+\end{figure}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_inputs_both.pdf} 
+ \caption{Input voltage waveforms} 
+\label{fig:pms_vin} 
+\end{figure}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_ripple_both.pdf} 
+ \caption{Ripple in Vrec and Vreg} 
+\label{fig:pms_ripple} 
+\end{figure}
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt_PI_both.pdf} 
+ \caption{Current and power consumption} 
+\label{fig:pms_PI} 
+\end{figure}
+
 
 % *********************************************************************** CHIP production and test  ***********************************************************************
 
