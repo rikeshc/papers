@@ -50,12 +50,12 @@
 \contentsline {figure}{\numberline {36}{\ignorespaces WPT block diagram\relax }}{47}{figure.caption.45}
 \contentsline {figure}{\numberline {37}{\ignorespaces WPT PMS implementation\relax }}{49}{figure.caption.46}
 \contentsline {figure}{\numberline {38}{\ignorespaces Test bench for PMS simulation \relax }}{49}{figure.caption.47}
-\contentsline {figure}{\numberline {39}{\ignorespaces Vrec and Vreg voltages\relax }}{50}{figure.caption.48}
-\contentsline {figure}{\numberline {40}{\ignorespaces Input voltage waveforms\relax }}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {41}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {42}{\ignorespaces Current and power consumption\relax }}{53}{figure.caption.51}
-\contentsline {figure}{\numberline {43}{\ignorespaces Test bench for complete PRU unit \relax }}{54}{figure.caption.52}
-\contentsline {figure}{\numberline {44}{\ignorespaces Vrec and Vreg voltages\relax }}{55}{figure.caption.53}
-\contentsline {figure}{\numberline {45}{\ignorespaces Input voltage waveforms\relax }}{56}{figure.caption.54}
-\contentsline {figure}{\numberline {46}{\ignorespaces Ripple in Vrec and Vreg\relax }}{56}{figure.caption.55}
-\contentsline {figure}{\numberline {47}{\ignorespaces Current and power consumption\relax }}{57}{figure.caption.56}
+\contentsline {figure}{\numberline {39}{\ignorespaces Input voltage waveform of PMS\relax }}{51}{figure.caption.49}
+\contentsline {figure}{\numberline {40}{\ignorespaces Vrec and Vreg voltages of PMS\relax }}{52}{figure.caption.50}
+\contentsline {figure}{\numberline {41}{\ignorespaces Ripple in Vrec and Vreg\relax }}{53}{figure.caption.51}
+\contentsline {figure}{\numberline {42}{\ignorespaces Current and power consumption\relax }}{54}{figure.caption.52}
+\contentsline {figure}{\numberline {43}{\ignorespaces Test bench for complete PRU unit \relax }}{55}{figure.caption.54}
+\contentsline {figure}{\numberline {44}{\ignorespaces Input voltage waveforms\relax }}{56}{figure.caption.55}
+\contentsline {figure}{\numberline {45}{\ignorespaces Vrec and Vreg voltages\relax }}{57}{figure.caption.56}
+\contentsline {figure}{\numberline {46}{\ignorespaces Ripple in Vrec and Vreg\relax }}{58}{figure.caption.57}
+\contentsline {figure}{\numberline {47}{\ignorespaces Current and power consumption\relax }}{59}{figure.caption.58}

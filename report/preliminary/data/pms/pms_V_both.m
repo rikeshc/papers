@@ -4,7 +4,7 @@
 clear all;
 load('V_sch.mat'); 
 load('V_pex.mat'); 
-% data includes 0u to 350u trans
+
 
 %% plot Vrec and Vreg
 
@@ -22,14 +22,15 @@ avg_Vreg_sch = mean(Vreg_sch(start: end));
 avg_Vrec_pex = mean(Vrec_pex(startp: end));
 avg_Vreg_pex = mean(Vreg_pex(startp: end));
 
-txt1 = sprintf('Schematic Vrec, Avg = %.3f V', avg_Vrec_sch);
-txt2 = sprintf('Schematic Vreg, Avg = %.3f V', avg_Vreg_sch);
-txt1p = sprintf('Post-layout Vrec, Avg = %.3f V', avg_Vrec_pex);
-txt2p = sprintf('Post-layout Vreg, Avg = %.3f V', avg_Vreg_pex);
+txt1 = sprintf('Schematic V_{rec}, Avg = %.3f V', avg_Vrec_sch);
+txt2 = sprintf('Schematic V_{reg}, Avg = %.3f V', avg_Vreg_sch);
+txt1p = sprintf('Post-layout V_{rec}, Avg = %.3f V', avg_Vrec_pex);
+txt2p = sprintf('Post-layout V_{reg}, Avg = %.3f V', avg_Vreg_pex);
 
 f1 = figure(1); % all voltage wave
 p1 = plot(time, Vrec_sch, 'b', time, Vreg_sch, 'r'); hold on;
-    plot(timep, Vrec_pex, 'b--', timep, Vreg_pex, 'r--');
+     plot(timep, Vrec_pex, 'b--', timep, Vreg_pex, 'r--');
+     hold off;
 set(p1, 'linewidth', plotwidth);
 grid on;
 legend(txt1, txt2, txt1p, txt2p,'location', 'best');
@@ -66,7 +67,7 @@ legend(leg1, leg1p,'location', 'best');
 ylabel('Voltage (V)');
 grid on;
 xlim([400, 400.3]);
-title('Rectified voltage', 'FontSize', 10);
+title('Rectified voltage, V_{rec}', 'FontSize', 10);
 
 subplot(2, 1, 2);
 p3 = plot(time(from: to), Vreg_sch(from: to), 'r'); hold on;
@@ -78,7 +79,8 @@ xlabel('Time (us)');
 ylabel('Voltage (V)');
 grid on;
 xlim([400, 400.3]);
-title('Regulated voltage', 'FontSize', 10);
+ylim([1.799, 1.802]);
+title('Regulated voltage, V_{reg}', 'FontSize', 10);
 
 %% Vin and Vac
 f3 = figure(3);
@@ -101,16 +103,16 @@ set(f1,'Units','Inches'); %% Vreg and Vrec
 pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f1, 'pms_vout.pdf', '-dpdf');
-movefile('pms_vout.pdf','../../img/pms_vout.pdf');
+movefile('pms_vout.pdf','../../img/pms_vout_both.pdf');
 
 set(f2,'Units','Inches'); %% ripple in vrec and vreg
 pos = get(f2,'Position');
 set(f2,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f2, 'pms_ripple.pdf', '-dpdf');
-movefile('pms_ripple.pdf','../../img/pms_ripple.pdf');
+movefile('pms_ripple.pdf','../../img/pms_ripple_both.pdf');
 
 set(f3,'Units','Inches');   %% Vac Vin's waveform
 pos = get(f3,'Position');
 set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f3, 'pms_vin.pdf', '-dpdf');
-movefile('pms_vin.pdf','../../img/pms_vin.pdf');
+movefile('pms_vin.pdf','../../img/pms_vin_both.pdf');

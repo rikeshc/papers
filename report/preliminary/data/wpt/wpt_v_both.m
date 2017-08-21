@@ -1,7 +1,7 @@
 %% Load 
 clear all;
 load('/uio/hume/student-u18/rikeshc/Rikesh/mast/mat_files/V_sch.mat');
-load('V_pex.mat');
+load('/uio/hume/student-u18/rikeshc/Rikesh/mast/mat_files/V_pex.mat');
 time = t_sch*10^6;
 timep = t_pex*10^6;
 
@@ -22,10 +22,10 @@ avg_vreg_sch = mean(vreg_sch(from: end));
 avg_vrec_pex = mean(vrec_pex(fromp: end));
 avg_vreg_pex = mean(vreg_pex(fromp: end));
 
-txt1 = sprintf('Pre Vrec, Avg = %.3f V', avg_vrec_sch);
-txt2 = sprintf('Pre Vreg, Avg = %.3f V', avg_vreg_sch);
-txt1p = sprintf('Post Vrec, Avg = %.3f V', avg_vrec_pex);
-txt2p = sprintf('Post Vreg, Avg = %.3f V', avg_vreg_pex);
+txt1 = sprintf('Pre V_{rec}, Avg = %.3f V', avg_vrec_sch);
+txt2 = sprintf('Pre V_{reg}, Avg = %.3f V', avg_vreg_sch);
+txt1p = sprintf('Post V_{rec}, Avg = %.3f V', avg_vrec_pex);
+txt2p = sprintf('Post V_{reg}, Avg = %.3f V', avg_vreg_pex);
 
 f1 = figure(1); % all voltage wave
 p1 = plot(time, vrec_sch, time, vreg_sch, timep, vrec_pex, timep, vreg_pex);
@@ -60,8 +60,8 @@ legend(leg1, leg1p, 'location', 'best');
 ylabel('Voltage (V)');
 grid on;
 xlim([3000, 3000.3]);
-%ylim([2.25, 2.35]);
-title('Rectified voltage', 'FontSize', 10);
+ylim([2.22, 2.32]);
+title('Rectified voltage, V_{rec}', 'FontSize', 10);
 
 subplot(2, 1, 2);
 p3 = plot(time(from: to), vreg_sch(from: to)); hold on;
@@ -74,7 +74,7 @@ ylabel('Voltage (V)');
 grid on;
 xlim([3000, 3000.3]);
 ylim([1.799, 1.802]);
-title('Regulated voltage', 'FontSize', 10);
+title('Regulated voltage, V_{reg}', 'FontSize', 10);
 
 %% Vin and Vac
 f3 = figure(3);
