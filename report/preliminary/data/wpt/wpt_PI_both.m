@@ -2,7 +2,7 @@
 clear all;
 load('/uio/hume/student-u18/rikeshc/Rikesh/mast/mat_files/IP_sch.mat'); 
 load('/uio/hume/student-u18/rikeshc/Rikesh/mast/mat_files/IP_pex.mat'); 
-time = t_sch*10^6;
+time = t_sch*10^6;      
 timep = t_pex*10^6;
 
 %%

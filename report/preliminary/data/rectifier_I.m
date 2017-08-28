@@ -15,7 +15,7 @@ save('I_sch');
 
 %% Load 
 clear all;
-load('I_sch.mat');
+load('rectifier_I_sch.mat');
 
 %% plot data
 

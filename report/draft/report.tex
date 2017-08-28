@@ -967,7 +967,7 @@ In other word, power from primary coil is transferred wirelessly to secondary co
 induced ac voltage is rectified and then used to power up the load.
 The maximum power transfer efficiency across the inductive link for optimal load, $\eta_{link}$ is given as  \cite{ant_PSC_geometry}
 
-\begin{equation}	% link efficiency
+\begin{equation} \label{eq:effi_link}	% link efficiency
 %\eta_{link} = \frac{k^2Q_{L_{1}} Q_{L_{2}}} {  2 + k^2Q_{L_{1}} Q_{L_{2}} + 2\sqrt{ 1 + Q_{L_{2}} + k^2Q_{L_{1}} Q_{L_{2}} }  } 
 \eta_{link} = \frac{k^2Q_{L_{1}} Q_{L}} {  1 + k^2Q_{L_{1}} Q_{L} } . \frac{Q_{L}}{Q_{L_{2}}Q_{L}} %+ 2\sqrt{ 1 + Q_{L_{2}} + k^2Q_{L_{1}} Q_{L_{2}} }  }
 \end{equation} 
@@ -1076,13 +1076,13 @@ of two coils, $ L_{12} = L_{21} = M $, coupling coefficient between the coils, $
 \begin{center}
 \begin{tabular}{c|c|c|c|c}
 \hline \hline
-Parameter 	& 2 mm		& 5 mm 		& 10 mm	 	& \si{\milli\meter}\\ \hline \hline
-$L_{1}$		& 357		& 466-496	& 499-503	 	& \si{\nano\henry} \\ \hline
-$L_{2}$		& 353		& 460-489	& 493-498	 	& \si{\nano\henry} \\ \hline
-$M$		& 254		& 122		& 50		& \si{\nano\henry} \\ \hline
-$k$		& 0.52		& 0.25		& 0.10		& -		   \\ \hline
-$Q_{L_{1}}$	& 39-60		& 57-63		& 62	 	& -		   \\ \hline
-$Q_{L_{2}}$	& 40-64		& 61-67		& 67	 	&		   \\
+ 			& \textbf{Sepr: 2 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr: 10 mm}	& \textbf{Unit}\\ \hline \hline
+$L_{1}$		& 357					& 466-496				& 499-503				& \si{\nano\henry} \\ \hline
+$L_{2}$		& 353					& 460-489				& 493-498				& \si{\nano\henry} \\ \hline
+$M$			& 254					& 122					& 50					& \si{\nano\henry} \\ \hline
+$k$			& 0.52					& 0.25					& 0.10					& -		   \\ \hline
+$Q_{L_{1}}$	& 39-60					& 57-63					& 62	 				& -		   \\ \hline
+$Q_{L_{2}}$	& 40-64					& 61-67					& 67	 				& -		   \\
 \hline \hline
 \end{tabular}
 \end{center}
@@ -1119,13 +1119,9 @@ is approximated to 115 \si{\ohm} as in [CITE: inductive book]. $Cp1$, series cap
 with $L1$ created parallel resonant circuit at 13.56 MHz on the primary side and $Cs1$, shunt capacitor together with $L2$ 
 creates the secondary resonant circuit at same operating frequency. Parallel secondary tuning with $Cs1$ is chosen as this is 
 recommended when $X_{L_{2}} < R_{L}$ and so it is in this work. Similarly in primary side both, first series 
-$Cp1$ and then parallel $Cp2$, is choosen in order to cancel both real and imaginary of primary impedance[CITE:single element matching]. Thus a pair of LC tank circuit is made tuned at same 
+$Cp1$ and then parallel $Cp2$, is chosen in order to cancel both real and imaginary of primary impedance[CITE:single element matching]. Thus a pair of LC tank circuit is made tuned at same 
 frequency. Such matching network is designed for all three coil separation distances as above, but resonant coupling system 
 with 5 mm separation is taken as a typical example and presented here. \\
-
-The reflection power loss, $S11$ and $S22$, at both primary and secondary terminal, power transfer gain, $S21$, from primary 
-to secondary and Q-factors for both antennas before and after creating resonance are shown in figure \ref{fig:ant_S_loss}, 
-this and this. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -1134,26 +1130,45 @@ this and this. \\
    \label{fig:ant_couple_resonant}
 \end{figure}
 
+In figure \ref{fig:ant_S_loss}, reflection power losses:  return loss, $S11$ at primary antenna terminals and reverse return loss, $S22$ at secondary antenna are presented comparatively before and after tuning. This shows that the reflection losses have been significantly reduced, at least by 25 dB, due to magnetic resonance created at the operating frequency. \\
+
 \begin{figure} [!htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{img/ant_S_loss.png} 
- \caption{Power loss before and after matching} 
+  \includegraphics[width=\textwidth]{img/ant_s1_s2_both.pdf} 
+ \caption{Link reflection loss before and after tuning} 
 \label{fig:ant_S_loss} 
 \end{figure}
 
-The performance of magnetic resonant coupling link designed in this work is summarises in table \ref{tab:ant_spec} below.
+Likewise, in figure \ref{fig:ant_S_gain}, power transfer gain, $S21$, from primary to secondary antenna is shown. It can be seen that  power transfer has been improved by 13 dB at the resonant frequency. The power transfer efficiency, $\eta_{link}$ in given equation \ref{eq:effi_link} is obtained empirically from $S21$ as follows.
+
+\begin{equation} \label{eq:effi_link_s21}	% link efficiency
+\eta_{link} = \eta_{pri}*\eta_{sec} = |S21|^{2}
+\end{equation} 
+
+The above $\eta_{link}$ calculation is valid for perfectly matched ports and gives maximum possible power gain from primary to secondary antenna. \\
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/ant_s21_both.pdf}
+ \caption{Link gain before and after tuning} 
+\label{fig:ant_S_gain} 
+\end{figure}
+
+The above discussion is also done for other two separation, 1.5 mm and 10 mm, of coupling coils. The performance of magnetic resonant inductive link for all cases designed in this work is summarized in table \ref{tab:ant_spec} below. 
 
 \begin{table}[!htbp]
 \caption{Performance of resonant inductive link} 
 \begin{center}
-\begin{tabular}{c|c|c}
+\begin{tabular}{c|c|c|c|c}
 \hline \hline
-$C_{P1}$, $C_{P2}$ and $C_{S1}$	  	& 126, 190 and 288 	& \si{\pico\farad}	\\ \hline
-Resonant frequency, $\omega$		& 13.56 MHz		& MHz \\ \hline
-Primary reflection loss, $S11$		& -64			& dB  \\ \hline
-Secondary reflection loss, $S22$	& -24			& dB  \\ \hline
-Primary to secondary gain, $S21$	& 0.61 (0.93)		& dB  \\ \hline
-Q-factor, $Q$			&			\\
+ 								& \textbf{Sepr: 1.5 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr: 10 mm}	& \textbf{Unit}		\\ \hline \hline
+$C_{P1}$, $C_{P2}$ \& $C_{S1}$ 	& 660, 80 \& 288		& 126, 190 \& 288		& 51, 227 \& 288		& \si{\pico\farad}	\\ \hline
+$\omega$						& 13.56					& 13.56					& 13.56					& \si{\mega\hertz}	\\ \hline
+$S11$							& -55					& -61					& -29					& \si{\decibel}		\\ \hline
+$S22$							& -30					& -24					& -9					& \si{\decibel} 	\\ \hline
+$S21$							& -0.28 (0.97)			& -0.61 (0.93)			& -2.50 (0.75)			& \si{\decibel} (mag.)	\\ \hline
+$Q_{L_{1}}$ \& $Q_{L_{2}}$		&						& 						& 						&					\\ \hline
+$\eta_{link}$					& 94					& 86					& 56					& \% \\		
 \hline \hline
 \end{tabular}
 \end{center}
@@ -1263,6 +1278,13 @@ While the chip was in production, test PCB board and antennas were designed and 
 \part{Conclusion}
 \chapter{Conclusion}
 \section{Problem and challenges}
+
+=> comment on PCB \\
+=> comment on layout \\
+	1. ac voltages right at the diode, not only at pad. \\
+	
+=> coil resonance: variable and fixed resonance \\
+
 \section{Future Work}
 
 \clearpage
@@ -1277,5 +1299,6 @@ While the chip was in production, test PCB board and antennas were designed and 
 %\printindex
 \newpage
 \printnoidxglossaries
+
 \backmatter{}
 \end{document}

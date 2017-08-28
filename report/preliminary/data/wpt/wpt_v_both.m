@@ -27,7 +27,7 @@ txt2 = sprintf('Pre V_{reg}, Avg = %.3f V', avg_vreg_sch);
 txt1p = sprintf('Post V_{rec}, Avg = %.3f V', avg_vrec_pex);
 txt2p = sprintf('Post V_{reg}, Avg = %.3f V', avg_vreg_pex);
 
-f1 = figure(1); % all voltage wave
+f5 = figure(5); % all voltage wave
 p1 = plot(time, vrec_sch, time, vreg_sch, timep, vrec_pex, timep, vreg_pex);
 set(p1, 'linewidth', plotwidth);
 grid on;
