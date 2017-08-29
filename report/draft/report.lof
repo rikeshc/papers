@@ -1,64 +1,79 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Mobile performance development trend \cite {mobile_performance}\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Mobile performance development trend \cite {mobile_performance}\relax }}{4}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Functional block diagram of energy harvesting system\relax }}{7}{figure.caption.9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Power density of energy sources and consumption of electronic devices \cite {power_density}\relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Near-field coupling models\relax }}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Functional block diagram of energy harvesting system\relax }}{7}{figure.caption.14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Power density of energy sources and consumption of electronic devices \cite {power_density}\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Near-field coupling models\relax }}{10}{figure.caption.16}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Inductive coupling}}}{10}{subfigure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Magnetic resonance inductive coupling}}}{10}{subfigure.3.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Capacitive coupling }}}{10}{subfigure.3.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Far-field harvesting model\relax }}{12}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Commercial application of wireless power transfer\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Far-field harvesting model\relax }}{12}{figure.caption.20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Commercial application of wireless power transfer\relax }}{13}{figure.caption.22}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Qualcomm EV charger}}}{13}{subfigure.5.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Qualcomm mobile phone charger with foreign object detection feature}}}{13}{subfigure.5.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {IDT concept of wireless charging of bionic devices}}}{13}{subfigure.5.3}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Qi\relax }}{14}{figure.caption.19}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces AirFuel\relax }}{15}{figure.caption.22}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Functional block diagram of complete design\relax }}{16}{figure.caption.24}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Qi\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces AirFuel\relax }}{15}{figure.caption.27}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Functional block diagram of complete design\relax }}{16}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Rectifier topologies: conventional and gate cross coupled\relax }}{20}{figure.caption.30}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Conventional full wave bridge rectifier}}}{20}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gate cross coupled full wave rectifier}}}{20}{subfigure.1.2}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Gate cross coupled full wave active rectifer]\relax }}{21}{figure.caption.26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparator circuit, RCC \relax }}{22}{figure.caption.27}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Testbench for rectifier\relax }}{23}{figure.caption.29}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{24}{figure.caption.30}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Voltages waveform for pre and post layout\relax }}{25}{figure.caption.31}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Rectified DC output for pre and post layout\relax }}{25}{figure.caption.32}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Voltage and power conversion efficiency\relax }}{26}{figure.caption.33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Gate cross coupled full wave active rectifer]\relax }}{21}{figure.caption.31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparator circuit, RCC \relax }}{22}{figure.caption.32}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Testbench for rectifier\relax }}{23}{figure.caption.34}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Voltage and current waveforms of the rectifier\relax }}{24}{figure.caption.35}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Voltages waveform for pre and post layout\relax }}{25}{figure.caption.36}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Rectified DC output for pre and post layout\relax }}{25}{figure.caption.37}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Voltage and power conversion efficiency\relax }}{26}{figure.caption.38}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Generic LDO with pMOS pass device\relax }}{30}{figure.caption.35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces CMOS implemenation of LDO\relax }}{30}{figure.caption.36}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces LDO testbench setup\relax }}{32}{figure.caption.38}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces LDO transient simulation\relax }}{33}{figure.caption.39}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces LDO step load regulation\relax }}{34}{figure.caption.40}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces LDO step line regulation\relax }}{34}{figure.caption.41}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Regulated voltage with supply variation\relax }}{35}{figure.caption.42}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Regulated voltage with load variation\relax }}{36}{figure.caption.43}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces LDO stability before and after compensation\relax }}{37}{figure.caption.44}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces PSSR performance\relax }}{38}{figure.caption.45}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Generic LDO with pMOS pass device\relax }}{30}{figure.caption.40}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces CMOS implemenation of LDO\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LDO testbench setup\relax }}{32}{figure.caption.43}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LDO transient simulation\relax }}{33}{figure.caption.44}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LDO step load regulation\relax }}{34}{figure.caption.45}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces LDO step line regulation\relax }}{34}{figure.caption.46}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Regulated voltage with supply variation\relax }}{35}{figure.caption.47}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Regulated voltage with load variation\relax }}{36}{figure.caption.48}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces LDO stability before and after compensation\relax }}{37}{figure.caption.49}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces PSSR performance\relax }}{38}{figure.caption.50}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Inductive coupling \relax }}{39}{figure.caption.47}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Inductive coupling \relax }}{39}{figure.caption.52}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Inductive coupling between two coils}}}{39}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Model of inductive coupling}}}{39}{subfigure.1.2}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Real antenna model\relax }}{41}{figure.caption.48}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Antenna model\relax }}{42}{figure.caption.49}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Real antenna model\relax }}{41}{figure.caption.53}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Antenna model\relax }}{42}{figure.caption.54}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS antenna model}}}{42}{subfigure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{42}{subfigure.3.2}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Antenna coupling model\relax }}{42}{figure.caption.51}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Antenna coupling model\relax }}{42}{figure.caption.56}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {HFSS coupling model}}}{42}{subfigure.4.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Equivalent schematic}}}{42}{subfigure.4.2}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Resonant coupled inductive link\relax }}{44}{figure.caption.53}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Link reflection loss before and after tuning\relax }}{45}{figure.caption.54}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Link gain before and after tuning\relax }}{45}{figure.caption.55}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Resonant coupled inductive link\relax }}{44}{figure.caption.58}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Link reflection loss before and after tuning\relax }}{45}{figure.caption.59}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Link gain before and after tuning\relax }}{45}{figure.caption.60}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces WPT block diagram\relax }}{50}{figure.caption.57}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces WPT PMS implementation\relax }}{51}{figure.caption.58}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Test bench for PMS simulation \relax }}{51}{figure.caption.59}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Transient Vrec and Vreg\relax }}{52}{figure.caption.60}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.61}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Test bench for complete PRU unit \relax }}{53}{figure.caption.62}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces WPT block diagram\relax }}{50}{figure.caption.62}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces WPT PMS implementation\relax }}{51}{figure.caption.63}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Test bench for PMS simulation \relax }}{51}{figure.caption.64}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Transient Vrec and Vreg\relax }}{52}{figure.caption.65}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.66}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Test bench for complete PRU unit \relax }}{53}{figure.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{63}{figure.caption.69}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{63}{figure.caption.70}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{64}{figure.caption.71}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{65}{figure.caption.72}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{66}{figure.caption.73}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{67}{figure.caption.74}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{68}{figure.caption.75}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{69}{figure.caption.76}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{69}{figure.caption.77}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{70}{figure.caption.78}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{71}{figure.caption.79}

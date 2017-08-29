@@ -1,13 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}
+\contentsline {chapter}{Preface}{v}{chapter*.2}
+\contentsline {chapter}{Contents}{vii}{section*.3}
+\contentsline {chapter}{List of Figures}{ix}{section*.5}
+\contentsline {chapter}{List of Tables}{xi}{section*.7}
 \contentsline {part}{I\hspace {1em}Introduction and Background}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Technology Trend}{3}{subsection.1.1.1}
-\contentsline {subsubsection}{Size and Weight : Lighter and Tighter}{3}{section*.4}
-\contentsline {subsubsection}{Operation: Multi-functional and Higher speed}{3}{section*.6}
-\contentsline {subsubsection}{Power consumption: Low-power}{4}{section*.7}
-\contentsline {subsubsection}{Power supply: Cut the Cord}{4}{section*.8}
+\contentsline {subsubsection}{Size and Weight : Lighter and Tighter}{3}{section*.9}
+\contentsline {subsubsection}{Operation: Multi-functional and Higher speed}{3}{section*.11}
+\contentsline {subsubsection}{Power consumption: Low-power}{4}{section*.12}
+\contentsline {subsubsection}{Power supply: Cut the Cord}{4}{section*.13}
 \contentsline {section}{\numberline {1.2}Thesis outline}{5}{section.1.2}
 \contentsline {chapter}{\numberline {2}Background}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Energy Harvesting}{7}{section.2.1}
@@ -16,16 +21,16 @@
 \contentsline {subsection}{\numberline {2.1.3}Thermal energy harvesting}{8}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Wireless Power Transfer}{9}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Non-radiative wireless power transfer}{10}{subsection.2.2.1}
-\contentsline {subsubsection}{Inductive power transfer, IPT}{10}{section*.12}
-\contentsline {subsubsection}{Magnetic resonance power transfer}{11}{section*.13}
-\contentsline {subsubsection}{Capacitive power transfer, CPT}{11}{section*.14}
+\contentsline {subsubsection}{Inductive power transfer, IPT}{10}{section*.17}
+\contentsline {subsubsection}{Magnetic resonance power transfer}{11}{section*.18}
+\contentsline {subsubsection}{Capacitive power transfer, CPT}{11}{section*.19}
 \contentsline {subsection}{\numberline {2.2.2}Radiative wireless power transfer}{11}{subsection.2.2.2}
-\contentsline {subsubsection}{Non-directive and directive radiative WPT}{11}{section*.16}
+\contentsline {subsubsection}{Non-directive and directive radiative WPT}{11}{section*.21}
 \contentsline {subsection}{\numberline {2.2.3}WPT Applications}{12}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Charger Standards}{14}{subsection.2.2.4}
-\contentsline {subsubsection}{Qi}{14}{section*.18}
-\contentsline {subsubsection}{A4WP}{14}{section*.20}
-\contentsline {subsubsection}{AirFuel Alliance}{15}{section*.21}
+\contentsline {subsubsection}{Qi}{14}{section*.23}
+\contentsline {subsubsection}{A4WP}{14}{section*.25}
+\contentsline {subsubsection}{AirFuel Alliance}{15}{section*.26}
 \contentsline {section}{\numberline {2.3}This project}{15}{section.2.3}
 \contentsline {part}{II\hspace {1em}Component Design and Analysis}{17}{part.2}
 \contentsline {chapter}{\numberline {3}Rectifier}{19}{chapter.3}
@@ -58,3 +63,11 @@
 \contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}
 \contentsline {section}{\numberline {8.1}Problem and challenges}{59}{section.8.1}
 \contentsline {section}{\numberline {8.2}Future Work}{59}{section.8.2}
+\contentsline {chapter}{Appendices}{61}{section*.68}
+\setcounter {tocdepth}{1}
+\begingroup \let \l@chapter \l@section \let \l@section \l@subsection 
+\contentsline {chapter}{\numberline {A}Rectifier Implementation}{63}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}LDO Implementation}{65}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}WPT Chip}{67}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Test PCBs}{69}{Appendix.1.D}
+\endgroup 

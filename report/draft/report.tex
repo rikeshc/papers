@@ -5,6 +5,8 @@
 \usepackage[T1]{fontenc, url}
 \urlstyle{sf}
 \usepackage{float}
+\usepackage{rotating} % rotating picx
+%\usepackage{lscape}  % landscape for image
 \usepackage{graphicx, epstopdf}
 \usepackage{subfig}
 \usepackage{multirow}
@@ -19,6 +21,7 @@
 \hypersetup{pageanchor=false,colorlinks=true, linktoc=all, linkcolor=blue,}
 \usepackage [nopostdot, acronym, nogroupskip, nonumberlist,] {glossaries}
 \usepackage{wrapfig}
+\usepackage[toc,page]{appendix} % appendice
 
 %fancy header and footer
 \usepackage{fancyhdr}
@@ -89,10 +92,6 @@
 
 
 % *********************************************************************** COVER ABSTRACT PREFACE  ***********************************************************************
-
-%\title{Preliminary report on master project}
-%\author{Rikesh Chauhan}
-%\date{}
 \title{Wireless Power Receiving Unit}        
 \subtitle{Analysis, design and implementation of inductive power receiving unit for wireless circuits}         
 \author{Rikesh Chauhan}         
@@ -105,14 +104,30 @@
 \frontmatter{}
 \maketitle{}
 
-%\chapter*{Abstract}
-%\chapter*{Preface} 
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
 %HERE IS THE ABSTRACT
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Contents}
 \tableofcontents{}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures{}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
 \listoftables{}
                   
 \mainmatter{}
+
 
 % ************************************************************ INTRODUCTION AND BACKGROUND *************************************************************************
 
@@ -1289,16 +1304,121 @@ While the chip was in production, test PCB board and antennas were designed and 
 
 \clearpage
 \newpage
+
+%***********************************************************************  APPENDICE ***********************************************************************************
+
+\begin{appendices} 	% starts appendix
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\makeatletter
+\addtocontents{toc}{%
+  \begingroup
+  \let\protect\l@chapter\protect\l@section
+  \let\protect\l@section\protect\l@subsection
+}
+\makeatother
+
+%********* RECTIFIER appendix *********
+\chapter{Rectifier Implementation}
+
+\begin{figure} [!htbp]	% schematic Rectifier
+ 	\centering
+  	\includegraphics[width=\textwidth]{appendix/schematic_rectifier_l.pdf} 
+ 	\caption{Schematic of Rectifier} 
+	\label{fig:appen_schematic_rectifer} 
+\end{figure}
+
+\begin{figure} [!htbp]	% schematic RCC
+ 	\centering
+  	\includegraphics[width=\textwidth]{appendix/schematic_rectifier_bw.pdf} 
+ 	\caption{Schematic of RCC} 
+	\label{fig:appen_schematic_rcc} 
+\end{figure}
+
+\begin{sidewaysfigure} [!htbp] % Layout Rectifer
+ 	\centering
+  	\includegraphics[width=\textwidth]{appendix/layout_rectifier_l.pdf} 
+ 	\caption{Layout of Rectifier} 
+	\label{fig:appen_layout_rectifer} 
+\end{sidewaysfigure}
+
+
+%********* LDO appendix *********
+\chapter{LDO Implementation}
+
+\begin{figure} [!htbp]	% schematic LDO
+ 	\centering
+  	\includegraphics[angle=90, width=0.57\textwidth]{appendix/schematic_ldo_l.pdf} 
+ 	\caption{Schematic of LDO} 
+	\label{fig:appen_schematic_ldo} 
+\end{figure}
+
+\begin{sidewaysfigure} [!htbp]	% Layout LDO
+ 	\centering
+  	\includegraphics[width=0.77\textwidth]{appendix/layout_ldo_p.pdf} 
+ 	\caption{Layout of LDO} 
+	\label{fig:appen_layout_ldo} 
+\end{sidewaysfigure}
+
+
+% ********* WPT appendix *********
+\chapter{WPT Chip}
+
+\begin{figure} [!htbp]	% schematic WPT top
+ 	\centering
+  	\includegraphics[angle=90, width=0.61\textwidth]{appendix/schematic_chip_p.pdf} 
+ 	\caption{Schematic of WPT chip} 
+	\label{fig:appen_schematic_chip} 
+\end{figure}
+
+\begin{sidewaysfigure} [!htbp]	% Layout WPT
+ 	\centering
+  	\includegraphics[width=0.6\textwidth]{appendix/layout_chip_l.pdf} 
+ 	\caption{Layout of WPT chip} 
+	\label{fig:appen_layout_chip} 
+\end{sidewaysfigure}
+
+% ********* Test PCB *********
+\chapter{Test PCBs}
+
+\begin{figure} [!htbp]	% primary antenna
+ 	\centering
+  	\includegraphics[width=0.85\textwidth]{appendix/pcb_pri.pdf} 
+ 	\caption{Primary antenna} 
+	\label{fig:appen_primary} 
+\end{figure}
+
+\begin{figure} [!htbp]	% secondary anenna
+ 	\centering
+  	\includegraphics[width=0.85\textwidth]{appendix/pcb_sec.pdf} 
+ 	\caption{Secondary antenna} 
+	\label{fig:appen_secondary} 
+\end{figure}
+
+\begin{sidewaysfigure} [!htbp]	% PCB schematic
+ 	\centering
+  	\includegraphics[width=0.85\textwidth]{appendix/pcb_schematic.pdf} 
+ 	\caption{Test PCB schematic} 
+	\label{fig:appen_schemtic_pcb} 
+\end{sidewaysfigure}
+
+\begin{sidewaysfigure} [!htbp]	% PCB board
+ 	\centering
+  	\includegraphics[width=0.85\textwidth]{appendix/pcb_board.pdf} 
+ 	\caption{Test PCB board} 
+	\label{fig:appen_board_pcb} 
+\end{sidewaysfigure}
+
+
+\addtocontents{toc}{\endgroup}
+\end{appendices} % end appendix
+
+\backmatter{}	% the main content ends here
+
 \nocite{*}
 \printbibliography
 
-%\newpage
-%\listoffigures
-%\newpage
-%\listoftables
-%\printindex
 \newpage
 \printnoidxglossaries
 
-\backmatter{}
+
 \end{document}
