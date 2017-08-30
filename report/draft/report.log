@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  29 AUG 2017 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.21)  30 AUG 2017 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1699,15 +1699,40 @@ ompendium-forside-eng.pdf>] [2] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 107.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 108.
  [2
 
 ]
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 107.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 108.
  [3] [4
 
-] [5] [6
+]
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[5] [6
 
 ] (./report.toc
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
@@ -1718,8 +1743,7 @@ LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
- [8] (./report.lof
-[9
+ [8] (./report.lof [9
 
 
 ])
@@ -1733,19 +1757,20 @@ LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <12> not available
  [11
 
 
-] [12
+]
+[12
 
 ]
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 134.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 156.
  [1
 
 ] [2]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pnc/b/n' tried instead on input line 138.
+(Font)              Font shape `T1/pnc/b/n' tried instead on input line 160.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--161
+Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
  []
 
@@ -1753,36 +1778,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--161
 File: img/comp_tech_batt.png Graphic file (type png)
 
 <use img/comp_tech_batt.png>
-Package pdftex.def Info: img/comp_tech_batt.png used on input line 164.
+Package pdftex.def Info: img/comp_tech_batt.png used on input line 186.
 (pdftex.def)             Requested size: 323.9978pt x 225.04137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--177
+Underfull \hbox (badness 10000) in paragraph at lines 193--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--187
+Underfull \hbox (badness 10000) in paragraph at lines 202--209
 
  []
 
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 192--198
+Underfull \hbox (badness 10000) in paragraph at lines 214--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
 
  []
 
 [4 <./img/comp_tech_batt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 204--209
+Underfull \hbox (badness 10000) in paragraph at lines 226--231
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pnc on input line 221.
+LaTeX Font Info:    Try loading font information for TS1+pnc on input line 243.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1pnc.fd
 File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
@@ -1791,17 +1816,17 @@ File: ts1pnc.fd 2001/06/04 font definitions for TS1/pnc.
 ]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
+Underfull \hbox (badness 10000) in paragraph at lines 271--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--259
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
 
  []
 
@@ -1809,25 +1834,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--259
 File: img/visio_harvest_func.pdf Graphic file (type pdf)
 
 <use img/visio_harvest_func.pdf>
-Package pdftex.def Info: img/visio_harvest_func.pdf used on input line 262.
+Package pdftex.def Info: img/visio_harvest_func.pdf used on input line 284.
 (pdftex.def)             Requested size: 360.0pt x 133.97977pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
+Underfull \hbox (badness 10000) in paragraph at lines 290--293
 
  []
 
 [7 <./img/visio_harvest_func.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--278
+Underfull \hbox (badness 10000) in paragraph at lines 295--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--289
+Underfull \hbox (badness 10000) in paragraph at lines 303--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--296
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
 
  []
 
@@ -1835,23 +1860,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--296
 File: img/power_density_2.png Graphic file (type png)
 
 <use img/power_density_2.png>
-Package pdftex.def Info: img/power_density_2.png used on input line 299.
+Package pdftex.def Info: img/power_density_2.png used on input line 321.
 (pdftex.def)             Requested size: 360.0pt x 193.05869pt.
 
 Underfull \vbox (badness 1688) has occurred while \output is active []
 
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 321--324
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--330
+Underfull \hbox (badness 10000) in paragraph at lines 347--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
@@ -1863,67 +1888,67 @@ Underfull \vbox (badness 2229) has occurred while \output is active []
 File: img/visio_ipt.pdf Graphic file (type pdf)
 
 <use img/visio_ipt.pdf>
-Package pdftex.def Info: img/visio_ipt.pdf used on input line 339.
+Package pdftex.def Info: img/visio_ipt.pdf used on input line 361.
 (pdftex.def)             Requested size: 172.79846pt x 86.40744pt.
  <img/visio_ript.pdf, id=690, 170.57356pt x 86.01686pt>
 File: img/visio_ript.pdf Graphic file (type pdf)
 
 <use img/visio_ript.pdf>
-Package pdftex.def Info: img/visio_ript.pdf used on input line 344.
+Package pdftex.def Info: img/visio_ript.pdf used on input line 366.
 (pdftex.def)             Requested size: 172.79846pt x 87.14407pt.
  <img/visio_cpt.pdf, id=691, 169.54854pt x 84.72975pt>
 File: img/visio_cpt.pdf Graphic file (type pdf)
 
 <use img/visio_cpt.pdf>
-Package pdftex.def Info: img/visio_cpt.pdf used on input line 348.
+Package pdftex.def Info: img/visio_cpt.pdf used on input line 370.
 (pdftex.def)             Requested size: 172.79846pt x 86.35338pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--359
+Underfull \hbox (badness 10000) in paragraph at lines 377--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--363
+Underfull \hbox (badness 10000) in paragraph at lines 382--385
 
  []
 
 [10 <./img/visio_ipt.pdf> <./img/visio_ript.pdf> <./img/visio_cpt.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 366--372
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--375
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--382
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--390
+Underfull \hbox (badness 10000) in paragraph at lines 407--412
 
  []
 
 <img/visio_rf.pdf, id=758, 158.86081pt x 76.51587pt>
 File: img/visio_rf.pdf Graphic file (type pdf)
  <use img/visio_rf.pdf>
-Package pdftex.def Info: img/visio_rf.pdf used on input line 393.
+Package pdftex.def Info: img/visio_rf.pdf used on input line 415.
 (pdftex.def)             Requested size: 233.9978pt x 112.7058pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--406
+Underfull \hbox (badness 10000) in paragraph at lines 422--428
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 407--411
+Underfull \hbox (badness 10000) in paragraph at lines 429--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--422
+Underfull \hbox (badness 10000) in paragraph at lines 436--444
 
  []
 
@@ -1931,45 +1956,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 414--422
 File: img/wpt_ev_qualcom.jpg Graphic file (type jpg)
 
 <use img/wpt_ev_qualcom.jpg>
-Package pdftex.def Info: img/wpt_ev_qualcom.jpg used on input line 426.
+Package pdftex.def Info: img/wpt_ev_qualcom.jpg used on input line 448.
 (pdftex.def)             Requested size: 169.20044pt x 112.60059pt.
 
 <img/wpt_mobile_qualcom.jpg, id=771, 672.5125pt x 504.88625pt>
 File: img/wpt_mobile_qualcom.jpg Graphic file (type jpg)
 
 <use img/wpt_mobile_qualcom.jpg>
-Package pdftex.def Info: img/wpt_mobile_qualcom.jpg used on input line 428.
+Package pdftex.def Info: img/wpt_mobile_qualcom.jpg used on input line 450.
 (pdftex.def)             Requested size: 169.20044pt x 127.02245pt.
 
 <img/wpt_bionics.jpg, id=772, 622.325pt x 536.0025pt>
 File: img/wpt_bionics.jpg Graphic file (type jpg)
 
 <use img/wpt_bionics.jpg>
-Package pdftex.def Info: img/wpt_bionics.jpg used on input line 432.
+Package pdftex.def Info: img/wpt_bionics.jpg used on input line 454.
 (pdftex.def)             Requested size: 169.20044pt x 145.72859pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--445
+Underfull \hbox (badness 10000) in paragraph at lines 459--467
 
  []
 
 [12 <./img/visio_rf.pdf>] [13 <./img/wpt_ev_qualcom.jpg> <./img/wpt_mobile_qual
 com.jpg> <./img/wpt_bionics.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 450--457
+Underfull \hbox (badness 10000) in paragraph at lines 472--479
 
  []
 
 <img/logo_qi.jpg, id=799, 301.125pt x 361.35pt>
 File: img/logo_qi.jpg Graphic file (type jpg)
  <use img/logo_qi.jpg>
-Package pdftex.def Info: img/logo_qi.jpg used on input line 464.
+Package pdftex.def Info: img/logo_qi.jpg used on input line 486.
 (pdftex.def)             Requested size: 90.0pt x 107.99782pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--476
+Underfull \hbox (badness 10000) in paragraph at lines 492--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--485
+Underfull \hbox (badness 10000) in paragraph at lines 501--507
 
  []
 
@@ -1977,20 +2002,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 479--485
 File: img/logo_airfuel.jpg Graphic file (type jpg)
 
 <use img/logo_airfuel.jpg>
-Package pdftex.def Info: img/logo_airfuel.jpg used on input line 491.
+Package pdftex.def Info: img/logo_airfuel.jpg used on input line 513.
 (pdftex.def)             Requested size: 90.0pt x 89.99664pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--502
+Underfull \hbox (badness 10000) in paragraph at lines 519--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--511
+Underfull \hbox (badness 10000) in paragraph at lines 529--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--536
+Underfull \hbox (badness 10000) in paragraph at lines 551--558
 
  []
 
@@ -1999,36 +2024,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 529--536
 File: img/visio_funct_wpt.pdf Graphic file (type pdf)
 
 <use img/visio_funct_wpt.pdf>
-Package pdftex.def Info: img/visio_funct_wpt.pdf used on input line 540.
+Package pdftex.def Info: img/visio_funct_wpt.pdf used on input line 562.
 (pdftex.def)             Requested size: 360.0pt x 160.32803pt.
  [16 <./img/visio_funct_wpt.pdf>] [17
 
 ] [18]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
 [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
 
@@ -2036,22 +2061,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 568--569
 File: img/rectifier_full_bridge.pdf Graphic file (type pdf)
 
 <use img/rectifier_full_bridge.pdf>
-Package pdftex.def Info: img/rectifier_full_bridge.pdf used on input line 572.
+Package pdftex.def Info: img/rectifier_full_bridge.pdf used on input line 594.
 (pdftex.def)             Requested size: 176.40198pt x 111.68713pt.
 
 <img/rectifier_full_cc.pdf, id=881, 369.38pt x 240.9pt>
 File: img/rectifier_full_cc.pdf Graphic file (type pdf)
 
 <use img/rectifier_full_cc.pdf>
-Package pdftex.def Info: img/rectifier_full_cc.pdf used on input line 574.
+Package pdftex.def Info: img/rectifier_full_cc.pdf used on input line 596.
 (pdftex.def)             Requested size: 176.40198pt x 115.04254pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
  []
 
 [20 <./img/rectifier_full_bridge.pdf> <./img/rectifier_full_cc.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
 
  []
 
@@ -2059,10 +2084,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
 File: img/rectifier_schematic.pdf Graphic file (type pdf)
 
 <use img/rectifier_schematic.pdf>
-Package pdftex.def Info: img/rectifier_schematic.pdf used on input line 585.
+Package pdftex.def Info: img/rectifier_schematic.pdf used on input line 607.
 (pdftex.def)             Requested size: 360.0pt x 154.00159pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
 
@@ -2070,10 +2095,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 590--591
 File: img/rectifier_rcc5.pdf Graphic file (type pdf)
 
 <use img/rectifier_rcc5.pdf>
-Package pdftex.def Info: img/rectifier_rcc5.pdf used on input line 594.
+Package pdftex.def Info: img/rectifier_rcc5.pdf used on input line 616.
 (pdftex.def)             Requested size: 360.0pt x 280.0029pt.
  [21 <./img/rectifier_schematic.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
 
  []
 
@@ -2081,7 +2106,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 599--601
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22 <./img/rectifier_rcc5.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 623--631
+Underfull \hbox (badness 10000) in paragraph at lines 645--653
 
  []
 
@@ -2089,20 +2114,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 623--631
 File: img/rectifier_testbench.pdf Graphic file (type pdf)
 
 <use img/rectifier_testbench.pdf>
-Package pdftex.def Info: img/rectifier_testbench.pdf used on input line 634.
+Package pdftex.def Info: img/rectifier_testbench.pdf used on input line 656.
 (pdftex.def)             Requested size: 360.0pt x 114.4566pt.
 
 <img/rectifier_VI.pdf, id=946, 427.5975pt x 309.155pt>
 File: img/rectifier_VI.pdf Graphic file (type pdf)
 
 <use img/rectifier_VI.pdf>
-Package pdftex.def Info: img/rectifier_VI.pdf used on input line 641.
+Package pdftex.def Info: img/rectifier_VI.pdf used on input line 663.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <./img/rectifier_testbench.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 646--648
+Underfull \hbox (badness 10000) in paragraph at lines 668--670
 
  []
 
@@ -2110,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 646--648
 File: img/rectifier_V_post.pdf Graphic file (type pdf)
 
 <use img/rectifier_V_post.pdf>
-Package pdftex.def Info: img/rectifier_V_post.pdf used on input line 651.
+Package pdftex.def Info: img/rectifier_V_post.pdf used on input line 673.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2120,10 +2145,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/rectifier_ripple.pdf Graphic file (type pdf)
 
 <use img/rectifier_ripple.pdf>
-Package pdftex.def Info: img/rectifier_ripple.pdf used on input line 658.
+Package pdftex.def Info: img/rectifier_ripple.pdf used on input line 680.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--670
+Underfull \hbox (badness 10000) in paragraph at lines 687--692
 
  []
 
@@ -2135,7 +2160,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/rectifier_ce.pdf Graphic file (type pdf)
 
 <use img/rectifier_ce.pdf>
-Package pdftex.def Info: img/rectifier_ce.pdf used on input line 673.
+Package pdftex.def Info: img/rectifier_ce.pdf used on input line 695.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2145,27 +2170,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--714
+Underfull \hbox (badness 10000) in paragraph at lines 731--736
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--722
+Underfull \hbox (badness 10000) in paragraph at lines 737--744
 
  []
 
 <img/ldo.pdf, id=1056, 433.62pt x 259.97125pt>
 File: img/ldo.pdf Graphic file (type pdf)
  <use img/ldo.pdf>
-Package pdftex.def Info: img/ldo.pdf used on input line 725.
+Package pdftex.def Info: img/ldo.pdf used on input line 747.
 (pdftex.def)             Requested size: 360.0pt x 215.8435pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--735
+Underfull \hbox (badness 10000) in paragraph at lines 752--757
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--741
+Underfull \hbox (badness 10000) in paragraph at lines 760--763
 
  []
 
@@ -2173,20 +2198,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 738--741
 File: img/ldo_schematic.pdf Graphic file (type pdf)
 
 <use img/ldo_schematic.pdf>
-Package pdftex.def Info: img/ldo_schematic.pdf used on input line 745.
+Package pdftex.def Info: img/ldo_schematic.pdf used on input line 767.
 (pdftex.def)             Requested size: 360.0pt x 186.84798pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--758
+Underfull \hbox (badness 10000) in paragraph at lines 772--780
 
  []
 
 [30 <./img/ldo.pdf> <./img/ldo_schematic.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 782--790
+Underfull \hbox (badness 10000) in paragraph at lines 804--812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--800
+Underfull \hbox (badness 10000) in paragraph at lines 813--822
 
  []
 
@@ -2194,15 +2219,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 791--800
 File: img/ldo_testbench.pdf Graphic file (type pdf)
 
 <use img/ldo_testbench.pdf>
-Package pdftex.def Info: img/ldo_testbench.pdf used on input line 803.
+Package pdftex.def Info: img/ldo_testbench.pdf used on input line 825.
 (pdftex.def)             Requested size: 360.0pt x 112.00116pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--824
+Underfull \hbox (badness 10000) in paragraph at lines 830--846
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 829--833
+Underfull \hbox (badness 10000) in paragraph at lines 851--855
 
  []
 
@@ -2210,10 +2235,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 829--833
 File: img/ldo_transient_both.pdf Graphic file (type pdf)
 
 <use img/ldo_transient_both.pdf>
-Package pdftex.def Info: img/ldo_transient_both.pdf used on input line 836.
+Package pdftex.def Info: img/ldo_transient_both.pdf used on input line 858.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
  [32 <./img/ldo_testbench.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 841--846
+Underfull \hbox (badness 10000) in paragraph at lines 863--868
 
  []
 
@@ -2221,7 +2246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 841--846
 File: img/ldo_loadr_both.pdf Graphic file (type pdf)
 
 <use img/ldo_loadr_both.pdf>
-Package pdftex.def Info: img/ldo_loadr_both.pdf used on input line 851.
+Package pdftex.def Info: img/ldo_loadr_both.pdf used on input line 873.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2231,10 +2256,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/ldo_liner_both.pdf Graphic file (type pdf)
 
 <use img/ldo_liner_both.pdf>
-Package pdftex.def Info: img/ldo_liner_both.pdf used on input line 858.
+Package pdftex.def Info: img/ldo_liner_both.pdf used on input line 880.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 865--871
+Underfull \hbox (badness 10000) in paragraph at lines 887--893
 
  []
 
@@ -2246,25 +2271,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/ldo_dc_both.pdf Graphic file (type pdf)
 
 <use img/ldo_dc_both.pdf>
-Package pdftex.def Info: img/ldo_dc_both.pdf used on input line 876.
+Package pdftex.def Info: img/ldo_dc_both.pdf used on input line 898.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 <img/ldo_Iload_both.pdf, id=1212, 427.5975pt x 309.155pt>
 File: img/ldo_Iload_both.pdf Graphic file (type pdf)
 
 <use img/ldo_Iload_both.pdf>
-Package pdftex.def Info: img/ldo_Iload_both.pdf used on input line 883.
+Package pdftex.def Info: img/ldo_Iload_both.pdf used on input line 905.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <./img/ldo_dc_both.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 890--893
+Underfull \hbox (badness 10000) in paragraph at lines 912--915
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--900
+Underfull \hbox (badness 10000) in paragraph at lines 916--922
 
  []
 
@@ -2272,14 +2297,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 894--900
 <img/ldo_ac.pdf, id=1270, 427.5975pt x 309.155pt>
 File: img/ldo_ac.pdf Graphic file (type pdf)
  <use img/ldo_ac.pdf>
-Package pdftex.def Info: img/ldo_ac.pdf used on input line 903.
+Package pdftex.def Info: img/ldo_ac.pdf used on input line 925.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
 <img/ldo_pssr_both.pdf, id=1271, 421.575pt x 316.18124pt>
 File: img/ldo_pssr_both.pdf Graphic file (type pdf)
 
 <use img/ldo_pssr_both.pdf>
-Package pdftex.def Info: img/ldo_pssr_both.pdf used on input line 910.
+Package pdftex.def Info: img/ldo_pssr_both.pdf used on input line 932.
 (pdftex.def)             Requested size: 360.0pt x 270.00487pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2287,7 +2312,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [37 <./img/ldo_ac.pdf>] [38 <./img/ldo_pssr_both.pdf>]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--959
+Underfull \hbox (badness 10000) in paragraph at lines 976--981
 
  []
 
@@ -2295,35 +2320,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 954--959
 File: img/ant_induction.pdf Graphic file (type pdf)
 
 <use img/ant_induction.pdf>
-Package pdftex.def Info: img/ant_induction.pdf used on input line 962.
+Package pdftex.def Info: img/ant_induction.pdf used on input line 984.
 (pdftex.def)             Requested size: 176.40198pt x 130.66905pt.
 
 <img/ant_induction_model.pdf, id=1553, 171.07864pt x 122.87416pt>
 File: img/ant_induction_model.pdf Graphic file (type pdf)
 
 <use img/ant_induction_model.pdf>
-Package pdftex.def Info: img/ant_induction_model.pdf used on input line 964.
+Package pdftex.def Info: img/ant_induction_model.pdf used on input line 986.
 (pdftex.def)             Requested size: 176.40198pt x 126.69676pt.
  [39
 
 
  <./img/ant_induction.pdf> <./img/ant_induction_model.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 979--980
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 990--994
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1016
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1009
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1015
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
 
  []
 
@@ -2331,15 +2356,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1012--1015
 File: img/ant_non_ideal.pdf Graphic file (type pdf)
 
 <use img/ant_non_ideal.pdf>
-Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 1018.
+Package pdftex.def Info: img/ant_non_ideal.pdf used on input line 1040.
 (pdftex.def)             Requested size: 323.9978pt x 100.11194pt.
  [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1066
 
  []
 
@@ -2347,17 +2372,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1031--1044
 File: img/ant_single.png Graphic file (type png)
 
 <use img/ant_single.png>
-Package pdftex.def Info: img/ant_single.png used on input line 1047.
+Package pdftex.def Info: img/ant_single.png used on input line 1069.
 (pdftex.def)             Requested size: 176.40198pt x 113.20354pt.
 
 <img/ant_single.pdf, id=1657, 190.09608pt x 121.66023pt>
 File: img/ant_single.pdf Graphic file (type pdf)
 
 <use img/ant_single.pdf>
-Package pdftex.def Info: img/ant_single.pdf used on input line 1049.
+Package pdftex.def Info: img/ant_single.pdf used on input line 1071.
 (pdftex.def)             Requested size: 176.40198pt x 112.89594pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1101
 
  []
 
@@ -2366,36 +2391,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 1072--1079
 File: img/ant_couple.png Graphic file (type png)
 
 <use img/ant_couple.png>
-Package pdftex.def Info: img/ant_couple.png used on input line 1082.
+Package pdftex.def Info: img/ant_couple.png used on input line 1104.
 (pdftex.def)             Requested size: 176.40198pt x 120.94109pt.
 
 <img/ant_couple.pdf, id=1706, 190.09608pt x 123.48534pt>
 File: img/ant_couple.pdf Graphic file (type pdf)
 
 <use img/ant_couple.pdf>
-Package pdftex.def Info: img/ant_couple.pdf used on input line 1084.
+Package pdftex.def Info: img/ant_couple.pdf used on input line 1106.
 (pdftex.def)             Requested size: 176.40198pt x 114.58957pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42 <./img/ant_single.png> <./img/ant_single.pdf> <./img/ant_couple.png> <./im
 g/ant_couple.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1111
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1120
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1162
 
  []
 
@@ -2403,10 +2428,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1129--1140
 File: img/ant_couple_resonant.pdf Graphic file (type pdf)
 
 <use img/ant_couple_resonant.pdf>
-Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 1143.
+Package pdftex.def Info: img/ant_couple_resonant.pdf used on input line 1165.
 (pdftex.def)             Requested size: 288.0011pt x 103.9278pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
 
  []
 
@@ -2414,10 +2439,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 File: img/ant_s1_s2_both.pdf Graphic file (type pdf)
 
 <use img/ant_s1_s2_both.pdf>
-Package pdftex.def Info: img/ant_s1_s2_both.pdf used on input line 1152.
+Package pdftex.def Info: img/ant_s1_s2_both.pdf used on input line 1174.
 (pdftex.def)             Requested size: 360.0pt x 270.00487pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
 
  []
 
@@ -2425,11 +2450,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
 File: img/ant_s21_both.pdf Graphic file (type pdf)
 
 <use img/ant_s21_both.pdf>
-Package pdftex.def Info: img/ant_s21_both.pdf used on input line 1167.
+Package pdftex.def Info: img/ant_s21_both.pdf used on input line 1189.
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
  [44 <./img/ant_couple_resonant.pdf>] [45 <./img/ant_s1_s2_both.pdf> <./img/ant
 _s21_both.pdf>]
-Overfull \hbox (40.86943pt too wide) in paragraph at lines 1177--1189
+Overfull \hbox (40.86943pt too wide) in paragraph at lines 1199--1211
  [] 
  []
 
@@ -2439,7 +2464,7 @@ Overfull \hbox (40.86943pt too wide) in paragraph at lines 1177--1189
 ] [48]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1212
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1234
 
  []
 
@@ -2447,36 +2472,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 1204--1212
 File: img/wpt_ptu_pru.pdf Graphic file (type pdf)
 
 <use img/wpt_ptu_pru.pdf>
-Package pdftex.def Info: img/wpt_ptu_pru.pdf used on input line 1215.
+Package pdftex.def Info: img/wpt_ptu_pru.pdf used on input line 1237.
 (pdftex.def)             Requested size: 323.9978pt x 297.0766pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1225
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1226--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1254
 
  []
 
 [49
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1236
+Underfull \hbox (badness 10000) in paragraph at lines 1257--1258
 
  []
 
 <img/wpt_top.pdf, id=1903, 369.38pt x 174.6525pt>
 File: img/wpt_top.pdf Graphic file (type pdf)
  <use img/wpt_top.pdf>
-Package pdftex.def Info: img/wpt_top.pdf used on input line 1239.
+Package pdftex.def Info: img/wpt_top.pdf used on input line 1261.
 (pdftex.def)             Requested size: 360.0pt x 170.21753pt.
 
 <img/wpt_top_testbench.pdf, id=1904, 369.38pt x 202.7575pt>
 File: img/wpt_top_testbench.pdf Graphic file (type pdf)
 
 <use img/wpt_top_testbench.pdf>
-Package pdftex.def Info: img/wpt_top_testbench.pdf used on input line 1248.
+Package pdftex.def Info: img/wpt_top_testbench.pdf used on input line 1270.
 (pdftex.def)             Requested size: 360.0pt x 197.60887pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2486,7 +2511,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/wpt_V_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_V_wo_bgr_both.pdf>
-Package pdftex.def Info: img/wpt_V_wo_bgr_both.pdf used on input line 1257.
+Package pdftex.def Info: img/wpt_V_wo_bgr_both.pdf used on input line 1279.
 (pdftex.def)             Requested size: 360.0pt x 270.00487pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2496,11 +2521,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/wpt_ripple_wo_bgr_both.pdf Graphic file (type pdf)
 
 <use img/wpt_ripple_wo_bgr_both.pdf>
-Package pdftex.def Info: img/wpt_ripple_wo_bgr_both.pdf used on input line 1264
+Package pdftex.def Info: img/wpt_ripple_wo_bgr_both.pdf used on input line 1286
 .
 (pdftex.def)             Requested size: 360.0pt x 260.2828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1273
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1295
 
  []
 
@@ -2509,10 +2534,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1272--1273
 File: img/wpt_top_link.pdf Graphic file (type pdf)
 
 <use img/wpt_top_link.pdf>
-Package pdftex.def Info: img/wpt_top_link.pdf used on input line 1276.
+Package pdftex.def Info: img/wpt_top_link.pdf used on input line 1298.
 (pdftex.def)             Requested size: 360.0pt x 199.56537pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1281--1282
+Underfull \hbox (badness 10000) in paragraph at lines 1303--1304
 
  []
 
@@ -2521,12 +2546,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1281--1282
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1309--1310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
 
  []
 
@@ -2535,12 +2560,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1289--1290
 ] [57] [58]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1297--1300
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1301--1302
+Underfull \hbox (badness 10000) in paragraph at lines 1323--1324
 
  []
 
@@ -2558,7 +2583,7 @@ File: appendix/schematic_rectifier_l.pdf Graphic file (type pdf)
 
 <use appendix/schematic_rectifier_l.pdf>
 Package pdftex.def Info: appendix/schematic_rectifier_l.pdf used on input line 
-1325.
+1347.
 (pdftex.def)             Requested size: 360.0pt x 160.29395pt.
 
 <appendix/schematic_rectifier_bw.pdf, id=2044, 361.35pt x 154.5775pt>
@@ -2566,15 +2591,15 @@ File: appendix/schematic_rectifier_bw.pdf Graphic file (type pdf)
 
 <use appendix/schematic_rectifier_bw.pdf>
 Package pdftex.def Info: appendix/schematic_rectifier_bw.pdf used on input line
- 1332.
+ 1354.
 (pdftex.def)             Requested size: 360.0pt x 154.00159pt.
 
 <appendix/layout_rectifier_l.pdf, id=2045, 772.05087pt x 391.2226pt>
 File: appendix/layout_rectifier_l.pdf Graphic file (type pdf)
 
 <use appendix/layout_rectifier_l.pdf>
-Package pdftex.def Info: appendix/layout_rectifier_l.pdf used on input line 133
-9.
+Package pdftex.def Info: appendix/layout_rectifier_l.pdf used on input line 136
+1.
 (pdftex.def)             Requested size: 650.20029pt x 329.49629pt.
  [63
 
@@ -2586,14 +2611,14 @@ Appendix B.
 File: appendix/schematic_ldo_l.pdf Graphic file (type pdf)
 
 <use appendix/schematic_ldo_l.pdf>
-Package pdftex.def Info: appendix/schematic_ldo_l.pdf used on input line 1350.
+Package pdftex.def Info: appendix/schematic_ldo_l.pdf used on input line 1372.
 (pdftex.def)             Requested size: 767.2655pt x 363.78851pt.
 
 <appendix/layout_ldo_p.pdf, id=3697, 614.295pt x 429.04158pt>
 File: appendix/layout_ldo_p.pdf Graphic file (type pdf)
 
 <use appendix/layout_ldo_p.pdf>
-Package pdftex.def Info: appendix/layout_ldo_p.pdf used on input line 1357.
+Package pdftex.def Info: appendix/layout_ldo_p.pdf used on input line 1379.
 (pdftex.def)             Requested size: 500.657pt x 349.67561pt.
  [65
 
@@ -2604,7 +2629,7 @@ Appendix C.
 File: appendix/schematic_chip_p.pdf Graphic file (type pdf)
 
 <use appendix/schematic_chip_p.pdf>
-Package pdftex.def Info: appendix/schematic_chip_p.pdf used on input line 1368.
+Package pdftex.def Info: appendix/schematic_chip_p.pdf used on input line 1390.
 
 (pdftex.def)             Requested size: 585.0469pt x 298.55026pt.
 
@@ -2612,7 +2637,7 @@ Package pdftex.def Info: appendix/schematic_chip_p.pdf used on input line 1368.
 File: appendix/layout_chip_l.pdf Graphic file (type pdf)
 
 <use appendix/layout_chip_l.pdf>
-Package pdftex.def Info: appendix/layout_chip_l.pdf used on input line 1375.
+Package pdftex.def Info: appendix/layout_chip_l.pdf used on input line 1397.
 (pdftex.def)             Requested size: 390.12413pt x 344.37637pt.
  [67
 
@@ -2623,28 +2648,28 @@ Appendix D.
 File: appendix/pcb_pri.pdf Graphic file (type pdf)
 
 <use appendix/pcb_pri.pdf>
-Package pdftex.def Info: appendix/pcb_pri.pdf used on input line 1385.
+Package pdftex.def Info: appendix/pcb_pri.pdf used on input line 1407.
 (pdftex.def)             Requested size: 306.0022pt x 187.3202pt.
 
 <appendix/pcb_sec.pdf, id=12096, 209.37723pt x 127.52731pt>
 File: appendix/pcb_sec.pdf Graphic file (type pdf)
 
 <use appendix/pcb_sec.pdf>
-Package pdftex.def Info: appendix/pcb_sec.pdf used on input line 1392.
+Package pdftex.def Info: appendix/pcb_sec.pdf used on input line 1414.
 (pdftex.def)             Requested size: 306.0022pt x 186.38094pt.
 
 <appendix/pcb_schematic.pdf, id=12097, 408.77263pt x 262.71823pt>
 File: appendix/pcb_schematic.pdf Graphic file (type pdf)
 
 <use appendix/pcb_schematic.pdf>
-Package pdftex.def Info: appendix/pcb_schematic.pdf used on input line 1399.
+Package pdftex.def Info: appendix/pcb_schematic.pdf used on input line 1421.
 (pdftex.def)             Requested size: 552.67421pt x 355.21954pt.
 
 <appendix/pcb_board.pdf, id=12098, 395.96758pt x 253.10913pt>
 File: appendix/pcb_board.pdf Graphic file (type pdf)
 
 <use appendix/pcb_board.pdf>
-Package pdftex.def Info: appendix/pcb_board.pdf used on input line 1406.
+Package pdftex.def Info: appendix/pcb_board.pdf used on input line 1428.
 (pdftex.def)             Requested size: 552.67421pt x 353.30371pt.
  [69
 
@@ -2653,14 +2678,14 @@ ic.pdf>] [71 <./appendix/pcb_board.pdf>]
 [72
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pag on input line 1418.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 1440.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 
 Package biblatex Warning: Month out of range or not an integer
-(biblatex)                at entry 'wpt_fund_std' on input line 1418.
+(biblatex)                at entry 'wpt_fund_std' on input line 1440.
 
 [73
 
@@ -2668,18 +2693,18 @@ Package biblatex Warning: Month out of range or not an integer
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls). 
-on input line 1421.
+on input line 1443.
 
 [77
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1424.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1446.
  [78]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1424.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1446.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1424.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1424.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1446.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 1B660BF47D798AFCCB27756ABF6CE902;2545.
@@ -2709,7 +2734,7 @@ urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncn
 trsbk/uncri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplri8a
 .pfb>
-Output written on report.pdf (92 pages, 16122768 bytes).
+Output written on report.pdf (92 pages, 16124886 bytes).
 PDF statistics:
  12401 PDF objects out of 12825 (max. 8388607)
  7044 compressed objects within 71 object streams
