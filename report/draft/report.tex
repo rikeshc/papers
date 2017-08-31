@@ -1330,7 +1330,7 @@ While the chip was in production, test PCB board and antennas were designed and 
 %***********************************************************************  APPENDICES ***********************************************************************************
 
 \begin{appendices} 	% starts appendix
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}} % 
 \makeatletter
 \addtocontents{toc}{%
   \begingroup
@@ -1430,16 +1430,20 @@ While the chip was in production, test PCB board and antennas were designed and 
 	\label{fig:appen_board_pcb} 
 \end{sidewaysfigure}
 
-
 \addtocontents{toc}{\endgroup}
 \end{appendices} % end appendix
 
 \backmatter{}	% the main content ends here
 
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
 \nocite{*}
 \printbibliography
 
-\newpage
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Acronyms}
 \printnoidxglossaries
 
 

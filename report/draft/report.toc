@@ -71,3 +71,5 @@
 \contentsline {chapter}{\numberline {C}WPT Chip}{67}{Appendix.1.C}
 \contentsline {chapter}{\numberline {D}Test PCBs}{69}{Appendix.1.D}
 \endgroup 
+\contentsline {chapter}{Bibliography}{73}{section*.80}
+\contentsline {chapter}{Acronyms}{77}{section*.82}
