@@ -1291,7 +1291,7 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 
 \section{PRU Unit}
 
-Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and componoent values remain the same as in PMS simulation. \\
+Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and component values remain the same as in PMS simulation. \\
 
 \begin{figure} [H]
   \centering
@@ -1314,15 +1314,44 @@ While the chip was in production, test PCB board and antennas were designed and 
 % ***********************************************************************  CONCLUSION ***********************************************************************************
 \part{Conclusion}
 \chapter{Conclusion}
-\section{Problem and challenges}
+In this project, wireless power harvesting system was designed, analysed, produced and tested. Magnetic resonance inductive coupling method was used for 
+wireless power transfer. The WPT chip was produced using 90 nm CMOS devices. The target performance was to wirelessly power 10 mA load with 1.8 V.   \\
 
-=> comment on PCB \\
-=> comment on layout \\
-	1. ac voltages right at the diode, not only at pad. \\
-	
-=> coil resonance: variable and fixed resonance \\
+The post-layout simulation result, summarised in table [], showed that the target objective can be achieved with reasonable efficiency. However, the laboratory 
+measurements of performance of the produced chip, table [], showed that it can drive at best 3 mA load with slightly lower efficiency. In spite of a  lot of room of improvements, one important observation is made. The choice of 90 nm process which was taken as a challenge for this work, can only be used for designing WPT 
+chip to deliver low power. For better efficiency and higher power transfer, bigger technology node should be chosen. \\
+
+
+\section{Lesson learnt}
+
+In course of this WPT chip design, I came across many design issues, most of which I learnt after the design. I realised these issues have direct impact on the performances of the system.
+
+\begin{itemize}
+\item I followed a text book approach for designing which I later realised not to be an optimal design choice. For example, choosing device length 3 times the minimum feature size. Though simulation across all corners 
+met the target requirements with chosen technique, there was still plenty room on the chip. Bigger devices sizes could have, on the one hand, make good used to available room and on the other hand, it could certainly have made the produced chip less prone to PVT variation. 
+\item During verification  of the chip, larger ripples, both in Vrec and Vreg were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
+During conduction of MOS diodes large ac current passed through the ground, eventually creating higher ripples and requiring large ripple rejection capacitors. Separate ground for rectifier and LDO could have minimised the ripple amplitude in rectified output. Similarly, the higher current path reaching the diodes should be made with equal resistance. A slight difference in path resistance was observed in this design which resulted in asymmetric conduction of rectifying diodes. 
+\item A more detail analysis of magnetic resonance inductive link is required. The coupling link was designed for fixed resonance frequency at 13.56 MHz but shift in resonance frequency was observed while taking measurements of WPT chip. It was 
+mostly due to variation of load, rectifier itself being a non-linear load and inaccuracy in coil separation. In this project, topology of resonance capacitors used in 
+the primary sides were dependant on load and were chosen for the case of 10 mA. However produced chip was able to supply 3 mA load. This is another source of load variation, causing resonance frequency shift. 
+\item The test PCB could have been made better in terms of both performance and test connivence. The current conduction paths, Vin1 and Vin2 should have been made shorter and symmetrical. The decoupling capacitors and ripple rejection capacitors should be place closer to their corresponding JLCC pins. For making measurements easier, more test points are required, especially current measurements points.
+\item The top level test-bench of WPT chip can also be improved to realise a real measurement set up. Inclusion of parasitics of probes increases the accuracy of measured data and hence the verification of performance.  More important is inclusion of pad resistance and capacitance which are the source of voltage/power loss and 
+shift of resonance frequency respectively.
+\end{itemize}
 
 \section{Future Work}
+
+As this work is done as pilot project of implementing of WPT in 90 nm. it can be taken as a starting point to build an optimal WPT system for either charging or directly driving low power devices. I think it can work as reference and/or preliminary work on following perspective future works. 
+
+\begin{itemize}
+
+\item The same design choices and architectures can be optimised for better efficiency in specific application. The boundary condition, problems and challenges discussed above should be first addressed. Other additional work includes, integration of over voltage protection circuit for rectifier and BGR for on chip biasing and reference voltage generation. 
+
+\item Design and implementation of communication and transfer protocol between PTU and PRU can be other additional topic relating to this work. One can implement 
+standard commercial protocols like Qi and AirFuel or can design one's own protocol optimised for specific application. On completion of these works, a complete independent WPT system is made.
+
+\end{itemize}
+
 
 \clearpage
 \newpage

@@ -61,15 +61,15 @@
 \contentsline {section}{\numberline {7.1}Chip and PCB}{55}{section.7.1}
 \contentsline {part}{IV\hspace {1em}Conclusion}{57}{part.4}
 \contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}
-\contentsline {section}{\numberline {8.1}Problem and challenges}{59}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{59}{section.8.2}
-\contentsline {chapter}{Appendices}{61}{section*.68}
+\contentsline {section}{\numberline {8.1}Lesson learnt}{59}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{60}{section.8.2}
+\contentsline {chapter}{Appendices}{63}{section*.68}
 \setcounter {tocdepth}{1}
 \begingroup \let \l@chapter \l@section \let \l@section \l@subsection 
-\contentsline {chapter}{\numberline {A}Rectifier Implementation}{63}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}LDO Implementation}{65}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}WPT Chip}{67}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Test PCBs}{69}{Appendix.1.D}
+\contentsline {chapter}{\numberline {A}Rectifier Implementation}{65}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}LDO Implementation}{67}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}WPT Chip}{69}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Test PCBs}{71}{Appendix.1.D}
 \endgroup 
-\contentsline {chapter}{Bibliography}{73}{section*.80}
-\contentsline {chapter}{Acronyms}{77}{section*.82}
+\contentsline {chapter}{Bibliography}{75}{section*.80}
+\contentsline {chapter}{Acronyms}{79}{section*.82}
