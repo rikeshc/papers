@@ -20,7 +20,7 @@ p1 = plot(time(from:to), Iac_sch(from:to)*10^3, 'b', timep(fromp:top), Iac_pex(f
     %xlabel('Time (us)'); 
 ylabel('Current (mA)');
 grid on;
-xlim([3000, 3000.3]);
+xlim([3000, 3000.15]);
 title('Current from source', 'FontSize', 10);
 
 Itxt1 = sprintf('Pre: I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Iac_sch(from:end)))*1000, rms(Iac_sch(from:end))*1000);
@@ -32,7 +32,7 @@ p2 = plot(time(from:to), pwr_sch(from:to)*10^3, 'b', timep(fromp:top), pwr_pex(f
 xlabel('Time (us)'); 
 ylabel('Power (mW)');
 grid on;
-xlim([3000, 3000.3]);
+xlim([3000, 3000.15]);
 title('Power from source', 'FontSize', 10);
 Ptxt1 = sprintf('Pre: P_{avg}= % .1f mW', mean(pwr_sch(from:end))*1000);
 Ptxt2 = sprintf('Post: P_{avg} = % .1f mW', mean(pwr_pex(fromp:end))*1000);

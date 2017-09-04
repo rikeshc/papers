@@ -24,19 +24,30 @@ Vpri_sch = V.data(:, 8);
 clear V;    %saving only required variables
 save('Vs_sch');
 
-
-%% Read voltage data from file
+%% Read Vrec and Vreg of PEX
 clear all;
-V = importdata('wpt_V_pex.matlab');
+V = importdata('pms_vout_pex.matlab');
 t_pex = V.data(:, 1);
-Vin1_pex = V.data(:, 2);
-Vin2_pex = V.data(:, 4);
-Vrec_pex = V.data(:, 6);
-Vreg_pex = V.data(:, 8);
-Vref_pex = V.data(:, 10);
+Vrec_pex = V.data(:, 2);
+Vreg_pex = V.data(:, 4);
 
 %% Save
-clear V; delete V_pex.mat;    %saving only required variables
-save('V_pex');
+clear V;    %saving only required variables
+save('Vout_pex');
+
+%% Read all voltages PEX
+clear all;
+V = importdata('pms_vs_pex.matlab');
+t_pex = V.data(:, 1);
+Vin1_pex = V.data(:, 4);
+Vin2_pex = V.data(:, 6);
+Vrec_pex = V.data(:, 10);
+Vreg_pex = V.data(:, 12);
+Vac_pex = V.data(:, 2);
+Vpri_pex = V.data(:, 8);
+
+%% Save
+clear V;    %saving only required variables
+save('Vs_pex');
 
 
