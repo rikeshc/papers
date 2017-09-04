@@ -34,6 +34,7 @@ GPIB_Write('DIGITIZE CHANNEL1, CHANNEL2, CHANNEL3', HP54622Adr);
 data(:,1) = readChannel(HP54622Adr, '1');
 data(:,2) = readChannel(HP54622Adr, '2');
 data(:,3) = readChannel(HP54622Adr, '3');
+data(:,4) = readChannel(HP54622Adr, '4');
 
 % Get x-axis
 GPIB_Write('WAVEFORM:XORIGIN?', HP54622Adr);

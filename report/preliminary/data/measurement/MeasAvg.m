@@ -11,11 +11,11 @@ GPIB_Write (cmdstr,HP54622Adr);
 
 % Measure VAVG on Scope
 %cmdstr = sprintf('MEAS:VAMP CHAN%d',Channel);
-cmdstr = sprintf('MEAS:AVG CHAN%d',Channel);
+cmdstr = sprintf('MEAS:VAV CHAN%d',Channel);
 GPIB_Write(cmdstr, HP54622Adr)
 
 % Query: measure VRMS?  and return VRMS value in Volt
-cmdstr = sprintf('MEAS:AVG? CHAN%d',Channel);
+cmdstr = sprintf('MEAS:VAV? CHAN%d',Channel);
 GPIB_Write(cmdstr, HP54622Adr);
 % fprintf(HP54622Adr, cmdstr);
 vr = GPIB_Read(HP54622Adr);
