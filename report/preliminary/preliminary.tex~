@@ -1214,7 +1214,7 @@ Figure \ref{fig:pms_vin} and \ref{fig:pms_vout} shows input and output waveforms
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms_Vs.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms_vin_both.pdf} 
  \caption{Input voltage waveform of PMS} 
 \label{fig:pms_vin} 
 \end{figure}

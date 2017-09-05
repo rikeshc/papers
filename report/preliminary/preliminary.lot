@@ -1,15 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \select@language {UKenglish}
-\contentsline {table}{\numberline {1}{\ignorespaces Target specifications\relax }}{14}{table.caption.8}
-\contentsline {table}{\numberline {2}{\ignorespaces Rectifier design parameters\relax }}{19}{table.caption.13}
-\contentsline {table}{\numberline {3}{\ignorespaces Rectifier performance summary\relax }}{24}{table.caption.19}
-\contentsline {table}{\numberline {4}{\ignorespaces LDO design parameters\relax }}{27}{table.caption.22}
-\contentsline {table}{\numberline {5}{\ignorespaces LDO performance summary\relax }}{36}{table.caption.31}
-\contentsline {table}{\numberline {6}{\ignorespaces BGR parameter and performance\relax }}{39}{table.caption.36}
-\contentsline {table}{\numberline {7}{\ignorespaces Characterisation of antenna\relax }}{43}{table.caption.39}
-\contentsline {table}{\numberline {8}{\ignorespaces Coupling parameters for varying coils distance\relax }}{44}{table.caption.41}
-\contentsline {table}{\numberline {9}{\ignorespaces Performance of resonant inductive link\relax }}{47}{table.caption.44}
-\contentsline {table}{\numberline {10}{\ignorespaces PMS testbench stimuli voltages and components\relax }}{51}{table.caption.48}
-\contentsline {table}{\numberline {11}{\ignorespaces PMS performance summary\relax }}{55}{table.caption.53}
-\contentsline {table}{\numberline {12}{\ignorespaces WPT performance summary\relax }}{61}{table.caption.59}
-\contentsline {table}{\numberline {13}{\ignorespaces WPT performance summary for all inductive link\relax }}{61}{table.caption.60}
+\contentsline {table}{\numberline {1}{\ignorespaces Target specifications\relax }}{13}{table.caption.8}
+\contentsline {table}{\numberline {2}{\ignorespaces Rectifier design parameters\relax }}{18}{table.caption.13}
+\contentsline {table}{\numberline {3}{\ignorespaces Rectifier performance summary\relax }}{23}{table.caption.19}
+\contentsline {table}{\numberline {4}{\ignorespaces LDO design parameters\relax }}{26}{table.caption.22}
+\contentsline {table}{\numberline {5}{\ignorespaces LDO performance summary\relax }}{35}{table.caption.31}
+\contentsline {table}{\numberline {6}{\ignorespaces BGR parameter and performance\relax }}{38}{table.caption.36}
+\contentsline {table}{\numberline {7}{\ignorespaces Characterisation of antenna\relax }}{42}{table.caption.39}
+\contentsline {table}{\numberline {8}{\ignorespaces Coupling parameters for varying coils distance\relax }}{43}{table.caption.41}
+\contentsline {table}{\numberline {9}{\ignorespaces Performance of resonant inductive link\relax }}{46}{table.caption.44}
+\contentsline {table}{\numberline {10}{\ignorespaces PMS testbench stimuli voltages and components\relax }}{50}{table.caption.48}
+\contentsline {table}{\numberline {11}{\ignorespaces PMS performance summary\relax }}{54}{table.caption.53}
+\contentsline {table}{\numberline {12}{\ignorespaces WPT performance summary\relax }}{60}{table.caption.59}
+\contentsline {table}{\numberline {13}{\ignorespaces WPT performance summary for all inductive link\relax }}{60}{table.caption.60}
