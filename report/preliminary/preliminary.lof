@@ -59,3 +59,10 @@
 \contentsline {figure}{\numberline {45}{\ignorespaces Vrec and Vreg voltages\relax }}{57}{figure.caption.56}
 \contentsline {figure}{\numberline {46}{\ignorespaces Ripple in Vrec and Vreg\relax }}{58}{figure.caption.57}
 \contentsline {figure}{\numberline {47}{\ignorespaces Current and power consumption\relax }}{59}{figure.caption.58}
+\contentsline {figure}{\numberline {48}{\ignorespaces Micrograph of WPT chip\relax }}{61}{figure.caption.61}
+\contentsline {figure}{\numberline {49}{\ignorespaces Antenna and test PCBs\relax }}{62}{figure.caption.62}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Primary antenna}}}{62}{subfigure.49.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Secondary antenna}}}{62}{subfigure.49.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test PCB board}}}{62}{subfigure.49.3}
+\contentsline {figure}{\numberline {50}{\ignorespaces Measured rectifier waveform for 10 mA load\relax }}{64}{figure.caption.63}
+\contentsline {figure}{\numberline {51}{\ignorespaces Measured rectifier output for various load\relax }}{65}{figure.caption.64}

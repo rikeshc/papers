@@ -1198,7 +1198,7 @@ $V_{bias2}$, $V_{bias3}$ \& $V_{bias4}$ & 1.1, 0.88 \& 0.68 \si{\volt} \\ \hline
 $C_{load}$ \& $R_{esr}$ & > 2.5 \si{\micro\farad} \& > 0.5 \si{\ohm} \\ \hline
 $I_{load} = I_{max}$ & 10 \si{\milli\ampere} \\ \hline
 $Vdd_{buff}$ \& $Vdd_{bias}$ & 2.5 \& 2.2 \si{\volt} \\ \hline
-$V_{b_buff}$ & 1.4 V \\ \hline
+$Vb_{buff}$ & 1.4 V \\ \hline
 \multirow{2}{*}{$V_{cntl}$} 
 			& 0 \si{\volt} for external biases \\ \cline{2-2}
 			& 2.5 \si{\volt} for internal biases  \\ 
@@ -1223,14 +1223,14 @@ Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, Vrec and regulated
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms_vout_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms_Vout.pdf} 
  \caption{Vrec and Vreg voltages of PMS} 
 \label{fig:pms_vout} 
 \end{figure}
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms_ripple_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms_ripple.pdf} 
  \caption{Ripple in Vrec and Vreg} 
 \label{fig:pms_ripple} 
 \end{figure}
@@ -1241,7 +1241,7 @@ Figure \ref{fig:pms_PI} shows transient waveform of current drawn and power cons
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms_PI_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms_PI.pdf} 
  \caption{Current and power consumption} 
 \label{fig:pms_PI} 
 \end{figure}
@@ -1371,10 +1371,57 @@ $\eta_{wpt}$		& -	\%					& - \%					& - \% \\
 % *********************************************************************** CHIP production and test  ***********************************************************************
 
 \section{Chip and PCB}
-After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure [CHIP MICRO PCITURE] .\\
+After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure \ref{fig:micrograph}.\\
 
-While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure [figure].\\
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/pcb/test_pcb.jpg} 
+ \caption{Micrograph of WPT chip} 
+\label{fig:micrograph} 
+\end{figure}
 
+
+While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure \ref{fig:pcb_all}.\\
+
+\begin{figure} [!htbp]
+  \begin{minipage}{\linewidth}
+  \centering 
+  \subfloat[Primary antenna]  {\includegraphics[width=.48\textwidth]{img/pcb/test_pri.jpg} \label{fig:pcb_pri}}
+  \hfill
+ \subfloat[Secondary antenna]  {\includegraphics[width=.48\textwidth]{img/pcb/test_sec.jpg}\label{fig:pcb_sec}}
+ \hfill
+ \end{minipage}\par\medskip
+ \centering
+ \subfloat[Test PCB board]  {\includegraphics[width=0.8\textwidth]{img/pcb/test_pcb.jpg}\label{fig:pcb_board}}
+ \caption{Antenna and test PCBs} 
+\label{fig:pcb_all} 
+\end{figure}
+
+\section{Measurement Setup}
+
+The laboratory setup done for measurement of data is shown in figure[figure]. The primary antenna is driven by $V_{ac}$ from arbitrary waveform function generator [name]. The differential ac signals  $V_{in1}$ and $V_{in2}$ generated from the secondary antenna, which are fed to the rectifier of PMS chip is measured with channel 1 and channel 2 of oscilloscope [name]. $V_{rec}$ and $V_{reg}$ are measured with channel 3 and channel 4 respectively. [name] is used as power supply to the regulator on PCB. This regulator is generates 2.5 V as $VDD$ and 1.18 V as $V_{ref}$. This $VDD$ is used as supply for pad/ESD, on chip buffers and on board bias generation circuit. [name] is used to measure current where required. 
+
+\section{Measurement Results}
+As in simulation, first the performance of rectifier and LDO are measured, then PMS and finally WPT system which are presented below. 
+
+\section{Rectifier}
+For measuring the performance of rectifier, balun on test PCB is used to generated $V_{in1}$ and $V_{in2}$.  $V_{ac}$ of 13.56 MHz frequency is supplied to the balun. Its magnitude is adjusted so that the magnitude at the input of rectifier, $V_{in}$ ($V_{in1} -V_{in2}$) is 2.75 V, maximum for 2.5 V transistor in 90 nm process. 2.75 V is chosen instead of 2.5 V in order to compensate for loss due to pad resistance when conducting peak diode current. The pad residence is measured to be 2 $\Omega$ and from simulation peak diode current is seen too exceed 64 mA. The bias and reference voltages for LDO are grounded in order to disable LDO for now. The voltage waveforms for 10 mA load is shown in figure [ref]. \\
+
+The average rectified output is same for simulated and measured result. However,  the measured performance does not match the simulated performance. It has two major differences with simulated result: $V_{reg}$ has larger ripple and $V_{in1}$ and $V_{in2}$ are different in shape. 
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/rect_10ma.pdf} 
+ \caption{Measured rectifier waveform for 10 mA load} 
+\label{fig:meas_rect_10ma} 
+\end{figure}
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/rect_load_sweep.pdf} 
+ \caption{Measured rectifier output for various load} 
+\label{fig:meas_rect_load_sweep} 
+\end{figure}
 
 
 \clearpage
