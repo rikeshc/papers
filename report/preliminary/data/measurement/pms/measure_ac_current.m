@@ -32,6 +32,18 @@ time = time * 10^9;     % in ns
 R_load = 200;    % complete DUT as resisitve load
 Iac_source = V_drop/R_load*1000; %mA
 
+
+%% clear data time;
+[time, data] =GetData(HP54622_DefaultAdr);
+pause(0.5);
+%%
+V_drop = data(:, 1) - data(:, 2);
+V_loaded = data(:, 1);
+V_unloaded = data(:, 2);
+pause(0.5);
+
+Iac_source = V_drop/2*1000; %mA
+
 %% Plot voltages 
 f1 = figure;
 plot(time, V_loaded ,'r', time, V_unloaded ,'b', time, V_drop ,'g'); 

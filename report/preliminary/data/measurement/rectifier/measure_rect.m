@@ -9,12 +9,21 @@ addpath(genpath('/hom/mes/src/matlab/gpib/linux'));
 Voffset1 = 0;
 Vamp1    = 2.9;           % Vpp
 Freq1    = 13.56*10^6;
-
 Vlimit   = 5;           % device range 2V-200V
 Ilimit   = 20*10^-3;    % device range 20pA-20mA
 mode     = 'V';
 pause(0.5);
 
+%%
+%% Power supply
+HPE3631Init(HPE3631_DefaultAdr);
+HPE3631_SetILimit(1, 0.05);
+HPE3631_SetILimit(2, 0.05);
+HPE3631_SetVolt(1, 0);
+HPE3631_SetVolt(2, 4);
+pause(1);
+
+HPE3631_Operate(5);
 %% Instruments address
 TTI1244_add = 6;        % Arbitary function generator
 HP54622_add = 24;       % Oscilloscope
@@ -77,30 +86,31 @@ clear all; pause(0.5);
 [time, data] =GetData(HP54622_DefaultAdr);
 
 pause(0.5);
-Vin1_vpp = HP54622_MeasVpp(1);
-F_Vin1   = HP54622_MeasFreq(1)/10^6;    %MHz
-Vin2_vpp = HP54622_MeasVpp(2);
-F_Vin2   = HP54622_MeasFreq(2)/10^6;    %MHz
+Vin1_vpp = HP54622_MeasVpp(2);
+F_Vin1   = HP54622_MeasFreq(2)/10^6;    %MHz
+Vin2_vpp = HP54622_MeasVpp(1);
+F_Vin2   = HP54622_MeasFreq(1)/10^6;    %MHz
 Vrec_rip = HP54622_MeasVpp(3);
 Vrec_avg = MeasAvg(3);
 Vreg_rip = HP54622_MeasVpp(4);
 Vreg_avg = MeasAvg(4);
 
 pause(0.5);
-Vin1 = data(:, 1);
-Vin2 = data(:, 2);
+Vac = 4.35;
+Vin1 = data(:, 2);
+Vin2 = data(:, 1);
 Vrec = data(:, 3);
-Vreg = data(:, 4);
-Vin  = data(:, 1)-data(:, 2);
+Vin  = Vin1 - Vin2;
+Vin_ac = peak2peak(Vin)/2;     %Rectifier input amplitude
 time = time * 10^9;     % in ns
 %%
 clear data; 
-save('load_5mA');
+save('load_11mA');
 
 %% plot
 
 f1 = figure;
-plot(time, Vin1 ,'r', time, Vin2 ,'b', time, Vrec ,'g', time, Vreg ,'m'); 
+plot(time, Vin1 ,'r', time, Vin2 ,'b', time, Vrec ,'g'); 
 hold on;
 plot(time, Vin); hold off;
 
@@ -108,13 +118,12 @@ xlabel('Time, s');
 ylabel('Voltage, V');
 grid on;
 
-ch1 = sprintf('Vin1: V_{pp} = %.3f V, F = %2.2f MHz', Vin1_vpp, F_Vin1);
-ch2 = sprintf('Vin2: V_{pp} = %.3f V, F = %2.2f MHz', Vin2_vpp, F_Vin2);
+ch1 = sprintf('Vin1: V_{pp} = %.3f V', Vin1_vpp);
+ch2 = sprintf('Vin2: V_{pp} = %.3f V', Vin2_vpp);
 ch3 = sprintf('Vrec: V_{pp} = %.3f V, V_{avg} = %.3f V', Vrec_rip, Vrec_avg);
-ch4 = sprintf('Vreg: V_{pp} = %.3f V, V_{avg} = %.3f V', Vreg_rip,Vreg_avg);
-vin_leg = sprintf('V_{in} = %.3f V', peak2peak(Vin)/2);
+vin_leg = sprintf('V_{in} = %.3f V', Vin_ac);
 
-legend(ch1, ch2, ch3, ch4, vin_leg, 'location', 'best');
+legend(ch1, ch2, ch3, vin_leg, 'location', 'best');
 title('Inputs voltages', 'FontSize', 10);
 %%
 f2 = figure(2);

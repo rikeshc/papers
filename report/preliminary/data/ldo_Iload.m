@@ -1,6 +1,7 @@
 %% Load 
 clear all;
 load('ldo_Iload_sch.mat');
+load('/uio/hume/student-u18/rikeshc/Rikesh/mast/papers/report/preliminary/data/ldo_Iload_pex.mat')
 % data includes 
 
 %%
