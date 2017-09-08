@@ -4,9 +4,9 @@ clear all;
 load('load_10mA');
 %load('/uio/hume/student-u18/rikeshc/Rikesh/mast/papers/report/preliminary/data/rectifier_V_pex.mat');
 load('/uio/hume/student-u18/rikeshc/Rikesh/mast/papers/report/preliminary/data/pms_2/Vs_pex.mat');
-time = time+100;%*10^9;
+time = time;%*10^9;
 % time_pex = (t_pex-t_pex(1))*10^9 - 54;
-time_pex = (t_pex-t_pex(1))*10^9 - 83;
+time_pex = (t_pex-t_pex(1))*10^9 - 75;
 
 f1 = figure(1);
 h1 = plot(time, Vin1 ,'r', time, Vin2 ,'b', time, Vrec ,'g'); 
@@ -19,7 +19,7 @@ plot(time_pex,(Vin1_pex-Vin2_pex), 'm--');
 %plot(Na, NaN,'b', time, NaN, 'b--');
 hold off;
 
-xlim([24, 106]);
+xlim([25, 118]);
 
 xlabel('Time, ns');
 ylabel('Voltage, V');
@@ -49,7 +49,8 @@ ma8 = load('load_8mA');
 ma9 = load('load_9mA');
 ma10 = load('load_10mA');
 ma11 = load('load_11mA');
-time = ma1.time + 100;
+ma12 = load('load_12mA');
+time = ma1.time;
 
 f2 = figure(2);
 plot(time, ma1.Vrec); hold on;
@@ -63,10 +64,12 @@ plot(time, ma8.Vrec);
 plot(time, ma9.Vrec);
 plot(time, ma10.Vrec);
 plot(time, ma11.Vrec); hold off;
+%plot(time, ma12.Vrec); hold off;
+
 
 ylim([0, 2.7]);
 xlabel('Time, ns');
-ylabel('Voltage, V');
+ylabel('Vrec, V');
 grid on;
 title('Rectifier: Measured Vrec for various load', 'FontSize', 10);
 
@@ -81,6 +84,7 @@ vrec8 = sprintf('8 mA load: V_{rec} = %.3f V, Ripple = %.3f V', ma8.Vrec_avg, ma
 vrec9 = sprintf('9 mA load: V_{rec} = %.3f V, Ripple = %.3f V', ma9.Vrec_avg, ma9.Vrec_rip);
 vrec10 = sprintf('10 mA load: V_{rec} = %.3f V, Ripple = %.3f V', ma10.Vrec_avg, ma10.Vrec_rip);
 vrec11 = sprintf('11 mA load: V_{rec} = %.3f V, Ripple = %.3f V', ma11.Vrec_avg, ma11.Vrec_rip);
+vrec12 = sprintf('12 mA load: V_{rec} = %.3f V, Ripple = %.3f V', ma12.Vrec_avg, ma12.Vrec_rip);
 
 legend(vrec1, vrec2, vrec3, vrec4, vrec5,vrec6, vrec7, vrec8,vrec9, vrec10,vrec11, 'location', 'best');
 
