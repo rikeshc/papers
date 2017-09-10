@@ -106,17 +106,17 @@ set(f1,'Units','Inches');
 pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f1, 'pms_Vout.pdf', '-dpdf');
-movefile('pms_Vout.pdf','../../img/pms/pms_Vout.pdf');
+movefile('pms_Vout.pdf','../../img/pms/pms_Vout_both.pdf');
 
 %%
 set(f2,'Units','Inches');
 pos = get(f2,'Position');
 set(f2,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f2, 'pms_ripple.pdf', '-dpdf');
-movefile('pms_ripple.pdf','../../img/pms/pms_ripple.pdf');
+movefile('pms_ripple.pdf','../../img/pms/pms_ripple_both.pdf');
 %%
 set(f3,'Units','Inches');
 pos = get(f3,'Position');
 set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f3, 'pms_Vs.pdf', '-dpdf');
-movefile('pms_Vs.pdf','../../img/pms/pms_Vs.pdf');
+movefile('pms_Vs.pdf','../../img/pms/pms_Vs_both.pdf');

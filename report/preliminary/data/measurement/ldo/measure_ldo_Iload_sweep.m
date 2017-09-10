@@ -24,14 +24,13 @@ pause(0.5);
 %%
 clear all;
 [time, data] =GetData(HP54622_DefaultAdr);
-
 pause(1);
 Vreg_vpp = HP54622_MeasVpp(1);          %ripple in Vreg
 F_Vreg   = HP54622_MeasFreq(1)/10^6;    %frequency of Vreg ripple
-Vreg_avg = MeasAvg(4);
+Vreg_avg = MeasAvg(1);
 pause(1);
-Vrec = data(:, 3);
-Vreg = data(:, 4);
+Vrec = data(:, 2);
+Vreg = data(:, 1);
 time = time * 10^3;     % in ms
 
 %%
@@ -43,10 +42,16 @@ f1 = figure;
 plot(time, Vreg); 
 hold on;
 
-
 xlabel('Time, ms');
 ylabel('Voltage, V');
 grid on;
 leg1 = sprintf('V_{reg} = %.3f V,  Del V = %.3f, F = %2.2f MHz',Vreg_avg, Vreg_vpp, F_Vreg);
 legend(leg1,  'location', 'best');
 title('LDO:V_{reg}', 'FontSize', 10);
+
+%% save plot
+set(f1,'Units','Inches');
+pos = get(f1,'Position');
+set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
+print(f1, 'load_xxmA.pdf', '-dpdf');
+%movefile('rect_load_sweep.pdf','../../../img/meas/rect_load_sweep.pdf');

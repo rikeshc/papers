@@ -1,32 +1,36 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
-[0] Config.pm:327> INFO - Logfile is 'preliminary.blg'
-[57] biber-darwin:276> INFO - === Thu Sep  7, 2017, 20:45:43
-[57] Biber.pm:333> INFO - Reading 'preliminary.bcf'
-[172] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[195] Biber.pm:2977> INFO - Processing section 0
-[216] Biber.pm:3115> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
-[220] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[224] bibtex.pm:895> INFO - Found BibTeX data source 'preliminary.bib'
-[260] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'author' in entry 'airfuel' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'month' in entry 'airfuel' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'title' in entry 'airfuel' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'year' in entry 'airfuel' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'author' in entry 'wpt_qi' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'month' in entry 'wpt_qi' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'title' in entry 'wpt_qi' cannot be null, deleting it
-[261] Utils.pm:146> WARN - The field 'year' in entry 'wpt_qi' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'pages' in entry 'review_energy_harvest' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'doi' in entry 'power_density' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'issn' in entry 'power_density' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'journaltitle' in entry 'power_density' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'month' in entry 'power_density' cannot be null, deleting it
-[262] Utils.pm:146> WARN - The field 'number' in entry 'power_density' cannot be null, deleting it
-[263] Utils.pm:146> WARN - The field 'volume' in entry 'power_density' cannot be null, deleting it
-[646] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[646] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[646] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[646] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[697] bbl.pm:505> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
-[702] bbl.pm:596> INFO - Output to preliminary.bbl
-[702] Biber.pm:106> INFO - WARNINGS: 16
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'preliminary.blg'
+[45] biber:303> INFO - === Sat Sep  9, 2017, 16:11:21
+[69] Biber.pm:359> INFO - Reading 'preliminary.bcf'
+[166] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[184] Biber.pm:3670> INFO - Processing section 0
+[203] Biber.pm:3840> INFO - Looking for bibtex format file 'preliminary.bib' for section 0
+[215] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[229] bibtex.pm:1292> INFO - Found BibTeX data source 'preliminary.bib'
+[237] Utils.pm:164> WARN - month field 'Jan' in entry 'ldo_quiescent' is not an integer - this will probably not sort properly.
+[269] Utils.pm:164> WARN - month field 'May' in entry 'wpt_witricity' is not an integer - this will probably not sort properly.
+[272] Utils.pm:164> WARN - month field 'Aug' in entry 'rectcomp' is not an integer - this will probably not sort properly.
+[274] Utils.pm:164> WARN - ISBN '0470881321, 9780470881323' in entry 'baker_2010' is invalid - run biber with '--validate_datamodel' for details.
+[280] Utils.pm:164> WARN - month field 'Jan' in entry 'mobile_performance' is not an integer - this will probably not sort properly.
+[283] Utils.pm:164> WARN - month field 'July' in entry 'wpt_mutliple_device_charging' is not an integer - this will probably not sort properly.
+[284] Utils.pm:164> WARN - month field 'May' in entry 'ant_SZ_formula' is not an integer - this will probably not sort properly.
+[287] Utils.pm:164> WARN - month field 'Nov' in entry 'ldo_bulkmod' is not an integer - this will probably not sort properly.
+[289] Utils.pm:164> WARN - month field 'Dec' in entry 'rectrcc' is not an integer - this will probably not sort properly.
+[291] Utils.pm:164> WARN - month field 'Secondquarter' in entry 'wpt_fund_std' is not an integer - this will probably not sort properly.
+[293] Utils.pm:164> WARN - month field 'Dec' in entry 'wpt_cpt' is not an integer - this will probably not sort properly.
+[294] Utils.pm:164> WARN - month field 'Sept' in entry 'ant_PSC_geometry' is not an integer - this will probably not sort properly.
+[295] Utils.pm:164> WARN - ISBN '0387717129, 9780387717128' in entry 'rabaey_2009' is invalid - run biber with '--validate_datamodel' for details.
+[298] Utils.pm:164> WARN - month field 'April' in entry 'ant_optimal_resonance' is not an integer - this will probably not sort properly.
+[300] Utils.pm:164> WARN - month field 'Oct' in entry 'ant_inductance_calculation' is not an integer - this will probably not sort properly.
+[301] Utils.pm:164> WARN - month field 'Aug' in entry 'ldo_ti_pmos' is not an integer - this will probably not sort properly.
+[303] Utils.pm:164> WARN - month field 'Nov' in entry 'merge_a4wp_pma' is not an integer - this will probably not sort properly.
+[306] Utils.pm:164> WARN - month field 'Aug' in entry 'rectboot' is not an integer - this will probably not sort properly.
+[311] Utils.pm:164> WARN - month field 'Nov' in entry 'iot_intro' is not an integer - this will probably not sort properly.
+[312] Utils.pm:164> WARN - ISBN '0072380322, 9780072380323' in entry 'razavi_2001' is invalid - run biber with '--validate_datamodel' for details.
+[343] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[343] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[343] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-UK'
+[343] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-UK'
+[365] bbl.pm:608> INFO - Writing 'preliminary.bbl' with encoding 'UTF-8'
+[371] bbl.pm:712> INFO - Output to preliminary.bbl
+[487] Biber.pm:109> INFO - WARNINGS: 20

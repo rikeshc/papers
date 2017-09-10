@@ -86,51 +86,50 @@ clear all; pause(0.5);
 [time, data] =GetData(HP54622_DefaultAdr);
 
 pause(0.5);
-Vin1_vpp = HP54622_MeasVpp(2);
-F_Vin1   = HP54622_MeasFreq(2)/10^6;    %MHz
-Vin2_vpp = HP54622_MeasVpp(1);
-F_Vin2   = HP54622_MeasFreq(1)/10^6;    %MHz
+Vin1_vpp = HP54622_MeasVpp(1);
+F_Vin1   = HP54622_MeasFreq(1)/10^6;    %MHz
+Vin2_vpp = HP54622_MeasVpp(2);
+F_Vin2   = HP54622_MeasFreq(2)/10^6;    %MHz
 Vrec_rip = HP54622_MeasVpp(3);
 Vrec_avg = MeasAvg(3);
-Vreg_rip = HP54622_MeasVpp(4);
-Vreg_avg = MeasAvg(4);
+%Vreg_rip = HP54622_MeasVpp(4);
+%Vreg_avg = MeasAvg(4);
 
 pause(0.5);
 %Vac = 3.06;
-Vin1 = data(:, 2);
-Vin2 = data(:, 1);
+Vin1 = data(:, 1);
+Vin2 = data(:, 2);
 Vrec = data(:, 3);
 Vin  = Vin1 - Vin2;
 Vin_ac = peak2peak(Vin)/2;     %Rectifier input amplitude
 time = time * 10^9 + 250;     % in ns
 %%
-Vac = 4.46;
+Vac = 3.82;
 clear data;
 save('load_xxmA');
 
-
 %% plot
-%Vac = 3.5
+Vac = 0;
+load('load_10mA.mat')
 f1 = figure;
 plot(time, Vin1 ,'r', time, Vin2 ,'b', time, Vrec ,'g'); 
 hold on;
 plot(time, Vin); hold off;
-
+xlim = ([0, 500]);
 xlabel('Time, ns');
 ylabel('Vrec, V');
 grid on;
-xlim = ([0, 500]);
 
 ch1 = sprintf('Vin1: V_{pp} = %.3f V', Vin1_vpp);
 ch2 = sprintf('Vin2: V_{pp} = %.3f V', Vin2_vpp);
 ch3 = sprintf('Vrec: V_{pp} = %.3f V, V_{avg} = %.3f V', Vrec_rip, Vrec_avg);
 vin_leg = sprintf('V_{in} = %.3f V, V_{ac} = %.2f V', Vin_ac, Vac);
-
 legend(ch1, ch2, ch3, vin_leg, 'location', 'best');
 title('Rectifer: Measured Vrec', 'FontSize', 10);
-%%
-f2 = figure(2);
-plot( time, Vrec ,'g', time, Vreg ,'m'); 
 
-%HP54622_MeasVpp(1);
-%HP54622_MeasFreq (1)
+%% save plot
+set(f1,'Units','Inches');
+pos = get(f1,'Position');
+set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
+print(f1, 'load_xxmA.pdf', '-dpdf');
+%movefile('rect_load_sweep.pdf','../../../img/meas/rect_load_sweep.pdf');

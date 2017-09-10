@@ -13,9 +13,9 @@ fromp = find(1000.000 == round(timep, 3), 1);
 top = find(1000.500 == round(timep, 2), 1);
 
 pwr_Rs = 50 * rms(Iac_sch)^2;
-pwr_sch = pwr_ac_sch + .018 - pwr_Rs;
+pwr_sch = pwr_ac_sch + .018; % - pwr_Rs;
 pwr_Rs_pex = 50 * rms(Iac_pex)^2;
-pwr_pex = pwr_ac_pex + .018 - pwr_Rs_pex;
+pwr_pex = pwr_ac_pex + .018; % - pwr_Rs_pex;
 
 subplot(2, 1, 1);
 p1 = plot(time(from:to), Iac_sch(from:to)*10^3, 'r'); hold on;
@@ -51,4 +51,4 @@ set(f1,'Units','Inches');
 pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f1, 'pms_PI.pdf', '-dpdf');
-movefile('pms_PI.pdf','../../img/pms/pms_PI.pdf');
+movefile('pms_PI.pdf','../../img/pms/pms_PI_both.pdf');
