@@ -9,8 +9,8 @@ load('Vout_pex.mat');
 plotwidth = 1;
 time = t_sch*10^6;
 timep = t_pex*10^6;
-start = find(1000.000 == round(time, 3), 1);
-startp = find(1000.000 == round(time, 3), 1);
+start = find(1200.000 == round(time, 3), 1);
+startp = find(1200.000 == round(time, 3), 1);
 
 avg_Vrec_sch = mean(Vrec_sch(start: end));
 avg_Vreg_sch = mean(Vreg_sch(start: end));
@@ -42,11 +42,11 @@ load('Vs_pex.mat')
 
 plotwidth = 1;
 time = t_sch*10^6;
-from = find(1000.000 == round(time, 3), 1);
-to = find(1000.150 == round(time, 3), 1);
+from = find(1200.000 == round(time, 3), 1);
+to = find(1200.150 == round(time, 3), 1);
 timep = t_pex*10^6;
-fromp = find(1000.000 == round(timep, 3), 1);
-top = find(1000.150 == round(timep, 3), 1);
+fromp = find(1200.000 == round(timep, 3), 1);
+top = find(1200.150 == round(timep, 3), 1);
 
 % Ripple in Vrec and Vreg
 rip_Vrec_sch = max(Vrec_sch(from:to))-min(Vrec_sch(from:to));
@@ -68,7 +68,7 @@ legend(leg1, leg1p, 'location', 'best');
 %xlabel('time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.15]);
+xlim([1200, 1200.15]);
 %ylim([2.35, 2.4]);
 title('Rectified voltage', 'FontSize', 10);
 
@@ -81,7 +81,7 @@ legend(leg2, leg2p,'location', 'best');
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.15]);
+xlim([1200, 1200.15]);
 %ylim([1.799, 1.801]);
 title('Regulated voltage', 'FontSize', 10);
 
@@ -96,7 +96,7 @@ hold off;
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.150]);
+xlim([1200, 1200.150]);
 title('Inputs voltages', 'FontSize', 10);
 legend('Vac', 'Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Post Vin', 'Post Vin1', 'Post Vin2');
 

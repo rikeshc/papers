@@ -7,7 +7,7 @@ load('Vout_sch.mat'); % transient from 0 to end time
 
 plotwidth = 1;
 time = t_sch*10^6;
-start = find(800.000 == round(time, 3), 1);
+start = find(1200.000 == round(time, 3), 1);
 %Vac_sch = Vin1_sch-Vin2_sch;
 avg_Vrec_sch = mean(Vrec_sch(start: end));
 avg_Vreg_sch = mean(Vreg_sch(start: end));
@@ -31,8 +31,8 @@ load('Vs_sch.mat')
 
 plotwidth = 1;
 time = t_sch*10^6;
-from = find(1000.000 == round(time, 3), 1);
-to = find(1000.150 == round(time, 3), 1);
+from = find(1200.000 == round(time, 3), 1);
+to = find(1200.150 == round(time, 3), 1);
 
 % Ripple in Vrec and Vreg
 rip_Vrec_sch = max(Vrec_sch(from:to))-min(Vrec_sch(from:to));
@@ -50,8 +50,8 @@ legend(leg1, 'location', 'best');
 %xlabel('time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.15]);
-ylim([2.35, 2.4]);
+xlim([1200, 1200.15]);
+ylim([2.3, 2.35]);
 title('Rectified voltage', 'FontSize', 10);
 
 subplot(2, 1, 2);
@@ -61,23 +61,23 @@ legend(leg2, 'location', 'best');
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.15]);
-ylim([1.799, 1.801]);
+xlim([1200, 1200.15]);
+ylim([1.775, 1.785]);
 title('Regulated voltage', 'FontSize', 10);
 
 %% Vs all
 f3 = figure(3);
 
-plot(time(from:to), Vac_sch(from:to),  time(from:to), Vpri_sch(from:to)); hold on;
+plot(time(from:to), Vin_sch(from:to),  time(from:to), Vpri_sch(from:to)); hold on;
 plot(time(from:to), Vin1_sch(from:to), time(from:to), Vin2_sch(from:to));
 %plot(time(from:to), Vrec_sch(from:to), time(from:to), Vreg_sch(from:to));
 hold off;
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([1000, 1000.150]);
+xlim([1200, 1200.150]);
 title('Inputs voltages', 'FontSize', 10);
-legend('Vac', 'Vin', 'Vin1', 'Vin2');
+legend('Vin', 'Vac', 'Vin1', 'Vin2');
 
 %% saving plot to a location
 

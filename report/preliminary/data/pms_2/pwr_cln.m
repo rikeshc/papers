@@ -19,3 +19,4 @@ I_pex_rms = rms(Iac_pex);
 I_sch_rms = rms(Iac_sch);
 power_sch = I_sch_rms*Vac/sqrt(2)*1000; %mW
 power_pex = I_pex_rms*Vac/sqrt(2)*1000; %mW
+
