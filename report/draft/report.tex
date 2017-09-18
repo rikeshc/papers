@@ -43,6 +43,7 @@
 
 \makenoidxglossaries
 
+
 \newacronym{ldo}{LDO}{linear dropout}
 \newacronym{pcb}{PCB}{printed circuit board}
 \newacronym{mos}{MOS}{metal-oxide-semiconductor}
@@ -135,6 +136,7 @@ Rikesh Chauhan
 
 \cleardoublepage
 \phantomsection
+\setcounter{tocdepth}{1}
 \addcontentsline{toc}{chapter}{Contents}
 \tableofcontents{}
 
@@ -159,7 +161,7 @@ Rikesh Chauhan
 
 \section{Motivation}
 
-We start with the technology development trend in micorelectronics. The progress of different aspects of 
+We start with the technology development trend in microelectronics. The progress of different aspects of 
 technology is discussed and compared with power/battery development. We end the chapter concluding the need for
 going cordless for suppling power for microelectronics.
 % The ongoing modern technological advancements have led us into dramatic and drastic electronic device development 
@@ -173,6 +175,7 @@ going cordless for suppling power for microelectronics.
 \subsection{Technology Trend}
 
 \subsubsection{Size and Weight : Lighter and Tighter}
+
 
 Reduction in size and weight has been most dramatic that in course of some decades miniaturisation trend went 
 from a room-sized fixed electronic into a wearable device. Most important milestone contributing for lighter and 
@@ -265,8 +268,8 @@ along with prospective future work.
 
 \section{Energy Harvesting}
 
-In this chapter, we discuss the options to elimanate or minimise the bottlenecks of battery used in portable and 
-wearbale devices. We start with energy harvesting techniques and then wireless power transfer techniques. \\
+In this chapter, we discuss the options to eliminate or minimise the bottlenecks of battery used in portable and 
+wearable devices. We start with energy harvesting techniques and then wireless power transfer techniques. \\
 
 There has been success in harvesting low power from ambient sources and a lot of effort and resources is being used for 
 harvesting high power. As discussed earlier the technological advancement has given us low power electronics. 
@@ -327,7 +330,7 @@ Figure \ref{fig:power_density} shows power density of different energy sources a
 devices. It is seem  that the above discussed energy sources have a low power density which means very low power 
 and some low power micro-electronic devices only have the privilege of integrating energy harvesting techniques 
 so far. For most of the devices, the harvested power is not high enough to drive them yet. This means perpetual 
-high density energy source is yet not realisiable for most of the devices. But what about wireless transfer of 
+high density energy source is yet not realisable for most of the devices. But what about wireless transfer of 
 alreadry available power? We will discuss it ahead. 
 %we observe the trend of technology development in reducing power consumption of micro devices and at the same 
 %time, the progress in R\&D with promising results in power harvesting, we can definitely expect that harvested 
@@ -345,7 +348,7 @@ microelectronic devices and energy harvesting techniques from natural sources ha
 density, wireless power transfer is by far best option to minimise challenges in battery powered devices. \\
 
 Wireless power transfer is technique of cordlessly transferring electric energy across a air gap either to drive 
-a load or to charge a battery. It eliminates the need of phycical power cables to recharge battery. and in the 
+a load or to charge a battery. It eliminates the need of physical power cables to recharge battery. and in the 
 best case completely remove the battery. Wireless power transfer methods implemented today can be broadly 
 classified into radiative and non-radiative power transfer on the basis of transfer distance which can be further 
 sub-classified on the basis of power transfer principle \cite{wpt_fund_std} as discussed below.\\
@@ -757,7 +760,7 @@ good insight into different design parameters of LDO.  \\
 
 \section{Design}		%****************************
 
-Figure \ref{ldo_cmos} shows the CMOS implementation of LDO in this project. The components in this design 
+Figure \ref{fig:ldo_cmos} shows the CMOS implementation of LDO in this project. The components in this design 
 include a folded cascode differential amplifier as error amplifier, pMOS buffer, pMOS pass device and feedback 
 network of resistors. \\
 
@@ -766,7 +769,7 @@ network of resistors. \\
    %\includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
   \includegraphics[width=\textwidth]{img/ldo_schematic.pdf} 
    \caption{CMOS implemenation of LDO}
-   \label{ldo_cmos}
+   \label{fig:ldo_cmos}
 \end{figure}
 
 As briefly mentioned above, the error amplifier amplifies the error i.e. difference in scaled regulated voltage, 
@@ -934,7 +937,7 @@ off frequency of PSSR, which can also been seen by comparing plots  \ref{fig:ldo
    \label{fig:ldo_pssr}
 \end{figure}
 
-Table \ref{ldo_spec} summaries the performance of LDO regulator discussed above. Power efficiency is calculated as power delivered to load to power consumed 
+Table \ref{tab:ldo_spec} summaries the performance of LDO regulator discussed above. Power efficiency is calculated as power delivered to load to power consumed 
 from the source. Quiescent current includes biasing currents for error amplifier, feedback resistors and buffer which is obtained by taking the difference of current 
 drawn from the source and current delivered to the load. Both power efficiency and quiescent current is calculated for maximum load operation. 
 
@@ -955,7 +958,7 @@ Line regulation 		&  435 uV/V 		& -1.162 mV/V	\\
 \hline \hline
 \end{tabular}
 \end{center}
-\label{ldo_spec}
+\label{tab:ldo_spec}
 \end{table}%
 
 %Reference and biasing circuit design follows next. \\
@@ -971,7 +974,7 @@ Line regulation 		&  435 uV/V 		& -1.162 mV/V	\\
 
 \chapter{Antenna Design}  
 
-\section{Introduction}		%****************************
+\section{Introduction}		%****************************************************
 
 All the components discussed above are part of any power management system which takes DC input from power line 
 and creates regulated output as required. However, the objective here is to replace direct power line connection with 
@@ -1029,7 +1032,7 @@ dimensions are provided by Nordic Semiconductor. Since having
 similar shape and size of antennas is important in gaining more transfer efficiency, the same antenna type is used as both 
 primary and secondary coils. \\
 
-\section{Inductor model}		%****************************
+\section{Inductor model}		%****************************************************
 
 Figure \ref{fig:ant_non_ideal} is a lumped model of a planar antenna/coil/inductor made on a PCB. $Rp$, series DC resistance of wire and $Cp$, 
 inter-winding self capacitance. These parasitics determine quality factor, $Q$ and self resonance frequency, $\acrshort{srf}$ of 
@@ -1089,7 +1092,7 @@ Parasitic Capacitancce, $C_{p}$ & 3.2 \si{\pico\farad}	&	-		\\
 \label{tab:ant_inductance_compare}
 \end{table}%
 
-\section{Inductive transfer link}		%****************************
+\section{Inductive transfer link}		%****************************************************
 
 In the next step, an inductive link is realised by using two antennas: one as primary and other as secondary, aligned one over 
 other and separated by air gap as shown in figure  \ref{fig:ant_couple_model}, equivalently shown as lumped schematic in 
@@ -1140,7 +1143,7 @@ higher efficiency. This eventually proposes optimal resonant load transformation
 and load variation. Likewise, the later one describes step by step iterative process of designing an antenna with optimal geometry for the given 
 design constraints. \\
 
-\section{Magnetic resonance coupling}  	%****************************
+\section{Magnetic resonance coupling}  	%****************************************************
 
 In this project, conventional magnetic resonance coupling as in is implemented to tune both primary and secondary 
 at same frequency. The purpose here is to tune the secondary antenna of 
@@ -1199,13 +1202,15 @@ The above discussion is also done for other two separation, 1.5 mm and 10 mm, of
 \begin{tabular}{c|c|c|c|c}
 \hline \hline
  								& \textbf{Sepr: 1.5 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr: 10 mm}	& \textbf{Unit}		\\ \hline \hline
-$C_{P1}$, $C_{P2}$ \& $C_{S1}$ 	& 660, 80 \& 288		& 126, 190 \& 288		& 51, 227 \& 288		& \si{\pico\farad}	\\ \hline
-$\omega$						& 13.56					& 13.56					& 13.56					& \si{\mega\hertz}	\\ \hline
-$S11$							& -55					& -61					& -29					& \si{\decibel}		\\ \hline
-$S22$							& -30					& -24					& -9					& \si{\decibel} 	\\ \hline
+$C_{P1}$, 						& 660				& 126				& 51					& \si{\pico\farad}	\\ \hline
+$C_{P2}$ 					 		& 80					& 190				& 227				& \si{\pico\farad}	\\ \hline
+$C_{S1}$ 							& 288				&  288				& 288				& \si{\pico\farad}	\\ \hline
+$\omega$							& 13.56				& 13.56				& 13.56				& \si{\mega\hertz}	\\ \hline
+$S11$							& -55				& -61				& -29			  	& \si{\decibel}		\\ \hline
+$S22$							& -30				& -24				& -9					& \si{\decibel} 		\\ \hline
 $S21$							& -0.28 (0.97)			& -0.61 (0.93)			& -2.50 (0.75)			& \si{\decibel} (mag.)	\\ \hline
-$Q_{L_{1}}$ \& $Q_{L_{2}}$		&						& 						& 						&					\\ \hline
-$\eta_{link}$					& 94					& 86					& 56					& \% \\		
+$Q_{L_{1}}$, $Q_{L_{2}}$			&					& 					& 					&		\\ \hline
+$\eta_{link}$						& 94					& 86					& 56					& \% \\		
 \hline \hline
 \end{tabular}
 \end{center}
@@ -1217,11 +1222,9 @@ $\eta_{link}$					& 94					& 86					& 56					& \% \\
 
 % *********************************************************************** WPT PRU SYSTEM  ***********************************************************************************
 
-\part{WPT System Design and Implementation}      
-
-\chapter{Power Receiving Unit Design} 
-
-\section{Introduction}		%****************************
+\part{WPT System Design and Implementation} 
+\chapter{Power Management System}  
+\section{Introduction}	%****************************************************
 
 Wireless power transfer, \acrshort{wpt} system always constitutes two main units: power transmitting unit, 
 \acrshort{ptu} and power receiving unit, \acrshort{pru}. Each unit comprises of resonator, power conditioner 
@@ -1232,7 +1235,7 @@ Similarly both these units have control block which facilitates transfer procedu
 these units.  In this work, design and analysis of PRU is the main objective.  \\
 %Since PRU cannot be realised without a transfer link, primary antenna creates a very simply PTU here.  \\
 
-\begin{figure} 
+\begin{figure} [H]
   \centering
   \includegraphics[width=0.9\textwidth]{img/wpt_ptu_pru.pdf} 
  \caption{WPT block diagram} 
@@ -1252,11 +1255,12 @@ been integrated into the PMS system, it has been designed with an option to over
 supplied reference and biasing will be primarily used for the PRU system simulation. The result with on-system biases 
 and reference will be explicitly noted when used. \\
 
-\section{Power Management System}
+
+\section{Power Management System} %****************************************************
 
 Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving maximum load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are biases voltages to examine the performance of BGR circuit which is disabled now with external control signal Vctl low.  \\
 
-\begin{figure} [!htbp]
+\begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/wpt_top.pdf} 
  \caption{WPT PMS implementation} 
@@ -1272,26 +1276,130 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 \label{fig:wpt_top_testbench} 
 \end{figure}
 
-\subsection{Transient Response}
+In the test-bench above, stimuli voltages like input and biases and components like capacitors and resistors are used. 
+The values for these stimuli and components are listed in table \ref{tab:pms_stimuli}. $V_{ac} $ is increased to 2.6 V in
+order to compensate voltage drop of pad resistance.
+
+\begin{table}[!htbp]
+\caption{PMS testbench stimuli voltages and components} 
+\begin{center}
+\begin{tabular}{c|c}
+\hline \hline
+$V_{ac} $			& 2.6 \si{\volt}\textsubscript{p} \\ \hline
+Operating frequency	& 13.56 \si{\mega\hertz}	\\ \hline
+$C_{rip}$ 		  	& > 100 \si{\nano\farad}	\\ \hline
+$V_{bias2}$, $V_{bias3}$ \& $V_{bias4}$ & 1.1, 0.88 \& 0.68 \si{\volt} \\ \hline
+$C_{load}$ \& $R_{esr}$ & > 2.5 \si{\micro\farad} \& > 0.5 \si{\ohm} \\ \hline
+$I_{load} = I_{max}$ & 10 \si{\milli\ampere} \\ \hline
+$Vdd_{buff}$ \& $Vdd_{bias}$ & 2.5 \& 2.2 \si{\volt} \\ \hline
+$Vb_{buff}$ & 1.4 V \\ \hline
+\multirow{2}{*}{$V_{cntl}$} 
+			& 0 \si{\volt} for external biases \\ \cline{2-2}
+			& 2.5 \si{\volt} for internal biases  \\ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:pms_stimuli}
+\end{table}%
+
+
+\subsection{Simulation result} %****************************************************
+
+Figure \ref{fig:pms_vin} and \ref{fig:pms_vout} shows input and output waveforms of PMS block. On comparing Vrec with 
+that of rectifier only section, two distinct difference can be observed: additional drop in Vrec and additional time to 
+get maximum Vrec. As already mentioned that final parasitic extraction from layout not just include the core but also 
+the tracks from pad to the core inputs, which obviously contributes more resistance in the conduction path and hence 
+more drop in Vrec. Similarly, passive and active rectification region is clearly seen here. $C_{load}$ being a large 
+capacitor, it is taking longer time to start the active rectification. [MORE HERE ABOUT IT]. 
+The regulated output, Vrec is similar to as discussed in LDO section. The only difference is longer start up time because 
+Vrec from rectifier is input to the LDO and minimum input to LDO is not reached unless active rectification starts. The 
+rectifier input Vin is clipped. It is because when the rectifying diode starts conducting, there is voltage drop across 
+the source resistance. \\
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/wpt_V_wo_bgr_both.pdf} 
- \caption{Transient Vrec and Vreg} 
-\label{fig:wpt_V_wo} 
+  \includegraphics[width=\textwidth]{img/pms/pms_Vs_both.pdf} 
+ \caption{Input voltage waveform of PMS} 
+\label{fig:pms_vin} 
+\end{figure}
+
+Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, Vrec and regulated, Vreg output voltages. Their 
+characteristcs are same as discussed in rectifier and LDO section. 
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/pms/pms_Vout_both.pdf} 
+ \caption{Vrec and Vreg voltages of PMS} 
+\label{fig:pms_vout} 
 \end{figure}
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/wpt_ripple_wo_bgr_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms_ripple_both.pdf} 
  \caption{Ripple in Vrec and Vreg} 
-\label{fig:wpt_ripple_wo} 
+\label{fig:pms_ripple} 
 \end{figure}
 
+Figure \ref{fig:pms_PI} shows transient waveform of diode currents corresponding to its input voltages. The results for both 
+pre and post layout simulation are similar. It is seen that diodes turn on slightly earlier and turn off slightly later. 
+The later has resulted in reverse leakage of current. It can be due to parasitic inductance and uneven resistance of 
+longer Vin1 and Vin2 paths from pad to rectifier inputs which has resulted in slight magnitude and phase difference of 
+Vin1 and Vin2. Similarly Irms is less in post layout because diode current is dependent on Vin1 and Vin2 and in post 
+layout Vin1 and Vin2 is always less than in schematic due to path resistance from pad to the diodes.\\
 
-\section{PRU Unit}
 
-Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. This inductive link is coupling model extracted from HFSS and both antennas tuned at the operating frequency, 13.56 MHz. The primary antenna is driven by signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, the inputs for the chip. Other biasing voltages and component values remain the same as in PMS simulation. \\
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/pms/pms_VIrect_both.pdf} 
+ \caption{Current and power consumption} 
+\label{fig:pms_PI} 
+\end{figure}
+
+The total power consumed from the source are 37 mW and 33 mW for pre and post layout simulation for delivering 17.8 mW to 
+the load. The input power to the rectifier is 28.7 mW and 27.2 mW respectively which is obtained after subtracting power 
+consumed by the source resistance. The increase in post layout efficiency is explained by two things: reduced Irms of 
+diodes as explained earlier and reduced Vrec. Since Vrec in the input to the LDO, less Vrec means pass device in LDO has 
+to drop less voltage increasing LDO efficiency. \\
+
+This results in power transfer efficiency, $\eta_{pms}$ of 62 and 65.5 respectively. In 
+theory these values should be equal to 
+
+\begin{equation} \label{eq:wpt_effi} 
+\eta_{pms} = \eta_{rect}*\eta_{ldo}
+\end{equation}
+
+Using $\eta_{rect}$ from table \ref{tab:rect_spec} and $\eta_{ldo}$ from table \ref{tab:ldo_spec}, the pre and post layout efficiencies are this and this respectively 
+which are close match with the obtained values here. \\
+
+The performance of PMS system is tabulated as in table \ref{tab:pms_spec}.
+\begin{table}[H]
+\caption{PMS performance summary} 
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline \hline
+			& \textbf{Schematic}	& \textbf{Post-layout} 	\\
+\hline \hline
+$V_{rec}$ 			& 2.32 \si{\volt}		& 2.26 V	\\ \hline
+$\Delta V_{rec}$	& 2.9 \si{\milli\volt}\textsubscript{pp} & 2.9 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$V_{reg}$			& 1.780	\si{\volt}		& 1.781 \si{\volt}			\\ \hline
+$\Delta V_{reg}$ 	& 0.0 \si{\milli\volt}\textsubscript{pp} & 0.4 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$\eta_{pms}$		& 	62.1 \%	& 65.5 \%		\\ 
+ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:pms_spec}
+\end{table}%
+
+\chapter{WPT System} 
+\section{Top Testbench} %****************************************************
+
+Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. The inductive link used here is coupling model extracted from HFSS for the case of 5 mm separation between the coils where both antennas are tuned at the operating frequency, 13.56 MHz using capacitors $Cp1$, $Cp2$ and $Cs1$ given in table \ref{tab:ant_couple_parameter}[CHECK TABLE]. The primary antenna is driven by voltage signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, which are inputs to the PMS chip. \\
+
+In this test-bench, a resistor, $R_{s}$ of  50 \si{\ohm} is used in series with signal source, $V_{ac}$ to realize a 
+source resistance. The magnitude of $V_{ac}$ is gradually increased till the differential signals $V_{in1}$ and $V_{in2}$ 
+in secondary antenna reach the nominal value of 2.6 \si{\volt} for maximum load. Other biasing voltages and component 
+values remain the same as in PMS simulation test bench given in table \ref{tab:pms_stimuli}. \\
 
 \begin{figure} [H]
   \centering
@@ -1302,13 +1410,254 @@ Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes P
 
 The parasitic extraction of the compete layout also includes the tracks from pad to core inputs. The pad-frame layout provided by the fab was used to accurately draw the tracks from pad to core I/O terminals. \\
 
+\section{Simulation result}	%****************************************************
+Figure \ref{fig:wpt_vin} is the plot presenting input voltages to the inductive link and chip: $V_{ac}$ is input to the 
+primary antenna, and $V_{in1}$ and $V_{in2}$ are differential voltages generated across the secondary antenna, which are 
+inputs to the chip. In order to obtained the nominal amplitude of 2.6 V of the differential signals, 
+the magnitude of $V_{ac}$ is required to rise to 5.6 \si{\volt}. It is seen that $V_{ac}$ slightly lags in phase with $V_{in}$ due to shift 
+in resonance frequency. This can be due to mismatch in load at secondary because rectifier being non-linear load, it was 
+modelled as an approximate dc load during tuning of inductive link. [ANYTHING MORE]\\
 
-\chapter{Chip Production, Test and Verification}
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt/wpt_inputs_both.pdf} 
+ \caption{Input voltage waveforms} 
+\label{fig:wpt_vin} 
+\end{figure}
+
+In figure \ref{fig:wpt_vout}, rectified voltage, $V_{rec}$ and regulated voltage, $V_{reg}$ waveform from the PMS chip is 
+shown where its inputs are the differential signals, $V_{in1}$ and $V_{in2}$, shown in figure \ref{fig:wpt_vin}. On 
+comparing these waveforms with that of PMS system, two distinct observations are made: reduced $V_{rec}$ and longer time 
+to reach steady state output. The reduction in $V_{rec}$ is due to shorter conduction of rectifying diodes because the 
+differential inputs are not perfectly sinusoidal.[OK?]. And longer time to steady state is due to weakly coupled inductive 
+and a large output capacitor [ANOTHER OK?].  
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt/wpt_Vout_both.pdf} 
+ \caption{Vrec and Vreg voltages} 
+\label{fig:wpt_vout} 
+\end{figure}
+
+Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_{reg}$ along with inherent ripple in them. 
+\\
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt/wpt_ripple_both.pdf} 
+ \caption{Ripple in Vrec and Vreg} 
+\label{fig:wpt_ripple} 
+\end{figure}
+
+Figure \ref{fig:wpt_PI} shows instantaneous diode current waveform with their corresponding input voltages. On comparison 
+with PMS performance, two distinct difference is seen: diode current rising quickly to peak value and higher peak diode 
+current. This is because Vin(Vin1 - Vin2) changes quickly during turning on time of diodes. That is why the peak of Vin 
+is more like a square wave. 
+%from the driver during stable operation. These are 
+%complete sine waves as the primary is driven by sinusoidal voltage source. The peaks of power waveform have additional 
+%smaller peak on the falling side which corresponding to extra power consudmed due to reverse leakage across rectifying 
+%diodes of the rectifier. \\
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt/wpt_VIrect_both.pdf} 
+ \caption{Current and power consumption} 
+\label{fig:wpt_PI} 
+\end{figure}
+From the simulation, total power from the source is 102.3 mW and 95.5 mW out of which 31.2 mW and 30 mW was supplied to the primary 
+antenna respectively for pre and post layout, for delivering 17.81 mW to the load. This results in power transfer 
+efficiency, $\eta_{wpt}$, of 57.1\% and 59.4 \% respectivley. This $\eta_{wpt}$ of complete WPT system should be equal to 
+
+\begin{equation} \label{eq:wpt_effi} 
+\eta_{wpt} = \eta_{link}*\eta_{rect}*\eta_{ldo}
+\end{equation}
+Using table \ref{tab:ant_spec}, \ref{tab:rect_spec} and \ref{tab:ldo_spec}, efficiency obtained from equation \ref{eq:wpt_effi} 
+and the one calculated here are very close.\\
+
+Finally, the performance of the above discussed WPT system for maximum load and coil separation of 5 mm is tabulated in 
+table \ref{tab:wpt_spec}. 
+
+
+\begin{table}[H]
+\caption{WPT performance summary} 
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline \hline
+					& \textbf{Schematic}	& \textbf{Post-layout} 	\\
+\hline \hline
+$V_{ac}$			& 5.5 \si{\volt}		& 5.5 \si{\volt} \\ \hline
+$V_{rec}$ 			& 2.22 \si{\volt}		& 2.17 V	\\ \hline
+$\Delta V_{rec}$	& 2.2 \si{\milli\volt}\textsubscript{pp} & 2.2 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$V_{reg}$			& 1.780	\si{\volt}		& 1.781 \si{\volt}			\\ \hline
+$\Delta V_{reg}$ 	& 0.1 \si{\milli\volt}\textsubscript{pp} & 0.5 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$\eta_{wpt}$		& 57.1 \%				& 59.4 \%		\\ 
+ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:wpt_spec}
+\end{table}%
+
+The above analysis and characterisation of WPT system is for inductive link with coil separation of 5 mm for driving maximum load. The same analysis is repeated for other two cases: a stronger inductive link created from 1.5 mm coil separation and a weaker inductive link created from 10 mm coil separation. The post layout performance of WPT system for these different inductive links is listed below in table \ref{tab:wpt_spec_all}.
+
+\begin{table}[H]
+\caption{WPT performance summary for all inductive link} 
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\hline \hline
+					& \textbf{Sepr: 1.5 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr:10 mm} \\ \hline \hline
+$ k $				& -						& -						& -		\\ \hline
+$V_{ac}$			& - \si{\volt}			& 5.5 \si{\volt} 		& -	\si{\volt}	\\ \hline
+$I_{peak}$			& - \si{\milli\ampere}	& 43.1 \si{\milli\ampere} 	& - \si{\milli\ampere} \\ \hline
+$\eta_{wpt}$		& -	\%					& 59.4 \%					& - \% \\ 
+ 
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:wpt_spec_all}
+\end{table}%
+
+
+% *********************************************************************** CHIP production and test  ***********************************************************************
+
+\part{WPT Chip Production, Test and Verification } 
+\chapter{Test and Verification }  %****************************************************
 
 \section{Chip and PCB}
-After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure [CHIP MICRO PCITURE] .\\
+After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix *. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure \ref{fig:micrograph}.\\
 
-While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure [figure].\\
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{img/pcb/test_pcb.JPG} 
+ \caption{Micrograph of WPT chip} 
+\label{fig:micrograph} 
+\end{figure}
+
+
+While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are shown in figure \ref{fig:pcb_all}.\\
+
+\begin{figure} [!htbp]
+  \begin{minipage}{\linewidth}
+  \centering 
+  \subfloat[Primary antenna]  {\includegraphics[width=.48\textwidth]{img/pcb/test_pri.JPG} \label{fig:pcb_pri}}
+  \hfill
+ \subfloat[Secondary antenna]  {\includegraphics[width=.48\textwidth]{img/pcb/test_sec.JPG}\label{fig:pcb_sec}}
+ \hfill
+ \end{minipage}\par\medskip
+ \centering
+ \subfloat[Test PCB board]  {\includegraphics[width=0.8\textwidth]{img/pcb/test_pcb.JPG}\label{fig:pcb_board}}
+ \caption{Antenna and test PCBs} 
+\label{fig:pcb_all} 
+\end{figure}
+
+\section{Measurement Setup} %****************************************************
+
+The laboratory setup done for measurement of data is shown in figure[figure]. The primary antenna is driven by $V_{ac}$ 
+from arbitrary waveform generator, TGA 1244. The differential ac signals  $V_{in1}$ and $V_{in2}$ generated from the 
+secondary antenna, which are fed to the rectifier of PMS chip is measured with channel 1 and channel 2 of oscilloscope,
+Agilent 54624A. $V_{rec}$ and $V_{reg}$ are measured with channel 3 and channel 4 respectively. Agilent E3648A is used as 
+power supply to the regulator on PCB. This regulator is generates 2.5 V as $VDD$ and 1.18 V as $V_{ref}$. This $VDD$ is 
+used as supply for pad/ESD, on chip buffers and on board bias generation circuit. Keithley 6514 electrometer is used to 
+measure current where required. All these devices are connnected to a GPIB bus and controlled using Matlab script.
+
+\section{Measurement Result and Discussion} %****************************************************
+As in simulation, first the performance of rectifier and LDO are measured, then PMS and finally WPT system which are 
+presented below. 
+
+\subsection{Rectifier} %****************************************************
+For measuring the performance of rectifier on PMS chip, balun on test PCB is used to generated $V_{in1}$ and $V_{in2}$.  $V_{ac}$ of 
+13.56 MHz frequency is supplied to the balun. Its magnitude is adjusted to 4.3 V so that the magnitude at the input of rectifier, 
+$V_{in}$ ($V_{in1} -V_{in2}$) is 2.6 V as in simulation. The bias and reference voltages for LDO are grounded in order 
+to disable LDO for now. The potentiometer at $V_{rec}$ node is adjusted for drawing 10 mA current. \\
+
+Figure \ref{fig:meas_rect_10ma} shows measured input and output waveform for 10 mA load compared with corresponding 
+PMS simulation. The average rectified output $V_{rec}$ is a close to simulated value. The additional drop in measured $V_{rec}$
+ can be accounted to resistive drop along bonding wire and PCB trace. The differential input waveforms are similar in shape 
+ but during diode conduction the measured waveforms are distorted: $V_{in1}$ and $V_{in2}$ have additional peak and valley 
+ when rectifying diode are turned on and and off respectively. [CITE] has discussed about similar issue in rectifier 
+ performance and accounted this distortion for parasitic inductance of bonding wire and PCB trace in addition with probe and 
+ pad capacitance while operating at higher frequency. In order to verify this clarification, the top level test bench is re-simulated with approximate parasitic 
+ inductance and capacitance and the distortion in $V_{in1}$ and $V_{in2}$ is noticed as in the result above. This distortion 
+ has affected the comparator performance resulting in faster turning on diodes and later turning off diodes. The later turning 
+ off of diodes results in reverse leakage current causing decrease in efficiency. \\
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/rect_10ma.pdf} 
+ \caption{Measured rectifier waveform for 10 mA load} 
+\label{fig:meas_rect_10ma} 
+\end{figure}
+
+Figure \ref{fig:meas_rect_1ma} is performance of rectifier for 1 mA load where the distortion due to energy storing and 
+realising in the parastic incudtor and capacitors is less pronounced. The simulated and measured performance is a close match 
+in this case. \\
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/rect_1ma.pdf} 
+ \caption{Measured rectifier waveform for 1 mA load} 
+\label{fig:meas_rect_1ma} 
+\end{figure}
+
+The measured rectified output for various load is presented in figure \ref{fig:meas_rect_load_sweep}. The average rectified 
+DC value is as expected but the ripple is unexpectedly higher. The ripple rejection capacitor was replaced with 100 uF capacitor 
+hoping for reduced ripple but only few milli volt reduction was observed.
+The frequency of ripple was higher than 2 times the operating frequency which means the distortion in inputs is causing 
+multiple conduction in a half cycle: the peaks in ripple corresponds to additional conduction during turning on of diodes and 
+valleys in ripple corresponds to occurrence of reverse leakage.
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/rect_load_sweep.pdf} 
+ \caption{Measured rectifier output for various load} 
+\label{fig:meas_rect_load_sweep} 
+\end{figure}
+
+\subsection{LDO} %****************************************************
+
+For measuring the performance of LDO on PMS chip, no differential inputs to the rectifier was applied. The biasing and reference 
+voltages given in table \ref{tab:pms_stimuli} were generated on test PCB and applied to PMS chip. \\
+
+Figure \ref{fig:meas_ldo_vin_sweep} is the regulated voltage $V_{reg}$ of LDO when the input voltage $V_{rec}$ was swept. 
+The load current was set to 5 mA by adjusting potentiometer. It is seen that the pass device starts conducting at around 
+1.9 V input and the regulated output is 1.8 V for both simulated and measured results. However the significant difference 
+minimum drop across pass device. The measured minimum drop across pass device is 0.55 V compared to simulated 0.15 V which 
+means minimum input voltage required for LDO to work is measured to be 2.45 V which is much higher than the simulated 
+performance which is 1.95 V. This is be due to the produced pass device having much higher resistance than shown by 
+simulation. This problem could have been avoided by making the pass device much wider.
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/ldo_vin_sweep.pdf} 
+ \caption{LDO input sweep for 5 mA load} 
+\label{fig:meas_ldo_vin_sweep} 
+\end{figure}
+
+Figure \ref{fig:meas_ldo_iload_sweep} is the performance of LDO when the load was swept from 0 mA to 11 mA by adjusting 
+potentiometer. 2.45 V was applied as input because it is the minimum input required for the LDO to work as given in 
+figure \ref{fig:meas_ldo_vin_sweep}. The regulated output $V_{reg}$ and current drawn from the source were measured in 
+order to note quiescent current. \\
+
+The variation in $V_{reg}$ is not greater than 5 \% of nominal value of 1.8 V i.e. within the desired margin. However, the quiescent current is much 
+higher than simulated result. It is seen that measured quiescent current 4 mA in average for all load current which was 
+only 115 uA in simulation. This is serious design issue resulting in very poor efficiency of LDO. In order the trace this
+problem in the design, the top level test-bench was re-simulated to test LDO performance. But this was not observed in the 
+simulation. In the produced chip the problem might be in the biasing of buffer of LDO in figure \ref{fig:ldo_cmos}. 
+Transistor M13 is a current source to buffer transistor M14. M13 was made wide in order to supply enough current to 
+drive a very large pass device. [MORE ON IT].
+
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/ldo_iload_sweep.pdf} 
+ \caption{LDO load sweep} 
+\label{fig:meas_ldo_iload_sweep} 
+\end{figure}
+
+\subsection{PMS Chip} %****************************************************
+
+As the PMS produced here consists of rectifier followed by LDO, the LDO should be able to operate with the given performance of rectifier. On verifying the LDO above, two limitations were observed. First, minimum input voltage required to operate LDO is much higher than rectified output $V_{rec}$. Second, quiescent current of LDO is way higher that the efficiency is low. One optimistic scenario is to use the rectifier performance of 4 mA load which tightly meet the requirement of minimum input voltage 
+of LDO. Yet, because of higher quiescent current, no useful power can be delivered to the load. Hence for the discussion ahead, rectifier is only considered as PMS.
+
 
 
 % ***********************************************************************  CONCLUSION ***********************************************************************************
@@ -1412,6 +1761,7 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 
 
 % ********* WPT appendix *********
+
 \chapter{WPT Chip}
 
 \begin{figure} [!htbp]	% schematic WPT top

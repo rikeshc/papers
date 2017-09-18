@@ -57,23 +57,40 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces WPT block diagram\relax }}{50}{figure.caption.62}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces WPT PMS implementation\relax }}{51}{figure.caption.63}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Test bench for PMS simulation \relax }}{51}{figure.caption.64}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Transient Vrec and Vreg\relax }}{52}{figure.caption.65}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.66}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Test bench for complete PRU unit \relax }}{53}{figure.caption.67}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Input voltage waveform of PMS\relax }}{53}{figure.caption.66}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Vrec and Vreg voltages of PMS\relax }}{53}{figure.caption.67}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Ripple in Vrec and Vreg\relax }}{54}{figure.caption.68}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Current and power consumption\relax }}{55}{figure.caption.69}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Test bench for complete PRU unit \relax }}{58}{figure.caption.71}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Input voltage waveforms\relax }}{59}{figure.caption.72}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Vrec and Vreg voltages\relax }}{60}{figure.caption.73}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Ripple in Vrec and Vreg\relax }}{60}{figure.caption.74}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Current and power consumption\relax }}{61}{figure.caption.75}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Micrograph of WPT chip\relax }}{66}{figure.caption.78}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Antenna and test PCBs\relax }}{67}{figure.caption.79}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Primary antenna}}}{67}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Secondary antenna}}}{67}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test PCB board}}}{67}{subfigure.2.3}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Measured rectifier waveform for 10 mA load\relax }}{69}{figure.caption.80}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Measured rectifier waveform for 1 mA load\relax }}{69}{figure.caption.81}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Measured rectifier output for various load\relax }}{70}{figure.caption.82}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces LDO input sweep for 5 mA load\relax }}{71}{figure.caption.83}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces LDO load sweep\relax }}{72}{figure.caption.84}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{81}{figure.caption.86}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{81}{figure.caption.87}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{82}{figure.caption.88}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{65}{figure.caption.69}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{65}{figure.caption.70}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{66}{figure.caption.71}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{83}{figure.caption.89}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{84}{figure.caption.90}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{67}{figure.caption.72}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{68}{figure.caption.73}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{85}{figure.caption.91}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{86}{figure.caption.92}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{69}{figure.caption.74}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{70}{figure.caption.75}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{71}{figure.caption.76}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{71}{figure.caption.77}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{72}{figure.caption.78}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{73}{figure.caption.79}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{87}{figure.caption.93}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{87}{figure.caption.94}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{88}{figure.caption.95}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{89}{figure.caption.96}

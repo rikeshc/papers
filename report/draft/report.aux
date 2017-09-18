@@ -180,7 +180,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Generic LDO with pMOS pass device\relax }}{30}{figure.caption.40}}
 \newlabel{ldo_gen}{{4.1}{30}{Generic LDO with pMOS pass device\relax }{figure.caption.40}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces CMOS implemenation of LDO\relax }}{30}{figure.caption.41}}
-\newlabel{ldo_cmos}{{4.2}{30}{CMOS implemenation of LDO\relax }{figure.caption.41}{}}
+\newlabel{fig:ldo_cmos}{{4.2}{30}{CMOS implemenation of LDO\relax }{figure.caption.41}{}}
 \@gls@reference{acronym}{dc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
 \abx@aux@cite{ldo_ti_pmos}
 \abx@aux@cite{ldo_ti_stability}
@@ -214,7 +214,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces PSSR performance\relax }}{38}{figure.caption.50}}
 \newlabel{fig:ldo_pssr}{{4.10}{38}{PSSR performance\relax }{figure.caption.50}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces LDO performance summary\relax }}{38}{table.caption.51}}
-\newlabel{ldo_spec}{{4.2}{38}{LDO performance summary\relax }{table.caption.51}{}}
+\newlabel{tab:ldo_spec}{{4.2}{38}{LDO performance summary\relax }{table.caption.51}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Antenna Design}{39}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -273,84 +273,139 @@
 \@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Performance of resonant inductive link\relax }}{46}{table.caption.61}}
 \newlabel{tab:ant_spec}{{5.3}{46}{Performance of resonant inductive link\relax }{table.caption.61}{}}
 \@writefile{toc}{\contentsline {part}{III\hspace  {1em}WPT System Design and Implementation}{47}{part.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Power Receiving Unit Design}{49}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Power Management System}{49}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{49}{section.6.1}}
 \@gls@reference{acronym}{wpt}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
 \@gls@reference{acronym}{ptu}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
 \@gls@reference{acronym}{pru}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
-\@gls@reference{acronym}{pms}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{49}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces WPT block diagram\relax }}{50}{figure.caption.62}}
 \newlabel{fig:wpt_ptu_pru}{{6.1}{50}{WPT block diagram\relax }{figure.caption.62}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Power Management System}{50}{section.6.2}}
+\@gls@reference{acronym}{pms}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{50}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Power Management System}{51}{section.6.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces WPT PMS implementation\relax }}{51}{figure.caption.63}}
 \newlabel{fig:wpt_top}{{6.2}{51}{WPT PMS implementation\relax }{figure.caption.63}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Test bench for PMS simulation \relax }}{51}{figure.caption.64}}
 \newlabel{fig:wpt_top_testbench}{{6.3}{51}{Test bench for PMS simulation \relax }{figure.caption.64}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Transient Response}{52}{subsection.6.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Transient Vrec and Vreg\relax }}{52}{figure.caption.65}}
-\newlabel{fig:wpt_V_wo}{{6.4}{52}{Transient Vrec and Vreg\relax }{figure.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Ripple in Vrec and Vreg\relax }}{52}{figure.caption.66}}
-\newlabel{fig:wpt_ripple_wo}{{6.5}{52}{Ripple in Vrec and Vreg\relax }{figure.caption.66}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}PRU Unit}{53}{section.6.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Test bench for complete PRU unit \relax }}{53}{figure.caption.67}}
-\newlabel{fig:wpt_top_link}{{6.6}{53}{Test bench for complete PRU unit \relax }{figure.caption.67}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Chip Production, Test and Verification}{55}{chapter.7}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces PMS testbench stimuli voltages and components\relax }}{52}{table.caption.65}}
+\newlabel{tab:pms_stimuli}{{6.1}{52}{PMS testbench stimuli voltages and components\relax }{table.caption.65}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Simulation result}{52}{subsection.6.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Input voltage waveform of PMS\relax }}{53}{figure.caption.66}}
+\newlabel{fig:pms_vin}{{6.4}{53}{Input voltage waveform of PMS\relax }{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Vrec and Vreg voltages of PMS\relax }}{53}{figure.caption.67}}
+\newlabel{fig:pms_vout}{{6.5}{53}{Vrec and Vreg voltages of PMS\relax }{figure.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Ripple in Vrec and Vreg\relax }}{54}{figure.caption.68}}
+\newlabel{fig:pms_ripple}{{6.6}{54}{Ripple in Vrec and Vreg\relax }{figure.caption.68}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Current and power consumption\relax }}{55}{figure.caption.69}}
+\newlabel{fig:pms_PI}{{6.7}{55}{Current and power consumption\relax }{figure.caption.69}{}}
+\newlabel{eq:wpt_effi}{{6.1}{55}{Simulation result}{equation.6.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces PMS performance summary\relax }}{56}{table.caption.70}}
+\newlabel{tab:pms_spec}{{6.2}{56}{PMS performance summary\relax }{table.caption.70}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}WPT System}{57}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Chip and PCB}{55}{section.7.1}}
-\@gls@reference{acronym}{jlcc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{55}}
-\@gls@reference{acronym}{smd}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{55}}
-\@gls@reference{acronym}{mlcc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{55}}
-\@writefile{toc}{\contentsline {part}{IV\hspace  {1em}Conclusion}{57}{part.4}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Top Testbench}{57}{section.7.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Test bench for complete PRU unit \relax }}{58}{figure.caption.71}}
+\newlabel{fig:wpt_top_link}{{7.1}{58}{Test bench for complete PRU unit \relax }{figure.caption.71}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Simulation result}{58}{section.7.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Input voltage waveforms\relax }}{59}{figure.caption.72}}
+\newlabel{fig:wpt_vin}{{7.2}{59}{Input voltage waveforms\relax }{figure.caption.72}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Vrec and Vreg voltages\relax }}{60}{figure.caption.73}}
+\newlabel{fig:wpt_vout}{{7.3}{60}{Vrec and Vreg voltages\relax }{figure.caption.73}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Ripple in Vrec and Vreg\relax }}{60}{figure.caption.74}}
+\newlabel{fig:wpt_ripple}{{7.4}{60}{Ripple in Vrec and Vreg\relax }{figure.caption.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Current and power consumption\relax }}{61}{figure.caption.75}}
+\newlabel{fig:wpt_PI}{{7.5}{61}{Current and power consumption\relax }{figure.caption.75}{}}
+\newlabel{eq:wpt_effi}{{7.1}{61}{Simulation result}{equation.7.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces WPT performance summary\relax }}{62}{table.caption.76}}
+\newlabel{tab:wpt_spec}{{7.1}{62}{WPT performance summary\relax }{table.caption.76}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces WPT performance summary for all inductive link\relax }}{62}{table.caption.77}}
+\newlabel{tab:wpt_spec_all}{{7.2}{62}{WPT performance summary for all inductive link\relax }{table.caption.77}{}}
+\@writefile{toc}{\contentsline {part}{IV\hspace  {1em}WPT Chip Production, Test and Verification }{63}{part.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Test and Verification }{65}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Lesson learnt}{59}{section.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{60}{section.8.2}}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{63}{section*.68}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Chip and PCB}{65}{section.8.1}}
+\@gls@reference{acronym}{jlcc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{65}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Micrograph of WPT chip\relax }}{66}{figure.caption.78}}
+\newlabel{fig:micrograph}{{8.1}{66}{Micrograph of WPT chip\relax }{figure.caption.78}{}}
+\@gls@reference{acronym}{smd}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{66}}
+\@gls@reference{acronym}{mlcc}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{66}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Measurement Setup}{66}{section.8.2}}
+\newlabel{fig:pcb_pri}{{8.2a}{67}{Subfigure 8 8.2a}{subfigure.8.2.1}{}}
+\newlabel{sub@fig:pcb_pri}{{(a)}{a}{Subfigure 8 8.2a\relax }{subfigure.8.2.1}{}}
+\newlabel{fig:pcb_sec}{{8.2b}{67}{Subfigure 8 8.2b}{subfigure.8.2.2}{}}
+\newlabel{sub@fig:pcb_sec}{{(b)}{b}{Subfigure 8 8.2b\relax }{subfigure.8.2.2}{}}
+\newlabel{fig:pcb_board}{{8.2c}{67}{Subfigure 8 8.2c}{subfigure.8.2.3}{}}
+\newlabel{sub@fig:pcb_board}{{(c)}{c}{Subfigure 8 8.2c\relax }{subfigure.8.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Antenna and test PCBs\relax }}{67}{figure.caption.79}}
+\newlabel{fig:pcb_all}{{8.2}{67}{Antenna and test PCBs\relax }{figure.caption.79}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Primary antenna}}}{67}{subfigure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Secondary antenna}}}{67}{subfigure.2.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Test PCB board}}}{67}{subfigure.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Measurement Result and Discussion}{68}{section.8.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.1}Rectifier}{68}{subsection.8.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces Measured rectifier waveform for 10 mA load\relax }}{69}{figure.caption.80}}
+\newlabel{fig:meas_rect_10ma}{{8.3}{69}{Measured rectifier waveform for 10 mA load\relax }{figure.caption.80}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Measured rectifier waveform for 1 mA load\relax }}{69}{figure.caption.81}}
+\newlabel{fig:meas_rect_1ma}{{8.4}{69}{Measured rectifier waveform for 1 mA load\relax }{figure.caption.81}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces Measured rectifier output for various load\relax }}{70}{figure.caption.82}}
+\newlabel{fig:meas_rect_load_sweep}{{8.5}{70}{Measured rectifier output for various load\relax }{figure.caption.82}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.2}LDO}{70}{subsection.8.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces LDO input sweep for 5 mA load\relax }}{71}{figure.caption.83}}
+\newlabel{fig:meas_ldo_vin_sweep}{{8.6}{71}{LDO input sweep for 5 mA load\relax }{figure.caption.83}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.3}PMS Chip}{71}{subsection.8.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces LDO load sweep\relax }}{72}{figure.caption.84}}
+\newlabel{fig:meas_ldo_iload_sweep}{{8.7}{72}{LDO load sweep\relax }{figure.caption.84}{}}
+\@writefile{toc}{\contentsline {part}{V\hspace  {1em}Conclusion}{73}{part.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion}{75}{chapter.9}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Lesson learnt}{75}{section.9.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.2}Future Work}{76}{section.9.2}}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{79}{section*.85}}
 \@writefile{toc}{\setcounter {tocdepth}{1}}
 \@writefile{toc}{\begingroup \let \l@chapter \l@section \let \l@section \l@subsection }
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Rectifier Implementation}{65}{Appendix.1.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Rectifier Implementation}{81}{Appendix.1.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{65}{figure.caption.69}}
-\newlabel{fig:appen_schematic_rectifer}{{A.1}{65}{Schematic of Rectifier\relax }{figure.caption.69}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{65}{figure.caption.70}}
-\newlabel{fig:appen_schematic_rcc}{{A.2}{65}{Schematic of RCC\relax }{figure.caption.70}{}}
-\newlabel{RF1}{66}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{66}{figure.caption.71}}
-\newlabel{fig:appen_layout_rectifer}{{A.3}{66}{Layout of Rectifier\relax }{figure.caption.71}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}LDO Implementation}{67}{Appendix.1.B}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{81}{figure.caption.86}}
+\newlabel{fig:appen_schematic_rectifer}{{A.1}{81}{Schematic of Rectifier\relax }{figure.caption.86}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{81}{figure.caption.87}}
+\newlabel{fig:appen_schematic_rcc}{{A.2}{81}{Schematic of RCC\relax }{figure.caption.87}{}}
+\newlabel{RF1}{82}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{82}{figure.caption.88}}
+\newlabel{fig:appen_layout_rectifer}{{A.3}{82}{Layout of Rectifier\relax }{figure.caption.88}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}LDO Implementation}{83}{Appendix.1.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{67}{figure.caption.72}}
-\newlabel{fig:appen_schematic_ldo}{{B.1}{67}{Schematic of LDO\relax }{figure.caption.72}{}}
-\newlabel{RF2}{68}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{68}{figure.caption.73}}
-\newlabel{fig:appen_layout_ldo}{{B.2}{68}{Layout of LDO\relax }{figure.caption.73}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}WPT Chip}{69}{Appendix.1.C}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{83}{figure.caption.89}}
+\newlabel{fig:appen_schematic_ldo}{{B.1}{83}{Schematic of LDO\relax }{figure.caption.89}{}}
+\newlabel{RF2}{84}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{84}{figure.caption.90}}
+\newlabel{fig:appen_layout_ldo}{{B.2}{84}{Layout of LDO\relax }{figure.caption.90}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}WPT Chip}{85}{Appendix.1.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{69}{figure.caption.74}}
-\newlabel{fig:appen_schematic_chip}{{C.1}{69}{Schematic of WPT chip\relax }{figure.caption.74}{}}
-\newlabel{RF3}{70}
-\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{70}{figure.caption.75}}
-\newlabel{fig:appen_layout_chip}{{C.2}{70}{Layout of WPT chip\relax }{figure.caption.75}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Test PCBs}{71}{Appendix.1.D}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{85}{figure.caption.91}}
+\newlabel{fig:appen_schematic_chip}{{C.1}{85}{Schematic of WPT chip\relax }{figure.caption.91}{}}
+\newlabel{RF3}{86}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{86}{figure.caption.92}}
+\newlabel{fig:appen_layout_chip}{{C.2}{86}{Layout of WPT chip\relax }{figure.caption.92}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Test PCBs}{87}{Appendix.1.D}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{71}{figure.caption.76}}
-\newlabel{fig:appen_primary}{{D.1}{71}{Primary antenna\relax }{figure.caption.76}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{71}{figure.caption.77}}
-\newlabel{fig:appen_secondary}{{D.2}{71}{Secondary antenna\relax }{figure.caption.77}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{87}{figure.caption.93}}
+\newlabel{fig:appen_primary}{{D.1}{87}{Primary antenna\relax }{figure.caption.93}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{87}{figure.caption.94}}
+\newlabel{fig:appen_secondary}{{D.2}{87}{Secondary antenna\relax }{figure.caption.94}{}}
 \@writefile{toc}{\endgroup }
-\newlabel{RF4}{72}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{72}{figure.caption.78}}
-\newlabel{fig:appen_schemtic_pcb}{{D.3}{72}{Test PCB schematic\relax }{figure.caption.78}{}}
-\newlabel{RF5}{73}
-\@writefile{lof}{\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{73}{figure.caption.79}}
-\newlabel{fig:appen_board_pcb}{{D.4}{73}{Test PCB board\relax }{figure.caption.79}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{75}{section*.80}}
-\@writefile{toc}{\contentsline {chapter}{Acronyms}{79}{section*.82}}
+\newlabel{RF4}{88}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{88}{figure.caption.95}}
+\newlabel{fig:appen_schemtic_pcb}{{D.3}{88}{Test PCB schematic\relax }{figure.caption.95}{}}
+\newlabel{RF5}{89}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{89}{figure.caption.96}}
+\newlabel{fig:appen_board_pcb}{{D.4}{89}{Test PCB board\relax }{figure.caption.96}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{91}{section*.97}}
+\@writefile{toc}{\contentsline {chapter}{Acronyms}{95}{section*.99}}
