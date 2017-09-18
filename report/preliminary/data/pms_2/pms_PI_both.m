@@ -61,6 +61,8 @@ p3 = plot(time(from:end), Ivin2_sch(from:end)*10^3, 'r'); hold on;
 ylabel('Current (mA)');
 grid on;
 xlim([1200, 1200.15]);
+ylim([-3, 32]);
+
 %ylim([-70, 70]);
 title('Current from source', 'FontSize', 10);
 Iin2 = sprintf('Pre: Vin2 I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Ivin2_sch(from:end)))*1000, rms(Ivin2_sch(from:end))*1000);
@@ -79,6 +81,7 @@ xlabel('Time (us)');
 ylabel('Voltage (V)');
 grid on;
 xlim([1200, 1200.150]);
+ylim([-4.4, 4.4]);
 title('Rectifier voltages and currents', 'FontSize', 10);
 legend('Vac', 'Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Post Vin', 'Post Vin1', 'Post Vin2');
 
