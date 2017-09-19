@@ -1572,7 +1572,7 @@ to disable LDO for now. The potentiometer at $V_{rec}$ node is adjusted for draw
 
 Figure \ref{fig:meas_rect_10ma} shows measured input and output waveform for 10 mA load compared with corresponding 
 PMS simulation. The average rectified output $V_{rec}$ is a close to simulated value. The additional drop in measured $V_{rec}$
- can be accounted to resistive drop along bonding wire and PCB trace. The differential input waveforms are similar in shape 
+ can be accounted to resistive drop along bonding wire, PCB trace and higher drain-source resistance of diodes. The differential input waveforms are similar in shape 
  but during diode conduction the measured waveforms are distorted: $V_{in1}$ and $V_{in2}$ have additional peak and valley 
  when rectifying diode are turned on and and off respectively. [CITE] has discussed about similar issue in rectifier 
  performance and accounted this distortion for parasitic inductance of bonding wire and PCB trace in addition with probe and 
@@ -1644,7 +1644,7 @@ only 115 uA in simulation. This is serious design issue resulting in very poor e
 problem in the design, the top level test-bench was re-simulated to test LDO performance. But this was not observed in the 
 simulation. In the produced chip the problem might be in the biasing of buffer of LDO in figure \ref{fig:ldo_cmos}. 
 Transistor M13 is a current source to buffer transistor M14. M13 was made wide in order to supply enough current to 
-drive a very large pass device. [MORE ON IT].
+drive a very large pass device. [MORE ON IT]. \\
 
 \begin{figure} [!htbp]
   \centering
@@ -1656,8 +1656,28 @@ drive a very large pass device. [MORE ON IT].
 \subsection{PMS Chip} %****************************************************
 
 As the PMS produced here consists of rectifier followed by LDO, the LDO should be able to operate with the given performance of rectifier. On verifying the LDO above, two limitations were observed. First, minimum input voltage required to operate LDO is much higher than rectified output $V_{rec}$. Second, quiescent current of LDO is way higher that the efficiency is low. One optimistic scenario is to use the rectifier performance of 4 mA load which tightly meet the requirement of minimum input voltage 
-of LDO. Yet, because of higher quiescent current, no useful power can be delivered to the load. Hence for the discussion ahead, rectifier is only considered as PMS.
+of LDO as shown in figure  \ref{fig:meas_pms} with no load used. It is because 4 mA is all consumed by LDO to operate and no useful power can be delivered to the load. Hence for the discussion ahead, rectifier is only considered as PMS. \\
 
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/pms_test.pdf} 
+ \caption{PMS performance} 
+\label{fig:meas_pms} 
+\end{figure}
+
+\subsection{WPT System} %****************************************************
+For measuring the performance of WPT system, the setup is done as shown in figure  [FIGURE]. The measurement results of magnetic resonant inductive link with 5 mm 
+coupling separation is presented here. 3.7 V magnitude sinusoidal  signal is required to drive primary antenna in order to generate 2.6 V differential signals in the secondary coil.\\
+
+The measured voltages waveform for 10 mA load is presented in figure  \ref{fig:meas_wpt5_vs} along with simulation result.  The additional drop in $V_{reg}$, distortion of inputs, $V_{in1}$ and $V_{in2}$ and larger ripple are due to the same reasons discussed in  rectifier measurement. The distortion is more pronounced here because of additional parasitic from the transfer link. \\
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/wpt5_vs.pdf} 
+ \caption{WPT from 5 mm coupling link} 
+\label{fig:meas_wpt5_vs} 
+\end{figure}
+
+Figure [FIGURE] shows measured currents in primary coil and rectifying diodes. The currents are calculated using a 2 $\Omega$ series resistance and measuring voltage drop across it. 
 
 
 % ***********************************************************************  CONCLUSION ***********************************************************************************

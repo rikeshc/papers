@@ -654,6 +654,12 @@ INPUT ./img/meas/ldo_vin_sweep.pdf
 INPUT img/meas/ldo_iload_sweep.pdf
 INPUT ./img/meas/ldo_iload_sweep.pdf
 INPUT ./img/meas/ldo_iload_sweep.pdf
+INPUT img/meas/pms_test.pdf
+INPUT ./img/meas/pms_test.pdf
+INPUT ./img/meas/pms_test.pdf
+INPUT img/meas/wpt5_vs.pdf
+INPUT ./img/meas/wpt5_vs.pdf
+INPUT ./img/meas/wpt5_vs.pdf
 INPUT appendix/schematic_rectifier_l.pdf
 INPUT ./appendix/schematic_rectifier_l.pdf
 INPUT ./appendix/schematic_rectifier_l.pdf

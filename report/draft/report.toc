@@ -66,18 +66,19 @@
 \contentsline {section}{\numberline {8.3}Measurement Result and Discussion}{68}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Rectifier}{68}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}LDO}{70}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}PMS Chip}{71}{subsection.8.3.3}
-\contentsline {part}{V\hspace {1em}Conclusion}{73}{part.5}
-\contentsline {chapter}{\numberline {9}Conclusion}{75}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lesson learnt}{75}{section.9.1}
-\contentsline {section}{\numberline {9.2}Future Work}{76}{section.9.2}
-\contentsline {chapter}{Appendices}{79}{section*.85}
+\contentsline {subsection}{\numberline {8.3.3}PMS Chip}{72}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}WPT System}{72}{subsection.8.3.4}
+\contentsline {part}{V\hspace {1em}Conclusion}{75}{part.5}
+\contentsline {chapter}{\numberline {9}Conclusion}{77}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lesson learnt}{77}{section.9.1}
+\contentsline {section}{\numberline {9.2}Future Work}{78}{section.9.2}
+\contentsline {chapter}{Appendices}{81}{section*.87}
 \setcounter {tocdepth}{1}
 \begingroup \let \l@chapter \l@section \let \l@section \l@subsection 
-\contentsline {chapter}{\numberline {A}Rectifier Implementation}{81}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}LDO Implementation}{83}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}WPT Chip}{85}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Test PCBs}{87}{Appendix.1.D}
+\contentsline {chapter}{\numberline {A}Rectifier Implementation}{83}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}LDO Implementation}{85}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}WPT Chip}{87}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Test PCBs}{89}{Appendix.1.D}
 \endgroup 
-\contentsline {chapter}{Bibliography}{91}{section*.97}
-\contentsline {chapter}{Acronyms}{95}{section*.99}
+\contentsline {chapter}{Bibliography}{93}{section*.99}
+\contentsline {chapter}{Acronyms}{97}{section*.101}
