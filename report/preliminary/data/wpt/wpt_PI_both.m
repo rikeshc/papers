@@ -92,6 +92,23 @@ ylim([-3, 3]);
 title('Rectifier voltages and currents', 'FontSize', 10);
 legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Post Vin', 'Post Vin1', 'Post Vin2');
 
+%% Primary voltage and currnet
+
+yyaxis left;
+plot(time(from:to), vac_sch(from:to)); hold on;
+plot(time(from:to), vpri_sch(from:to), timep(fromp:top), vpri_pex(fromp:top));
+ylabel('Voltage, V');
+yyaxis right;
+
+plot(time(from:to), Iac_sch(from:to)*1000); 
+plot(time(from:to), Ip_sch(from:to)*1000, timep(fromp:top), Ip_pex(fromp:top)*1000); 
+hold off;
+grid on;
+xlim([start, start + 0.15]);
+xlabel('Time (us)'); 
+ylabel('Current, mA');
+legend('Pre Vac', 'Pre Vpri', 'Post Vpri', 'Iac','Pre Ipri', 'Post Ipri', 'location', 'best');
+title('Voltage and Current at primary', 'FontSize', 10);
 
 %% save plot 
 set(f1,'Units','Inches');
