@@ -27,9 +27,9 @@ ylabel('Voltages, V');
 
 legend('MEAS: V_{in1}', 'MEAS: V_{in2}', 'MEAS: V_{in}', strcat(rec,' \Delta', rip), 'SIM: V_{in1}', 'SIM: V_{in2}', 'SIM: V_{in}', strcat(recp,' \Delta', ripp), 'location', 'best');
 %legend([h1(1), h2(1)], 'Blue Meanies', 'Red Rovers')
-title('WPT: Measured performance', 'FontSize', 10);
+title('WPT: Measured voltages', 'FontSize', 10);
 
-%%
+%% Diode currents Vin2 and Vin1
 R_test = 10;
 vin1_drop = importdata('F2vin1_drop_wpt00000.dat');
 vin2_drop = importdata('F2vin2_drop_wpt00000.dat');
@@ -53,7 +53,7 @@ ylabel('Current, mA');
 grid on;
 
 legend(l1, l2, 'location', 'best');
-title('WPT: Measured performance', 'FontSize', 10);
+title('WPT: Measured diode currents', 'FontSize', 10);
 
 %% Primary current and voltages
 vpri = importdata('C1vpri_wpt00000.dat');
@@ -62,13 +62,20 @@ Iac = vac_drop(:,2)/10*1000;
 time = vpri(:,1)*10^9+250; % time in ns
 timep = (t_pex-t_pex(1))*10^9-20.9;
 
+
+f3 = figure(3);
 yyaxis left;
-plot(time, vpri(:,2), timep, (vac_pex+Iac_pex*50)); hold on;
+plot(time, vpri(:,2), timep, (vac_pex-(-Iac_pex*50))); hold on;
+ylabel('Voltage, V');
 yyaxis right;
 plot(time, Iac, timep, Iac_pex*1000); hold off;
-xlim([63, 221]);
+xlim([50, 203]);
+xlabel('Time, ns');
+ylabel('Current, mA');
 grid on;
 
+legend('MEAS: V_{primary}', 'SIM: V_{primary}', 'MEAS: I_{primary}', 'SIM: I_{primary}', 'location', 'best');
+title('WPT: Primary voltage and current', 'FontSize', 10);
 %% save WPT voltages 
 set(f1,'Units','Inches');
 pos = get(f1,'Position');
@@ -80,5 +87,12 @@ movefile('wpt5_vs.pdf','../../img/meas/wpt5_vs.pdf');
 set(f2,'Units','Inches');
 pos = get(f2,'Position');
 set(f2,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
-print(f2, 'wpt5_current.pdf', '-dpdf');
-movefile('wpt5_current.pdf','../../img/meas/wpt5_current.pdf');
+print(f2, 'wpt5_current_diode.pdf', '-dpdf');
+movefile('wpt5_current_diode.pdf','../../img/meas/wpt5_current_diode.pdf');
+
+%% save WPT current
+set(f3,'Units','Inches');
+pos = get(f3,'Position');
+set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
+print(f3, 'wpt5_current_pri.pdf', '-dpdf');
+movefile('wpt5_current_pri.pdf','../../img/meas/wpt5_current_pri.pdf');

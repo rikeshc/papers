@@ -54,10 +54,10 @@ to = find(stable + 0.5 ==round(time, 2), 1);
 fromp = find(stable ==round(timep, 2), 1);
 top = find(stable + 0.5 ==round(timep, 2), 1);
 
-rip_Vrec_sch = max(vrec_sch(from:to))-min(vrec_sch(from:to));
-rip_Vreg_sch = max(vreg_sch(from:to))-min(vreg_sch(from:to));
-rip_Vrec_pex = max(vrec_pex(from:to))-min(vrec_pex(fromp:top));
-rip_Vreg_pex = max(vreg_pex(from:to))-min(vreg_pex(fromp:top));
+rip_Vrec_sch = max(vrec_sch(from:end))-min(vrec_sch(from:end));
+rip_Vreg_sch = max(vreg_sch(from:end))-min(vreg_sch(from:end));
+rip_Vrec_pex = max(vrec_pex(from:end))-min(vrec_pex(fromp:end));
+rip_Vreg_pex = max(vreg_pex(from:end))-min(vreg_pex(fromp:end));
 leg1 = sprintf('Pre ripple = %.2f mV', rip_Vrec_sch*1000);
 leg2 = sprintf('Pre ripple = %.2f mV', rip_Vreg_sch*1000);
 leg1p = sprintf('Post ripple = %.2f mV', rip_Vrec_pex*1000);
@@ -96,18 +96,19 @@ time = time - time(1);
 timep = timep - timep(1);
 vin_sch = vin1_sch - vin2_sch;
 vin_pex = vin1_pex - vin2_pex;
-plot(time(from:to), vac_sch(from:to), 'm', time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'g', time(from:to), vin2_sch(from:to), 'b'); hold on;
-%plot(timep(fromp:top), vac_pex(fromp:top), 'm--', timep(fromp:top), vac_rect_pex(fromp:top), 'r--', timep(fromp:top), vin1_pex(fromp:top), 'g--', timep(fromp:top), vin2_pex(fromp:top), 'b--');
-plot(timep(fromp:top), vin_pex(fromp:top), 'r--', timep(fromp:top), vin1_pex(fromp:top), 'g--', timep(fromp:top), vin2_pex(fromp:top), 'b--');
+%plot(time(from:to), vac_sch(from:to), 'm', time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'g', time(from:to), vin2_sch(from:to), 'b'); hold on;
+plot(time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'b', time(from:to), vin2_sch(from:to), 'm', time(from:to), vrec_sch(from:to), 'g'); hold on;
+
+plot(timep(fromp:top), vin_pex(fromp:top), 'r--', timep(fromp:top), vin1_pex(fromp:top), 'b--', timep(fromp:top), vin2_pex(fromp:top), 'm--', timep(fromp:top), vrec_pex(fromp:top), 'g--');
 
 hold off;
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
 xlim([0, .16]);
-ylim([-5.6, 5.6]);
+%ylim([-5.6, 5.6]);
 title('Inputs voltages', 'FontSize', 10);
-legend('Vac', 'Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Post Vin', 'Post Vin1', 'Post Vin2', 'location', 'best');
+legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Pre Vrec', 'location', 'best');
 
 %% saving plot to a location
 
