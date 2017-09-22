@@ -124,7 +124,7 @@ First and foremost, I would like to thank both of my supervisors for their valua
 supervisor, assisted me with project requirements and implementation. I must also thank Malihe for encouraging me during the challenging times of my project. \\
 
 I would also like to thank Olav Stanly Kyrvestad, our lab engineer for helping me in finalising my chip, ordering PCB and components and helping in laboratory  setup. 
-Similarly I appreciate the PhD students in the department for answering my stupid questions without hesitation. I should also remember my fellow students who were very engaging in discussing my problems and suggesting creative ideas. \\
+Similarly I appreciate the PhD students in the department for answering my questions without hesitation. I should also remember my fellow students who were very engaging in discussing my problems and suggesting creative ideas. \\
 
 Last but not least, I am very thankful to my family and friends who were always motivating and filling me with positive energy to accomplish my project.  \\
 
@@ -186,7 +186,7 @@ consists of billions of transistors of some  tens of nm feature size. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/comp_tech_batt.png}
+   \includegraphics[width=0.95\textwidth]{img/comp_tech_batt.png}
    \caption{Mobile performance development trend \cite{mobile_performance}}
    \label{fig:comp_tech_batt}
 \end{figure}
@@ -218,11 +218,10 @@ In spite of dramatic technological advancement, battery technology has not evolv
 \ref{fig:comp_tech_batt}. It is not like there has been no progress in battery technology at all. There has been a lot improvements 
 like increased volumetric energy density thereby reducing size, increased gravimetric energy density thereby 
 reducing weight, reduced self discharge thereby increasing life time and increased charged cycle thereby 
-increasing reuse.[CITE]. Today Li-ion has better choice for powering devices because of it better combined 
+increasing reuse\cite{review_energy_harvest}. Today Li-ion has better choice for powering devices because of it better combined 
 above mentioned characteristics and hence used excessively in portable and wearable devices. \\
 
-But use of battery in todays'  portable and wearable devices is constraining the overall development of devices 
-[CITE]. Batteries contribute significant proportion of total weight and size of the device. They supply limited 
+But use of battery in todays'  portable and wearable devices is constraining the overall development of devices. Batteries contribute significant proportion of total weight and size of the device. They supply limited 
 power which means require regular recharge and in the long run need replacement. During recharge either device or 
 battery has to be physically connected to power outlet. \\
 
@@ -230,7 +229,7 @@ A power source with high power density which perpetually and wirelessly power de
 all the above problems and challenges mentioned above. But how 
 far have we gone to achieve this? In the next chapter, we will discussed the techniques of energy harvesting and 
 wireless power transfer studied and implemented so far. Bluetooth Low Energy, BLE is taken as a 
-reference device to drive and a power harvesting circuit is designed and implememted for BLE. \\
+reference device to drive and a power harvesting circuit is designed and implemented for BLE. \\
 
 % WPT helps to overcome some of these limitations. For example instead of removing and recharging batteries, 
 % they can be recharged with 
@@ -289,7 +288,6 @@ harvested energy so that it can be used either to directly power a load or to st
    \label{fig:visio_harvest_func}
 \end{figure}
 
-
 Depending upon the type of energy harvested from the surrounding environment, energy harvesting devices can be 
 broadly classified into kinetic, electromagnetic and thermal energy sources\cite{review_energy_harvest}. These are 
 briefly discussed below.\\
@@ -300,7 +298,6 @@ electrical energy. Piezoelectrical material is good example of transducer for ki
 Piezoelectrical materials are those which exhibit piezoelectric effect: when subjected to mechanical strain, 
 it generates electrical charge proportional to applied strain. Strain is applied with either compression, slap 
 or bending of the material. \\
-
 
 \subsection{Harvesting from Radiation}
 Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy 
@@ -432,7 +429,7 @@ non-directive method. \\
 Health concerns as governed by \acrshort{fcc} and \acrshort{ieee} safety regulation policy on human exposure has 
 limited its used to low power harvesting over longer distance using RF wave. But, as RF wave is also information 
 carrier wave in wireless communication, its capacity to transmit both data and power simultaneously is expected 
-to introduce new application in wireless communication field  \cite{wpt_fund_std}. \\
+to introduce new application in wireless communication field \cite{wpt_fund_std}. \\
 
 \subsection{WPT Applications}
 
@@ -445,33 +442,32 @@ medical equipments and consumers electronics. In case of microelectronics device
 sensors, pacemaker etc, magnetic resonance IPT is mostly used both to charge a battery or directly drive the 
 device. \\
 
-\begin{figure} [htbp]
-  \begin{minipage}{\linewidth}
-  \centering 
-  \subfloat[Qualcomm EV charger]  {\includegraphics[width=.47\textwidth]{img/wpt_ev_qualcom.jpg} \label{wpt_ev}}
-  \hfill
- \subfloat[Qualcomm mobile phone charger with foreign object detection feature]  {\includegraphics[width=.47\textwidth]{img/wpt_mobile_qualcom.jpg}\label{wpt_mobile}}
- \hfill
- \end{minipage}\par\medskip
- \centering
- \subfloat[IDT concept of wireless charging of bionic devices]  {\includegraphics[width=.47\textwidth]{img/wpt_bionics.jpg}\label{wpt_medical}}
- \caption{Commercial application of wireless power transfer} 
-\label{wpt_application} 
-\end{figure}
-
 In context of radiative power transfer, non-directive technique is mostly used in low power sensors and implants. 
 Because of the low power requirement, mostly omnipresent RF signals are used to harvest energy. This technique 
 has been used in both perpetually supplying power like in body sensor which continuously monitor some activity 
-or sporadically supplying power like in RFID and body implants which work only when required. [CITE] reports 
+or sporadically supplying power like in RFID and body implants which work only when required. \cite{wpt_fund_std} reports 
 future application of microwave power transfer can be in SPS (Solar Power Satellite) system and SHARP (Stationary 
 High Altitude Relay Platform). SPS uses satellite for harvesting solar energy in space and transfer that power 
 to earth. Similarly SHARP is stationary charging station for unmanned aerial vehicles in stratosphere region by 
 beaming power from earth.    \\
 
+\begin{figure} [htbp]
+  \begin{minipage}{\linewidth}
+  \centering 
+  \subfloat[Qualcomm EV charger]  {\includegraphics[width=.49\textwidth]{img/wpt_ev_qualcom.jpg} \label{wpt_ev}}
+  \hfill
+ \subfloat[Qualcomm mobile phone charger with foreign object detection feature]  {\includegraphics[width=.49\textwidth]{img/wpt_mobile_qualcom.jpg}\label{wpt_mobile}}
+ \hfill
+ \end{minipage}\par\medskip
+ \centering
+ \subfloat[IDT concept of wireless charging of bionic devices]  {\includegraphics[width=.5\textwidth]{img/wpt_bionics.jpg}\label{wpt_medical}}
+ \caption{Commercial application of wireless power transfer} 
+\label{wpt_application} 
+\end{figure}
+
+
 \subsection{Charger Standards}
-
 %http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/basics-tutorial.php
-
 When wireless charging was introduced into consumer daily appliances, it was quickly realised the need of 
 standard design protocols to maintain uniformity and avoid confusion for the manufacturers. Here are some 
 mostly used standards in the market. All commercial standards discussed below use both IPT and resonant IPT 
@@ -480,9 +476,7 @@ integrated into mobile, handheld or wearable devices. Both the transmitter and t
 and management protocol in order to detect compatible electronic devices, exchange charging state information 
 and control charging process. \\
 
-
 \subsubsection{Qi}
-
 \begin{wrapfigure}{R}{0.35\textwidth}
   \vspace{-5pt}
   \centering
@@ -500,7 +494,6 @@ positioning of the receiver, either guided or free. Qi charger also have foreign
 \cite{wpt_qi}. Qi uses the same frequency for communication and power transfer, 80-300 KHz \cite{wpt_qi_ian}. \\
 
 \subsubsection{A4WP}
-
 A4WP is acronym for Alliance for Alliance for Wireless Power which has introduced another independent wireless 
 charging protocol. It uses magnetic resonance IPT technique for power transfer. The main differences between 
 A4WP from Qi are multiple device charging from a single charger, also called power transmitting unit, PTU and 
@@ -509,7 +502,6 @@ and supports wireless charging from low power to high power. A4WP used different
 and power transfer, which are 2.4 GHz and 6.78 MHz respectively  \cite{wpt_a4wp_ian}.\\
 
 \subsubsection{AirFuel Alliance}
-
 \begin{wrapfigure}{R}{0.35\textwidth}
   \vspace{-5pt}
   \centering
@@ -554,7 +546,7 @@ Output DC voltage 	& 1.8 V \\
 Figure \ref{fig:funct_block} is the functional block diagram of proposed implementation of wireless power transfer in 
 this work. From the discussion in wireless power transfer section, it is seen that IPT is the best option for 
 being mature, easy and safe implementation. Since tuning the IPT transfer link at the operating frequency 
-increases the transfer effieicency, magnetic resonance link is designed for this work. The antennas are designed 
+increases the transfer efficiency, magnetic resonance link is designed for this work. The antennas are designed 
 with the specifications provided by NORDIC. The power management system includes rectifier, LDO and reference and bias circuit. The biasing and reference circuit is designed solely for 
 learning the design technique without much effort on the accuracy of the generated biases and references. So 
 externally supplied bias and reference will be the secondary option. \\
@@ -608,13 +600,13 @@ For the illustration of operation of comparator, consider the case when $Vin1 > 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_schematic.pdf} 
-   \caption{Gate cross coupled full wave active rectifer]}
+   \caption{Gate cross coupled full wave active rectifier]}
    \label{rect_rcc}
 \end{figure}
 
 Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vac > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vac < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M9$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vac < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_rcc5.pdf} 
    \caption{Comparator circuit, RCC }
@@ -654,14 +646,14 @@ the channel resistance. Secondly, the reverse current from output to input has b
 there is only positive current flowing to the load when all conducting devices 
 are on.  \\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_testbench.pdf} 
    \caption{Testbench for rectifier}
    \label{rect_tb}
 \end{figure}
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_VI.pdf} 
    \caption{Voltage and current waveforms of the rectifier}
@@ -671,14 +663,14 @@ are on.  \\
 Figure  \ref{fig:rect_v_post}  presents both pre and post layout results of input voltages, $Vin1$ and $Vin2$  and output voltage, $Vrec$, for one cycle of ac input. The closer view of rectified output is shown in figure \ref{fig:rect_ripple}. The voltage drop of about 60 mV in layout result is accounted for the voltage drop due to 
 the resistance of high current conduction path. \\
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_V_post.pdf} 
    \caption{Voltages waveform for pre and post layout}
    \label{fig:rect_v_post}
 \end{figure}
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/rectifier_ripple.pdf} 
    \caption{Rectified DC output for pre and post layout}
@@ -714,8 +706,8 @@ inter layer coupling [WHY???]. The high current conduction routes are designed w
 \hline \hline
 Rectified DC	 	& 2.23 V 				& 2.17 V	\\ \hline
 Ripple \acrshort{vpp} & 3.1 mV 				& 3 mV	\\ \hline
-Peak diode current 	& 63.7 mA 			&	-	\\ \hline
-PCE 				& 84.5 \% 				&	-	\\ \hline
+Peak diode current 	& 63.7 mA 			&	63.1 mA	\\ \hline
+PCE 				& 84.5 \% 				&	82.9 \%	\\ \hline
 VCE 				& 88.6 \% 				&	86.2 \%	\\
 \hline \hline
 \end{tabular}
@@ -737,6 +729,13 @@ regulated voltage is 1.8 V, charge pump or  \acrshort{smps} of boost type is irr
 an option for voltage regulation but LDO is preferred for it better performance in terms of noise and faster 
 settling of regulated voltage.  \cite{ldo_psu}.\\ 
 
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/ldo.pdf} 
+   \caption{Generic LDO with pMOS pass device}
+   \label{ldo_gen}
+\end{figure}
+
 Figure \ref{ldo_gen} shows a circuit of typical LDO with pMOS as pass element. As shown in the figure, the 
 components includes an error amplifier (EA), a pass device (Mpass), a feedback circuit (R1 and R2) and load 
 (C\textsubscript{out} and I\textsubscript{load}). A more general and complete LDO circuit also includes 
@@ -745,14 +744,7 @@ separately later. The working principle of LDO is that the error amplifier compa
 voltage, Vdiv with Vref and regulates the internal resistance of the pass transistor such that  the error, 
 V\textsubscript{ref} - V\textsubscript{div} is least or zero ideally. \\
 
-\begin{figure}[htbp] %figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=\textwidth]{img/ldo.pdf} 
-   \caption{Generic LDO with pMOS pass device}
-   \label{ldo_gen}
-\end{figure}
-
-\cite{ldo_bulkmod} and \cite{ldo_quiescent} are two examples of CMOS implementation of LDO. \cite{ldo_bulkmod} 
+\cite{ldo_bulkmod} and \cite{ldo_quiescent} discusses two examples of CMOS implementation of LDO. \cite{ldo_bulkmod} 
 has proposed bulk modulation technique for improving load regulation and stability of capacitor-less LDO. 
 Similarly \cite{ldo_quiescent} has  proposed techniques for increasing current efficiency of LDO especially at 
 no or low load condition. Though the techniques discussed in these designs have not been used, they have given 
@@ -768,7 +760,7 @@ network of resistors. \\
    \centering
    %\includegraphics[width=0.9\textwidth]{img/sch_ldo_label.pdf} 
   \includegraphics[width=\textwidth]{img/ldo_schematic.pdf} 
-   \caption{CMOS implemenation of LDO}
+   \caption{CMOS implementation of LDO}
    \label{fig:ldo_cmos}
 \end{figure}
 
@@ -793,8 +785,8 @@ Error amplifier				& folded cascode \\ \hline
 Vbias2 					& 1.1 V \\ \hline
 Vbias3					& 0.88 V \\ \hline
 Vbias4					& 0.68 V \\ \hline
-Vref						& 1.17 V \\ \hline
-C\textsubscript{load} 		& > 5 \si{\micro\farad}  \\ \hline
+Vref						& 1.18 V \\ \hline
+C\textsubscript{load} 		& > 2.5 \si{\micro\farad}  \\ \hline
 R\textsubscript{esr} 	 		& > 0.5 $\Omega$ \\ \hline
 Regulated output voltage 		& 1.8 V \\ \hline
 I\textsubscript{load} max. 		& 10 mA \\
@@ -810,7 +802,7 @@ for EA lies almost at half the supply voltage. This amplifier drives a pMOS buff
 sufficient current to drive the large pass transistor. Moreover, pMOS as a buffer passes 1 better which means 
 it can turn off the pass device completely and hence LDO regulates better at low load or no load condition. 
 However for heavier load/larger load current, this pMOS buffer is not able to pull down the gate of pass device 
-suffuiciently lower. This is overcome by making the pass device large enough to feed the required  maximum 
+sufficiently lower. This is overcome by making the pass device large enough to feed the required  maximum 
 load current.\\
 
 The pass device is a pMOS transistor in this design. It is chosen because it has several advantages over it's 
@@ -825,7 +817,7 @@ devices' power supply. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_testbench.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_testbench.pdf} 
    \caption{LDO testbench setup}
    \label{fig:ldo_testbench}
 \end{figure}
@@ -856,9 +848,9 @@ both maximun load, 10 mA. For maximum load, it takes minimum 107 us to produce s
 LDO, it take longer time. Compared to schematic result, it takes 9 us extra time which can be accounted additional parasitic capacitance of interconnects 
 at the output of LDO.\\
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_transient_both.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_transient_both.pdf} 
    \caption{LDO transient simulation}
    \label{fig:ldo_tran}
 \end{figure}
@@ -869,18 +861,18 @@ It gives information about how well and how fast regulated output settles for li
  observation, input, $Vrec$ is pulsed from 2 V to 2.5 V with 1 ns rising and falling time keeping load current constant to 10 mA. Sudden increase in input voltage causes output to increase and vice-versa. As in load variation case, similar recovery pattern is seen. In both case of load and line regulation, the out put voltage is maintained 
  quickly, less than 0.15 us. Both results from schematic and post layout have same transition behaviour except post layout result offset by 3.7 mV as explained in DC response section below. \\
  
- Line regulation, change in regulated output voltage due to maximum change in input voltage and load regulation, change in output voltage due to maximum change in load current are calculated from values shown in respective plots and are listed in table \ref{ldo_spec}.
+ Line regulation, change in regulated output voltage due to maximum change in input voltage and load regulation, change in output voltage due to maximum change in load current are calculated from values shown in respective plots and are listed in table \ref{tab:ldo_spec}.
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_loadr_both.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_loadr_both.pdf} 
    \caption{LDO step load regulation}
    \label{fig:ldo_loadr}
 \end{figure}
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_liner_both.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_liner_both.pdf} 
    \caption{LDO step line regulation}
    \label{fig:ldo_liner}
 \end{figure}
@@ -894,18 +886,16 @@ load. This shows that minimum value of supply required for LDO to function prope
 layout simulation is 3.7 mV higher than for schematic. Since $Vreg = (1 + R1/R2)*Vref$, the mismatch in the resistors has resulted in slightly higher ratio, consequently 
 increasing the close loop gain.\\
 
-
-
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_dc_both.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_dc_both.pdf} 
    \caption{Regulated voltage with supply variation}
    \label{fig:ldo_dc}
 \end{figure}
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ldo_Iload_both.pdf} 
+   \includegraphics[width=1.05\textwidth]{img/ldo_Iload_both.pdf} 
    \caption{Regulated voltage with load variation}
    \label{fig:ldo_Iload}
 \end{figure}
@@ -1001,7 +991,7 @@ V_{2} = M\frac{dI_{2}}{dt}
 
 \begin{equation} \label{eq:mutual_ind} % mutual inductance
  M =k{\sqrt{L_{1}L_{2}}}
-\end{equation}\\
+\end{equation}
 
 In other word, power from primary coil is transferred wirelessly to secondary coil through magnetic field and this is popularly known as inductive power transfer. And this 
 induced ac voltage is rectified and then used to power up the load.
@@ -1032,7 +1022,7 @@ dimensions are provided by Nordic Semiconductor. Since having
 similar shape and size of antennas is important in gaining more transfer efficiency, the same antenna type is used as both 
 primary and secondary coils. \\
 
-\section{Inductor model}		%****************************************************
+\section{Inductor Model}		%****************************************************
 
 Figure \ref{fig:ant_non_ideal} is a lumped model of a planar antenna/coil/inductor made on a PCB. $Rp$, series DC resistance of wire and $Cp$, 
 inter-winding self capacitance. These parasitics determine quality factor, $Q$ and self resonance frequency, $\acrshort{srf}$ of 
@@ -1040,7 +1030,7 @@ the antenna as given in equations  \ref{eq:quality_f} and  \ref{eq:srf}.  \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/ant_non_ideal.pdf} 
+   \includegraphics[width=1\textwidth]{img/ant_non_ideal.pdf} 
    \caption{Real antenna model}
    \label{fig:ant_non_ideal}
 \end{figure}
@@ -1090,9 +1080,9 @@ Parasitic Capacitancce, $C_{p}$ & 3.2 \si{\pico\farad}	&	-		\\
 \end{tabular}
 \end{center}
 \label{tab:ant_inductance_compare}
-\end{table}%
+\end{table} 
 
-\section{Inductive transfer link}		%****************************************************
+\section{Inductive Transfer Link}		%****************************************************
 
 In the next step, an inductive link is realised by using two antennas: one as primary and other as secondary, aligned one over 
 other and separated by air gap as shown in figure  \ref{fig:ant_couple_model}, equivalently shown as lumped schematic in 
@@ -1111,7 +1101,7 @@ of two coils, $ L_{12} = L_{21} = M $, coupling coefficient between the coils, $
 \label{fig:ant_couple} 
 \end{figure}
 
-\begin{table}[H]
+\begin{table}[htbp]
 \caption{Coupling parameters for varying coils distance} 
 \begin{center}
 \begin{tabular}{c|c|c|c|c}
@@ -1143,7 +1133,7 @@ higher efficiency. This eventually proposes optimal resonant load transformation
 and load variation. Likewise, the later one describes step by step iterative process of designing an antenna with optimal geometry for the given 
 design constraints. \\
 
-\section{Magnetic resonance coupling}  	%****************************************************
+\section{Magnetic Resonance Coupling}  	%****************************************************
 
 In this project, conventional magnetic resonance coupling as in is implemented to tune both primary and secondary 
 at same frequency. The purpose here is to tune the secondary antenna of 
@@ -1165,7 +1155,7 @@ with 5 mm separation is taken as a typical example and presented here. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.8\textwidth]{img/ant_couple_resonant.pdf} 
+   \includegraphics[width=\textwidth]{img/ant_couple_resonant.pdf} 
    \caption{Resonant coupled inductive link}
    \label{fig:ant_couple_resonant}
 \end{figure}
@@ -1174,7 +1164,7 @@ In figure \ref{fig:ant_S_loss}, reflection power losses:  return loss, $S11$ at 
 
 \begin{figure} [!htbp]
   \centering
-  \includegraphics[width=\textwidth]{img/ant_s1_s2_both.pdf} 
+  \includegraphics[width=1.05\textwidth]{img/ant_s1_s2_both.pdf} 
  \caption{Link reflection loss before and after tuning} 
 \label{fig:ant_S_loss} 
 \end{figure}
@@ -1186,17 +1176,16 @@ Likewise, in figure \ref{fig:ant_S_gain}, power transfer gain, $S21$, from prima
 \end{equation} 
 
 The above $\eta_{link}$ calculation is valid for perfectly matched ports and gives maximum possible power gain from primary to secondary antenna. \\
-
 \begin{figure} [!htbp]
   \centering
-  \includegraphics[width=\textwidth]{img/ant_s21_both.pdf}
+  \includegraphics[width=1.05\textwidth]{img/ant_s21_both.pdf}
  \caption{Link gain before and after tuning} 
 \label{fig:ant_S_gain} 
 \end{figure}
 
-The above discussion is also done for other two separation, 1.5 mm and 10 mm, of coupling coils. The performance of magnetic resonant inductive link for all cases designed in this work is summarized in table \ref{tab:ant_spec} below. 
+The above discussion is also done for other two separation, 1.5 mm and 10 mm, of coupling coils. The performance of magnetic resonant inductive link for all cases designed in this work is summarised in table \ref{tab:ant_spec} below. 
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Performance of resonant inductive link} 
 \begin{center}
 \begin{tabular}{c|c|c|c|c}
@@ -1318,7 +1307,7 @@ the source resistance. \\
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms_Vs_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms2_Vs_both.pdf} 
  \caption{Input voltage waveform of PMS} 
 \label{fig:pms_vin} 
 \end{figure}
@@ -1328,48 +1317,45 @@ characteristcs are same as discussed in rectifier and LDO section.
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms_Vout_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms2_Vout_both.pdf} 
  \caption{Vrec and Vreg voltages of PMS} 
 \label{fig:pms_vout} 
 \end{figure}
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms_ripple_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms2_ripple_both.pdf} 
  \caption{Ripple in Vrec and Vreg} 
 \label{fig:pms_ripple} 
 \end{figure}
 
-Figure \ref{fig:pms_PI} shows transient waveform of diode currents corresponding to its input voltages. The results for both 
-pre and post layout simulation are similar. It is seen that diodes turn on slightly earlier and turn off slightly later. 
+Figure \ref{fig:pms_PI} shows transient waveform of diode currents corresponding to its input voltages. It is seen that diodes turn on slightly earlier and turn off slightly later. 
 The later has resulted in reverse leakage of current. It can be due to parasitic inductance and uneven resistance of 
 longer Vin1 and Vin2 paths from pad to rectifier inputs which has resulted in slight magnitude and phase difference of 
-Vin1 and Vin2. Similarly Irms is less in post layout because diode current is dependent on Vin1 and Vin2 and in post 
-layout Vin1 and Vin2 is always less than in schematic due to path resistance from pad to the diodes.\\
+Vin1 and Vin2. Same is the reason for Irms being slightly less in post layout. The other important observation is peak diode though Vin1 path is 
+less than through Vin2 path which means paths from pad to diode inputs are asymmetrical with Vin1 track having higher resistance.\\
 
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms_VIrect_both.pdf} 
+  \includegraphics[width=\textwidth]{img/pms/pms2_VIrect_both.pdf} 
  \caption{Current and power consumption} 
 \label{fig:pms_PI} 
 \end{figure}
 
-The total power consumed from the source are 37 mW and 33 mW for pre and post layout simulation for delivering 17.8 mW to 
-the load. The input power to the rectifier is 28.7 mW and 27.2 mW respectively which is obtained after subtracting power 
-consumed by the source resistance. The increase in post layout efficiency is explained by two things: reduced Irms of 
+The total power consumed from the source are 30.9 mW and 29.1 mW for pre and post layout simulation for delivering 17.8 mW to 
+the load. Slightly less power in consumed in post in post layout which  is explained by two things: reduced Irms of 
 diodes as explained earlier and reduced Vrec. Since Vrec in the input to the LDO, less Vrec means pass device in LDO has 
 to drop less voltage increasing LDO efficiency. \\
 
-This results in power transfer efficiency, $\eta_{pms}$ of 62 and 65.5 respectively. In 
+This results in power transfer efficiency, $\eta_{pms}$ of 57.5  \% and 61.2  \% respectively. In 
 theory these values should be equal to 
 
 \begin{equation} \label{eq:wpt_effi} 
 \eta_{pms} = \eta_{rect}*\eta_{ldo}
 \end{equation}
 
-Using $\eta_{rect}$ from table \ref{tab:rect_spec} and $\eta_{ldo}$ from table \ref{tab:ldo_spec}, the pre and post layout efficiencies are this and this respectively 
-which are close match with the obtained values here. \\
+Using $\eta_{rect}$ from table \ref{tab:rect_spec} and $\eta_{ldo}$ from table \ref{tab:ldo_spec}, the pre and post layout efficiencies are 68.5  \% and 67.2  \% respectively. This disagreement in value is due to inclusion of pad resistance in top test bench and pad to  core resistive path loss. \\
 
 The performance of PMS system is tabulated as in table \ref{tab:pms_spec}.
 \begin{table}[H]
@@ -1379,11 +1365,11 @@ The performance of PMS system is tabulated as in table \ref{tab:pms_spec}.
 \hline \hline
 			& \textbf{Schematic}	& \textbf{Post-layout} 	\\
 \hline \hline
-$V_{rec}$ 			& 2.32 \si{\volt}		& 2.26 V	\\ \hline
-$\Delta V_{rec}$	& 2.9 \si{\milli\volt}\textsubscript{pp} & 2.9 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$V_{rec}$ 			& 2.29 \si{\volt}		& 2.2 V	\\ \hline
+$\Delta V_{rec}$	& 2.4 \si{\milli\volt}\textsubscript{pp} & 3.6 \si{\milli\volt}\textsubscript{pp}		\\ \hline
 $V_{reg}$			& 1.780	\si{\volt}		& 1.781 \si{\volt}			\\ \hline
-$\Delta V_{reg}$ 	& 0.0 \si{\milli\volt}\textsubscript{pp} & 0.4 \si{\milli\volt}\textsubscript{pp}		\\ \hline
-$\eta_{pms}$		& 	62.1 \%	& 65.5 \%		\\ 
+$\Delta V_{reg}$ 	& 0.1 \si{\milli\volt}\textsubscript{pp} & 0.4 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$\eta_{pms}$		& 	57.5  \%	& 61.2  \%		\\ 
  
 \hline \hline
 \end{tabular}
@@ -1452,7 +1438,8 @@ Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_
 Figure \ref{fig:wpt_PI} shows instantaneous diode current waveform with their corresponding input voltages. On comparison 
 with PMS performance, two distinct difference is seen: diode current rising quickly to peak value and higher peak diode 
 current. This is because Vin(Vin1 - Vin2) changes quickly during turning on time of diodes. That is why the peak of Vin 
-is more like a square wave. 
+is more like a square wave. Similarly as in PMS section, diode in Vin1 path is conducting less peak current than in Vin2 path due to two 
+path being resistively asymmetrical in the layout. 
 %from the driver during stable operation. These are 
 %complete sine waves as the primary is driven by sinusoidal voltage source. The peaks of power waveform have additional 
 %smaller peak on the falling side which corresponding to extra power consudmed due to reverse leakage across rectifying 
@@ -1466,7 +1453,7 @@ is more like a square wave.
 \end{figure}
 From the simulation, total power from the source is 102.3 mW and 95.5 mW out of which 31.2 mW and 30 mW was supplied to the primary 
 antenna respectively for pre and post layout, for delivering 17.81 mW to the load. This results in power transfer 
-efficiency, $\eta_{wpt}$, of 57.1\% and 59.4 \% respectivley. This $\eta_{wpt}$ of complete WPT system should be equal to 
+efficiency, $\eta_{wpt}$, of 57.1\% and 59.4 \% respectivley. [IS THERE NO LOSS AT INDUCITVE LINK, SHOULD BE ????]This $\eta_{wpt}$ of complete WPT system should be equal to 
 
 \begin{equation} \label{eq:wpt_effi} 
 \eta_{wpt} = \eta_{link}*\eta_{rect}*\eta_{ldo}
@@ -1646,12 +1633,14 @@ simulation. In the produced chip the problem might be in the biasing of buffer o
 Transistor M13 is a current source to buffer transistor M14. M13 was made wide in order to supply enough current to 
 drive a very large pass device. [MORE ON IT]. \\
 
-\begin{figure} [!htbp]
+\begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/meas/ldo_iload_sweep.pdf} 
  \caption{LDO load sweep} 
 \label{fig:meas_ldo_iload_sweep} 
 \end{figure}
+
+
 
 \subsection{PMS Chip} %****************************************************
 
@@ -1677,8 +1666,18 @@ The measured voltages waveform for 10 mA load is presented in figure  \ref{fig:m
 \label{fig:meas_wpt5_vs} 
 \end{figure}
 
-Figure [FIGURE] shows measured currents in primary coil and rectifying diodes. The currents are calculated using a 2 $\Omega$ series resistance and measuring voltage drop across it. 
+Figure \ref{fig:meas_wpt5_current_pri}  shows measured currents in primary coil and rectifying diodes. The current is calculated using a 5 $\Omega$ series resistance and measuring voltage drop across it. Average power delivered to primary is calculated by integrating the product of instantaneous voltage and current and dividing it by the integration time which is obtained as 52 mW. (? DOUBT IT ) The useful power delivered  to load is calculated as product of rms of Vrec which is 2.22 V and dc current of 10 mA  i.e. 22.2 mW. This results in system efficiency of 42  \%. against the simulation efficiency of 73.4 \%. Just a remainder that these efficiencies are the combined efficiency of inductive link and only rectifier as PMS. \\
 
+\begin{figure} [!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{img/meas/wpt5_current_pri_2.pdf} 
+ \caption{Voltage and current at primary coil} 
+\label{fig:meas_wpt5_current_pri} 
+\end{figure}
+
+The measured power transfer efficiency 40 \% less than simulated efficiency. These reduction can be explained with two main design issues: effect of parasitics on rectifier and non-optimal resonance. As explained in rectifier measurement result, the parasitic capacitance and inductance have caused the distortion of rectifier inputs, significantly affecting the comparator performance which was designed to avoid reverse leakage of current. Similarly magnetic resonance created at the transfer link is dependent both on load and distance between the coil. During tuning of transfer link the load was modelled as dc load including the LDO, which is disabled during measurement due to its limitations, and not to mention rectifier itself being non-linear load which is always subjected to change. \\
+
+The measurement procedure for other two case of inductive links, 1 mm and 10 mm separation is done as above. The performance of all three coupling from weal, moderate to weak is presented in table [] below. 
 
 % ***********************************************************************  CONCLUSION ***********************************************************************************
 \part{Conclusion}
