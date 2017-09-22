@@ -55,6 +55,20 @@ Ptxt1 = sprintf('Pre: P_{avg}= % .1f mW', mean(pwr_sch(from:end))*1000);
 Ptxt1p = sprintf('Post: P_{avg}= % .1f mW', mean(pwr_pex(fromp:end))*1000);
 legend(Ptxt1, Ptxt1p, 'location', 'best');
 
+
+%% test power plots
+f3 = figure(3);
+plot(time(from:to), pwr_sch(from:to)*10^3, 'b'); hold on;
+plot(timep(fromp:top), pwr_pex(fromp:top)*10^3, 'b-.');
+plot(time(from:to), pwr_ac_sch(from:to)*10^3, 'r'); hold on;
+plot(timep(fromp:top), pwr_ac_pex(fromp:top)*10^3, 'r-.');
+
+hold off;
+     grid on;
+     
+     xlim([start, start + 0.15]);
+
+
 %% VOLTAGE CURRENT
 f2 = figure(2);
 subplot(2, 1, 1);
