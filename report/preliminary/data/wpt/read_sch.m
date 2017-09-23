@@ -16,12 +16,12 @@ clear all;
 V = importdata('wpt_vs_sch.matlab');
 
 t_sch = V.data(:, 1);
-vreg_sch = V.data(:, 12);
-vrec_sch = V.data(:, 10);
 vac_sch = V.data(:, 2);
-vin1_sch = V.data(:, 4);
-vin2_sch = V.data(:, 6);
-vpri_sch = V.data(:, 8);
+vpri_sch = V.data(:, 4);
+vin1_sch = V.data(:, 6);
+vin2_sch = V.data(:, 8);
+vrec_sch = V.data(:, 10);
+vreg_sch = V.data(:, 12);
 
 %%
 clear V; 
@@ -33,13 +33,14 @@ clear all;
 I = importdata('wpt_PI_sch.matlab');
 
 t_sch = I.data(:, 1);
-pwr_ac_sch = I.data(:, 12);
-pwr_pms_sch = I.data(:, 14);
 Iac_sch = I.data(:, 2);
-Is_sch = I.data(:, 6);
 Ip_sch = I.data(:, 4);
+Is_sch = I.data(:, 6);
 Ivin1_sch = I.data(:, 10);
 Ivin2_sch = I.data(:, 8);
+pwr_ac_sch = I.data(:, 12);
+pwr_pms_sch = I.data(:, 14);
+pwr_il_sch = I.data(:, 16);
 
 %%
 clear I;

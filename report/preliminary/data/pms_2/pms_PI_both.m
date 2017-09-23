@@ -15,8 +15,15 @@ to = find(600.500 == round(time, 2), 1);
 fromp = find(600.000 == round(timep, 3), 1);
 top = find(600.500 == round(timep, 2), 1);
 
-pwr_sch = pwr_ac_sch + .0178;
-pwr_pex = pwr_ac_pex + .01781;
+pwr_sch = pwr_ac_sch + .0178 - 0.0007;
+pwr_pad_sch = rms(Ivin2_sch)^2*2*4+0.01^2*2*2;
+pPms_sch = (mean(pwr_pms_sch)+pwr_pad_sch)*1000;
+pLoad_sch = 0.0178*1000;
+
+pwr_pex = pwr_ac_pex + .01781 - 0.0007;
+pwr_pad_pex = rms(Ivin2_pex)^2*2*4+0.01^2*2*2;
+pPms_pex = (mean(pwr_pms_pex)+pwr_pad_pex)*1000;
+pLoad_pex = 0.0178*1000;
 
 subplot(2, 1, 1);
 p1 = plot(time(from:to), Iac_sch(from:to)*10^3, 'r'); hold on;
@@ -43,8 +50,8 @@ grid on;
 xlim([600, 600.3]);
 %ylim([0, 35]);
 title('Power from source', 'FontSize', 10);
-Ptxt1 = sprintf('Pre: P_{avg}= % .1f mW', mean(pwr_sch(from:end))*1000);
-Ptxt1p = sprintf('Post: P_{avg}= % .1f mW', mean(pwr_pex(fromp:end-1))*1000);
+Ptxt1 =  sprintf('Pre:  P_{src}=%.1f, P_{pms}=%.1f, P_{load}=%.1f mW', mean(pwr_sch(from:end))*1000, pPms_sch, pLoad_sch);
+Ptxt1p = sprintf('Post: P_{src}=%.1f, P_{pms}=%.1f, P_{load}=%.1f mW', mean(pwr_pex(fromp:end-1))*1000, pPms_pex, pLoad_pex);
 legend(Ptxt1, Ptxt1p, 'location', 'best');
 
 %% VOLTAGE CURRENT
@@ -102,9 +109,14 @@ print(f2, 'pms_VIrect_both.pdf', '-dpdf');
 movefile('pms_VIrect_both.pdf','../../img/pms/pms2_VIrect_both.pdf');
 
 %%
-plot(time, Vac_sch, time, Vpri_sch);
+yyaxis left
+plot(time, Vac_sch);
 
-xlim([1200, 1200.150]);
+yyaxis right
+plot(time, Iac_sch*1000);
+
+xlim([600  , 600.150]);
 grid on;
 
+mean(Vac_sch.*Iac_sch)
 

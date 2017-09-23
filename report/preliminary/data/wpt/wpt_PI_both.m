@@ -12,19 +12,29 @@ vin_sch = vin1_sch - vin2_sch;
 vin_pex = vin1_pex - vin2_pex;
 %% POWER CURRENT FROM SOURCE
 f1 = figure(1);
-start = 3500.000;
+start = 1200.000;
 from = find(start == round(time, 3), 1);
 to = find(start + 0.5 == round(time, 2), 1);
 fromp = find(start == round(timep, 3), 1);
 top = find(start + 0.5 == round(timep, 2), 1);
 
-pwr_Rs = 50 * rms(Iac_sch)^2;
-pwr_sch = pwr_ac_sch + .0178 ;%- pwr_Rs;
-pwr_tot = mean(pwr_sch);
-pwr_in_pri = pwr_tot -pwr_Rs;
-pwr_pms = mean(pwr_pms_sch) + .0178;
-pwr_Rs_pex = 50 * rms(Iac_pex)^2;
-pwr_pex = pwr_ac_pex + .01781 ;%- pwr_Rs_pex;
+% Power clacn
+ 
+pwr_pad_sch = rms(Ivin2_sch)^2*2*4+0.01^2*2;
+pTot_sch = mean(pwr_ac_sch) *1000 - 0.6; % 0.7 accounted for buffer and bias loss
+pRs_sch = 50 * rms(Iac_sch)^2 *1000;
+pIn_sch = pTot_sch - pRs_sch;
+pIL_sch = mean(pwr_il_sch) *1000;
+pPms_sch = (mean(pwr_pms_sch)+pwr_pad_sch)*1000;
+pLoad_sch = 0.0178*1000;
+
+pwr_pad_pex = rms(Ivin2_pex)^2*2*4+0.01^2*2;
+pTot_pex = mean(pwr_ac_pex) *1000 - 0.6;
+pRs_pex = 50 * rms(Iac_pex)^2 *1000;
+pIn_pex = pTot_pex - pRs_pex;
+pIL_pex = mean(pwr_il_pex)*1000;
+pPms_pex = (mean(pwr_pms_pex) + pwr_pad_pex)*1000;
+pLoad_pex = 0.01781*1000;
 
 subplot(2, 1, 1);
 p1 = plot(time(from:to), Iac_sch(from:to)*10^3, 'r'); hold on;
@@ -42,17 +52,17 @@ Itxt1p = sprintf('Post: I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Iac_pex(
 legend(Itxt1, Itxt1p, 'location', 'best');
 
 subplot(2, 1, 2);
-p2 = plot(time(from:to), pwr_sch(from:to)*10^3, 'b'); hold on;
-     plot(timep(fromp:top), pwr_pex(fromp:top)*10^3, 'r-.');
+p2 = plot(time(from:to), pwr_ac_sch(from:to)*10^3, 'b'); hold on;
+     plot(timep(fromp:top), pwr_ac_pex(fromp:top)*10^3, 'r-.');
      hold off;
 xlabel('Time (us)'); 
 ylabel('Power (mW)');
 grid on;
 xlim([start, start + 0.15]);
-%ylim([0, 35]);
+ylim([-30, 130]);
 title('Power from source', 'FontSize', 10);
-Ptxt1 = sprintf('Pre: P_{avg}= % .1f mW', mean(pwr_sch(from:end))*1000);
-Ptxt1p = sprintf('Post: P_{avg}= % .1f mW', mean(pwr_pex(fromp:end))*1000);
+Ptxt1 =  sprintf('Pre:  P_{src}=%.1f, P_{Rs}=%.1f, P_{in}=%.1f, P_{il}=%.1f, P_{pms}=%.1f, P_{load}=%.1f  mW, ', pTot_sch, pRs_sch, pIn_sch, pIL_sch, pPms_sch, pLoad_sch );
+Ptxt1p = sprintf('Post: P_{src}=%.1f, P_{Rs}=%.1f, P_{in}=%.1f, P_{il}=%.1f, P_{pms}=%.1f, P_{load}=%.1f  mW, ', pTot_pex, pRs_pex, pIn_pex, pIL_pex, pPms_pex, pLoad_pex );
 legend(Ptxt1, Ptxt1p, 'location', 'best');
 
 
@@ -86,17 +96,17 @@ ylim([-3, 45]);
 
 %ylim([-70, 70]);
 title('Current from source', 'FontSize', 10);
-Iin2 = sprintf('Pre: Vin2 I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Ivin2_sch(from:end)))*1000, rms(Ivin2_sch(from:end))*1000);
-Iin1 = sprintf('Pre: Vin1 I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Ivin1_sch(from:end)))*1000, rms(Ivin1_sch(from:end))*1000);
-Iin2p = sprintf('Post: Vin2 I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Ivin2_pex(fromp:end)))*1000, rms(Ivin2_pex(fromp:end))*1000);
-Iin1p = sprintf('Post: Vin1 I_{peak} = %.1f mA, I_{rms} = %.1f mA', max(abs(Ivin1_pex(fromp:end)))*1000, rms(Ivin1_pex(fromp:end))*1000);
+Iin2 = sprintf('Pre: Vin2, I_{peak}=%.1f mA, I_{rms}=%.1f mA', max(abs(Ivin2_sch(from:end)))*1000, rms(Ivin2_sch(from:end))*1000);
+Iin1 = sprintf('Pre: Vin1, I_{peak}=%.1f mA, I_{rms}=%.1f mA', max(abs(Ivin1_sch(from:end)))*1000, rms(Ivin1_sch(from:end))*1000);
+Iin2p = sprintf('Post: Vin2, I_{peak}=%.1f mA, I_{rms}=%.1f mA', max(abs(Ivin2_pex(fromp:end)))*1000, rms(Ivin2_pex(fromp:end))*1000);
+Iin1p = sprintf('Post: Vin1, I_{peak}=%.1f mA, I_{rms}=%.1f mA', max(abs(Ivin1_pex(fromp:end)))*1000, rms(Ivin1_pex(fromp:end))*1000);
 legend(Iin2, Iin1, Iin2p, Iin1p, 'location', 'best');
 
 subplot(2, 1, 2);
 plot(time(from:to), vin_sch(from:to), 'r'); hold on;
-plot(time(from:to), vin1_sch(from:to), 'b', time(from:to), vin2_sch(from:to), 'c');
+plot(time(from:to), vin1_sch(from:to), 'b', time(from:to), vin2_sch(from:to), 'c', time(from:to), vrec_sch(from:to), 'g');
 plot(timep(fromp:top), vin_pex(fromp:top), 'r--'); 
-plot(timep(fromp:top), vin1_pex(fromp:top),'b--', timep(fromp:top), vin2_pex(fromp:top), 'c--');
+plot(timep(fromp:top), vin1_pex(fromp:top),'b--', timep(fromp:top), vin2_pex(fromp:top), 'c--', timep(fromp:top), vrec_pex(fromp:top), 'g--');
 hold off;
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
@@ -104,37 +114,32 @@ grid on;
 xlim([start, start + 0.15]);
 ylim([-3, 3]);
 title('Rectifier voltages and currents', 'FontSize', 10);
-legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Post Vin', 'Post Vin1', 'Post Vin2');
+legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Post Vrec');
 
 %% Primary voltage and currnet
 
-Vprim_sch = vac_sch -(-Iac_sch)*50;
-Vprim_pex = vac_pex -(-Iac_pex)*50;
+f3 = figure(3);
 yyaxis left;
 %plot(time(from:to), vac_sch(from:to)); hold on;
-plot(time, Vprim_sch, timep, Vprim_pex);
+plot( time, vpri_sch, timep, vpri_pex);
 ylabel('Voltage, V');
 
 yyaxis right;
-plot(time, -Iac_sch*1000, timep, -Iac_pex*1000);
+plot(time, Iac_sch*1000, timep, Iac_pex*1000);
 
 hold off;
 grid on;
-xlim([start, start + 0.15]);
+xlim([start, start + 0.1505]);
 xlabel('Time (us)'); 
 ylabel('Current, mA');
-legend('Pre Vprim', 'Post Vprim' ,'Pre Iprim', 'Post Iprim', 'location', 'best');
+priV =  sprintf('Pre:  V_{prim}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_sch)/2, rms(vpri_sch));
+priVp = sprintf('Post: V_{prim}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_pex)/2, rms(vpri_pex));
+priI =  sprintf('Pre: I_{prim}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_sch)/2*1000, rms(Iac_sch)*1000);
+priIp =  sprintf('Post: I_{prim}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_pex)/2*1000, rms(Iac_pex)*1000);
+
+
+legend(priV, priVp, priI, priIp, 'location', 'best');
 title('Voltage and Current at primary', 'FontSize', 10);
-
-
-% Power calcn test
-ti = time - time(1);
-pwr_sch_approx = 1/ti(end)*trapz(ti, Iac_sch.*Vprim_sch);
-tip = timep - timep(1);
-pwr_pex_approx = 1/tip(end)*trapz(tip, Iac_pex.*Vprim_pex);
-
-[Amp, Ph] = freqrespmeasure(Iac_sch, Vprim_sch);
-pwr_sch_approx_2 = rms(Iac_sch)*rms(Vprim_sch)*cos(Ph);
 
 
 %% save plot 
@@ -143,7 +148,7 @@ pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f1, 'wpt_PIsrc_both.pdf', '-dpdf');
 movefile('wpt_PIsrc_both.pdf','../../img/wpt/wpt_PIsrc_both.pdf');
-%%
+%% diode current
 set(f2,'Units','Inches');
 pos = get(f2,'Position');
 set(f2,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
@@ -151,12 +156,15 @@ print(f2, 'wpt_VIrect_both.pdf', '-dpdf');
 movefile('wpt_VIrect_both.pdf','../../img/wpt/wpt_VIrect_both.pdf');
 
 
-%%
-ti = time - time(1);
-pwr_trapz = 1/ti(end)*trapz(ti, Iac_sch.*vac_sch);
-%pwr_int = 1/ti(end)*integral(Iac_sch.*vac_sch, ti(1), ti(end))
-pwr_trapz1 = 1/ti(end)*trapz(ti, Ivin1_sch.*vin1_sch);
-pwr_trapz2 = 1/ti(end)*trapz(ti, Ivin2_sch.*vin2_sch);
+%% primiary voltage and current
+set(f3,'Units','Inches');
+pos = get(f3,'Position');
+set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
+print(f3, 'wpt_priVI_both.pdf', '-dpdf');
+movefile('wpt_priVI_both.pdf','../../img/wpt/wpt_priVI_both.pdf');
 
 %%
 
+pin_totl = mean(vac_sch.*Iac_sch)
+pin_rect = sqrt(mean(vin1_sch.*Ivin1_sch)^2+mean(vin2_sch.*Ivin2_sch)^2)
+pin_prim = mean(vpri_sch.*Iac_sch)

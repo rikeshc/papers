@@ -8,7 +8,7 @@ timep = t_pex*10^6;
 %% plot Vrec and Vreg
 
 plotwidth = 1;
-stable = 3500;
+stable = 1200;
 from = find(stable ==round(time, 2), 1);
 to = find(stable + 0.5 ==round(time, 2), 1);
 fromp = find(stable ==round(timep, 2), 1);
@@ -48,7 +48,7 @@ timep = t_pex*10^6;
 
 %%
 plotwidth = 1;
-stable = 3500;
+stable = 1200.00;
 from = find(stable ==round(time, 2), 1);
 to = find(stable + 0.5 ==round(time, 2), 1);
 fromp = find(stable ==round(timep, 2), 1);
@@ -73,8 +73,8 @@ legend(leg1, leg1p, 'location', 'best');
 %xlabel('time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([3500, 3500.15]);
-ylim([2.15, 2.25]);
+xlim([1200, 1200.15]);
+%ylim([2.15, 2.25]);
 title('Rectified voltage, V_{rec}', 'FontSize', 10);
 
 subplot(2, 1, 2);
@@ -86,8 +86,8 @@ legend(leg2, leg2p, 'location', 'best');
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([3500, 3500.15]);
-ylim([1.778, 1.783]);
+xlim([1200, 1200.15]);
+ylim([1.779, 1.783]);
 title('Regulated voltage, V_{reg}', 'FontSize', 10);
 
 %% Vin and Vac
@@ -105,7 +105,7 @@ hold off;
 xlabel('Time (us)'); 
 ylabel('Voltage (V)');
 grid on;
-xlim([0, .16]);
+xlim([0.005, .16]);
 %ylim([-5.6, 5.6]);
 title('Inputs voltages', 'FontSize', 10);
 legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Pre Vrec', 'location', 'best');

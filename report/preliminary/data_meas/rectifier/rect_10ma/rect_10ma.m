@@ -5,6 +5,7 @@ vin2 = importdata('C4vin2_10ma00000.dat');
 vin1 = importdata('C1vin1_10ma00000.dat');
 vrec = importdata('F1vrec_10ma00000.dat');
 vin = importdata('F1vin_10ma00000.dat');
+vac = importdata('C1vpri_10ma00000.dat');
 time = vrec(:,1)*10^9+100+10.5; % time in ns
 
 load('/uio/hume/student-u18/rikeshc/Rikesh/mast/papers/report/preliminary/data/pms_2/Vs_pex.mat');
@@ -13,13 +14,13 @@ load('/uio/hume/student-u18/rikeshc/Rikesh/mast/papers/report/preliminary/data/p
 time_pex = (t_pex-t_pex(1))*10^9 - 75;
 
 f1 = figure(1);
-h1 = plot(time, vin1(:,2) ,'r', time, vin2(:,2) ,'b', time, vrec(:,2) ,'g'); 
+h1 = plot(time, vin1(:,2) ,'r', time, vin2(:,2) ,'b', time, vrec(:,2) ,'g', time, vac(:,2)); 
 hold on;
 plot(time, vin(:,2), 'm'); 
 
 %h2 = plot(time_pex, V1_pex, 'r--', time_pex, V2_pex, 'b--', time_pex, Vrec_pex ,'g--');
 h2 = plot(time_pex, Vin1_pex, 'r--', time_pex, Vin2_pex, 'b--', time_pex, Vrec_pex ,'g--');
-plot(time_pex,(Vin1_pex-Vin2_pex), 'm--'); 
+plot(time_pex, (Vin1_pex-Vin2_pex), 'm--'); 
 %plot(Na, NaN,'b', time, NaN, 'b--');
 hold off;
 xlim([68, 159]);
