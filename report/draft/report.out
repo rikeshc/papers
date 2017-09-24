@@ -26,25 +26,23 @@
 \BOOKMARK [1][-]{section.5.3}{Inductive Transfer Link}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.4}{Magnetic Resonance Coupling}{chapter.5}% 27
 \BOOKMARK [-1][-]{part.3}{III WPT System Design and Implementation}{}% 28
-\BOOKMARK [0][-]{chapter.6}{Power Management System}{part.3}% 29
+\BOOKMARK [0][-]{chapter.6}{PMS and WPT Systems}{part.3}% 29
 \BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 30
 \BOOKMARK [1][-]{section.6.2}{Power Management System}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter.7}{WPT System}{part.3}% 32
-\BOOKMARK [1][-]{section.7.1}{Top Testbench}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.2}{Simulation result}{chapter.7}% 34
-\BOOKMARK [-1][-]{part.4}{IV WPT Chip Production, Test and Verification }{}% 35
-\BOOKMARK [0][-]{chapter.8}{Test and Verification }{part.4}% 36
-\BOOKMARK [1][-]{section.8.1}{Chip and PCB}{chapter.8}% 37
-\BOOKMARK [1][-]{section.8.2}{Measurement Setup}{chapter.8}% 38
-\BOOKMARK [1][-]{section.8.3}{Measurement Result and Discussion}{chapter.8}% 39
-\BOOKMARK [-1][-]{part.5}{V Conclusion}{}% 40
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{part.5}% 41
-\BOOKMARK [1][-]{section.9.1}{Lesson learnt}{chapter.9}% 42
-\BOOKMARK [1][-]{section.9.2}{Future Work}{chapter.9}% 43
-\BOOKMARK [0][-]{section*.90}{Appendices}{part.5}% 44
-\BOOKMARK [0][-]{Appendix.1.A}{Rectifier Implementation}{part.5}% 45
-\BOOKMARK [0][-]{Appendix.1.B}{LDO Implementation}{part.5}% 46
-\BOOKMARK [0][-]{Appendix.1.C}{WPT Chip}{part.5}% 47
-\BOOKMARK [0][-]{Appendix.1.D}{Test PCBs}{part.5}% 48
-\BOOKMARK [0][-]{section*.102}{Bibliography}{part.5}% 49
-\BOOKMARK [0][-]{section*.103}{Acronyms}{part.5}% 50
+\BOOKMARK [1][-]{section.6.3}{WPT System}{chapter.6}% 32
+\BOOKMARK [-1][-]{part.4}{IV WPT Chip Production, Test and Verification }{}% 33
+\BOOKMARK [0][-]{chapter.7}{Test and Verification }{part.4}% 34
+\BOOKMARK [1][-]{section.7.1}{Chip and PCB}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.2}{Measurement Setup}{chapter.7}% 36
+\BOOKMARK [1][-]{section.7.3}{Measurement Result and Discussion}{chapter.7}% 37
+\BOOKMARK [-1][-]{part.5}{V Conclusion}{}% 38
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{part.5}% 39
+\BOOKMARK [1][-]{section.8.1}{Lesson learnt}{chapter.8}% 40
+\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 41
+\BOOKMARK [0][-]{section*.92}{Appendices}{part.5}% 42
+\BOOKMARK [0][-]{Appendix.1.A}{Rectifier Implementation}{part.5}% 43
+\BOOKMARK [0][-]{Appendix.1.B}{LDO Implementation}{part.5}% 44
+\BOOKMARK [0][-]{Appendix.1.C}{WPT Chip}{part.5}% 45
+\BOOKMARK [0][-]{Appendix.1.D}{Test PCBs}{part.5}% 46
+\BOOKMARK [0][-]{section*.104}{Bibliography}{part.5}% 47
+\BOOKMARK [0][-]{section*.106}{Acronyms}{part.5}% 48

@@ -625,6 +625,9 @@ INPUT ./img/wpt/wpt_Vout_both.pdf
 INPUT img/wpt/wpt_ripple_both.pdf
 INPUT ./img/wpt/wpt_ripple_both.pdf
 INPUT ./img/wpt/wpt_ripple_both.pdf
+INPUT img/wpt/wpt_priVI_both.pdf
+INPUT ./img/wpt/wpt_priVI_both.pdf
+INPUT ./img/wpt/wpt_priVI_both.pdf
 INPUT img/wpt/wpt_VIrect_both.pdf
 INPUT ./img/wpt/wpt_VIrect_both.pdf
 INPUT ./img/wpt/wpt_VIrect_both.pdf
@@ -648,6 +651,10 @@ INPUT ./img/meas/rect_1ma.pdf
 INPUT img/meas/rect_load_sweep.pdf
 INPUT ./img/meas/rect_load_sweep.pdf
 INPUT ./img/meas/rect_load_sweep.pdf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT img/meas/ldo_vin_sweep.pdf
 INPUT ./img/meas/ldo_vin_sweep.pdf
 INPUT ./img/meas/ldo_vin_sweep.pdf
