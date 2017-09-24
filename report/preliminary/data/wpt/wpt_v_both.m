@@ -46,7 +46,6 @@ load('Vs_pex.mat');
 time = t_sch*10^6;
 timep = t_pex*10^6;
 
-%%
 plotwidth = 1;
 stable = 1200.00;
 from = find(stable ==round(time, 2), 1);
@@ -97,9 +96,9 @@ timep = timep - timep(1);
 vin_sch = vin1_sch - vin2_sch;
 vin_pex = vin1_pex - vin2_pex;
 %plot(time(from:to), vac_sch(from:to), 'm', time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'g', time(from:to), vin2_sch(from:to), 'b'); hold on;
-plot(time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'b', time(from:to), vin2_sch(from:to), 'm', time(from:to), vrec_sch(from:to), 'g'); hold on;
+plot(time(from:to), vpri_sch(from:to), 'c', time(from:to), vin_sch(from:to), 'r', time(from:to), vin1_sch(from:to), 'b', time(from:to), vin2_sch(from:to), 'm', time(from:to), vrec_sch(from:to), 'g'); hold on;
 
-plot(timep(fromp:top), vin_pex(fromp:top), 'r--', timep(fromp:top), vin1_pex(fromp:top), 'b--', timep(fromp:top), vin2_pex(fromp:top), 'm--', timep(fromp:top), vrec_pex(fromp:top), 'g--');
+plot(timep(fromp:top), vpri_pex(fromp:top), 'c--', timep(fromp:top), vin_pex(fromp:top), 'r--', timep(fromp:top), vin1_pex(fromp:top), 'b--', timep(fromp:top), vin2_pex(fromp:top), 'm--', timep(fromp:top), vrec_pex(fromp:top), 'g--');
 
 hold off;
 xlabel('Time (us)'); 
@@ -108,7 +107,7 @@ grid on;
 xlim([0.005, .16]);
 %ylim([-5.6, 5.6]);
 title('Inputs voltages', 'FontSize', 10);
-legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Pre Vrec', 'location', 'best');
+legend('Pre Vac', 'Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vac', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Pre Vrec', 'location', 'best');
 
 %% saving plot to a location
 

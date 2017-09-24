@@ -1107,8 +1107,8 @@ of two coils, $ L_{12} = L_{21} = M $, coupling coefficient between the coils, $
 \begin{tabular}{c|c|c|c|c}
 \hline \hline
  			& \textbf{Sepr: 2 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr: 10 mm}	& \textbf{Unit}\\ \hline \hline
-$L_{1}$		& 357					& 466-496				& 499-503				& \si{\nano\henry} \\ \hline
-$L_{2}$		& 353					& 460-489				& 493-498				& \si{\nano\henry} \\ \hline
+$L_{1}$		& 357					& 481				& 501				& \si{\nano\henry} \\ \hline
+$L_{2}$		& 353					& 476				& 496				& \si{\nano\henry} \\ \hline
 $M$			& 254					& 122					& 50					& \si{\nano\henry} \\ \hline
 $k$			& 0.52					& 0.25					& 0.10					& -		   \\ \hline
 $Q_{L_{1}}$	& 39-60					& 57-63					& 62	 				& -		   \\ \hline
@@ -1198,7 +1198,7 @@ $\omega$							& 13.56				& 13.56				& 13.56				& \si{\mega\hertz}	\\ \hline
 $S11$							& -55				& -61				& -29			  	& \si{\decibel}		\\ \hline
 $S22$							& -30				& -24				& -9					& \si{\decibel} 		\\ \hline
 $S21$							& -0.28 (0.97)			& -0.61 (0.93)			& -2.50 (0.75)			& \si{\decibel} (mag.)	\\ \hline
-$Q_{L_{1}}$, $Q_{L_{2}}$			&					& 					& 					&		\\ \hline
+%$Q_{L_{1}}$, $Q_{L_{2}}$			&					& 					& 					&		\\ \hline
 $\eta_{link}$						& 94					& 86					& 56					& \% \\		
 \hline \hline
 \end{tabular}
@@ -1301,9 +1301,7 @@ the tracks from pad to the core inputs, which obviously contributes more resista
 more drop in Vrec. Similarly, passive and active rectification region is clearly seen here. $C_{load}$ being a large 
 capacitor, it is taking longer time to start the active rectification. [MORE HERE ABOUT IT]. 
 The regulated output, Vrec is similar to as discussed in LDO section. The only difference is longer start up time because 
-Vrec from rectifier is input to the LDO and minimum input to LDO is not reached unless active rectification starts. The 
-rectifier input Vin is clipped. It is because when the rectifying diode starts conducting, there is voltage drop across 
-the source resistance. \\
+Vrec from rectifier is input to the LDO and minimum input to LDO is not reached unless active rectification starts.\\
 
 \begin{figure} [H]
   \centering
@@ -1343,19 +1341,21 @@ less than through Vin2 path which means paths from pad to diode inputs are asymm
 \label{fig:pms_PI} 
 \end{figure}
 
-The total power consumed from the source are 30.9 mW and 29.1 mW for pre and post layout simulation for delivering 17.8 mW to 
+The total power consumed from the source are 30.2 mW and 28.4 mW for pre and post layout simulation for delivering 17.8 mW to 
 the load. Slightly less power in consumed in post in post layout which  is explained by two things: reduced Irms of 
 diodes as explained earlier and reduced Vrec. Since Vrec in the input to the LDO, less Vrec means pass device in LDO has 
 to drop less voltage increasing LDO efficiency. \\
 
-This results in power transfer efficiency, $\eta_{pms}$ of 57.5  \% and 61.2  \% respectively. In 
+This results in power transfer efficiency, $\eta_{pms}$ of 58.9  \% and 62.7  \% respectively. In 
 theory these values should be equal to 
 
 \begin{equation} \label{eq:wpt_effi} 
 \eta_{pms} = \eta_{rect}*\eta_{ldo}
 \end{equation}
 
-Using $\eta_{rect}$ from table \ref{tab:rect_spec} and $\eta_{ldo}$ from table \ref{tab:ldo_spec}, the pre and post layout efficiencies are 68.5  \% and 67.2  \% respectively. This disagreement in value is due to inclusion of pad resistance in top test bench and pad to  core resistive path loss. \\
+Using $\eta_{rect}$ from table \ref{tab:rect_spec} and $\eta_{ldo}$ from table \ref{tab:ldo_spec}, the pre and post 
+layout efficiencies are 68.5  \% and 67.2  \% respectively. This disagreement in value is due to inclusion of pad 
+resistance and pad to  core resitance in in top test bench of PMS.\\
 
 The performance of PMS system is tabulated as in table \ref{tab:pms_spec}.
 \begin{table}[H]
@@ -1365,11 +1365,11 @@ The performance of PMS system is tabulated as in table \ref{tab:pms_spec}.
 \hline \hline
 			& \textbf{Schematic}	& \textbf{Post-layout} 	\\
 \hline \hline
-$V_{rec}$ 			& 2.29 \si{\volt}		& 2.2 V	\\ \hline
+$V_{rec}$ 			& 2.285 \si{\volt}		& 2.200 V	\\ \hline
 $\Delta V_{rec}$	& 2.4 \si{\milli\volt}\textsubscript{pp} & 3.6 \si{\milli\volt}\textsubscript{pp}		\\ \hline
 $V_{reg}$			& 1.780	\si{\volt}		& 1.781 \si{\volt}			\\ \hline
-$\Delta V_{reg}$ 	& 0.1 \si{\milli\volt}\textsubscript{pp} & 0.4 \si{\milli\volt}\textsubscript{pp}		\\ \hline
-$\eta_{pms}$		& 	57.5  \%	& 61.2  \%		\\ 
+$\Delta V_{reg}$ 	& 0.1 \si{\milli\volt}\textsubscript{pp} & 0.5 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$\eta_{pms}$		& 	58.9  \%	& 62.7  \%		\\ 
  
 \hline \hline
 \end{tabular}
@@ -1398,11 +1398,13 @@ The parasitic extraction of the compete layout also includes the tracks from pad
 
 \section{Simulation result}	%****************************************************
 Figure \ref{fig:wpt_vin} is the plot presenting input voltages to the inductive link and chip: $V_{ac}$ is input to the 
-primary antenna, and $V_{in1}$ and $V_{in2}$ are differential voltages generated across the secondary antenna, which are 
-inputs to the chip. In order to obtained the nominal amplitude of 2.6 V of the differential signals, 
-the magnitude of $V_{ac}$ is required to rise to 5.6 \si{\volt}. It is seen that $V_{ac}$ slightly lags in phase with $V_{in}$ due to shift 
+primary antenna, and $V_{in1}$ and $V_{in2}$ are differential voltages generated across the secondary antenna which are 
+inputs to the chip and and 
+$V_{in}$ is $V_{in1} - V_{in2}$. In order to obtained the nominal amplitude of 2.6 V of the differential signals, 
+the amplitude of $V_{ac}$ is required to rise to 1.85 \si{\volt}. It is seen that $V_{ac}$ slightly lags in phase with $V_{in}$ due to shift 
 in resonance frequency. This can be due to mismatch in load at secondary because rectifier being non-linear load, it was 
-modelled as an approximate dc load during tuning of inductive link. [ANYTHING MORE]\\
+modelled as an approximate dc load during tuning of inductive link. Moreover, $V_{in}$ is not perfectly symmetrical here. It is slightly 
+flattened at the peaks because of voltage drop in coil and pad resistance while the diodes are conducting.[ANYTHING MORE]\\
 
 \begin{figure} [H]
   \centering
@@ -1413,10 +1415,8 @@ modelled as an approximate dc load during tuning of inductive link. [ANYTHING MO
 
 In figure \ref{fig:wpt_vout}, rectified voltage, $V_{rec}$ and regulated voltage, $V_{reg}$ waveform from the PMS chip is 
 shown where its inputs are the differential signals, $V_{in1}$ and $V_{in2}$, shown in figure \ref{fig:wpt_vin}. On 
-comparing these waveforms with that of PMS system, two distinct observations are made: reduced $V_{rec}$ and longer time 
-to reach steady state output. The reduction in $V_{rec}$ is due to shorter conduction of rectifying diodes because the 
-differential inputs are not perfectly sinusoidal.[OK?]. And longer time to steady state is due to weakly coupled inductive 
-and a large output capacitor [ANOTHER OK?].  
+comparing these waveforms with that of PMS system, it is seen that outputs take longer time to reach steady state due to 
+weakly coupled inductive and a large output capacitor. 
 
 \begin{figure} [H]
   \centering
@@ -1435,6 +1435,17 @@ Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_
 \label{fig:wpt_ripple} 
 \end{figure}
 
+The voltage and current at the primary antenna is shown in figure \ref{fig:wpt_priVI_both}. AS already mentioned, $V_{ac}$ is 
+gradually increased to 1.85 V ampltiude to get nominal amplitude of differential inputs to the rectifier. Also seen in 
+the plot, current is slightly leading voltage, which means it slightly capacititive and resooance frequency has slight shift.
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=\textwidth]{img/wpt/wpt_priVI_both.pdf} 
+ \caption{Primary voltage and current} 
+\label{fig:wpt_priVI_both} 
+\end{figure}
+
 Figure \ref{fig:wpt_PI} shows instantaneous diode current waveform with their corresponding input voltages. On comparison 
 with PMS performance, two distinct difference is seen: diode current rising quickly to peak value and higher peak diode 
 current. This is because Vin(Vin1 - Vin2) changes quickly during turning on time of diodes. That is why the peak of Vin 
@@ -1448,36 +1459,41 @@ path being resistively asymmetrical in the layout.
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/wpt/wpt_VIrect_both.pdf} 
- \caption{Current and power consumption} 
+ \caption{Diode current and voltages} 
 \label{fig:wpt_PI} 
 \end{figure}
-From the simulation, total power from the source is 102.3 mW and 95.5 mW out of which 31.2 mW and 30 mW was supplied to the primary 
-antenna respectively for pre and post layout, for delivering 17.81 mW to the load. This results in power transfer 
-efficiency, $\eta_{wpt}$, of 57.1\% and 59.4 \% respectivley. [IS THERE NO LOSS AT INDUCITVE LINK, SHOULD BE ????]This $\eta_{wpt}$ of complete WPT system should be equal to 
+From the simulation, it is obtained that primary antenna consumes 37.1 mW and 35.2 mW in pre and post layout result, for 
+delivering 17.81 mW to the load. This results in power transfer efficiency,  $\eta_{wpt}$, of 48\% and 50.6 \% respectivley. 
+Using $\eta_{pms}$ value from table \ref{tab:pms_spec}, $\eta_{link}$ is obtained 81.5\% and 80.7\% from pre and post layout result. 
+The theoritical $\eta_{link}$ for perfectly matched source and load of transfer link is 86\%. This difference can be explained with 
+inaccuracy in modelling complete system (PMS chip and DC load) as DC load during tuning of inductive link. As a result this has caused 
+slight shift in resonance frequency and eventually has reduced efficiency. \\
 
+Just for the cross check, this $\eta_{wpt}$ of complete WPT system should be equal to 
 \begin{equation} \label{eq:wpt_effi} 
 \eta_{wpt} = \eta_{link}*\eta_{rect}*\eta_{ldo}
 \end{equation}
-Using table \ref{tab:ant_spec}, \ref{tab:rect_spec} and \ref{tab:ldo_spec}, efficiency obtained from equation \ref{eq:wpt_effi} 
-and the one calculated here are very close.\\
+Using table \ref{tab:ant_spec}, \ref{tab:rect_spec} and \ref{tab:ldo_spec}, efficiencies obtained from equation \ref{eq:wpt_effi} 
+are 56.7\% and 57.8\% respectively for pre and post layout results. As already discussed this difference can be explained with resisitive loss
+ in PMS system and load mismatch in resonant inducitve link.\\
 
 Finally, the performance of the above discussed WPT system for maximum load and coil separation of 5 mm is tabulated in 
 table \ref{tab:wpt_spec}. 
 
 
 \begin{table}[H]
-\caption{WPT performance summary} 
+\caption{WPT performance summary for 5 mm coupling} 
 \begin{center}
 \begin{tabular}{c|c|c}
 \hline \hline
 					& \textbf{Schematic}	& \textbf{Post-layout} 	\\
 \hline \hline
-$V_{ac}$			& 5.5 \si{\volt}		& 5.5 \si{\volt} \\ \hline
-$V_{rec}$ 			& 2.22 \si{\volt}		& 2.17 V	\\ \hline
-$\Delta V_{rec}$	& 2.2 \si{\milli\volt}\textsubscript{pp} & 2.2 \si{\milli\volt}\textsubscript{pp}		\\ \hline
+$V_{ac}$			& 1.85 \si{\volt}		& 1.85 \si{\volt} \\ \hline
+$V_{rec}$ 			& 2.287 \si{\volt}		& 2.229 V	\\ \hline
+$\Delta V_{rec}$	& 3 \si{\milli\volt}\textsubscript{pp} & 2.8 \si{\milli\volt}\textsubscript{pp}		\\ \hline
 $V_{reg}$			& 1.780	\si{\volt}		& 1.781 \si{\volt}			\\ \hline
 $\Delta V_{reg}$ 	& 0.1 \si{\milli\volt}\textsubscript{pp} & 0.5 \si{\milli\volt}\textsubscript{pp}		\\ \hline
-$\eta_{wpt}$		& 57.1 \%				& 59.4 \%		\\ 
+$\eta_{wpt}$		& 48 \%				& 50.6 \%		\\ 
  
 \hline \hline
 \end{tabular}
@@ -1485,18 +1501,23 @@ $\eta_{wpt}$		& 57.1 \%				& 59.4 \%		\\
 \label{tab:wpt_spec}
 \end{table}%
 
-The above analysis and characterisation of WPT system is for inductive link with coil separation of 5 mm for driving maximum load. The same analysis is repeated for other two cases: a stronger inductive link created from 1.5 mm coil separation and a weaker inductive link created from 10 mm coil separation. The post layout performance of WPT system for these different inductive links is listed below in table \ref{tab:wpt_spec_all}.
+The above analysis and characterisation of WPT system is for inductive link with coil separation of 5 mm for delivering 10 mA current at 1.8 V. The 
+same analysis is repeated for other two cases: a stronger inductive link created from 1.5 mm coil separation and a weaker inductive link 
+created from 10 mm coil separation. For doing this, respective lumped model of inductive link is used in top testbench, 
+figure \ref{fig:wpt_top_testbench}, The comparative post layout performance of WPT system for these different inductive links is listed below in 
+table \ref{tab:wpt_spec_all}.
 
 \begin{table}[H]
 \caption{WPT performance summary for all inductive link} 
 \begin{center}
 \begin{tabular}{c|c|c|c}
 \hline \hline
-					& \textbf{Sepr: 1.5 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr:10 mm} \\ \hline \hline
-$ k $				& -						& -						& -		\\ \hline
-$V_{ac}$			& - \si{\volt}			& 5.5 \si{\volt} 		& -	\si{\volt}	\\ \hline
-$I_{peak}$			& - \si{\milli\ampere}	& 43.1 \si{\milli\ampere} 	& - \si{\milli\ampere} \\ \hline
-$\eta_{wpt}$		& -	\%					& 59.4 \%					& - \% \\ 
+				& \textbf{Sepr: 1.5 mm}	& \textbf{Sepr: 5 mm} 	& \textbf{Sepr:10 mm} \\ \hline \hline
+$ k $				& 0.52						& 0.25		& 0.1		\\ \hline
+$V_{ac}$			& 1.58 \si{\volt}		& 1.85 \si{\volt} 		& 2.81 \si{\volt}	\\ \hline
+$I_{peak}$			& 41.2 \si{\milli\ampere}	& 37.5 \si{\milli\ampere} 	& 39.2 \si{\milli\ampere} \\ \hline
+$P_{in}$			& 32.8 \si{\milli\watt}	& 35.2 \si{\milli\watt} 	& 51 \si{\milli\watt} \\ \hline
+$\eta_{wpt}$			& 54.3 \%		& 50.6 \%			& 34.9 \% \\ 
  
 \hline \hline
 \end{tabular}
@@ -1504,7 +1525,9 @@ $\eta_{wpt}$		& -	\%					& 59.4 \%					& - \% \\
 \label{tab:wpt_spec_all}
 \end{table}%
 
-
+From the above table, it is observed that with the increase in distance between primary and secondary coils, there is decrease in coupling 
+between the coils in the inductive link, resulting in less magnetic field from the primary coupling into secondary. That is why with increasing 
+distance between the coils, the primary has to be driven with more power to deliver to the load.
 % *********************************************************************** CHIP production and test  ***********************************************************************
 
 \part{WPT Chip Production, Test and Verification } 
@@ -1566,7 +1589,7 @@ PMS simulation. The average rectified output $V_{rec}$ is a close to simulated v
  pad capacitance while operating at higher frequency. In order to verify this clarification, the top level test bench is re-simulated with approximate parasitic 
  inductance and capacitance and the distortion in $V_{in1}$ and $V_{in2}$ is noticed as in the result above. This distortion 
  has affected the comparator performance resulting in faster turning on diodes and later turning off diodes. The later turning 
- off of diodes results in reverse leakage current causing decrease in efficiency. \\
+ off of diodes results in reverse leakage current. \\
 
 \begin{figure} [!htbp]
   \centering
@@ -1589,9 +1612,23 @@ in this case. \\
 The measured rectified output for various load is presented in figure \ref{fig:meas_rect_load_sweep}. The average rectified 
 DC value is as expected but the ripple is unexpectedly higher. The ripple rejection capacitor was replaced with 100 uF capacitor 
 hoping for reduced ripple but only few milli volt reduction was observed.
-The frequency of ripple was higher than 2 times the operating frequency which means the distortion in inputs is causing 
-multiple conduction in a half cycle: the peaks in ripple corresponds to additional conduction during turning on of diodes and 
-valleys in ripple corresponds to occurrence of reverse leakage.
+The frequency of ripple was 35 MHz, higher than 2 times the operating frequency which means the distortion in inputs is causing 
+multiple conduction in a half cycle. The peaks in ripple corresponds to additional conduction during turning on of diodes and 
+valleys in ripple corresponds to occurrence of reverse leakage during turning off time. \\
+
+In order to measure input power, $P_{in}$, from source, first a 5 $\Omega $ was connected in series between supply and balun and voltage drop across this 
+ resistor was measured. Current drawn from the source was then calculated by dividing voltage drop across the series resistor by its resistance value.
+ Using matlab, the average input power was calculated by integrating the product of instanteneous current waveform and input voltage waveform, $V_{in}$  in figure \ref{fig:meas_rect_10ma} and dividing 
+ it by integration time, as in equation \ref{eq:avg_pwr} below.
+ \begin{equation} \label{eq:avg_pwr} 
+P_{avg} = \frac{1}{T_{2}-T_{1}}\int_{T_{1}}^{T_{2}} v(t).i(t) dt
+\end{equation}
+
+Similarly, ouput power, $P_{load}$ deliverd to load, realised with potentiomfeter, was calculated as product of rms value of $V_{rec}$ 
+and dc current, $I_{load}$ value read by Keithley 6514 electrometer measured at $V_{rec}$ node, as in equation \ref{eq:load_pwr} below.
+\begin{equation} \label{eq:load_pwr} 
+P_{load} = V_{rec_{rms}}.I_{load}
+\end{equation}
 
 \begin{figure} [!htbp]
   \centering
@@ -1599,6 +1636,31 @@ valleys in ripple corresponds to occurrence of reverse leakage.
  \caption{Measured rectifier output for various load} 
 \label{fig:meas_rect_load_sweep} 
 \end{figure}
+
+For delivering 10 mA output current to load  $V_{rec}$ is 2.171 V i.e 21.71 mW output power, the measured input power is 33.74 mW.. The results 
+in measured efficiency of rectifier to be 62.5\%.
+
+
+\begin{table}[H]
+\caption{Rectifier measured performance}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline \hline
+				 & \textbf{Measured}		& \textbf{Post-layout} \\
+\hline \hline
+Input magnitude 	& 2.6 V 			&	2.65 V	\\ \hline
+Rectified DC	 	& 2.17 V 				& 2.285 V	\\ \hline
+Ripple \acrshort{vpp} & 142 mV 				& 4 mV	\\ \hline
+PCE 				& 64.4 \% 				&	80.5 \%	\\ \hline
+VCE 				& 80.4 \% 				&	87.8 \%	\\
+\hline \hline
+\end{tabular}
+\end{center}
+\label{tab:rect_spec}
+\end{table}
+
+The post layout performance of rectifier is obtained from PMS simulation by disabling LDO. This is done in order to imitate 
+the measurement scenerio.
 
 \subsection{LDO} %****************************************************
 
@@ -1656,7 +1718,7 @@ of LDO as shown in figure  \ref{fig:meas_pms} with no load used. It is because 4
 
 \subsection{WPT System} %****************************************************
 For measuring the performance of WPT system, the setup is done as shown in figure  [FIGURE]. The measurement results of magnetic resonant inductive link with 5 mm 
-coupling separation is presented here. 3.7 V magnitude sinusoidal  signal is required to drive primary antenna in order to generate 2.6 V differential signals in the secondary coil.\\
+coupling separation is presented here. 3.7 V magnitude sinusoidal  signal is required to drive primary antenna in order to generate 2.65 V differential signals in the secondary coil.\\
 
 The measured voltages waveform for 10 mA load is presented in figure  \ref{fig:meas_wpt5_vs} along with simulation result.  The additional drop in $V_{reg}$, distortion of inputs, $V_{in1}$ and $V_{in2}$ and larger ripple are due to the same reasons discussed in  rectifier measurement. The distortion is more pronounced here because of additional parasitic from the transfer link. \\
 \begin{figure} [!htbp]

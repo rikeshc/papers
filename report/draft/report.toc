@@ -44,12 +44,12 @@
 \contentsline {section}{\numberline {4.2}Design}{28}{section.4.2}
 \contentsline {section}{\numberline {4.3}Simulation result}{30}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Transient response}{30}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}DC response}{33}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}AC response}{33}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.2}DC response}{32}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}AC response}{32}{subsection.4.3.3}
 \contentsline {chapter}{\numberline {5}Antenna Design}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{37}{section.5.1}
 \contentsline {section}{\numberline {5.2}Inductor Model}{38}{section.5.2}
-\contentsline {section}{\numberline {5.3}Inductive Transfer Link}{40}{section.5.3}
+\contentsline {section}{\numberline {5.3}Inductive Transfer Link}{39}{section.5.3}
 \contentsline {section}{\numberline {5.4}Magnetic Resonance Coupling}{41}{section.5.4}
 \contentsline {part}{III\hspace {1em}WPT System Design and Implementation}{45}{part.3}
 \contentsline {chapter}{\numberline {6}Power Management System}{47}{chapter.6}
@@ -59,26 +59,26 @@
 \contentsline {chapter}{\numberline {7}WPT System}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}Top Testbench}{55}{section.7.1}
 \contentsline {section}{\numberline {7.2}Simulation result}{56}{section.7.2}
-\contentsline {part}{IV\hspace {1em}WPT Chip Production, Test and Verification }{61}{part.4}
-\contentsline {chapter}{\numberline {8}Test and Verification }{63}{chapter.8}
-\contentsline {section}{\numberline {8.1}Chip and PCB}{63}{section.8.1}
-\contentsline {section}{\numberline {8.2}Measurement Setup}{64}{section.8.2}
-\contentsline {section}{\numberline {8.3}Measurement Result and Discussion}{66}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Rectifier}{66}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}LDO}{68}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}PMS Chip}{70}{subsection.8.3.3}
-\contentsline {subsection}{\numberline {8.3.4}WPT System}{70}{subsection.8.3.4}
-\contentsline {part}{V\hspace {1em}Conclusion}{75}{part.5}
-\contentsline {chapter}{\numberline {9}Conclusion}{77}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lesson learnt}{77}{section.9.1}
-\contentsline {section}{\numberline {9.2}Future Work}{78}{section.9.2}
-\contentsline {chapter}{Appendices}{81}{section*.88}
+\contentsline {part}{IV\hspace {1em}WPT Chip Production, Test and Verification }{63}{part.4}
+\contentsline {chapter}{\numberline {8}Test and Verification }{65}{chapter.8}
+\contentsline {section}{\numberline {8.1}Chip and PCB}{65}{section.8.1}
+\contentsline {section}{\numberline {8.2}Measurement Setup}{66}{section.8.2}
+\contentsline {section}{\numberline {8.3}Measurement Result and Discussion}{68}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Rectifier}{68}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}LDO}{70}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}PMS Chip}{73}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}WPT System}{73}{subsection.8.3.4}
+\contentsline {part}{V\hspace {1em}Conclusion}{77}{part.5}
+\contentsline {chapter}{\numberline {9}Conclusion}{79}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lesson learnt}{79}{section.9.1}
+\contentsline {section}{\numberline {9.2}Future Work}{80}{section.9.2}
+\contentsline {chapter}{Appendices}{83}{section*.90}
 \setcounter {tocdepth}{1}
 \begingroup \let \l@chapter \l@section \let \l@section \l@subsection 
-\contentsline {chapter}{\numberline {A}Rectifier Implementation}{83}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}LDO Implementation}{85}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}WPT Chip}{87}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Test PCBs}{89}{Appendix.1.D}
+\contentsline {chapter}{\numberline {A}Rectifier Implementation}{85}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}LDO Implementation}{87}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}WPT Chip}{89}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Test PCBs}{91}{Appendix.1.D}
 \endgroup 
-\contentsline {chapter}{Bibliography}{93}{section*.100}
-\contentsline {chapter}{Acronyms}{97}{section*.102}
+\contentsline {chapter}{Bibliography}{95}{section*.102}
+\contentsline {chapter}{Acronyms}{95}{section*.103}

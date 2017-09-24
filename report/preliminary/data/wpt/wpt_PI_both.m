@@ -132,10 +132,10 @@ grid on;
 xlim([start, start + 0.1505]);
 xlabel('Time (us)'); 
 ylabel('Current, mA');
-priV =  sprintf('Pre:  V_{prim}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_sch)/2, rms(vpri_sch));
-priVp = sprintf('Post: V_{prim}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_pex)/2, rms(vpri_pex));
-priI =  sprintf('Pre: I_{prim}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_sch)/2*1000, rms(Iac_sch)*1000);
-priIp =  sprintf('Post: I_{prim}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_pex)/2*1000, rms(Iac_pex)*1000);
+priV =  sprintf('Pre:  V_{ac}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_sch)/2, rms(vpri_sch));
+priVp = sprintf('Post: V_{ac}, Peak = %.2f V, Rms = %.2f V', peak2peak(vpri_pex)/2, rms(vpri_pex));
+priI =  sprintf('Pre: I_{ac}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_sch)/2*1000, rms(Iac_sch)*1000);
+priIp =  sprintf('Post: I_{ac}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_pex)/2*1000, rms(Iac_pex)*1000);
 
 
 legend(priV, priVp, priI, priIp, 'location', 'best');

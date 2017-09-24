@@ -34,7 +34,7 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces LDO testbench setup\relax }}{30}{figure.caption.43}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces LDO transient simulation\relax }}{31}{figure.caption.44}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces LDO step load regulation\relax }}{32}{figure.caption.45}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces LDO step line regulation\relax }}{32}{figure.caption.46}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces LDO step line regulation\relax }}{33}{figure.caption.46}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Regulated voltage with supply variation\relax }}{33}{figure.caption.47}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Regulated voltage with load variation\relax }}{34}{figure.caption.48}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces LDO stability before and after compensation\relax }}{35}{figure.caption.49}
@@ -66,34 +66,35 @@
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Input voltage waveforms\relax }}{57}{figure.caption.72}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Vrec and Vreg voltages\relax }}{58}{figure.caption.73}
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Ripple in Vrec and Vreg\relax }}{58}{figure.caption.74}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Current and power consumption\relax }}{59}{figure.caption.75}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Primary voltage and current\relax }}{59}{figure.caption.75}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Diode current and voltages\relax }}{60}{figure.caption.76}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Micrograph of WPT chip\relax }}{64}{figure.caption.78}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Antenna and test PCBs\relax }}{65}{figure.caption.79}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Primary antenna}}}{65}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Secondary antenna}}}{65}{subfigure.2.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test PCB board}}}{65}{subfigure.2.3}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Measured rectifier waveform for 10 mA load\relax }}{67}{figure.caption.80}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Measured rectifier waveform for 1 mA load\relax }}{67}{figure.caption.81}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Measured rectifier output for various load\relax }}{68}{figure.caption.82}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces LDO input sweep for 5 mA load\relax }}{69}{figure.caption.83}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces LDO load sweep\relax }}{70}{figure.caption.84}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces PMS performance\relax }}{71}{figure.caption.85}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces WPT from 5 mm coupling link\relax }}{72}{figure.caption.86}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Voltage and current at primary coil\relax }}{72}{figure.caption.87}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Micrograph of WPT chip\relax }}{66}{figure.caption.79}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Antenna and test PCBs\relax }}{67}{figure.caption.80}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Primary antenna}}}{67}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Secondary antenna}}}{67}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test PCB board}}}{67}{subfigure.2.3}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Measured rectifier waveform for 10 mA load\relax }}{69}{figure.caption.81}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Measured rectifier waveform for 1 mA load\relax }}{69}{figure.caption.82}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Measured rectifier output for various load\relax }}{71}{figure.caption.83}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces LDO input sweep for 5 mA load\relax }}{72}{figure.caption.85}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces LDO load sweep\relax }}{73}{figure.caption.86}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces PMS performance\relax }}{74}{figure.caption.87}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces WPT from 5 mm coupling link\relax }}{75}{figure.caption.88}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Voltage and current at primary coil\relax }}{75}{figure.caption.89}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{83}{figure.caption.89}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{83}{figure.caption.90}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{84}{figure.caption.91}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of Rectifier\relax }}{85}{figure.caption.91}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Schematic of RCC\relax }}{85}{figure.caption.92}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Layout of Rectifier\relax }}{86}{figure.caption.93}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{85}{figure.caption.92}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{86}{figure.caption.93}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Schematic of LDO\relax }}{87}{figure.caption.94}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Layout of LDO\relax }}{88}{figure.caption.95}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{87}{figure.caption.94}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{88}{figure.caption.95}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Schematic of WPT chip\relax }}{89}{figure.caption.96}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Layout of WPT chip\relax }}{90}{figure.caption.97}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{89}{figure.caption.96}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{89}{figure.caption.97}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{90}{figure.caption.98}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{91}{figure.caption.99}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Primary antenna\relax }}{91}{figure.caption.98}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Secondary antenna\relax }}{91}{figure.caption.99}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Test PCB schematic\relax }}{92}{figure.caption.100}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Test PCB board\relax }}{93}{figure.caption.101}
