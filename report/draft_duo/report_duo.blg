@@ -1,32 +1,32 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'report_duo.blg'
-[53] biber-darwin:276> INFO - === Tue Sep 26, 2017, 11:42:43
+[53] biber-darwin:276> INFO - === Wed Sep 27, 2017, 22:53:23
 [53] Biber.pm:333> INFO - Reading 'report_duo.bcf'
-[171] Biber.pm:642> INFO - Using all citekeys in bib section 0
-[196] Biber.pm:2977> INFO - Processing section 0
-[220] Biber.pm:3115> INFO - Looking for bibtex format file 'reference.bib' for section 0
-[224] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[175] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[197] Biber.pm:2977> INFO - Processing section 0
+[218] Biber.pm:3115> INFO - Looking for bibtex format file 'reference.bib' for section 0
+[223] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
 [228] bibtex.pm:895> INFO - Found BibTeX data source 'reference.bib'
-[276] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
-[276] Utils.pm:146> WARN - The field 'author' in entry 'airfuel' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'month' in entry 'airfuel' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'title' in entry 'airfuel' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'year' in entry 'airfuel' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'author' in entry 'wpt_qi' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'month' in entry 'wpt_qi' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'title' in entry 'wpt_qi' cannot be null, deleting it
-[277] Utils.pm:146> WARN - The field 'year' in entry 'wpt_qi' cannot be null, deleting it
-[278] Utils.pm:146> WARN - The field 'pages' in entry 'review_energy_harvest' cannot be null, deleting it
-[278] Utils.pm:146> WARN - The field 'doi' in entry 'power_density' cannot be null, deleting it
-[279] Utils.pm:146> WARN - The field 'issn' in entry 'power_density' cannot be null, deleting it
-[279] Utils.pm:146> WARN - The field 'journaltitle' in entry 'power_density' cannot be null, deleting it
-[279] Utils.pm:146> WARN - The field 'month' in entry 'power_density' cannot be null, deleting it
-[279] Utils.pm:146> WARN - The field 'number' in entry 'power_density' cannot be null, deleting it
-[279] Utils.pm:146> WARN - The field 'volume' in entry 'power_density' cannot be null, deleting it
-[694] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[694] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[694] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
-[694] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
-[743] bbl.pm:505> INFO - Writing 'report_duo.bbl' with encoding 'UTF-8'
-[748] bbl.pm:596> INFO - Output to report_duo.bbl
-[748] Biber.pm:106> INFO - WARNINGS: 16
+[278] Utils.pm:146> WARN - The field 'month' in entry 'ldo_ti_pssr' cannot be null, deleting it
+[278] Utils.pm:146> WARN - The field 'author' in entry 'airfuel' cannot be null, deleting it
+[278] Utils.pm:146> WARN - The field 'month' in entry 'airfuel' cannot be null, deleting it
+[278] Utils.pm:146> WARN - The field 'title' in entry 'airfuel' cannot be null, deleting it
+[279] Utils.pm:146> WARN - The field 'year' in entry 'airfuel' cannot be null, deleting it
+[279] Utils.pm:146> WARN - The field 'author' in entry 'wpt_qi' cannot be null, deleting it
+[279] Utils.pm:146> WARN - The field 'month' in entry 'wpt_qi' cannot be null, deleting it
+[279] Utils.pm:146> WARN - The field 'title' in entry 'wpt_qi' cannot be null, deleting it
+[279] Utils.pm:146> WARN - The field 'year' in entry 'wpt_qi' cannot be null, deleting it
+[280] Utils.pm:146> WARN - The field 'pages' in entry 'review_energy_harvest' cannot be null, deleting it
+[280] Utils.pm:146> WARN - The field 'doi' in entry 'power_density' cannot be null, deleting it
+[280] Utils.pm:146> WARN - The field 'issn' in entry 'power_density' cannot be null, deleting it
+[280] Utils.pm:146> WARN - The field 'journaltitle' in entry 'power_density' cannot be null, deleting it
+[281] Utils.pm:146> WARN - The field 'month' in entry 'power_density' cannot be null, deleting it
+[281] Utils.pm:146> WARN - The field 'number' in entry 'power_density' cannot be null, deleting it
+[281] Utils.pm:146> WARN - The field 'volume' in entry 'power_density' cannot be null, deleting it
+[710] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[710] UCollate.pm:66> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[710] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-UK'
+[710] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-UK'
+[764] bbl.pm:505> INFO - Writing 'report_duo.bbl' with encoding 'UTF-8'
+[769] bbl.pm:596> INFO - Output to report_duo.bbl
+[769] Biber.pm:106> INFO - WARNINGS: 16

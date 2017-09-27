@@ -26,6 +26,7 @@
 \usepackage{wrapfig}
 \usepackage[toc,page]{appendix} % appendice
 
+\usepackage[labelfont=it]{caption}	% Figure/ table identifer italics
 
 %%% creating front main and back matter command for report class
 \makeatletter
@@ -272,7 +273,7 @@ reference device to drive and a power harvesting circuit is designed and impleme
 
 \section{Thesis outline}
 
-A brief overview of this thesis report is presented below. For better organisation and clarity of content, it is divided into four parts 
+A brief overview of this thesis report is presented . For better organisation and clarity of content, it is divided into four parts 
 and eight chapters. 
 \begin{itemize}
 \item \textbf{Chapter 1} discusses the motivation behind this work. It compares technology trends and concludes
@@ -503,7 +504,7 @@ beaming power from earth.    \\
 %http://www.radio-electronics.com/info/power-management/wireless-inductive-battery-charging/basics-tutorial.php
 When wireless charging was introduced into consumer daily appliances, it was quickly realised the need of 
 standard design protocols to maintain uniformity and avoid confusion for the manufacturers. Here are some 
-mostly used standards in the market. All commercial standards discussed below use both IPT and resonant IPT 
+mostly used standards in the market. Most common commercial standards are discussed below use both IPT and resonant IPT 
 techniques for charging, and have two elements: transmitter for transferring power and receiver device usually 
 integrated into mobile, handheld or wearable devices. Both the transmitter and the receiver use the same control 
 and management protocol in order to detect compatible electronic devices, exchange charging state information 
@@ -620,9 +621,10 @@ Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementat
 
 \begin{figure} [htbp]
   \centering 
-  \subfloat[Conventional full wave bridge rectifier]  {\includegraphics[width=.49\textwidth]{img/rectifier_full_bridge.pdf} \label{rect_conv}}
+  %\subfloat[Conventional full wave bridge rectifier]  {\includegraphics[width=.49\textwidth]{img/rectifier_full_bridge.pdf} 
+  \subfloat[Conventional full wave bridge rectifier]  {\includegraphics[width=.485\textwidth]{img/visio/visio_gate_cc} \label{rect_conv}}
 \hfill
- \subfloat[Gate cross coupled full wave rectifier]  {\includegraphics[width=.49\textwidth]{img/rectifier_full_cc.pdf}\label{rect_cc}}
+ \subfloat[Gate cross coupled full wave rectifier]  {\includegraphics[width=.485\textwidth]{img/visio/visio_gate_fcc}\label{rect_cc}}
  \caption{Rectifier topologies: conventional and gate cross coupled} 
 \label{rect_conv_cc} 
 \end{figure}
@@ -1219,7 +1221,7 @@ The above $\eta_{link}$ calculation is valid for perfectly matched ports and giv
 \label{fig:ant_S_gain} 
 \end{figure}
 
-The above discussion is also done for other two separation, 1.5 mm and 10 mm, of coupling coils. The performance of magnetic resonant inductive link for all cases designed in this work is summarised in table \ref{tab:ant_spec} below. 
+The above discussion is also done for other two separation, 1.5 mm and 10 mm, of coupling coils. The performance of magnetic resonant inductive link for all cases designed in this work is summarised in table \ref{tab:ant_spec}. 
 
 \begin{table}[H]
 \caption{Performance of resonant inductive link} 
@@ -1324,7 +1326,7 @@ $Vb_{buff}$ & 1.4 V \\ \hline
 \label{fig:wpt_top_testbench} 
 \end{figure}
 
-In the test-bench above, stimuli voltages like input and biases and components like capacitors and resistors are used. 
+In the test-bench in figure \ref{fig:wpt_top_testbench}, stimuli voltages like input and biases and components like capacitors and resistors are used. 
 The values for these stimuli and components are listed in table \ref{tab:pms_stimuli}. $V_{ac} $ is set to 2.6 V in
 order to compensate voltage drop of pad resistance.  \\ 
 
@@ -1541,7 +1543,7 @@ $\eta_{wpt}$		& 48 \%				& 50.6 \%		\\
 The above analysis and characterisation of WPT system is for inductive link with coil separation of 5 mm for delivering 10 mA current at 1.8 V. The 
 same analysis is repeated for other two cases: a stronger inductive link created from 1.5 mm coil separation and a weaker inductive link 
 created from 10 mm coil separation. For doing this, respective lumped model of inductive link is used in top test-bench, 
-figure \ref{fig:wpt_top_testbench}, The comparative post layout performance of WPT system for these different inductive links is listed below in 
+figure \ref{fig:wpt_top_testbench}, The comparative post layout performance of WPT system for these different inductive links is listed in 
 table \ref{tab:wpt_spec_all}.
 
 \begin{table}[H]
@@ -1562,7 +1564,7 @@ $\eta_{wpt}$			& 54.3 \%		& 50.6 \%			& 34.9 \% \\
 \label{tab:wpt_spec_all}
 \end{table}%
 
-From the above table, it is observed that with the increase in distance between primary and secondary coils, there is decrease in coupling 
+From table \ref{tab:wpt_spec_all}, it is observed that with the increase in distance between primary and secondary coils, there is decrease in coupling 
 between the coils in the inductive link, resulting in less magnetic field from the primary coupling into secondary. That is why with increasing 
 distance between the coils, the primary has to be driven with more power to deliver to the load.
 % *********************************************************************** CHIP production and test  ***********************************************************************
@@ -1601,7 +1603,7 @@ measure current where required. All these devices are connected to a GPIB bus an
 \end{figure}
 
 \section{Measurement Result and Discussion} %****************************************************
-As in simulation, first the performance of rectifier and LDO are measured, then PMS and finally WPT system which are 
+As in simulation, first the performance of rectifier and LDO are measured, then PMS and finally WPT system, which are 
 presented below. 
 
 \subsection{Rectifier} %****************************************************
@@ -1658,13 +1660,13 @@ valleys in ripple corresponds to occurrence of reverse leakage during turning of
 In order to measure input power, $P_{in}$, from signal source $V_{ac}$, first a 5 $\Omega $ current sense resistor was connected in series between supply and balun and voltage drop across this 
  resistor was measured. Current drawn from the source was then calculated by dividing voltage drop across the series resistor by its resistance value.
  Using Matlab, the average input power was calculated by integrating the product of instantaneous current waveform and input voltage waveform, $V_{in}$  in figure \ref{fig:meas_rect_10ma} and dividing 
- it by integration time, as in equation \ref{eq:avg_pwr} below.
+ it by integration time, as in equation \ref{eq:avg_pwr}.
  \begin{equation} \label{eq:avg_pwr} 
 P_{avg} = \frac{1}{T_{2}-T_{1}}\int_{T_{1}}^{T_{2}} v(t).i(t) dt
 \end{equation}
 
 Similarly, output power, $P_{load}$ delivered to load, realised with potentiometer, was calculated as product of rms value of $V_{rec}$ 
-and dc current, $I_{load}$ value read by Keithley 6514 electrometer measured at $V_{rec}$ node, as in equation \ref{eq:load_pwr} below.
+and dc current, $I_{load}$ value read by Keithley 6514 electrometer measured at $V_{rec}$ node, as in equation \ref{eq:load_pwr}.
 \begin{equation} \label{eq:load_pwr} 
 P_{load} = V_{rec_{rms}}.I_{load}
 \end{equation}
@@ -1800,7 +1802,7 @@ $\eta_{wpt}$		& 46.1 \%						& 63.4 \%		\\
 \end{table}%
 
 
- Once again just to avoid confusion, it should be mention here that above mentioned performance summary is for WPT system constituting resonant inductive link and rectifier. \\
+ Once again just to avoid confusion, it should be mention here that performance summary given in table \ref{tab:wpt_spec_meas} is for WPT system constituting resonant inductive link and rectifier. \\
  
  As in simulation the performance is measured for 1.5 mm and 10 mm coil separation too. On doing so, the transfer link is realised with their respective resonant primary and secondary coil held at respective distance. The input voltage and current at the primary antenna for all three coupling cases for 10 mA load at rectifier output is shown in figure \ref{fig:meas_wpt_all_pri}. \\
  
@@ -1811,7 +1813,7 @@ $\eta_{wpt}$		& 46.1 \%						& 63.4 \%		\\
 \label{fig:meas_wpt_all_pri} 
 \end{figure}
 
-On observing the voltage and current waveform above, it is found that their amplitude and phase difference are comparable to the simulated result for 1.5 mm and 5 mm distance coupling. However for the case of 10 mm, the phase difference between current and voltage has increased, thereby requiring much higher input voltage to deliver the same output current. As in other two case, load variation, unaccounted parasitic capacitance in simulation and inaccuracy in coil separation have obviously shifted the resonance frequency. In addition, \cite{koen_robert_2009}, reports that optimisation for weakly coupled link should be done together with rectifier and regulator. \\
+On observing the voltage and current waveform in figure \ref{fig:meas_wpt_all_pri}, it is found that their amplitude and phase difference are comparable to the simulated result for 1.5 mm and 5 mm distance coupling. However for the case of 10 mm, the phase difference between current and voltage has increased, thereby requiring much higher input voltage to deliver the same output current. As in other two case, load variation, unaccounted parasitic capacitance in simulation and inaccuracy in coil separation have obviously shifted the resonance frequency. In addition, \cite{koen_robert_2009}, reports that optimisation for weakly coupled link should be done together with rectifier and regulator. \\
 
 The measured performance for all three cases of coupling are presented in table \ref{tab:wpt_spec_all_meas}
  
