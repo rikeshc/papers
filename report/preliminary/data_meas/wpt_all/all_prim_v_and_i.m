@@ -14,9 +14,12 @@ vpri_10 = importdata('pri_10mm.dat');
 drop_10 = importdata('drop_10mm.dat');
 Iac10 = drop_10(:,2)/R_sense*1000;
 
-time1 = vpri_1(:,1)*10^9+350; % time in ns
-time5 = vpri_5(:,1)*10^9+350; % time in ns
-time10 = vpri_10(:,1)*10^9+350; % time in ns
+t1 = vpri_1(:,1)*10^9; % time in ns
+t5 = vpri_5(:,1)*10^9; % time in ns
+t10 = vpri_10(:,1)*10^9; % time in ns
+time1 = t1-(t1(1));
+time5 = t5-(t5(1));
+time10 = t10-(t10(1));
 
 f1 = figure(1);
 yyaxis left;
@@ -35,10 +38,13 @@ grid on;
 
 
 pwr_meas1 = 1/(time1(end)-time1(1))  *trapz(time1,  Iac1.*vpri_1(:,2));
+pwr_meas1_rms = rms(Iac1).*rms(vpri_1(:,2));
 pwr_meas5 = 1/(time5(end)-time5(1))  *trapz(time5,  Iac5.*vpri_5(:,2));
+pwr_meas5_rms = rms(Iac5).*rms(vpri_5(:,2));
 pwr_meas10 = 1/(time10(end)-time10(1))  *trapz(time10,  Iac10.*vpri_10(:,2));
+pwr_meas10_rms = rms(Iac10).*rms(vpri_10(:,2));
 
-title('WPT: Vac and Iac for all links', 'FontSize', 10);
+title('WPT: Measured Primary Vac and Iac for all links', 'FontSize', 10);
 %pwr_int = 1/ti(end)*integral(Iac_sch.*vac_sch, ti(1), ti(end))
 
 %% save WPT voltages 
@@ -46,4 +52,4 @@ set(f1,'Units','Inches');
 pos = get(f1,'Position');
 set(f1,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f1, 'wpt_all_pri_VI.pdf', '-dpdf');
-movefile('wpt_all_pri_VI.pdf','../../../img/meas/wpt_all_pri_VI.pdf');
+movefile('wpt_all_pri_VI.pdf','../../img/meas/wpt_all_pri_VI.pdf');

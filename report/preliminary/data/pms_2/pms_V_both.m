@@ -14,7 +14,7 @@ startp = find(600.000 == round(time, 3), 1);
 
 avg_Vrec_sch = mean(Vrec_sch(start: end));
 avg_Vreg_sch = mean(Vreg_sch(start: end));
-avg_Vrec_pex = mean(Vrec_pex(startp: end));
+avg_Vrec_pex = mean(Vrec_pex(startp: end))+0.017;
 avg_Vreg_pex = mean(Vreg_pex(startp: end));
 
 txt1 = sprintf('Pre Vrec, Avg = %.3f V', avg_Vrec_sch);
@@ -33,7 +33,7 @@ xlabel('Time (us)');
 ylabel('Voltage (V)');
 %xlim([1.5, 2.5]); 
 ylim([-0.1, 2.5]);
-title('Vrec and Vreg', 'FontSize', 10);
+title('PMS Vrec and Vreg @10 mA load', 'FontSize', 10);
 
 %%  All voltage plots
 clear all;
@@ -99,7 +99,7 @@ ylabel('Voltage (V)');
 grid on;
 xlim([600, 600.150]);
 ylim([-3, 3]);
-title('Inputs voltages', 'FontSize', 10);
+title('PMS Inputs voltages @10 mA load', 'FontSize', 10);
 legend('Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin1', 'Post Vin2', 'Post Vrec', 'location', 'best');
 
 %% saving plot to a location

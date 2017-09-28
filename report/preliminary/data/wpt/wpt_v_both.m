@@ -36,7 +36,7 @@ xlabel('Time (us)');
 ylabel('Voltage (V)');
 %xlim([-0.1, 2.5]); 
 ylim([-.1, 2.5]);
-title('Vrec and Vreg', 'FontSize', 10);
+title('WPT Vrec and Vreg @10 mA load', 'FontSize', 10);
 
 %%  Ripple plot
 
@@ -106,7 +106,7 @@ ylabel('Voltage (V)');
 grid on;
 xlim([0.005, .16]);
 %ylim([-5.6, 5.6]);
-title('Inputs voltages', 'FontSize', 10);
+title('WPT Inputs voltages @10 mA load', 'FontSize', 10);
 legend('Pre Vac', 'Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vac', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Pre Vrec', 'location', 'best');
 
 %% saving plot to a location

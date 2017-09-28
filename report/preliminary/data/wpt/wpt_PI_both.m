@@ -113,7 +113,7 @@ ylabel('Voltage (V)');
 grid on;
 xlim([start, start + 0.15]);
 ylim([-3, 3]);
-title('Rectifier voltages and currents', 'FontSize', 10);
+title('Rectifier voltages', 'FontSize', 10);
 legend('Pre Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin', 'Post Vin1', 'Post Vin2', 'Post Vrec');
 
 %% Primary voltage and currnet
@@ -139,7 +139,7 @@ priIp =  sprintf('Post: I_{ac}, Peak = %.1f mA, Rms = %.1f mA', peak2peak(Iac_pe
 
 
 legend(priV, priVp, priI, priIp, 'location', 'best');
-title('Voltage and Current at primary', 'FontSize', 10);
+title('WPT Primary Voltage and Current @10 mA load', 'FontSize', 10);
 
 
 %% save plot 

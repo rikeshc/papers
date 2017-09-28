@@ -20,7 +20,7 @@ xlabel('Time, ns');
 ylabel('Voltages, V');
 
 legend('V_{in1}', 'V_{in2}', 'V_{in}', rec, reg, 'location', 'best');
-title('PMS: Preformance without load', 'FontSize', 10);
+title('PMS: Measured voltage waveforms', 'FontSize', 10);
 
 %% save PMS performance
 set(f1,'Units','Inches');

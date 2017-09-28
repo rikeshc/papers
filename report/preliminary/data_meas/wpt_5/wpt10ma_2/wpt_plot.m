@@ -59,7 +59,7 @@ ylabel('Current, mA');
 grid on;
 
 legend('MEAS: V_{primary}', 'SIM: V_{primary}', 'MEAS: I_{primary}', 'SIM: I_{primary}', 'location', 'best');
-title('WPT: Primary voltage and current', 'FontSize', 10);
+title('WPT: Measured primary voltage and current', 'FontSize', 10);
 
 %%
 pwr_sim = mean(vpri_pex.*Iac_pex)*1000
@@ -79,7 +79,7 @@ set(f3,'Units','Inches');
 pos = get(f3,'Position');
 set(f3,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)]);
 print(f3, 'wpt5_current_pri.pdf', '-dpdf');
-movefile('wpt5_current_pri.pdf','../../img/meas/wpt5_current_pri_2.pdf');
+movefile('wpt5_current_pri.pdf','../../../img/meas/wpt5_current_pri_2.pdf');
 
 %%
 ti = time - time(1);

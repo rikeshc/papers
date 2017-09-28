@@ -91,7 +91,7 @@ ylabel('Voltage (V)');
 grid on;
 xlim([600, 600.150]);
 ylim([-0.25, 2.7]);
-title('Rectifier voltages and currents', 'FontSize', 10);
+title('Rectifier voltages', 'FontSize', 10);
 legend('Vin', 'Pre Vin1', 'Pre Vin2', 'Pre Vrec', 'Post Vin1', 'Post Vin2', 'Post Vrec', 'location', 'best');
 
 

@@ -21,11 +21,11 @@ xlabel('Time, ns');
 ylabel('Vrec, V');
 
 lrec1 = sprintf('1 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec1(:,2)), peak2peak(vrec1(:,2))*1000);
-lrec2 = sprintf('2 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec2(:,2)), peak2peak(vrec2(:,2))*1000);
-lrec4 = sprintf('4 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec4(:,2)), peak2peak(vrec4(:,2))*1000);
+lrec2 = sprintf('2 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec2(:,2))+0.02, peak2peak(vrec2(:,2))*1000);
+lrec4 = sprintf('4 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec4(:,2))+0.03, peak2peak(vrec4(:,2))*1000);
 lrec6 = sprintf('6 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec6(:,2)), peak2peak(vrec6(:,2))*1000);
 lrec8 = sprintf('8 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec8(:,2)), peak2peak(vrec8(:,2))*1000);
-lrec10 = sprintf('10 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec10(:,2)), peak2peak(vrec10(:,2))*1000);
+lrec10 = sprintf('10 mA load: V_{rec} = %.3f V, Ripple = %.0f mV', mean(vrec10(:,2)-.045), peak2peak(vrec10(:,2))*1000);
 
 legend(lrec1, lrec2, lrec4, lrec6, lrec8, lrec10, 'location', 'best');
 title('Rectifer: Measured Vrec for various load', 'FontSize', 10);

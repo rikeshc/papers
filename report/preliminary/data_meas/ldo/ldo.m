@@ -13,7 +13,7 @@ plot(Vin_pex, Vreg_pex); hold off;
 grid on;
 xlabel('V_{in}(V)'); 
 ylabel('V_{reg}(V)');
-title('Measured: Vin sweep', 'FontSize', 10)
+title('LDO: Vin sweep @5 mA load', 'FontSize', 10)
 legend('MEAS: V_{reg}', 'SIM: V_{reg}','location', 'best');
 
 %% current consumed and leaked
@@ -24,7 +24,7 @@ plot(Vin_pex, Iin_pex*1000, Vin_pex, Ileak_pex*1000); hold off;
 grid on;
 ylabel('I_{load} (mA)'); 
 xlabel('V_{in}(V)');
-title('Measured: Current consumption', 'FontSize', 10)
+title('LDO: Measured current consumption', 'FontSize', 10)
 legend('MEAS: I_{source}', 'MEAS: I_{quiescent}', 'SIM: I_{source}', 'SIM: I_{quiescent}', 'location', 'best');
 
 
@@ -47,7 +47,7 @@ hold off;
 grid on;
 xlabel('I_{load}(mA)'); 
 ylabel('I_{source}(mA)');
-title('Measured: I_{load} sweep', 'FontSize', 10)
+title('LDO: I_{load} sweep @ Vin = 2.45 V', 'FontSize', 10)
 legend('MEAS: V_{reg}', 'SIM: V_{reg}', 'MEAS: I_{src}','SIM: V_{reg}', 'SIM: I_{src}', 'location', 'best');
 
 
