@@ -28,7 +28,7 @@
 
 \usepackage[labelfont=it]{caption}	% Figure/ table identifer italics
 
-%%% creating front main and back matter command for report class
+%%% FRONT MAIN and BACK command for report class
 \makeatletter
 \newcommand\frontmatter{%
     \cleardoublepage
@@ -50,7 +50,14 @@
 %%% front main and back matter ends
 
 
-%fancy header and footer
+
+%% FOR MATLAB CODE LISTING
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+%FANCY HEADER AND FOOTER
 \usepackage{fancyhdr}
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
@@ -64,44 +71,48 @@
   \fancyhf{} % remove everything
   \renewcommand{\headrulewidth}{0pt} % remove lines as well
   \renewcommand{\footrulewidth}{0pt}}
+  
+  
+\let\firstchar\uppercase
+\let\oldprintglossaries\printglossaries
+\def\printglossaries{\let\firstchar\uppercase\oldprintglossaries}
 
 \setacronymstyle{long-short}
 \glsdisablehyper
 
 \makenoidxglossaries
 
-
-\newacronym{ldo}{LDO}{linear dropout}
-\newacronym{pcb}{PCB}{printed circuit board}
-\newacronym{mos}{MOS}{metal-oxide-semiconductor}
+\newacronym{ldo}{LDO}{Low Dropout Regulator}
+\newacronym{pcb}{PCB}{Printed Circuit Board}
+\newacronym{mos}{MOS}{Metal-Oxide-Semiconductor}
 \newacronym{nmos}{nMOS}{n-channel MOS}
 \newacronym{pmos}{pMOS}{p-channel MOS}
-\newacronym{cmos}{CMOS}{complementary metal-oxide-semiconductor}
-\newacronym{vpp}{Vpp}{peak to peak voltage}
-\newacronym{vp}{Vp}{peak voltage}
-\newacronym{vce}{VCE}{voltage conversion efficiency}
-\newacronym{pce}{PCE}{power conversion efficiency}
-\newacronym{vtn}{Vtn}{thresold voltage of n-channel MOS}
-\newacronym{vtp}{Vtp}{thresold voltage of p-channel MOS}
-\newacronym{smps}{SMPS}{switch mode power supply}
-\newacronym{pssr}{PSSR}{power supply rejection ratio}
-\newacronym{icmr}{ICMR}{input common mode range}
-\newacronym{dc}{DC}{direct current}
-\newacronym{pm}{PM}{phase margin}
-\newacronym{gm}{GM}{gain margin}
-\newacronym{esr}{ESR}{equivalent series resistance}
-\newacronym{ugf}{UGF}{unity gain frequency}
-\newacronym{pvt}{PVT}{process voltage temperature}
+\newacronym{cmos}{CMOS}{Complementary Metal-Oxide-Semiconductor}
+\newacronym{vpp}{Vpp}{Peak to Peak Voltage}
+\newacronym{vp}{Vp}{Peak Voltage}
+\newacronym{vce}{VCE}{Voltage Conversion Efficiency}
+\newacronym{pce}{PCE}{Power Conversion Efficiency}
+\newacronym{vtn}{Vtn}{Threshold Voltage of n-channel MOS}
+\newacronym{vtp}{Vtp}{Threshold Voltage of p-channel MOS}
+\newacronym{smps}{SMPS}{Switch Mode Power Supply}
+\newacronym{pssr}{PSSR}{Power Supply Rejection Ratio}
+\newacronym{icmr}{ICMR}{Input Common Mode Range}
+\newacronym{dc}{DC}{Direct Current}
+\newacronym{pm}{PM}{Phase Margin}
+\newacronym{gm}{GM}{Gain Margin}
+\newacronym{esr}{ESR}{Equivalent Series Resistance}
+\newacronym{ugf}{UGF}{Unity Gain Grequency}
+\newacronym{pvt}{PVT}{Process Voltage Temperature}
 \newacronym{ptat}{PTAT}{proportional to absolute temperature}
 \newacronym{ctat}{CTAT}{complementary to absolute temperature}
 \newacronym{tc}{TC}{temperature coefficient}
 \newacronym{bgr}{BGR}{bandgap reference}
-\newacronym{ota}{OTA}{operational transconductance amplifier}
-\newacronym{bjt}{BJT}{bipolar junction transistor}
+\newacronym{ota}{OTA}{Operational Transconductance Amplifier}
+\newacronym{bjt}{BJT}{Bipolar Junction Transistor}
 \newacronym{pnp}{PNP}{BJT where n-type semiconductor is between two p-type semiconductors}
 \newacronym{pms}{PMS}{Power Management System}
 \newacronym{smd}{SMD}{Surface Mounted Device}
-\newacronym{srf}{SRF}{self resonance frequency}
+\newacronym{srf}{SRF}{Self Resonance Frequency}
 
 \newacronym{wpt}{WPT}{Wireless Power Transfer}
 \newacronym{ipt}{IPT}{Inductive Power Transfer}
@@ -110,13 +121,18 @@
 \newacronym{jlcc}{JLCC}{J-Lead Chip Carrier}
 \newacronym{mlcc}{MLCC}{Multi-Layer Ceramic Capacitor}
 \newacronym{nordic}{NORDIC}{Nordic Semiconductor}
-\newacronym{soc}{SOC}{System on a Chip}
+\newacronym{soc}{SOC}{System On a Chip}
 \newacronym{rfid}{RFID}{Radio Frequency Identification}
 \newacronym{rf}{RF}{Radio Frequency}
 \newacronym{ism}{ISM}{Industrial, Scientific and Medical }
 %\newacronym{fcc}{FFC}{Federal Communications Commission}
 \newacronym{fcc}{FCC}{Federal Communications Commission}
 \newacronym{ieee}{IEEE}{ Institute of Electrical and Electronics Engineers}
+\newacronym{cpt}{CPT}{ Capacitive Power Transfer}
+\newacronym{tsmc}{TSMC}{ Taiwan Semiconductor Manufacturing Company}
+\newacronym{sma}{SMA}{ SubMiniature Coaxial Connector version A}
+
+
 
 
 % *********************************************************************** COVER ABSTRACT PREFACE  ***********************************************************************
@@ -128,6 +144,25 @@
 \bibliography{reference.bib}   
 
 \begin{document}
+
+%% MATLAB code options
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=8pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
 
 %\ififorside{}
 
@@ -228,7 +263,7 @@ consists of billions of transistors of some  tens of nm feature size. \\
 \subsubsection{Operation: Multi-functional and Higher speed}
 
 On the contrary to shrinking device size, integrated functionality and device speed is increasing proportionally. 
-The introduction of SoCs created of new dawn of multi-functionality IC by integrating many electronic components 
+The introduction of \acrshort{soc}s created of new dawn of multi-functionality IC by integrating many electronic components 
 and/or systems on a single silicon substrate. Similarly multi-core CPU with parallel programmed instruction  
 significantly increased work payload as stated by Amdahl's law. Similarly recent developments in IoT has 
 introduced whole new dimension on multi-functionality by connecting many devices to a same local network or 
@@ -334,13 +369,13 @@ it generates electrical charge proportional to applied strain. Strain is applied
 or bending of the material. \\
 
 \subsection{Harvesting from Radiation}
-Electromagnetic energy harvesting is extraction of useful energy from ambient light or RF radiation. Solar energy 
+Electromagnetic energy harvesting is extraction of useful energy from ambient light or \acrshort{rf} radiation. Solar energy 
 harvesting is the most popular and widely successful EM energy harvesting for large scale energy generation. It 
 makes use of semiconductor device called solar cells as transducer. These transducer converts incident light 
 energy to electric energy due to photoelectric effect: when light is incident on semiconductor, electrons are 
 emitted from the surface.  Its application ranges from LP wrist watch to grid of photovoltaic system. The other 
 popular example is harvesting from  RF radiation, which are available almost everywhere in modern cities, to 
-power RFIDs. In this technique, antenna or rectenna are used as transducer. However harvesting from RF radiation 
+power \acrshort{rfid}s. In this technique, antenna or rectenna are used as transducer. However harvesting from RF radiation 
 has been limited to very low power only. \\
 
 \subsection{Thermal energy harvesting}
@@ -372,7 +407,6 @@ alreadry available power? We will discuss it ahead.
 
 
 \section{Wireless Power Transfer}
-
 
 As discussed earlier since the evolution of battery technology is not at par with rest of the development in 
 microelectronic devices and energy harvesting techniques from natural sources has not yet evolved to high power
@@ -408,7 +442,7 @@ Non radiative method of wireless power transfer based on magnetic field coupling
 
 \subsubsection{Inductive power transfer, IPT}
 
-IPT is based on electromagnetic induction between two coils. Electric energy is transferred by coupling of 
+\acrshort{ipt} is based on electromagnetic induction between two coils. Electric energy is transferred by coupling of 
 magnetic field from the primary to secondary coil. As stated by Faraday law of induction, alternating current 
 flowing in primary coil generates varying magnetic filed which is when coupled with secondary coil includes 
 voltage/current across the secondary coil. \\
@@ -429,7 +463,7 @@ receivers from a single large source coil \cite{wpt_mutliple_device_charging}. \
 Because of it strong coupling between the coils, it can effectively transfer power for mid range in tens of cm. 
 It is mostly used in  wireless charging of medical implants and consumer electronics. \\
 
-\subsubsection{Capacitive power transfer, CPT}
+\subsubsection{Capacitive power transfer, \acrshort{cpt}}
 
 In capacitive power transfer, power transfer is done through capacitive coupling, use of E-field, between sending 
 and receiving plates as transferring interface. For low power transfer, it is seen effective over IPT because of 
@@ -763,7 +797,7 @@ VCE 				& 88.6 \% 				&	86.2 \%	\\
 Voltage regulator follows the rectifier designed above in order to regulated the rectified voltage to 1.8 V and 
 deliver maximum load current of 10 mA. Since the output from the active rectifier is 2.2 V and the required 
 regulated voltage is 1.8 V, charge pump or  \acrshort{smps} of boost type is irrelevant here. Buck SMPS could be 
-an option for voltage regulation but LDO is preferred for it better performance in terms of noise and faster 
+an option for voltage regulation but  \acrshort{ldo} is preferred for it better performance in terms of noise and faster 
 settling of regulated voltage.  \cite{ldo_psu}.\\ 
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
@@ -843,7 +877,7 @@ sufficiently lower. This is overcome by making the pass device large enough to f
 load current.\\
 
 The pass device is a pMOS transistor in this design. It is chosen because it has several advantages over it's 
-counterparts like nMOS and BJT devices in terms of dropout voltage, quiescent current, input voltage, thermal 
+counterparts like nMOS and \acrshort{bjt} devices in terms of dropout voltage, quiescent current, input voltage, thermal 
 response and noise\cite{ldo_ti_pmos}. Prominently, there are two factors that give pMOS edge over other devices; 
 dropout voltage and quiescent current, when it comes to application in low power and low voltage devices. nMOS as 
 a pass device requires a positive drive voltage with respect to output to operate. On the other hand, pMOS is 
@@ -1250,7 +1284,7 @@ $\eta_{link}$						& 94					& 86					& 56					& \% \\
 % *********************************************************************** WPT PRU SYSTEM  ***********************************************************************************
 
 \part{WPT System Design and Implementation} 
-\chapter{PMS and WPT Systems}  
+\chapter{\acrshort{pms} and WPT Systems}  
 \section{Introduction}	%****************************************************
 
 Wireless power transfer, \acrshort{wpt} system always constitutes two main units: power transmitting unit, 
@@ -1573,17 +1607,17 @@ distance between the coils, the primary has to be driven with more power to deli
 \chapter{Test and Verification }  %****************************************************
 
 \section{Chip and PCB}
-After post layout simulation of complete PRU system, it was sent for production to TSMC fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure \ref{fig:micrograph}.\\
+After post layout simulation of complete PRU system, it was sent for production to \acrshort{tsmc} fab in November 2016 and was received in February 2017. The  manufactured chip was packaged in 84 I/O pins \acrshort{jlcc} package. The full layout is included in appendix. It is designed in 90nm process using 2.5 V devices. This process provides 1P-9M - 1 poly layer and 9 metal layers. However in this design, 1 poly and 8 metal layers is used. Basically every component layout used up-to 4 metal layers. Only the high current paths are made with parallel path of higher metal layers. The micrograph of produced layout is shown in figure \ref{fig:micrograph}.\\
 
 \begin{figure} [!htb]
   \centering
   \includegraphics[width=0.9\textwidth]{pcb/micrograph2} 
- \caption{Micrograph of WPT chip} 
+ \caption{Micrograph of PMS chip} 
 \label{fig:micrograph} 
 \end{figure}
 
 
-While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as PCB design tool. Jumper header pins are used for DC voltages whereas for ac inputs SMA connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are included in appendix.\\
+While the chip was in production, test PCB board and antennas were designed and produced. EAGLE is used as  \acrshort{pcb} design tool. Jumper header pins are used for DC voltages whereas for ac inputs \acrshort{sma} connectors are used. Similarly, for decoupling and ripple rejection \acrshort{smd} \acrshort{mlcc} capacitors are used but  for stability purpose of LDO, electrolytic capacitor is used owing to requirement of better accuracy and higher ESR for compensation capacitor.  In order to have better control of supplies to bias, buffer and pad circuits on board regulator is used. For convenience, instead of providing biases voltages from power supply, on board resistive network is implemented to generate required bias voltages. For sanity check of the chip, balun is used to created differential signal inputs. The test PCB and antenna are included in appendix.\\
 
 \section{Measurement Setup} %****************************************************
 
@@ -1608,13 +1642,13 @@ presented below.
 
 \subsection{Rectifier} %****************************************************
 For measuring the performance of rectifier on PMS chip, balun on test PCB is used to generated $V_{in1}$ and $V_{in2}$.  $V_{ac}$ of 
-13.56 MHz frequency is supplied to the balun. Its magnitude is adjusted to 4.25 V so that the magnitude at the input of rectifier, 
+13.56 MHz frequency is supplied to the balun. Its magnitude is adjusted to 4.1 V so that the magnitude at the input of rectifier, 
 $V_{in}$ ($V_{in1} -V_{in2}$) is 2.6 V as in simulation. The bias and reference voltages for LDO are grounded in order 
 to disable LDO for now. The potentiometer at $V_{rec}$ node, as a load resistance, is adjusted for drawing 10 mA current. \\
 
 Figure \ref{fig:meas_rect_10ma} shows measured input and output waveform for 10 mA load compared with corresponding 
-PMS simulation. The average rectified output $V_{rec}$ is a close to simulated value. The additional drop in measured $V_{rec}$ is about 90 mV,
- which be accounted to resistive drop along bonding wire, PCB trace and higher drain-source resistance of diodes. This assumption results in resistance of 9  $\Omega$ in $V_{rec}$ path, which cannot be so big. This means more than 10 mA current is drawn from the rectifier where the additional current is drawn by LDO because the LDO is not completely off. \\
+PMS simulation. The average rectified output $V_{rec}$ is a close to simulated value. The additional drop in measured $V_{rec}$ is about 65 mV,
+ which can be accounted to resistive drop along bonding wire, PCB trace and higher drain-source resistance of diodes. This assumption results in resistance of 6.5  $\Omega$ in $V_{rec}$ path, which in real cannot be so big. This means more than 10 mA current is drawn from the rectifier, proportionally dropping this higher voltage. The additional current may have been drawn by LDO because the LDO might not be completely turned off. \\
  
 \begin{figure} [H]
   \centering
@@ -1671,7 +1705,7 @@ and dc current, $I_{load}$ value read by Keithley 6514 electrometer measured at 
 P_{load} = V_{rec_{rms}}.I_{load}
 \end{equation}
 
-For delivering 10 mA output current to load  $V_{rec}$ is 2.171 V i.e 21.71 mW output power, the measured input power is 33.74 mW.. The results 
+For delivering 10 mA output current to load,  $V_{rec}$ is 2.151 V i.e 21.51 mW output power, the measured input power is 33.74 mW.. The results 
 in measured efficiency of rectifier to be 62.5\%.
 
 
@@ -1852,7 +1886,7 @@ In course of this WPT chip design, I came across many design issues, most of whi
 
 \begin{itemize}
 \item I followed a text book approach for designing which I later realised not to be an optimal design choice. For example, choosing device length 3 times the minimum feature size. Though simulation across all corners 
-met the target requirements with chosen technique, there was still plenty room on the chip. Bigger devices sizes could have, on the one hand, make good used to available room and on the other hand, it could certainly have made the produced chip less prone to PVT variation. 
+met the target requirements with chosen technique, there was still plenty room on the chip. Bigger devices sizes could have, on the one hand, make good used to available room and on the other hand, it could certainly have made the produced chip less prone to \acrshort{pvt} variation. 
 \item During verification  of the chip, larger ripples, both in Vrec and Vreg were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
 During conduction of MOS diodes large ac current passed through the ground, eventually creating higher ripples and requiring large ripple rejection capacitors. Separate ground for rectifier and LDO and wider gaurd-ring around the noisy rectifier, could have minimised the ripple amplitude in rectified output. Similarly, the higher current path reaching the diodes should be made with equal resistance. A slight difference in path resistance was observed in this design which resulted in asymmetric conduction of rectifying diodes. 
 \item A more detail analysis of magnetic resonance inductive link is required. The coupling link was designed for fixed resonance frequency at 13.56 MHz but shift in resonance frequency was observed while taking measurements of WPT chip. It was 
@@ -1879,8 +1913,8 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 \clearpage
 \newpage
 
-%***********************************************************************  APPENDICES ***********************************************************************************
 
+%***********************************************************************  APPENDICES ***********************************************************************************
 
 \begin{appendices} 	% starts appendix
 \addtocontents{toc}{\protect\setcounter{tocdepth}{1}} % 
@@ -1898,7 +1932,7 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 %\begin{figure} [!htbp]	% schematic Rectifier
 \begin{sidewaysfigure} [!htbp]
  	\centering
-  	\includegraphics[width=\textwidth]{appendix/schematic_rectifier_l.pdf} 
+  	\includegraphics[width=1\textwidth]{appendix/schematic_rectifier_l.pdf} 
  	\caption{Schematic of Rectifier} 
 	\label{fig:appen_schematic_rectifer} 
 \end{sidewaysfigure}
@@ -1923,16 +1957,18 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 %********* LDO appendix *********
 \chapter{LDO Implementation}
 
-\begin{figure} [!htbp]	% schematic LDO
+%\begin{figure} [!htbp]	% schematic LDO
+\begin{sidewaysfigure} [!htbp]
  	\centering
-  	\includegraphics[angle=90, width=0.75\textwidth]{appendix/schematic_ldo_l.pdf} 
+  	\includegraphics[width=\textwidth]{appendix/schematic_ldo_l.pdf} 
  	\caption{Schematic of LDO} 
 	\label{fig:appen_schematic_ldo} 
-\end{figure}
+%\end{figure}
+\end{sidewaysfigure}
 
 \begin{sidewaysfigure} [!htbp]	% Layout LDO
  	\centering
-  	\includegraphics[width=0.85\textwidth]{appendix/layout_ldo_p.pdf} 
+  	\includegraphics[width=0.88\textwidth]{appendix/layout_ldo_p.pdf} 
  	\caption{Layout of LDO} 
 	\label{fig:appen_layout_ldo} 
 \end{sidewaysfigure}
@@ -1941,19 +1977,21 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 % ********* WPT appendix *********
 
 
-\chapter{WPT Chip}
+\chapter{PMS Chip}
 
-\begin{figure} [!htbp]	% schematic WPT top
+\begin{sidewaysfigure} [!htbp]
+%\begin{figure} [!htbp]	% schematic WPT top
  	\centering
-  	\includegraphics[angle=90, width=0.75\textwidth]{appendix/schematic_chip_p.pdf} 
- 	\caption{Schematic of WPT chip} 
+  	\includegraphics[width=\textwidth]{appendix/schematic_chip_p.pdf} 
+ 	\caption{Schematic of PMS chip} 
 	\label{fig:appen_schematic_chip} 
-\end{figure}
+%\end{figure}
+\end{sidewaysfigure}
 
 \begin{sidewaysfigure} [!htbp]	% Layout WPT
  	\centering
-  	\includegraphics[width=0.75\textwidth]{appendix/layout_chip_core.pdf} 
- 	\caption{Layout of WPT chip} 
+  	\includegraphics[width=0.9\textwidth]{appendix/layout_chip_core.pdf} 
+ 	\caption{Layout of PMS chip} 
 	\label{fig:appen_layout_chip} 
 \end{sidewaysfigure}
 
@@ -1991,11 +2029,10 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 %************************************************TEST PCB************************************************
 \begin{sidewaysfigure} [!htbp]	% PCB schematic
  	\centering
-  	\includegraphics[width=0.85\textwidth]{appendix/pcb_schematic.pdf} 
+  	\includegraphics[width=0.94\textwidth]{appendix/pcb_schematic.pdf} 
  	\caption{Test PCB schematic} 
 	\label{fig:appen_schemtic_pcb} 
 \end{sidewaysfigure}
-
 
 %\begin{sidewaysfigure} [!htbp]		% PCB board layout
 \begin{figure} [!htbp]
@@ -2013,22 +2050,28 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 	\label{fig:appen_board_pcb} 
 \end{figure}
 
+
+\chapter{Matlab example for PMS measurement}
+\lstinputlisting{appendix/matlab_sample_code.m} 
+
 \addtocontents{toc}{\endgroup}
-\end{appendices} % end appendix
+\end{appendices} 
+% end appendix
 
 
 \backmatter{}	% the main content ends here
 
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Bibliography}
-\nocite{*}
-\printbibliography
+\addcontentsline{toc}{chapter}{Acronyms}
+\printnoidxglossaries
+
 
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Acronyms}
-\printnoidxglossaries
+\addcontentsline{toc}{chapter}{Bibliography}
+\nocite{*}
+\printbibliography
 
 
 \end{document}
