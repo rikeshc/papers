@@ -36,50 +36,50 @@
 \contentsline {chapter}{\numberline {3}Rectifier}{18}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{18}{section.3.1}
 \contentsline {section}{\numberline {3.2}Design}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}Simulation result}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Transient performance}{23}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}DC performance}{25}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Low Dropout Regulator}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Design}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Simulation result}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Transient response}{31}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}DC response}{34}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}AC response}{35}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}Antenna Design}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Inductor Model}{41}{section.5.2}
-\contentsline {section}{\numberline {5.3}Inductive Transfer Link}{43}{section.5.3}
-\contentsline {section}{\numberline {5.4}Magnetic Resonance Coupling}{44}{section.5.4}
-\contentsline {part}{III\hspace {1em}WPT System Design and Implementation}{48}{part.3}
-\contentsline {chapter}{\numberline {6}\acrshort {pms} and WPT Systems}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{49}{section.6.1}
-\contentsline {section}{\numberline {6.2}Power Management System}{50}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Simulation result}{53}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}WPT System}{57}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Top Testbench}{57}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Simulation result}{58}{subsection.6.3.2}
-\contentsline {part}{IV\hspace {1em}WPT Chip Production, Test and Verification }{65}{part.4}
-\contentsline {chapter}{\numberline {7}Test and Verification }{66}{chapter.7}
-\contentsline {section}{\numberline {7.1}Chip and PCB}{66}{section.7.1}
-\contentsline {section}{\numberline {7.2}Measurement Setup}{67}{section.7.2}
-\contentsline {section}{\numberline {7.3}Measurement Result and Discussion}{68}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Rectifier}{68}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}LDO}{72}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}PMS Chip}{74}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}WPT System}{75}{subsection.7.3.4}
-\contentsline {part}{V\hspace {1em}Conclusion}{80}{part.5}
-\contentsline {chapter}{\numberline {8}Conclusion}{81}{chapter.8}
-\contentsline {section}{\numberline {8.1}Design issues}{81}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{83}{section.8.2}
-\contentsline {chapter}{Appendices}{84}{section*.93}
+\contentsline {section}{\numberline {3.3}Simulation result}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Transient performance}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}DC performance}{26}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Low Dropout Regulator}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}Design}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Simulation result}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Transient response}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}DC response}{35}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}AC response}{36}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Antenna Design}{40}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{40}{section.5.1}
+\contentsline {section}{\numberline {5.2}Inductor Model}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}Inductive Transfer Link}{44}{section.5.3}
+\contentsline {section}{\numberline {5.4}Magnetic Resonance Coupling}{45}{section.5.4}
+\contentsline {part}{III\hspace {1em}WPT System Design and Implementation}{49}{part.3}
+\contentsline {chapter}{\numberline {6}\acrshort {pms} and WPT Systems}{50}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}Power Management System}{51}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Simulation result}{54}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}WPT System}{58}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Top Testbench}{58}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Simulation result}{59}{subsection.6.3.2}
+\contentsline {part}{IV\hspace {1em}WPT Chip Production, Test and Verification }{66}{part.4}
+\contentsline {chapter}{\numberline {7}Test and Verification }{67}{chapter.7}
+\contentsline {section}{\numberline {7.1}Chip and PCB}{67}{section.7.1}
+\contentsline {section}{\numberline {7.2}Measurement Setup}{68}{section.7.2}
+\contentsline {section}{\numberline {7.3}Measurement Result and Discussion}{69}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Rectifier}{69}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}LDO}{73}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}PMS Chip}{75}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}WPT System}{76}{subsection.7.3.4}
+\contentsline {part}{V\hspace {1em}Conclusion}{81}{part.5}
+\contentsline {chapter}{\numberline {8}Conclusion}{82}{chapter.8}
+\contentsline {section}{\numberline {8.1}Design issues}{82}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{84}{section.8.2}
+\contentsline {chapter}{Appendices}{85}{section*.93}
 \setcounter {tocdepth}{1}
 \begingroup \let \l@chapter \l@section \let \l@section \l@subsection 
-\contentsline {chapter}{\numberline {A}Rectifier Implementation}{85}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}LDO Implementation}{88}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}PMS Chip}{91}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Test PCBs}{94}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}Matlab example for PMS measurement}{100}{Appendix.1.E}
+\contentsline {chapter}{\numberline {A}Rectifier Implementation}{86}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}LDO Implementation}{89}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}PMS Chip}{92}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Test PCBs}{95}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}Matlab code for PMS measurement}{101}{Appendix.1.E}
 \endgroup 
 \contentsline {chapter}{Acronyms}{104}{section*.107}
 \contentsline {chapter}{Bibliography}{106}{section*.110}

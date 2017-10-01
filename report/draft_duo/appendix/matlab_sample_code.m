@@ -35,7 +35,7 @@ TTi1244_SetAmplitude(Vamp1);
 TTi1244_SetFrequency(Freq1);
 TTi1244_DCoffset(Voffset1);
 TTi1244_ChannelEnable('ON', 1);
-pause(1;
+pause(1);
 
 %%  Multimeter initailisation and setup
 GPIB_Write('*CLS;*RST;', K6514_add);
@@ -47,22 +47,22 @@ pause(1);
 %% Oscilloscope initailisation and setup
 GPIB_Write('*CLS;*RST;', HP54622_add); 
 %HP54622_AutoScale(1);  % autoscaling channel 1
-HP54622_SetVerticalRange(1, 3, 0);  % voltage for complete window, not div,
-HP54622_SetTimeScale(2*1/Freq1);    % time for complete window, now a div
+HP54622_SetVerticalRange(1, 3, 0);  % voltage scale
+HP54622_SetTimeScale(2*1/Freq1);    % time scale
 pause(1);
 [time, data] = GetData(HP54622_DefaultAdr);	% read all channles
-Vrec_freq 	 = HP54622_MeasFreq(3);			% ripple frequency in Vrec
-Vreg_freq 	 = HP54622_MeasFreq(4);			% ripple frequency in Vreg
+Vrec_freq = HP54622_MeasFreq(3);	% Vrec ripple freq
+Vreg_freq = HP54622_MeasFreq(4);	% Vreg ripple freq
 pause(1);
 
-Vin1 	 = data(:, 1);	Vin1_vpp = peak2peak(Vin1);		% Channel 1 as "Vin1"
-Vin2 	 = data(:, 2);	Vin2_vpp = peak2peak(Vin2);		% Channel 2 as "Vin2"
-Vrec 	 = data(:, 3);  Vrec_avg = mean(Vrec);			% channle 3 as "Vrec"
+Vin1 = data(:, 1);	Vin1_vpp = peak2peak(Vin1);		% Channel 1 as "Vin1"
+Vin2 = data(:, 2);	Vin2_vpp = peak2peak(Vin2);		% Channel 2 as "Vin2"
+Vrec = data(:, 3);  Vrec_avg = mean(Vrec);		% channle 3 as "Vrec"
 Vrec_rip = peak2peak(Vrec);
-Vreg 	 = data(:, 4);  Vreg_avg = mean(Vreg);			% channle 4 as "Vreg"
+Vreg = data(:, 4);  Vreg_avg = mean(Vreg);		% channle 4 as "Vreg"
 Vreg_rip = peak2peak(Vreg);
-Vin  	 = Vin1 - Vin2;	Vin_vpp = peak2peak(Vin)/2;     % "Vin"
-time  	 = time * 10^9 + 250;     						% in ns and starting with 0 ns
+Vin  = Vin1 - Vin2;	Vin_vpp = peak2peak(Vin)/2;	% "Vin"
+time  = time * 10^9 + 250;	% in ns and starting with 0 ns
 
 %% Plotting all voltage waveforms
 f1 = figure(1);
@@ -77,7 +77,7 @@ vin1_legend = sprintf('Vin1: V_{pp} = %.3f V', Vin1_vpp);
 vin2_legend = sprintf('Vin2: V_{pp} = %.3f V', Vin2_vpp);
 vrec_legend = sprintf('Vrec: V_{pp} = %.3f V, V_{avg} = %.3f V', Vrec_rip, Vrec_avg);
 vreg_legend = sprintf('Vreg: V_{pp} = %.3f V, V_{avg} = %.3f V', Vreg_rip, Vreg_avg);
-vin_legend  = sprintf('Vin : V_{pp} = %.3f V', Vin_vpp);')
+vin_legend  = sprintf('Vin : V_{pp} = %.3f V', Vin_vpp);
 legend(vin1_legend, vin2_legend, vrec_legend, vreg_leg, vin_legend', 'location', 'best');
 title('PMS: Measured voltages', 'FontSize', 10);
 

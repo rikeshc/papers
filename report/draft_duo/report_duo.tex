@@ -50,12 +50,33 @@
 %%% front main and back matter ends
 
 
-
 %% FOR MATLAB CODE LISTING
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+
+\usepackage{listings}
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=2,
+   showspaces=false,
+   showstringspaces=false,
+   breaklines = true, %del opp linjer dersom de skulle flyte utenfor ramma
+   frame=shadowbox, rulesepcolor=\color{black}} %ramme rundt koden
+%Ramma gjør det lettere å skille hva som er kode og hva som er kommentarer.
 
 %FANCY HEADER AND FOOTER
 \usepackage{fancyhdr}
@@ -131,6 +152,7 @@
 \newacronym{cpt}{CPT}{ Capacitive Power Transfer}
 \newacronym{tsmc}{TSMC}{ Taiwan Semiconductor Manufacturing Company}
 \newacronym{sma}{SMA}{ SubMiniature Coaxial Connector version A}
+\newacronym{a4wp}{A4WP}{Alliance for Wireless Power}
 
 
 
@@ -146,22 +168,22 @@
 \begin{document}
 
 %% MATLAB code options
-\lstset{language=Matlab,%
-    %basicstyle=\color{red},
-    breaklines=true,%
-    morekeywords={matlab2tikz},
-    keywordstyle=\color{blue},%
-    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
-    identifierstyle=\color{black},%
-    stringstyle=\color{mylilas},
-    commentstyle=\color{mygreen},%
-    showstringspaces=false,%without this there will be a symbol in the places where there is a space
-    numbers=left,%
-    numberstyle={\tiny \color{black}},% size of the numbers
-    numbersep=8pt, % this defines how far the numbers are from the text
-    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
-    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
-}
+%\lstset{language=Matlab,%
+%    %basicstyle=\color{red},
+%    breaklines=true,%
+%    morekeywords={matlab2tikz},
+%    keywordstyle=\color{blue},%
+%    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+%    identifierstyle=\color{black},%
+%    stringstyle=\color{mylilas},
+%    commentstyle=\color{mygreen},%
+%    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+%    numbers=left,%
+%    numberstyle={\tiny \color{black}},% size of the numbers
+%    numbersep=8pt, % this defines how far the numbers are from the text
+%    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+%    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+%}
 
 
 %\ififorside{}
@@ -562,8 +584,8 @@ positioning of the receiver, either guided or free. Qi charger also have foreign
 \cite{wpt_qi}. Qi uses the same frequency for communication and power transfer, 80-300 KHz \cite{wpt_qi_ian}. \\
 
 \subsubsection{A4WP}
-A4WP is acronym for Alliance for Alliance for Wireless Power which has introduced another independent wireless 
-charging protocol. It uses magnetic resonance IPT technique for power transfer. The main differences between 
+\acrshort{a4wp} is  another independent wireless 
+charging standard. It uses magnetic resonance IPT technique for power transfer. The main differences between 
 A4WP from Qi are multiple device charging from a single charger, also called power transmitting unit, PTU and 
 longer charging range. Similarly there are different category of PTUs from 1 to 5, most of them still on roadmap 
 and supports wireless charging from low power to high power. A4WP used different frequency band for communication 
@@ -590,9 +612,8 @@ industrial, medical and military applications \cite{airfuel}.\\
 
 \section{This project}
 As mentioned in the last chapter, a typical microelectronics system, BLE, used extensively in all portable and 
-wearable is taken as a reference load for this project. It requires 10 mA current from a supply of 1.8 V to drive 
-BLE system. The purpose of this work will be to make a wireless power transfer system for cordlessly driving BLE 
-or charging BLE battery. The target specification for this work is listed in table \ref{tab:proj_spec_tar}. \\
+wearable is taken as a reference load for this project.  The purpose of this work will be to make a wireless power transfer system for cordlessly driving
+a load or charging a battery of 1.8 V with 10 mA current. The target specification for this work is listed in table \ref{tab:proj_spec_tar}. \\
 
 \begin{table}[!htbp]
 \caption{Target specifications}
@@ -651,7 +672,7 @@ All the above discussed topology suffer from either large voltage drop or large 
 
 In this project, active rectifier is chosen, primarily for better VCE and PCE and secondarily to avoid the use large on chip capacitors. \cite{rectrcc}  and \cite{rectcomp} have discussed same active rectifier topology with a slight difference in active circuitry. \cite{rectrcc} has implemented comparator with compensating the delay of comparator's output falling whereas \cite{rectcomp} has implemented comparator with compensating both the falling and the rising delay of comparator's output in expense of added circuit complexity and power consumption. \cite{rectrcc} has been used here for its simple design. \\
 
-Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vac \geq Vdc + Vtn$ for conduction. \\
+Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementation of conventional full wave bridge rectifier, gate cross coupled rectifier and proposed active rectifier in \cite{rectrcc}. The problem with \ref{rect_conv} and \ref{rect_cc} has already been briefly mentioned above. Though  \ref{rect_cc}  is significantly improvement over  \ref{rect_conv} , it is still not a favourable topology with respect to the design technology chosen. In the gate cross couple rectifier of  \ref{rect_cc}, the cross coupled pMOSes act as switches, so the only voltage drop across them is conduction drop due to channel resistance. However the other two nMOSes are diode connected, so they have at least $Vtn$ drop across them which means $Vin \geq Vdc + Vtn$ for conduction. \\
 
 \begin{figure} [htbp]
   \centering 
@@ -663,18 +684,18 @@ Figure \ref{rect_conv}, \ref{rect_cc} and \ref{rect_rcc} is the CMOS implementat
 \label{rect_conv_cc} 
 \end{figure}
 
-The proposed active circuit in \ref{rect_rcc} is improvement over \ref{rect_cc} which eliminates $Vtn$ drop required for conduction by replacing diode connected nMOS with devices controlled by active circuit as shown in figure \ref{rcc}. The active circuit is a four input comparator that turns on nMOSes fast when Vac > Vdc and turns off fast to avoid flow of current. \\
+The proposed active circuit in \ref{rect_rcc} is improvement over \ref{rect_cc} which eliminates $Vtn$ drop required for conduction by replacing diode connected nMOS with devices controlled by active circuit as shown in figure \ref{rcc}. The active circuit is a four input comparator that turns on nMOSes fast when $Vin$ > $Vrec$ and turns off fast to avoid flow of current. \\
 
-For the illustration of operation of comparator, consider the case when $Vin1 > Vin2$ i.e. $Vin1 > 0$ and $Vin2 < 0$. During this half cycle, comparator $D1$ output is low and turns off $Mn2$ and also, $Mp1$ is reversed biased and hence there is no path to flow current along $Mn2$ and $Mp1$. For simplicity, assume $Vac =  Vin1 - Vin2$. When $Vac$ reaches $\acrshort{vtp}$, $Mp3$ turns on which shorts $Vin1$ to $Vrec$. When $Vac > Vrec$, $D2$ output goes high, which turns on $Mn4$ and starts the conduction path for the first half cycle and starts charging $Cl$. When $Vac$ reaches maximum, it starts to decrease and at $Vac < Vrec$, conduction stops as output of $D2$ is low and $Mn4$ is off. As $Vac$ further decreases to below $Vtp$, $Mp3$ if off too. This way rectifier in \ref{rect_rcc}  conducts during positive half cycle eliminating the $Vtn$ drop seen in \ref{rect_cc}. Now the only drop is the conduction drop due to channel resistance of two pass devices along the conduction path. This drop is much less because during conduction both the device are operating in the linear region with small resistance. The operation is similar for $Vin2 > Vin1$ where $Mn4$ and $Mp3$ are off and $Mn2$ and $Mp1$ conduct to charge $Cl$. \\
+For the illustration of operation of comparator, consider the case when $Vin1 > Vin2$ i.e. $Vin1 > 0$ and $Vin2 < 0$. During this half cycle, comparator $D1$ output is low and turns off $Mn2$ and also, $Mp1$ is reversed biased and hence there is no path to flow current along $Mn2$ and $Mp1$. For simplicity, assume $Vin =  Vin1 - Vin2$. When $Vin$ reaches $\acrshort{vtp}$, $Mp3$ turns on which shorts $Vin1$ to $Vrec$. When $Vin > Vrec$, $D2$ output goes high, which turns on $Mn4$ and starts the conduction path for the first half cycle and starts charging $Cl$. When $Vin$ reaches maximum, it starts to decrease and at $Vin < Vrec$, conduction stops as output of $D2$ is low and $Mn4$ is off. As $Vin$ further decreases to below $Vtp$, $Mp3$ if off too. This way rectifier in \ref{rect_rcc}  conducts during positive half cycle eliminating the $Vtn$ drop seen in \ref{rect_cc}. Now the only drop is the conduction drop due to channel resistance of two pass devices along the conduction path. This drop is much less because during conduction both the device are operating in the linear region with small resistance. The operation is similar for $Vin2 > Vin1$ where $Mn4$ and $Mp3$ are off and $Mn2$ and $Mp1$ conduct to charge $Cl$. \\
 
 \begin{figure}[htbp] %figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{img/visio/visio_rect_rcc.pdf} 
-   \caption{Gate cross coupled full wave active rectifier]}
+   \caption{Gate cross coupled full wave active rectifier}
    \label{rect_rcc}
 \end{figure}
 
-Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vac > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vac < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M8$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vac < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
+Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vin > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vin < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M8$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vin < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
 
 The design parameters for the rectifier is listed in table  \ref{tab:rect_parameter}. The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes. Thought maximum load for this work is 10 mA, It is always simulated with 1 mA extra load. This extra current is to account for the fact that RCC is self powered and LDO which will follow this rectifier will be powered by $Vrec$. Similarly, the value of ripple rejection capacitor is chosen 100nF. This size of 
 filter capacitor is calculated from capacitor current-voltage relationship with the assumption of keeping peak to peak ripple voltage below 5 mV to deliver 11 mA current.  \\
@@ -750,7 +771,7 @@ the resistance of high current conduction path. \\
 \subsection{DC performance}		%****************************
 
 Similarly, figure  \ref{rect_ce} shows PCE, ratio of powered delivered to load to average power from the source and 
-VCE, ratio of rectified DC, $Vrec$ to peak ac input, |$Vac$| with respect to magnitude peak ac input signal. |$Vac$| is gradually increased in 
+VCE, ratio of rectified DC, $Vrec$ to peak ac input, |$Vin$| with respect to magnitude peak ac input signal. |$Vin$| is gradually increased in 
 peak magnitude in step of 50 mV and VCE and PCE is calculated for every step. The plot shows both 
 PCE and VCE are very less for input ac amplitude less then 1.8 V. It can be explained by the fact that required 
 bias current and gate drive voltage for RCC circuit are not achieved for smaller input. \\
@@ -838,7 +859,7 @@ network of resistors. \\
 As briefly mentioned above, the error amplifier amplifies the error i.e. difference in scaled regulated voltage, 
 V\textsubscript{div} and reference voltage, V\textsubscript{ref}. It is known that an amplifier with higher 
 open loop \acrshort{dc} gain reduces the closed loop gain error and hence amplifier with higher gain is desired 
-here which is turn increase the accuracy of regulated voltage, Vreg \cite{ldo_bulkmod}. Typically error amplifier 
+here which is turn increase the accuracy of regulated voltage, $V_{reg}$ \cite{ldo_bulkmod}. Typically error amplifier 
 has gain $> 40 dB$ which is not achieved with a single stage amplifier with this technology. Higher gain can be 
 achieved by cascading multiple single stage but with increased difficulty in making the multistage
 amplifier stable. So for achieving higher DC gain and at the same time for stability convenience, folded cascode 
@@ -1130,7 +1151,8 @@ but these are not considered for mathematical calculation.\\
   \centering 
   \subfloat[HFSS antenna model]  {\includegraphics[width=.49\textwidth]{img/ant_single.png} \label{fig:ant_single_model}}
 \hfill
- \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_single.pdf}\label{fig:ant_single_schematic}}
+ %\subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_single.pdf}\label{fig:ant_single_schematic}}
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/visio/visio_antenna_single.pdf}\label{fig:ant_single_schematic}}
  \caption{Antenna model} 
 \label{fig:ant_single} 
 \end{figure}
@@ -1165,7 +1187,8 @@ of two coils, $ L_{12} = L_{21} = M $, coupling coefficient between the coils, $
   \centering 
   \subfloat[HFSS coupling model]  {\includegraphics[width=.49\textwidth]{img/ant_couple.png} \label{fig:ant_couple_model}}
 \hfill
- \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_couple.pdf}\label{fig:ant_couple_schematic}}
+ %\subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/ant_couple.pdf}\label{fig:ant_couple_schematic}}
+ \subfloat[Equivalent schematic]  {\includegraphics[width=.49\textwidth]{img/visio/visio_antenna_couple.pdf}\label{fig:ant_couple_schematic}}
  \caption{Antenna coupling model} 
 \label{fig:ant_couple} 
 \end{figure}
@@ -1226,7 +1249,7 @@ with 5 mm separation is taken as a typical example and presented here. \\
 
 \begin{figure}[!htb] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/ant_couple_resonant.pdf} 
+   \includegraphics[width=\textwidth]{img/visio/visio_antenna_couple_resonant.pdf} 
    \caption{Resonant coupled inductive link}
    \label{fig:ant_couple_resonant}
 \end{figure}
@@ -1298,7 +1321,8 @@ these units.  In this work, design and analysis of PRU is the main objective.  \
 
 \begin{figure} [!htb]
   \centering
-  \includegraphics[width=0.9\textwidth]{img/wpt_ptu_pru.pdf} 
+  %\includegraphics[width=0.9\textwidth]{img/wpt_ptu_pru.pdf} 
+  \includegraphics[width=0.9\textwidth]{img/visio/visio_wpt_func_block.pdf} 
  \caption{WPT block diagram} 
 \label{fig:wpt_ptu_pru} 
 \end{figure}
@@ -1319,7 +1343,7 @@ and reference will be explicitly noted when used. \\
 
 \section{Power Management System} %****************************************************
 
-Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal Vin1 and Vin2 from source Vac and see Vrec and Vreg outputs while driving load. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are bias voltages to examine the performance of BGR circuit which can be disabled with external control signal Vctl low.  \\
+Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench setup is a shown in figure \ref{fig:wpt_top_testbench}. The purpose here is to give differential signal $V_{in1}$ and $V_{in2}$ to PMS system and see $V_{rec}$ and $V_{reg}$ outputs while driving load. The voltage signal from  source $V_{ac}$ is fed to balun in order to generated $V_{in1}$ and $V_{in2}$. The other inputs are external biases, reference, control and supply for LDO and buffer. Other outputs are bias voltages to examine the performance of BGR circuit which can be disabled with external control signal Vctl low.  \\
 
 
 \begin{figure} [H]
@@ -1337,7 +1361,7 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 \hline \hline
 $V_{in} $			& 2.6 \si{\volt}\textsubscript{p} \\ \hline
 Operating frequency	& 13.56 \si{\mega\hertz}	\\ \hline
-$C_{rip}$ 		  	& > 100 \si{\nano\farad}	\\ \hline
+$V_{ac}$ 		  	& > 100 \si{\nano\farad}	\\ \hline
 $V_{bias2}$, $V_{bias3}$ \& $V_{bias4}$ & 1.1, 0.88 \& 0.68 \si{\volt} \\ \hline
 $C_{load}$ \& $R_{esr}$ & > 2.5 \si{\micro\farad} \& > 0.5 \si{\ohm} \\ \hline
 $I_{load} = I_{max}$ & 10 \si{\milli\ampere} \\ \hline
@@ -1355,7 +1379,7 @@ $Vb_{buff}$ & 1.4 V \\ \hline
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=1.05\textwidth]{img/pms_top_testbench.pdf} 
+  \includegraphics[width=1\textwidth]{img/visio/visio_pms_top.pdf} 
  \caption{Test bench for PMS simulation } 
 \label{fig:wpt_top_testbench} 
 \end{figure}
@@ -1367,12 +1391,12 @@ order to compensate voltage drop of pad resistance.  \\
 
 \subsection{Simulation result} %****************************************************
 
-Figure \ref{fig:pms_vin} and \ref{fig:pms_vout} shows input and output waveforms of PMS block when supplying 10 mA current to the load. On comparing Vrec with 
-that of rectifier only section, two distinct difference can be observed: additional drop in Vrec and additional time to 
-get maximum Vrec. As already mentioned that final parasitic extraction from layout not just include the core but also 
+Figure \ref{fig:pms_vin} and \ref{fig:pms_vout} shows input and output waveforms of PMS block when supplying 10 mA current to the load. On comparing $V_{rec}$ with 
+that of rectifier only section, two distinct difference can be observed: additional drop in $V_{rec}$ and additional time to 
+get maximum $V_{rec}$. As already mentioned that final parasitic extraction from layout not just include the core but also 
 the tracks from pad to the core inputs, which obviously contributes more resistance in the conduction path and hence 
-more drop in Vrec. Similarly, passive and active rectification region is clearly seen here. $C_{load}$ being a large 
-capacitor, it is taking longer time to start the active rectification. The regulated output, Vreg is similar to as discussed in LDO section. \\
+more drop in $V_{rec}$. Similarly, passive and active rectification region is clearly seen here. $C_{load}$ being a large 
+capacitor, it is taking longer time to start the active rectification. The regulated output, $V_{reg}$ is similar to as discussed in LDO section. \\
 
 \begin{figure} [!htb]
   \centering
@@ -1384,25 +1408,25 @@ capacitor, it is taking longer time to start the active rectification. The regul
 \begin{figure} [H]
   \centering
   \includegraphics[width=0.96\textwidth]{img/pms/pms2_Vout_both.pdf} 
- \caption{Vrec and Vreg voltages of PMS} 
+ \caption{$V_{rec}$ and $V_{reg}$ voltages of PMS} 
 \label{fig:pms_vout} 
 \end{figure}
 
-Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, Vrec and regulated, Vreg output voltages. Their 
+Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, $V_{rec}$ and regulated, $V_{reg}$ output voltages. Their 
 characteristcs are same as discussed in rectifier and LDO section. \\
 
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/pms/pms2_ripple_both.pdf} 
- \caption{Ripple in Vrec and Vreg} 
+ \caption{Ripple in $V_{rec}$ and $V_{reg}$} 
 \label{fig:pms_ripple} 
 \end{figure}
 
 Figure \ref{fig:pms_PI} shows of diode currents corresponding to its input voltages. It is seen that diodes turn off slightly later than intended. This has resulted in reverse leakage of current. Since rectifying  diodes are realised with large MOSes, these diodes have larger gate to source capacitance. So when the diodes are turned on and off, it require some time to charge and discharge, resulting in delay of turning off diodes. The other reason might be,  if the parasitic capacitance of diodes are not equal, it results in different charging and discharging of time of diodes, resulting in even conduction of current through them.
 %It can be due to parasitic inductance and uneven resistance of 
 %longer Vin1 and Vin2 paths from pad to rectifier inputs which has resulted in slight magnitude and phase difference of Vin1 and Vin2. 
-Same is the reason for rms diode current being slightly less in post layout. The other important observation is peak diode though Vin1 path is 
-less than through Vin2 path which means paths from pad to diode inputs are asymmetrical with Vin1 track having higher resistance.\\
+Same is the reason for rms diode current being slightly less in post layout. The other important observation is peak diode though $V_{in1}$ path is 
+less than through $V_{in2}$ path which means paths from pad to diode inputs are asymmetrical with $V_{in1}$ track having higher resistance.\\
 
 
 \begin{figure} [H]
@@ -1453,19 +1477,28 @@ $\eta_{pms}$		& 	58.9  \%	& 62.7  \%		\\
 \section{WPT System} 
 \subsection{Top Testbench} %****************************************************
 
-Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. The inductive link used here is lumped model of coupling extracted from HFSS for the case of 5 mm separation between the coils where both antennas are tuned at the operating frequency, 13.56 MHz using capacitors $Cp1$, $Cp2$ and $Cs1$ given in table \ref{tab:ant_couple_parameter}. The primary antenna is driven by voltage signal source Vac and the secondary antenna generate differential signal Vin1 and Vin2, which are inputs to the PMS chip. \\
+%Figure \ref{fig:wpt_top_link} is test bench for complete PRU unit. It includes PMS shown in figure \ref{fig:wpt_top} and resonant inductive link shown in figure \ref{fig:ant_couple}. The inductive link used here is lumped model of coupling extracted from HFSS for the case of 5 mm separation between the coils where both antennas are tuned at the operating frequency, 13.56 MHz using capacitors $Cp1$, $Cp2$ and $Cs1$ given in table \ref{tab:ant_couple_parameter}. The primary antenna is driven by voltage signal source  and the secondary antenna generate differential signal  and Vin2, which are inputs to the PMS chip. \\
 
-In this test-bench, a resistor, $R_{s}$ of  50 \si{\ohm} is used in series with signal source, $V_{ac}$ to realise a 
-source resistance. The magnitude of $V_{ac}$ is gradually increased till the differential signals $V_{in1}$ and $V_{in2}$ 
-in secondary antenna reach the nominal value of 2.6 \si{\volt} for maximum load. Other biasing voltages and component 
+Figure \ref{fig:wpt_top_testbench} is also the test bench for complete WPT PRU unit when the balun block is replaced with wireless transfer link model. Figure \ref{fig:wpt_top_link} is the transfer link realised with lumped model of resonant inductive link. The values of lumped elements of inductive link and tuning capacitors 
+are given in table  \ref{tab:ant_inductance_compare}, \ref{tab:ant_couple_parameter} and \ref{tab:ant_spec}. $V_{ac}$, a 13.56 MHz voltage source, is connected to $V_{pri}$ input of this model and differential voltages $V_{sec+}$ and $V_{sec-}$ are generated as output, which are used as $V_{in1}$ and $V_{in2}$ inputs for PMS system. The simulation result of 5 mm distance coupling is presented below. \\
+
+Since the nominal peak to peak value of differential inputs is 2.6V, during simulation magnitude of $V_{ac}$ is gradually increased till the differential signals in secondary antenna reach the nominal value when driving maximum load. Other biasing voltages and component 
 values remain the same as in PMS simulation test bench given in table \ref{tab:pms_stimuli}. \\
+
+%\begin{figure} [H]
+%  \centering
+%  \includegraphics[width=1.05\textwidth]{img/wpt_top_testbench.pdf} 
+% \caption{Test bench for complete PRU unit } 
+%\label{fig:wpt_top_link} 
+%\end{figure}
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=1.05\textwidth]{img/wpt_top_testbench.pdf} 
- \caption{Test bench for complete PRU unit } 
+  \includegraphics[width=1\textwidth]{img/visio/visio_res_ind_link.pdf} 
+ \caption{Lumped model of inductive link } 
 \label{fig:wpt_top_link} 
 \end{figure}
+
 
 The parasitic extraction of the compete layout also includes the tracks from pad to core inputs. The pad-frame layout provided by the fab was used to accurately draw the tracks from pad to core I/O terminals. \\
 
@@ -1494,7 +1527,7 @@ weakly coupled inductive and a large output capacitor. \\
 \begin{figure} [!htb]
   \centering
   \includegraphics[width=\textwidth]{img/wpt/wpt_Vout_both.pdf} 
- \caption{Vrec and Vreg voltages} 
+ \caption{$V_{rec}$ and $V_{reg}$ voltages} 
 \label{fig:wpt_vout} 
 \end{figure}
 
@@ -1504,7 +1537,7 @@ Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_
 \begin{figure} [H]
   \centering
   \includegraphics[width=\textwidth]{img/wpt/wpt_ripple_both.pdf} 
- \caption{Ripple in Vrec and Vreg} 
+ \caption{Ripple in $V_{rec}$ and $V_{reg}$} 
 \label{fig:wpt_ripple} 
 \end{figure}
 
@@ -1521,8 +1554,8 @@ the plot, current is slightly leading voltage, which means it slightly capacitat
 
 Figure \ref{fig:wpt_PI} shows instantaneous diode current waveform with their corresponding input voltages. On comparison 
 with PMS performance, two distinct difference is seen: diode current rising quickly to peak value and higher peak diode 
-current. This is because Vin(Vin1 - Vin2) changes quickly during turning on time of diodes. That is why the peak of Vin 
-is more like a square wave. Similarly as in PMS section, diode in Vin1 path is conducting less peak current than in Vin2 path due to two 
+current. This is because $V_{in} (V_{in1} - V_{in2})$  changes quickly during turning on time of diodes. That is why the peak of Vin 
+is more like a square wave. Similarly as in PMS section, diode in $V_{in1}$ path is conducting less peak current than in $V_{in2}$ path due to two 
 path being resistively asymmetrical in the layout. 
 %from the driver during stable operation. These are 
 %complete sine waves as the primary is driven by sinusoidal voltage source. The peaks of power waveform have additional 
@@ -1887,12 +1920,12 @@ In course of this WPT chip design, I came across many design issues, most of whi
 \begin{itemize}
 \item I followed a text book approach for designing which I later realised not to be an optimal design choice. For example, choosing device length 3 times the minimum feature size. Though simulation across all corners 
 met the target requirements with chosen technique, there was still plenty room on the chip. Bigger devices sizes could have, on the one hand, make good used to available room and on the other hand, it could certainly have made the produced chip less prone to \acrshort{pvt} variation. 
-\item During verification  of the chip, larger ripples, both in Vrec and Vreg were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
+\item During verification  of the chip, larger ripples, both in $V_{rec}$ and $V_{reg}$ were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
 During conduction of MOS diodes large ac current passed through the ground, eventually creating higher ripples and requiring large ripple rejection capacitors. Separate ground for rectifier and LDO and wider gaurd-ring around the noisy rectifier, could have minimised the ripple amplitude in rectified output. Similarly, the higher current path reaching the diodes should be made with equal resistance. A slight difference in path resistance was observed in this design which resulted in asymmetric conduction of rectifying diodes. 
 \item A more detail analysis of magnetic resonance inductive link is required. The coupling link was designed for fixed resonance frequency at 13.56 MHz but shift in resonance frequency was observed while taking measurements of WPT chip. It was 
 mostly due to variation of load and inaccuracy in coil separation. %In this project, topology of resonance capacitors used in 
 %the primary sides were dependant on load and were chosen for the case of 10 mA. However produced chip was able to supply 3 mA load. This is another source of load variation, causing resonance frequency shift. 
-\item The test PCB could have been made better in terms of both performance and test connivence. The current conduction paths, Vin1 and Vin2 should have been made shorter and symmetrical. The decoupling capacitors and ripple rejection capacitors should be place closer to their corresponding JLCC pins. For making measurements easier, more test points are required, especially current measurements points.
+\item The test PCB could have been made better in terms of both performance and test connivence. The current conduction paths, $V_{in1}$ and $V_{in2}$ should have been made shorter and symmetrical. The decoupling capacitors and ripple rejection capacitors should be place closer to their corresponding JLCC pins. For making measurements easier, more test points are required, especially current measurements points.
 \item The top level test-bench of WPT chip can also be improved to realise a real measurement set up. Inclusion of parasitics of probes increases the accuracy of measured data and hence the verification of performance.  More important is inclusion of pad resistance and capacitance which are the source of voltage/power loss and shift of resonance frequency respectively. Moreover, power down switches should be added to disable rectifier and LDO so that they can be tested separately.
 \end{itemize}
 
@@ -2051,7 +2084,7 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 \end{figure}
 
 
-\chapter{Matlab example for PMS measurement}
+\chapter{Matlab code for PMS measurement}
 \lstinputlisting{appendix/matlab_sample_code.m} 
 
 \addtocontents{toc}{\endgroup}
