@@ -49,7 +49,6 @@
 \makeatother
 %%% front main and back matter ends
 
-
 %% FOR MATLAB CODE LISTING
 \usepackage{listings}
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
@@ -93,10 +92,6 @@
   \renewcommand{\headrulewidth}{0pt} % remove lines as well
   \renewcommand{\footrulewidth}{0pt}}
   
-  
-\let\firstchar\uppercase
-\let\oldprintglossaries\printglossaries
-\def\printglossaries{\let\firstchar\uppercase\oldprintglossaries}
 
 \setacronymstyle{long-short}
 \glsdisablehyper
@@ -1264,16 +1259,16 @@ Likewise, in figure \ref{fig:ant_S_gain}, power transfer gain, $S21$, from prima
 
 The above $\eta_{link}$ calculation is valid for perfectly matched ports and gives maximum possible power gain from primary to secondary antenna. \\
 
-\begin{figure} [H]
+\begin{figure} [!htb]
   \centering
-  \includegraphics[width=1\textwidth]{img/ant_s1_s2_both.pdf} 
+  \includegraphics[width=0.95\textwidth]{img/ant_s1_s2_both.pdf} 
  \caption{Link reflection loss before and after tuning} 
 \label{fig:ant_S_loss} 
 \end{figure}
 
-\begin{figure} [!htb]
+\begin{figure} [H]
   \centering
-  \includegraphics[width=1\textwidth]{img/ant_s21_both.pdf}
+  \includegraphics[width=0.95\textwidth]{img/ant_s21_both.pdf}
  \caption{Link gain before and after tuning} 
 \label{fig:ant_S_gain} 
 \end{figure}
@@ -1400,27 +1395,27 @@ capacitor, it is taking longer time to start the active rectification. The regul
 
 \begin{figure} [!htb]
   \centering
-  \includegraphics[width=0.96\textwidth]{img/pms/pms2_Vs_both.pdf} 
+  \includegraphics[width=1\textwidth]{img/pms/pms2_Vs_both.pdf} 
  \caption{Input voltage waveform of PMS} 
 \label{fig:pms_vin} 
 \end{figure}
 
-\begin{figure} [H]
+\begin{figure} [!htb]
   \centering
-  \includegraphics[width=0.96\textwidth]{img/pms/pms2_Vout_both.pdf} 
+  \includegraphics[width=0.95\textwidth]{img/pms/pms2_Vout_both.pdf} 
  \caption{$V_{rec}$ and $V_{reg}$ voltages of PMS} 
 \label{fig:pms_vout} 
 \end{figure}
 
-Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, $V_{rec}$ and regulated, $V_{reg}$ output voltages. Their 
-characteristcs are same as discussed in rectifier and LDO section. \\
-
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/pms/pms2_ripple_both.pdf} 
+  \includegraphics[width=0.95\textwidth]{img/pms/pms2_ripple_both.pdf} 
  \caption{Ripple in $V_{rec}$ and $V_{reg}$} 
 \label{fig:pms_ripple} 
 \end{figure}
+
+Figure \ref{fig:pms_ripple} gives a zoomed view of rectified, $V_{rec}$ and regulated, $V_{reg}$ output voltages. Their 
+characteristics are same as discussed in rectifier and LDO section. \\
 
 Figure \ref{fig:pms_PI} shows of diode currents corresponding to its input voltages. It is seen that diodes turn off slightly later than intended. This has resulted in reverse leakage of current. Since rectifying  diodes are realised with large MOSes, these diodes have larger gate to source capacitance. So when the diodes are turned on and off, it require some time to charge and discharge, resulting in delay of turning off diodes. The other reason might be,  if the parasitic capacitance of diodes are not equal, it results in different charging and discharging of time of diodes, resulting in even conduction of current through them.
 %It can be due to parasitic inductance and uneven resistance of 
@@ -1526,17 +1521,16 @@ weakly coupled inductive and a large output capacitor. \\
 
 \begin{figure} [!htb]
   \centering
-  \includegraphics[width=\textwidth]{img/wpt/wpt_Vout_both.pdf} 
+  \includegraphics[width=0.95\textwidth]{img/wpt/wpt_Vout_both.pdf} 
  \caption{$V_{rec}$ and $V_{reg}$ voltages} 
 \label{fig:wpt_vout} 
 \end{figure}
 
-Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_{reg}$ along with inherent ripple in them. 
-\\
+Figure \ref{fig:wpt_ripple} is a closer look over steady state $V_{rec}$ and $V_{reg}$ along with inherent ripple in them. \\
 
 \begin{figure} [H]
   \centering
-  \includegraphics[width=\textwidth]{img/wpt/wpt_ripple_both.pdf} 
+  \includegraphics[width=0.95\textwidth]{img/wpt/wpt_ripple_both.pdf} 
  \caption{Ripple in $V_{rec}$ and $V_{reg}$} 
 \label{fig:wpt_ripple} 
 \end{figure}
@@ -1606,6 +1600,8 @@ $\eta_{wpt}$		& 48 \%				& 50.6 \%		\\
 \end{center}
 \label{tab:wpt_spec}
 \end{table}%
+
+\subsubsection{All inductive links}
 
 The above analysis and characterisation of WPT system is for inductive link with coil separation of 5 mm for delivering 10 mA current at 1.8 V. The 
 same analysis is repeated for other two cases: a stronger inductive link created from 1.5 mm coil separation and a weaker inductive link 
@@ -1871,6 +1867,8 @@ $\eta_{wpt}$		& 46.1 \%						& 63.4 \%		\\
 
  Once again just to avoid confusion, it should be mention here that performance summary given in table \ref{tab:wpt_spec_meas} is for WPT system constituting resonant inductive link and rectifier. \\
  
+\subsubsection{All inductive links} 
+
  As in simulation the performance is measured for 1.5 mm and 10 mm coil separation too. On doing so, the transfer link is realised with their respective resonant primary and secondary coil held at respective distance. The input voltage and current at the primary antenna for all three coupling cases for 10 mA load at rectifier output is shown in figure \ref{fig:meas_wpt_all_pri}. \\
  
  \begin{figure} [!htbp]
@@ -1918,15 +1916,15 @@ The post-layout simulation result, summarised in table \ref{tab:wpt_spec}, showe
 In course of this WPT chip design, I came across many design issues, most of which I learnt after the design. I learnt that these issues have direct impact on the performances of the system and on addressing these issues the performance of the WPT system can be significantly improved.
 
 \begin{itemize}
-\item I followed a text book approach for designing which I later realised not to be an optimal design choice. For example, choosing device length 3 times the minimum feature size. Though simulation across all corners 
+\item \textbf{Device size:} I followed a text book approach for designing which I later realised not to be an optimal design choice. For example, choosing device length 3 times the minimum feature size. Though simulation across all corners 
 met the target requirements with chosen technique, there was still plenty room on the chip. Bigger devices sizes could have, on the one hand, make good used to available room and on the other hand, it could certainly have made the produced chip less prone to \acrshort{pvt} variation. 
-\item During verification  of the chip, larger ripples, both in $V_{rec}$ and $V_{reg}$ were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
+\item \textbf{Layout:} During verification  of the chip, larger ripples, both in $V_{rec}$ and $V_{reg}$ were measured. The main reason for this is rectifier and LDO sharing the same ground path. 
 During conduction of MOS diodes large ac current passed through the ground, eventually creating higher ripples and requiring large ripple rejection capacitors. Separate ground for rectifier and LDO and wider gaurd-ring around the noisy rectifier, could have minimised the ripple amplitude in rectified output. Similarly, the higher current path reaching the diodes should be made with equal resistance. A slight difference in path resistance was observed in this design which resulted in asymmetric conduction of rectifying diodes. 
-\item A more detail analysis of magnetic resonance inductive link is required. The coupling link was designed for fixed resonance frequency at 13.56 MHz but shift in resonance frequency was observed while taking measurements of WPT chip. It was 
+\item \textbf{Inductive link:} A more detail analysis of magnetic resonance inductive link is required. The coupling link was designed for fixed resonance frequency at 13.56 MHz but shift in resonance frequency was observed while taking measurements of WPT chip. It was 
 mostly due to variation of load and inaccuracy in coil separation. %In this project, topology of resonance capacitors used in 
 %the primary sides were dependant on load and were chosen for the case of 10 mA. However produced chip was able to supply 3 mA load. This is another source of load variation, causing resonance frequency shift. 
-\item The test PCB could have been made better in terms of both performance and test connivence. The current conduction paths, $V_{in1}$ and $V_{in2}$ should have been made shorter and symmetrical. The decoupling capacitors and ripple rejection capacitors should be place closer to their corresponding JLCC pins. For making measurements easier, more test points are required, especially current measurements points.
-\item The top level test-bench of WPT chip can also be improved to realise a real measurement set up. Inclusion of parasitics of probes increases the accuracy of measured data and hence the verification of performance.  More important is inclusion of pad resistance and capacitance which are the source of voltage/power loss and shift of resonance frequency respectively. Moreover, power down switches should be added to disable rectifier and LDO so that they can be tested separately.
+\item \textbf{PCB:} The test PCB could have been made better in terms of both performance and test connivence. The current conduction paths, $V_{in1}$ and $V_{in2}$ should have been made shorter and symmetrical. The decoupling capacitors and ripple rejection capacitors should be place closer to their corresponding JLCC pins. For making measurements easier, more test points are required, especially current measurements points.
+\item \textbf{Test-bench:} The top level test-bench of WPT chip can also be improved to realise a real measurement set up. Inclusion of parasitics of probes increases the accuracy of measured data and hence the verification of performance.  More important is inclusion of pad resistance and capacitance which are the source of voltage/power loss and shift of resonance frequency respectively. Moreover, power down switches should be added to disable rectifier and LDO so that they can be tested separately.
 \end{itemize}
 
 \section{Future Work}
@@ -1965,17 +1963,10 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 %\begin{figure} [!htbp]	% schematic Rectifier
 \begin{sidewaysfigure} [!htbp]
  	\centering
-  	\includegraphics[width=1\textwidth]{appendix/schematic_rectifier_l.pdf} 
+  	\includegraphics[width=\textwidth]{appendix/schematic_rectifier_l.pdf} 
  	\caption{Schematic of Rectifier} 
 	\label{fig:appen_schematic_rectifer} 
 \end{sidewaysfigure}
-%\end{figure}
-
-%\begin{figure} [!htbp]	% schematic RCC
-% 	\centering
-%  	\includegraphics[width=\textwidth]{appendix/schematic_rectifier_bw.pdf} 
-% 	\caption{Schematic of RCC} 
-%	\label{fig:appen_schematic_rcc} 
 %\end{figure}
 
 
