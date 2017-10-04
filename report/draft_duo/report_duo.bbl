@@ -288,30 +288,67 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{note}{Retrived from: \url{https://www.airfuel.org}}
     \endentry
-    \entry{rectboot}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
-        {{hash=cf76b1e54b0ce6d4db6d6e4eeb30f0ef}{Sawan}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-        {{hash=521890551e7f6695f10743c4d4fbf4bc}{Savaria}{S\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+    \entry{wpt_3r_rect}{article}{}
+      \name{author}{5}{}{%
+        {{hash=00c064fea0cd16a00f2c454cb78d822e}{Choi}{C\bibinitperiod}{Jun-Han}{J\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=ecc5cc33411c626a4c361e64481d801e}{Yeo}{Y\bibinitperiod}{Sung-Ku}{S\bibinithyphendelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=d6843cef0dccee6093b4435ad3dbf799}{Park}{P\bibinitperiod}{Seho}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=62d35f29708d3753fb111de4fba6dc1a}{Lee}{L\bibinitperiod}{Jeong-Seok}{J\bibinithyphendelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=3161475cb841a1a0ac02fc717023af3b}{Cho}{C\bibinitperiod}{Gyu-Hyeong}{G\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{3b3862562520161d58993614bab01fba}
-      \strng{fullhash}{3b3862562520161d58993614bab01fba}
+      \strng{namehash}{d9ea37ac0aa4d000e9e206055ea07b97}
+      \strng{fullhash}{c77076d96356ed8aaa35ab81417d94b2}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1932-4545}
-      \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
-      \field{month}{08}
-      \field{number}{4}
-      \field{title}{A High-Efficiency Low-Voltage CMOS Rectifier for Harvesting Energy in Implantable Devices}
-      \field{volume}{6}
+      \field{booktitle}{Solid-State Circuits, IEEE Journal of}
+      \field{month}{12}
+      \field{title}{Resonant Regulating Rectifiers (3R) Operating for 6.78 MHz Resonant Wireless Power Transfer (RWPT)}
+      \field{volume}{48}
+      \field{year}{2013}
+      \field{pages}{2989\bibrangedash 3001}
+      \range{pages}{13}
+    \endentry
+    \entry{wpt_high_power}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=88de33666cd5a24cfc0dfe13a5855ad9}{Moti}{M\bibinitperiod}{Kyung-Goo}{K\bibinithyphendelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=1caf1a6a8314721f54b92a5e72888358}{Neri}{N\bibinitperiod}{Filippo}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=a6f38c1c6a8f0a49114c2bd08fdac173}{Moon}{M\bibinitperiod}{Sungwoo}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=64d401d9598f62fc8f5f1d6f696d8715}{Yeon}{Y\bibinitperiod}{Pyeongwoo}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=51dfee5febd111d577b453f22dfd9dbf}{Yu}{Y\bibinitperiod}{Jinhyuck}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=1b50c6d06b0034ee90f5056ab46d5202}{Cheon}{C\bibinitperiod}{Youso}{Y\bibinitperiod}{}{}{}{}}%
+        {{hash=0cccab07fd500f4bb2274ed90cc45d16}{Roh}{R\bibinitperiod}{Yong-seong}{Y\bibinithyphendelim s\bibinitperiod}{}{}{}{}}%
+        {{hash=e34f88ef82a62540af2674bf3ac13721}{Ko}{K\bibinitperiod}{Myeonglyong}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=802c319cf25c14282207dcffecd327c9}{Park}{P\bibinitperiod}{Byeong-Ha}{B\bibinithyphendelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1fde1c04d63c908853f63665ceef2db8}
+      \strng{fullhash}{618c3e62ddff94c8472059a843fc09e1}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ISSCC}
+      \field{title}{12.9 A fully integrated 6W wireless power receiver operating at 6.78MHz with magnetic resonance coupling}
+      \field{year}{2015}
+    \endentry
+    \entry{hf_band_matching}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c24abafc68335b153dae1be1b843dbcf}{Jang}{J\bibinitperiod}{byung-jun}{b\bibinithyphendelim j\bibinitperiod}{}{}{}{}}%
+        {{hash=e6186c82fe3471f9e06ab71d851e5608}{Lee}{L\bibinitperiod}{Seongjoo}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bb821196a4bec1667d5818ad081022a3}{Yoon}{Y\bibinitperiod}{Hyun-Goo}{H\bibinithyphendelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{39e55c59d7c428f31950aae40f07c0e3}
+      \strng{fullhash}{39e55c59d7c428f31950aae40f07c0e3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Progress In Electromagnetics Research}
+      \field{month}{01}
+      \field{title}{HF-band wireless power transfer system: Concept, issues, and design}
+      \field{volume}{124}
       \field{year}{2012}
-      \field{pages}{326\bibrangedash 335}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/TBCAS.2011.2177267
-      \endverb
     \endentry
     \entry{rectrcc}{article}{}
       \name{author}{3}{}{%
@@ -336,6 +373,56 @@
       \range{pages}{5}
       \verb{doi}
       \verb 10.1109/TCSII.2006.885400
+      \endverb
+    \endentry
+    \entry{parasitic_effect}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7c87b550ef99004eabf2b0d0c7d4dfb9}{Lee}{L\bibinitperiod}{H.\bibnamedelimi M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{Ghovanloo}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{395022f2d99a39ff358ec0f98c13908c}
+      \strng{fullhash}{395022f2d99a39ff358ec0f98c13908c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1549-8328}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{month}{08}
+      \field{number}{8}
+      \field{title}{An Integrated Power-Efficient Active Rectifier With Offset-Controlled High Speed Comparators for Inductively Powered Applications}
+      \field{volume}{58}
+      \field{year}{2011}
+      \field{pages}{1749\bibrangedash 1760}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TCSI.2010.2103172
+      \endverb
+      \keyw{CMOS integrated circuits;comparators (circuits);delays;overvoltage protection;power conversion;rectifying circuits;switches;telemetry;LSK technique;OVP;PCE;back current maximization;built-in back telemetry;dropout voltage;efficiency 80.2 percent;forward current maximization;frequency 13.56 MHz;full-wave rectifier;inductively powered application;integrated power-efficient active rectifier;load shift keying technique;offset-controlled high speed comparator;overvoltage protection;passive off-chip rectifier;passive on-chip rectifier;power conversion efficiency;rectifying switch;resistance 500 ohm;size 0.5 mum;standard CMOS process;turn-off delay;turn-on delay;voltage 3.12 V;voltage 3.8 V;Coils;Delay;Logic gates;Power demand;Schottky diodes;Telemetry;Transistors;Active rectifier;RFID;back telemetry;high speed comparators;implantable microelectronic devices;inductive power transmission;load shift keying;offset control}
+    \endentry
+    \entry{rectboot}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0a78eca0486178043b226c9e21bda60}{Hashemi}{H\bibinitperiod}{S.\bibnamedelimi S.}{S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=cf76b1e54b0ce6d4db6d6e4eeb30f0ef}{Sawan}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=521890551e7f6695f10743c4d4fbf4bc}{Savaria}{S\bibinitperiod}{Y.}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3b3862562520161d58993614bab01fba}
+      \strng{fullhash}{3b3862562520161d58993614bab01fba}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1932-4545}
+      \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{A High-Efficiency Low-Voltage CMOS Rectifier for Harvesting Energy in Implantable Devices}
+      \field{volume}{6}
+      \field{year}{2012}
+      \field{pages}{326\bibrangedash 335}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TBCAS.2011.2177267
       \endverb
     \endentry
     \entry{rectcomp}{article}{}
@@ -672,31 +759,6 @@
       \verb 10.1109/TIE.2008.2010110
       \endverb
       \keyw{electromagnetic induction;telecommunication power supplies;high-power high-efficiency loosely coupled planar wireless power transfer system;impedance response;inductive coupling;power 295 W;power 69 W;power-delivery profile;Class-E;inductive coupling;magnetic induction;switch mode;wireless power transfer}
-    \endentry
-    \entry{parasitic_effect}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7c87b550ef99004eabf2b0d0c7d4dfb9}{Lee}{L\bibinitperiod}{H.\bibnamedelimi M.}{H\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
-        {{hash=d338a40f39704b2d3b4f59c33a3d00d1}{Ghovanloo}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{395022f2d99a39ff358ec0f98c13908c}
-      \strng{fullhash}{395022f2d99a39ff358ec0f98c13908c}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1549-8328}
-      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
-      \field{month}{08}
-      \field{number}{8}
-      \field{title}{An Integrated Power-Efficient Active Rectifier With Offset-Controlled High Speed Comparators for Inductively Powered Applications}
-      \field{volume}{58}
-      \field{year}{2011}
-      \field{pages}{1749\bibrangedash 1760}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1109/TCSI.2010.2103172
-      \endverb
-      \keyw{CMOS integrated circuits;comparators (circuits);delays;overvoltage protection;power conversion;rectifying circuits;switches;telemetry;LSK technique;OVP;PCE;back current maximization;built-in back telemetry;dropout voltage;efficiency 80.2 percent;forward current maximization;frequency 13.56 MHz;full-wave rectifier;inductively powered application;integrated power-efficient active rectifier;load shift keying technique;offset-controlled high speed comparator;overvoltage protection;passive off-chip rectifier;passive on-chip rectifier;power conversion efficiency;rectifying switch;resistance 500 ohm;size 0.5 mum;standard CMOS process;turn-off delay;turn-on delay;voltage 3.12 V;voltage 3.8 V;Coils;Delay;Logic gates;Power demand;Schottky diodes;Telemetry;Transistors;Active rectifier;RFID;back telemetry;high speed comparators;implantable microelectronic devices;inductive power transmission;load shift keying;offset control}
     \endentry
     \entry{baker_2010}{book}{}
       \name{author}{1}{}{%

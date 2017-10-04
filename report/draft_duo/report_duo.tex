@@ -24,7 +24,9 @@
 \hypersetup{pageanchor=false,colorlinks=true, linktoc=all, linkcolor=blue,}
 \usepackage [nopostdot, acronym, nogroupskip, nonumberlist,] {glossaries}
 \usepackage{wrapfig}
-\usepackage[toc,page]{appendix} % appendice
+
+\usepackage[toc, page]{appendix} % appendicex
+\usepackage{adjustbox} %rotate caption of image
 
 \usepackage[labelfont=it]{caption}	% Figure/ table identifer italics
 
@@ -414,7 +416,7 @@ devices. It is seem  that the above discussed energy sources have a low power de
 and some low power micro-electronic devices only have the privilege of integrating energy harvesting techniques 
 so far. For most of the devices, the harvested power is not high enough to drive them yet. This means perpetual 
 high density energy source is yet not realisable for most of the devices. But what about wireless transfer of 
-alreadry available power? We will discuss it ahead. 
+already available power? We will discuss it ahead. 
 %we observe the trend of technology development in reducing power consumption of micro devices and at the same 
 %time, the progress in R\&D with promising results in power harvesting, we can definitely expect that harvested 
 %power will meet power requirement of electronic devices in near future. But consumers' desire for battery-less 
@@ -643,11 +645,16 @@ externally supplied bias and reference will be the secondary option. \\
    \label{fig:funct_block}
 \end{figure}
 
+
 The chapter ahead discusses the design, analysis and implementation of the functional blocks in figure 
 \ref{fig:funct_block} starting with rectifier. The physics behind each block will be less discussed, however the 
 design choices and reasoning of choices will be clearly stated. 2.5 V transistor of 90 nm process is used because most of the similar work are done 
 in higher technology nodes. So this choice is taken as design challenge. 
 
+\section{Previous Works}
+There has been a lot of similar works in inductive wireless power transfer. With recent trend of integrating wireless power transfer in consumer electronics, application specific optimisation has been abundantly studied. \cite{wpt_3r_rect} has presented  wireless power transfer system for implantable medical devices implemented using 0.35 um CMOS process and operating at 13.56 MHz, proposing techniques to minimise load and coupling variation. Similarly \cite{wpt_high_power} has proposed high power transfer receiver with magnetic resonance coupling operating at 6.87 MHz fabricated in 0.13 um BCD process. \\
+
+Besides complete WPT systems, there are also numerous works in optimising individual module of WPT systems. For example \cite{hf_band_matching} discusses about effect of impedance mismatch in transfer link in high frequency wireless power transfer system. Likewise, \cite{rectrcc} and \cite{parasitic_effect} discuss about high efficiency active rectifier topologies for wireless power transfer. Low loss CMOS active rectifier in \cite{rectrcc} has been implemented in this work.  Apart from being reference to this project, these works also helped in explaining and reasoning  the design issues encountered in this work. 
 
 % *********************************************************************** RECTIFIER  ********************************************************************************************
 
@@ -692,7 +699,7 @@ For the illustration of operation of comparator, consider the case when $Vin1 > 
 
 Figure \ref{rcc}  is the implementation of four input comparator $D2$ used in \ref{rect_rcc} as proposed in \cite{rectrcc}. It is designed to self power and bias because no steady state supply is available at start up. $M1$, $M2$ and $M7$ monitors voltage across $Mn4$ i.e $Vin2 - Vgnd$ and $M3$, $M4$ and $M8$ monitors voltage across $Mp3$ ie $Vin1 - Vrec$ . So when $Vin1 - Vrec > Vin2 - Vgnd$ which means $Vin > Vrec$, output of $D2$ is high and turns on $Mn4$ instantly. But when $Vin < Vrec$, the output of comparator is delayed to fall which causes $Mn4$ to conduct in reverse direction leading to significant reduction in power delivered to load. $M8$ is introduced in order to overcome this problem which adds offset currents to increase $Van$ and $Vpn$ faster, causing the output to decrease faster and turns off $Mn4$ before $Vin < Vrec$. This reverse current control technique compensates the comparator delay and increases the power efficiency of the rectifier. \\
 
-The design parameters for the rectifier is listed in table  \ref{tab:rect_parameter}. The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes. Thought maximum load for this work is 10 mA, It is always simulated with 1 mA extra load. This extra current is to account for the fact that RCC is self powered and LDO which will follow this rectifier will be powered by $Vrec$. Similarly, the value of ripple rejection capacitor is chosen 100nF. This size of 
+The design parameters for the rectifier is listed in table  \ref{tab:rect_parameter}. The dimensions of the pass devices are first hand calculated by using square law current equation and devices parameters values given in the technology documents, and later optimised with simulation tool in order to make the rectifier to deliver the required current. Since \acrshort{nmos} does not have to have same device size as \acrshort{pmos} to deliver same current, optimal size ratio equation from \cite{rectsize} is used to find nMOS pass devices sizes. Thought maximum load for this work is 10 mA, It is always simulated with 0.5 mA extra load. This extra current is to account for the fact that RCC is self powered and LDO which will follow this rectifier will be powered by $Vrec$. Similarly, the value of ripple rejection capacitor is chosen 100nF. This size of 
 filter capacitor is calculated from capacitor current-voltage relationship with the assumption of keeping peak to peak ripple voltage below 5 mV to deliver 11 mA current.  \\
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
@@ -711,7 +718,7 @@ Wn/Ln, Wp/Lp 		& 720um/280nm, 1.2mm/280nm \\ \hline
 Rectifier area 		& TBA mm\textsuperscript{2} \\ \hline
 Operating frequency 	& 13.56 MHz \\ \hline
 Input ac magnitude	& 2.5  \acrshort{vp}\\ \hline
-Load current 		& 11 mA \\ \hline
+Load current 		& 10.5 mA \\ \hline
 Ripple rejection capacitor	& 100 nF \\ 
 \hline \hline
 \end{tabular}
@@ -723,14 +730,8 @@ Ripple rejection capacitor	& 100 nF \\
 
 \subsection{Transient performance}	%****************************
 
-Figure \ref{rect_tb} is the test bench setup for simulation of the rectifier. Figure \ref{rect_plot} show the simulation results showing voltages at the input ac and output rectified DC 
-voltages and current through rectifying MOSes. These  
-waveforms clearly follows the working principle discussed above. Two important observations can be made from 
-plots. First, the rectified output $Vrec$ is 2.2 V for $Vpp$ ac input of 2.5 V for driving which means the 
-voltage loss has been significantly reduced and the loss of around 300 mV yields to the conduction loss due 
-the channel resistance. Secondly, the reverse current from output to input has been effectively eliminated as 
-there is only positive current flowing to the load when all conducting devices 
-are on.  \\
+Figure \ref{rect_tb} is the test bench setup for simulation of the rectifier. Figure  \ref{fig:rect_v_post}  presents both pre and post layout results of input voltages, $Vin1$ and $Vin2$  and output voltage, $Vrec$, for one cycle of ac input. The closer view of rectified output is shown in figure \ref{fig:rect_ripple}. The voltage drop of about 60 mV in layout result is accounted for the voltage drop due to 
+the resistance of high current conduction path. \\
 
 \begin{figure}[!htbp] %figure placement: here, top, bottom, or page
    \centering
@@ -739,28 +740,27 @@ are on.  \\
    \label{rect_tb}
 \end{figure}
 
-Figure  \ref{fig:rect_v_post}  presents both pre and post layout results of input voltages, $Vin1$ and $Vin2$  and output voltage, $Vrec$, for one cycle of ac input. The closer view of rectified output is shown in figure \ref{fig:rect_ripple}. The voltage drop of about 60 mV in layout result is accounted for the voltage drop due to 
-the resistance of high current conduction path. \\
+Figure \ref{rect_plot} is the simulation results showing voltages at rectifier inputs and output rectified voltage along with corresponding current waveform through rectifying MOSes. On comparing schematic and post-layout results, two important observations can be made from plots. First is reduction in peak diode current in post layout result. This is due to in addition to channel resistance of rectifying diodes, there is additional resistance of high current conducting path in the layout. In schematic, the paths are ideal wire with no resistance and hence higher peak current. Second is reverse leakage current is more pronounced in post layout simulation.   It is because wide path run over drain and source of rectifying diodes, creating larger parasitic capacitance. This is causing slight delay in turning off the diodes.\\
 
-\begin{figure}[H] %figure placement: here, top, bottom, or page
+\begin{figure}[htb] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=0.9\textwidth]{img/rectifier_VI.pdf} 
-   \caption{Voltage and current waveforms of the rectifier}
-   \label{rect_plot}
-\end{figure}
-
-\begin{figure}[H] %figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=.9\textwidth]{img/rectifier_V_post.pdf} 
+   \includegraphics[width=.95\textwidth]{img/rectifier_V_both_new.pdf} 
    \caption{Voltages waveform for pre and post layout}
    \label{fig:rect_v_post}
 \end{figure}
 
 \begin{figure}[H] %figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{img/rectifier_ripple.pdf} 
-   \caption{Rectified DC output for pre and post layout}
+   \includegraphics[width=0.95\textwidth]{img/rectifier_ripple_both_new.pdf} 
+   \caption{Rectified output for pre and post layout}
    \label{fig:rect_ripple}
+\end{figure}
+
+\begin{figure}[H] %figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{img/rectifier_VI_both_new.pdf} 
+   \caption{Voltage and current waveforms of the rectifier}
+   \label{rect_plot}
 \end{figure}
 
 \subsection{DC performance}		%****************************
@@ -791,9 +791,9 @@ inter layer coupling. The high current conduction routes are designed with wide 
 \hline \hline
 				 & \textbf{Schematic}		& \textbf{Post-layout} \\
 \hline \hline
-Rectified DC	 	& 2.23 V 				& 2.17 V	\\ \hline
-Ripple \acrshort{vpp} & 3.1 mV 				& 3 mV	\\ \hline
-Peak diode current 	& 63.7 mA 			&	63.1 mA	\\ \hline
+Rectified DC	 	& 2.28 V 				& 2.14 V	\\ \hline
+Ripple \acrshort{vpp} & 3.1 mV 				& 2.8 mV	\\ \hline
+Peak diode current 	& 63 mA 			&	57.3 mA	\\ \hline
 PCE 				& 84.5 \% 				&	82.9 \%	\\ \hline
 VCE 				& 88.6 \% 				&	86.2 \%	\\
 \hline \hline
@@ -884,7 +884,7 @@ I\textsubscript{load} max. 		& 10 mA \\
 \end{table}
 
 The amplifier has a nMOS differential input stage, perferably for its higher mobility for achieving more gain.
-Reference voltage, V\textsubscript{ref} will be bandgap voltage, 1.17 V, of silicon and  thus \acrshort{icmr} 
+Reference voltage, V\textsubscript{ref} will be band-gap voltage, 1.18 V, of silicon and  thus \acrshort{icmr} 
 for EA lies almost at half the supply voltage. This amplifier drives a pMOS buffer which is used to supply 
 sufficient current to drive the large pass transistor. Moreover, pMOS as a buffer passes 1 better which means 
 it can turn off the pass device completely and hence LDO regulates better at low load or no load condition. 
@@ -1284,7 +1284,7 @@ The above discussion is also done for other two separation, 1.5 mm and 10 mm, of
 $C_{P1}$, 						& 660				& 126				& 51					& \si{\pico\farad}	\\ \hline
 $C_{P2}$ 					 		& 80					& 190				& 227				& \si{\pico\farad}	\\ \hline
 $C_{S1}$ 							& 288				&  288				& 288				& \si{\pico\farad}	\\ \hline
-$\omega$							& 13.56				& 13.56				& 13.56				& \si{\mega\hertz}	\\ \hline
+$Freq.$							& 13.56				& 13.56				& 13.56				& \si{\mega\hertz}	\\ \hline
 $S11$							& -55				& -61				& -29			  	& \si{\decibel}		\\ \hline
 $S22$							& -30				& -24				& -9					& \si{\decibel} 		\\ \hline
 $S21$							& -0.28 (0.97)			& -0.61 (0.93)			& -2.50 (0.75)			& \si{\decibel} (mag.)	\\ \hline
@@ -1356,8 +1356,9 @@ Figure \ref{fig:wpt_top} is the top level of PMS in this design and test bench s
 \hline \hline
 $V_{in} $			& 2.6 \si{\volt}\textsubscript{p} \\ \hline
 Operating frequency	& 13.56 \si{\mega\hertz}	\\ \hline
-$V_{ac}$ 		  	& > 100 \si{\nano\farad}	\\ \hline
+$C_{rip}$ 		  	& > 100 \si{\nano\farad}	\\ \hline
 $V_{bias2}$, $V_{bias3}$ \& $V_{bias4}$ & 1.1, 0.88 \& 0.68 \si{\volt} \\ \hline
+$V_{ref}$ 		  	&  1.18 \si{\volt}	\\ \hline
 $C_{load}$ \& $R_{esr}$ & > 2.5 \si{\micro\farad} \& > 0.5 \si{\ohm} \\ \hline
 $I_{load} = I_{max}$ & 10 \si{\milli\ampere} \\ \hline
 $Vdd_{buff}$ \& $Vdd_{bias}$ & 2.5 \& 2.2 \si{\volt} \\ \hline
@@ -1656,7 +1657,7 @@ secondary antenna, which are fed to the rectifier of PMS chip is measured with c
 Agilent 54624A. $V_{rec}$ and $V_{reg}$ are measured with channel 3 and channel 4 respectively. Agilent E3648A is used as 
 power supply to the regulator on PCB. This regulator is generates 2.5 V as $VDD$ and 1.18 V as $V_{ref}$. This $VDD$ is 
 used as supply for pad/ESD, on chip buffers and on board bias generation circuit. Keithley 6514 electrometer is used to 
-measure current where required. All these devices are connected to a GPIB bus and controlled using Matlab script.
+measure current where required. All these devices are connected to a GPIB bus and controlled using Matlab script. An example of Matlab code used here is given in the appendix.
 
 \begin{figure} [H]
   \centering
@@ -1843,7 +1844,7 @@ Figure \ref{fig:meas_wpt5_current_pri}  shows measured current and voltage in th
 \label{fig:meas_wpt5_current_pri} 
 \end{figure}
 
-  The decreased efficiency can be explained with two main factors: effect of parasitics on rectifier and non-optimal resonance. As explained in rectifier measurement result, the parasitic capacitance and inductance have caused the distortion of rectifier inputs, significantly affecting the comparator performance which was designed to avoid reverse leakage of current. Similarly magnetic resonance created at the transfer link is dependent both on load and distance between the coil. During tuning of transfer link the load was modelled as dc load including the LDO, which is disabled during measurement due to its limitations, and not to mention rectifier itself being non-linear load which is always subjected to change. \\
+  The decreased efficiency can be explained with two main factors: effect of parasitics on rectifier and non-optimal resonance. As explained in rectifier measurement result, the parasitic capacitance and inductance have caused the distortion of rectifier inputs, significantly affecting the comparator performance which was designed to avoid reverse leakage of current. Similarly magnetic resonance created at the transfer link is dependent both on load and distance and alignment of the coil. During tuning of transfer link the load was modelled as dc load including the LDO, which is disabled during measurement due to its limitations, and not to mention rectifier itself being non-linear load which is always subjected to change. Likewise during measurement, due to lack of device/instruments to maintain better control of distance and alignment of coils, the coupling factor was always subjected to variation. \\
   
   The measured performance of WPT with 5 mm coil separation is summarised in table \ref{tab:wpt_spec_meas}
   
@@ -1905,11 +1906,11 @@ $\eta_{wpt}$		&  52.9\%				& 46.1 \%				& 21 \% \\
 \part{Conclusion}
 \chapter{Conclusion}
 In this project, wireless power harvesting system was designed, analysed, produced and tested. Magnetic resonance inductive coupling method was used for 
-wireless power transfer. The WPT chip was produced using 90 nm CMOS devices. The target performance was to wirelessly power 10 mA load with 1.8 V.   \\
+wireless power transfer. The WPT chip was produced using 2.5 V devices of 90 nm CMOS process. The target performance was to wirelessly power 10 mA load with 1.8 V.   \\
 
-The post-layout simulation result, summarised in table \ref{tab:wpt_spec}, showed that the target objective of WPT system implemented in this project can be achieved with efficiency greater than 50 \%. Measured performance of rectifier was decent, the limitation being effect of parasitic inductance and capacitance.  Similarly, in spite of leakage issue, LDO measured performance showed that its functionality agreed with the simulation result. The inductive link power transfer efficiency for strong and moderate coupling was reasonable good enough to give measured WPT system efficiency of 46.1 \% taking rectifier only as PMS. \\
+The post-layout simulation result, summarised in table \ref{tab:wpt_spec}, showed that the target objective of WPT system implemented in this project can be achieved with system efficiency greater than 50 \%. Measured performance of rectifier was decent, the limitation being effect of parasitic inductance and capacitance.  Similarly, in spite of higher drop and leakage, LDO measured performance showed that its functionality agreed with the simulation result. The inductive link power transfer efficiency for strong and moderate coupling was reasonable good enough to give measured WPT system efficiency of 46.1 \% taking rectifier only as PMS. \\
 
- To sum up the work, it can be said that the conceptual design of WPT implemented in this work was approved by simulation,  with measured results backing the simulated performance. The analysis of degraded measured results were traced to layout design of PMS and effect of parasitics. \\
+ To sum up the work, it can be said that the conceptual design of WPT implemented in this work was approved by post layout simulation,  with measured results backing the simulated performance. The analysis of degraded measured results were traced to layout design of PMS and effect of parasitics. \\
 
 \section{Design issues}
 
@@ -1948,6 +1949,7 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 %***********************************************************************  APPENDICES ***********************************************************************************
 
 \begin{appendices} 	% starts appendix
+
 \addtocontents{toc}{\protect\setcounter{tocdepth}{1}} % 
 \makeatletter
 \addtocontents{toc}{%
@@ -1957,7 +1959,10 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 }
 \makeatother
 
+
+
 %********* RECTIFIER appendix *********
+
 \chapter{Rectifier Implementation}
 
 %\begin{figure} [!htbp]	% schematic Rectifier
@@ -1968,7 +1973,6 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 	\label{fig:appen_schematic_rectifer} 
 \end{sidewaysfigure}
 %\end{figure}
-
 
 \begin{sidewaysfigure} [!htbp] % Layout Rectifer
  	\centering
@@ -2080,7 +2084,7 @@ standard commercial protocols like Qi and AirFuel or can design one's own protoc
 
 \addtocontents{toc}{\endgroup}
 \end{appendices} 
-% end appendix
+% END OF APPENDIX
 
 
 \backmatter{}	% the main content ends here
